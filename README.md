@@ -12,7 +12,7 @@ Il modulo TOP definisce i concetti e le proprietà di più alto livello che veng
 ### [Ontologia Place](https://w3id.org/italia/env/onto/place)
 
 Il modulo PLACE estende il modulo TOP aggiungendo classi e proprietà che descrivono in maniera più dettagliata i luoghi sia dal punto di vista fisico che nella loro accezione amministrativa. 
-Di conseguenza tali classi sono modellate come sottoclassi di ispra-top:Location tramite l’utilizzo dell’assioma rdfs:subClassOf. In maniera analoga il modulo TOP è esteso modellando tutta una serie di proprietà (ex. :hasAdministrativeUnit, :hasCountry, ecc…) come sottoproprietà della object property ispra-top:hasLocation tramite l’utlizzo dell’assioma rdfs:subPropertyOf. Il namespace del modulo TOP è https://w3id.org/italia/env/onto/place/.
+Di conseguenza tali classi sono modellate come sottoclassi di ispra-top:Location tramite l’utilizzo dell’assioma rdfs:subClassOf. In maniera analoga il modulo TOP è esteso modellando tutta una serie di proprietà (ex. :hasAdministrativeUnit, :hasCountry, ecc…) come sottoproprietà della object property ispra-top:hasLocation tramite l’utlizzo dell’assioma rdfs:subPropertyOf. Il namespace del modulo PLACE è https://w3id.org/italia/env/onto/place/.
 
 ### [Ontologia Inspire-mf](https://w3id.org/italia/env/onto/inspire-mf)
 
