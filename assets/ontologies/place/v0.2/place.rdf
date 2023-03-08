@@ -1,0 +1,881 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/italia/env/onto/place/"
+     xml:base="https://w3id.org/italia/env/onto/place/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:top="https://w3id.org/italia/env/onto/top/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/italia/env/onto/place">
+        <owl:imports rdf:resource="https://w3id.org/italia/env/onto/top/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasCountry -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasCountry">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/place/hasFeature"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/place/isCountryOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/place/Country"/>
+        <rdfs:comment xml:lang="it">La proprietà per associare un&apos;entità al paese in cui si trova.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property for associating an entity with the country it is located in.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="it">ha paese</rdfs:label>
+        <rdfs:label xml:lang="en">has country</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasDirectHigherRank -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasDirectHigherRank">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/place/hasHigherRank"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/place/hasDirectLowerRank"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/AdministrativeUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">Questa proprietà mette in relazione componenti dell&apos;indirizzo con un nome, dove la prima è più specifica della seconda in maniera diretta senza transitività.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates two named address components, where the first is directly more specific then the second without any transitiveness.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">is direct lower rank of</rdfs:label>
+        <rdfs:label xml:lang="it">è il livello diretto più basso di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasDirectLowerRank -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasDirectLowerRank">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/place/hasLowerRank"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/place/AdministrativeUnit"/>
+        <rdfs:comment xml:lang="it">Questa proprietà mette in relazione componenti dell&apos;indirizzo con un nome, dove la prima è meno specifica della seconda e non esise un&apos;altra componente dell&apos;indirizzo con nome che è sia più specifica della prima che più generale della seconda.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates two named address components, where the first is less specific then the second and there is no other named address component that is both more specific than the first and more general than the second.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place/"/>
+        <rdfs:label xml:lang="it">ha livello diretto più basso</rdfs:label>
+        <rdfs:label xml:lang="en">has direct lower rank</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasFeature -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasFeature">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/hasLocation"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/place/isFeatureOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/place/Feature"/>
+        <rdfs:comment xml:lang="it">La relazione esistente tra un&apos;entità ed una feature geografica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between any possible entity an a feature.</rdfs:comment>
+        <rdfs:comment xml:lang="it">ha feature</rdfs:comment>
+        <rdfs:comment xml:lang="en">has feature</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasGeometry">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/place/isGeometryOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/place/Geometry"/>
+        <rdfs:comment xml:lang="it">Questa proprietà collega un&apos;entità alla sua geometria.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property links an entity to its geometry.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="it">ha geometria</rdfs:label>
+        <rdfs:label xml:lang="en">has geometry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasGeometryType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasGeometryType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/place/isGeometryTypeOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/Geometry"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/place/GeometryType"/>
+        <rdfs:comment xml:lang="it">La relazione per classificare una geometria con il suo tipo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation for classifying a geometry with its type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="it">ha tipo di geometria</rdfs:label>
+        <rdfs:label xml:lang="en">has geometry type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasHigherRank -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasHigherRank">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/place/hasLowerRank"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/AdministrativeUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">Questa proprietà mette in relazione due componenti dell&apos;indirizzo con nomi, dove la prima è più specifica della seconda.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates two named address components, where the first is more specific than the second.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">is lower rank of</rdfs:label>
+        <rdfs:label xml:lang="it">è il livello più basso di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasLowerRank -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasLowerRank">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/place/AdministrativeUnit"/>
+        <rdfs:comment xml:lang="it">Questa proprietà mette in relazione due componenti dell&apos;indirizzo con nomi, dove la prima è meno specifica della seconda.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates two named address components, where the first is less specific than the second.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="it">ha livello più basso</rdfs:label>
+        <rdfs:label xml:lang="en">has lower rank</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasMetropolitanCity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasMetropolitanCity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/place/hasFeature"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/place/isMetropolitanCityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/place/MetropolitanCity"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/hasMunicipality"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/hasMetropolitanCity"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment xml:lang="it">Il caso particolare di localizzazione di un oggetto in cui tale oggetto si trova in una città metropolitana.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The special case of location associated with an object in which such an object is located in a metropolitan city.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="it">ha città metropolitana</rdfs:label>
+        <rdfs:label xml:lang="en">has metropolitan city</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasMunicipality -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasMunicipality">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/place/hasFeature"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/place/isMunicipalityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/place/Municipality"/>
+        <rdfs:comment xml:lang="it">Il caso particolare di localizzazione di un oggetto in cui tale oggetto si trova in un comune.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The special case of location associated with an object in which such an object is located in a municipality.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="it">ha municipalità</rdfs:label>
+        <rdfs:label xml:lang="en">has municipality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasNearbyLocation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasNearbyLocation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">La relazione di vicinanza che può essere utilizzata per associare qualsiasi entità a un luogo secondo una vaga nozione di prossimità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The nearby relation that can be used to associate any entity to a place according to a vague notion of proximity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="it">ha luogo nelle vicinanze</rdfs:label>
+        <rdfs:label xml:lang="en">has nearby location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasProvince -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasProvince">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/place/hasFeature"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/place/isProvinceOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/place/Province"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/hasMunicipality"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/hasProvince"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment xml:lang="it">Il caso particolare di localizzazione di un oggetto in cui tale oggetto si trova in una provincia.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The special case of location associated with an object in which such an object is located in a province.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="it">ha provincia</rdfs:label>
+        <rdfs:label xml:lang="en">has province</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasRegion -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasRegion">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/place/hasFeature"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/place/isRegionOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/place/Region"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/hasMetropolitanCity"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/hasRegion"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/hasProvince"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/hasRegion"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment xml:lang="it">Il caso speciale di posizione associata a un oggetto in cui tale oggetto si trova in una regione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The special case of location associated with an object in which such an object is located in a region.</rdfs:comment>
+        <rdfs:comment xml:lang="en">has region</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place/"/>
+        <rdfs:label xml:lang="it">ha regione</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/isCountryOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/isCountryOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/place/isFeatureOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/Country"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">La relazione per associare un paese a un&apos;entità situata in tale paese.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation for associating a country with an entity located in such a country.</rdfs:comment>
+        <rdfs:comment xml:lang="en">is country of</rdfs:comment>
+        <rdfs:comment xml:lang="it">è paese di</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/isFeatureOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/isFeatureOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isLocationOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/Feature"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">La relazione esistente tra una feature geografica e una qualsiasi entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between a feature and any entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">is feature of</rdfs:label>
+        <rdfs:label xml:lang="it">è feature di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/isGeometryOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/isGeometryOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <rdfs:comment xml:lang="it">La relazione che sussiste tra una geometria e la sua entità corrispondente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between a geometry and its corresponding entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">is geometry of</rdfs:label>
+        <rdfs:label xml:lang="it">è geometria di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/isGeometryTypeOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/isGeometryTypeOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/classifies"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/GeometryType"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/place/Geometry"/>
+        <rdfs:comment xml:lang="it">La relazione per classificare con un tipo di geometria una geometria.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation that can be used for classifying a geometry with a geometry type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">is geometry type of</rdfs:label>
+        <rdfs:label xml:lang="it">è tipo di geometria di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/isMetropolitanCityOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/isMetropolitanCityOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/place/isFeatureOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/MetropolitanCity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">Il caso speciale di &quot;è la posizione di&quot; in cui una città metropolitana è la posizione in cui si trova un oggetto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The special case of &apos;is location of&apos; in which a metropolitan city is the location an object is located in.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">is metropolitan city of</rdfs:label>
+        <rdfs:label xml:lang="it">è città metropolitana di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/isMunicipalityOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/isMunicipalityOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/place/isFeatureOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/Municipality"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">Il caso particolare di &apos;è luogo di&apos; in cui un comune è il luogo in cui si trova un oggetto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The special case of &apos;is location of&apos; in which a municipality is the location an object is located in.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">is municipality of</rdfs:label>
+        <rdfs:label xml:lang="it">è municipalità di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/isProvinceOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/isProvinceOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/place/isFeatureOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/Province"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">Il caso particolare di &apos;è luogo di&apos; in cui una provincia è il luogo in cui si trova un oggetto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The special case of &apos;is location of&apos; in which a province is the location an object is located in.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">is province of</rdfs:label>
+        <rdfs:label xml:lang="it">è provincia di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/isRegionOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/isRegionOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/place/isFeatureOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/Region"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">Il caso speciale di &quot;è la posizione di&quot; in cui una regione è la posizione in cui si trova un oggetto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The special case of &apos;is location of&apos; in which a region is the location an object is located in.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">is region of</rdfs:label>
+        <rdfs:label xml:lang="it">è regione di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/associatedWith -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/associatedWith"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/classifies -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/classifies"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/hasLocation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasLocation"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/hasUniqueIdentifier -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasUniqueIdentifier"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/isClassifiedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/isLocationOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isLocationOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/coordinateSystem -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/place/coordinateSystem">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/Geometry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Property used to indicate the coordinate system or reference system (e.g., WGS84, ETRS89, etc.)</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per indicare il sistema di coordinate o sistema di riferimento (e.g., WGS84, ETRS89, ecc,.)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">coordinate system</rdfs:label>
+        <rdfs:label xml:lang="it">sistema di coordinate di riferimento</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/geometry -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/place/geometry">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/Geometry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">This property represents the serialization of the geometry object (e.g., kml, gml, etc.).</rdfs:comment>
+        <rdfs:comment xml:lang="it">This property represents the serialization of the geometry object (e.g., kml, gml, etc.).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">geometry serialisation</rdfs:label>
+        <rdfs:label xml:lang="it">serializzazione della geometria</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/istat -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/place/istat">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/AdministrativeUnit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Il codice identificativo dei luoghi previsto dall&apos;ISTAT.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The identification code for places as provided by ISTAT.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">ISTAT code</rdfs:label>
+        <rdfs:label xml:lang="it">codice ISTAT</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/lat -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/place/lat">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/Geometry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">La proprietà per la latitudine.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the latitude.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">latitude</rdfs:label>
+        <rdfs:label xml:lang="it">latitudine</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/long -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/place/long">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/place/Geometry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta la longitudine.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents longitude.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">longitude</rdfs:label>
+        <rdfs:label xml:lang="it">longitudine</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/AdministrativeUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/AdministrativeUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/place/Feature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/hasUniqueIdentifier"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/top/UniqueIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/istat"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/env/onto/place/Geometry"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/env/onto/place/Sea"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/istat"/>
+        </owl:hasKey>
+        <rdfs:comment xml:lang="en">A place meant as administrative unit.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un luogo inteso come unità amministrativa.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">Administrative unit</rdfs:label>
+        <rdfs:label xml:lang="it">Unità amministrativa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/Country -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Country">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/place/AdministrativeUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasDirectLowerRank"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasLowerRank"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/MetropolitanCity"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Municipality"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Province"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Region"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasDirectLowerRank"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasLowerRank"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/MetropolitanCity"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Municipality"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Province"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Region"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta lo Stato. Esempio: &quot;Italia - Italy&quot; oppure &quot;United Kingdom&quot;, ecc. E&apos; l&apos;unità amministrativa più alta nella gerarchia di contenimento territoriale dell&apos;indirizzo. Nel Core Location Vocabulary del programma ISA2 essa è modellata con la proprietà dell&apos;indirizzo nominata adminUnit1</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the uppermost administrative unit for the address, almost always a country. &quot;United Kingdom&quot;, &quot;Italy&quot;, etc. In the Core Location Vocabulary this is modelled as adminUnit1.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+        <rdfs:label xml:lang="it">Stato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/Feature -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Feature">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Location"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/env/onto/place/Geometry"/>
+        <rdfs:comment xml:lang="en">A feature meant as a location.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una feature intesa come luogo.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">Feature</rdfs:label>
+        <rdfs:label xml:lang="it">Luogo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/Geometry -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Geometry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/GeometryType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/lat"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/long"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/geometry"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/env/onto/place/Sea"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la geometria di un luogo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the geometry of a location.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="it">Geometria</rdfs:label>
+        <rdfs:label xml:lang="en">Geometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/GeometryType -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/GeometryType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Concept"/>
+        <rdfs:comment xml:lang="en">A geometry type, such as a point, polygon, multipolygon, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un tipo di geometrica, come ad esempio punto, poligono, multipoligono, ecc...</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">Geometry type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di geometria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/MetropolitanCity -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/MetropolitanCity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/place/AdministrativeUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasDirectLowerRank"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Municipality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasLowerRank"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Municipality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasDirectLowerRank"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Municipality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasLowerRank"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Municipality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Le città metropolitane d&apos;Italia sono divisioni amministrative dell&apos;Italia, operative dal 2015, che sono un tipo speciale di provincia. La città metropolitana, così come definita dalla legge, comprende un grande nucleo urbano e i centri minori circostanti che sono ad esso strettamente collegati per quanto riguarda le attività economiche e i servizi pubblici essenziali, nonché le relazioni culturali e le caratteristiche territoriali.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The metropolitan cities of Italy are administrative divisions of Italy, operative since 2015, which are a special type of province. The metropolitan city, as defined by law, includes a large core city and the smaller surrounding towns that are closely related to it with regard to economic activities and essential public services, as well as to cultural relations and to territorial features.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="it">Città Metropolitana</rdfs:label>
+        <rdfs:label xml:lang="en">Metropolitan City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/Municipality -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Municipality">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/place/AdministrativeUnit"/>
+        <rdfs:comment xml:lang="it">La classe per rappresentare comuni come Roma o Milano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class for representing municipalities such as Rome or Milan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">Municipality</rdfs:label>
+        <rdfs:label xml:lang="it">Municipalità (Comune)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/Province -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Province">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/place/AdministrativeUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasDirectLowerRank"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Municipality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasLowerRank"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Municipality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasDirectLowerRank"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Municipality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasLowerRank"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Municipality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe per rappresentare province come la Provincia di Ancona o L&apos;Aquila.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class for representing provinces such as the Province of Ancona or L&apos;Aquila.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">Province</rdfs:label>
+        <rdfs:label xml:lang="it">Provincia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/Region -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Region">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/place/AdministrativeUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasDirectLowerRank"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/MetropolitanCity"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Province"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasLowerRank"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/MetropolitanCity"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Municipality"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Province"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasDirectLowerRank"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/MetropolitanCity"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Province"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasLowerRank"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/MetropolitanCity"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Municipality"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Province"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A region is the first-level constituent entity of a country, constituting its second NUTS administrative level.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una regione è l&apos;entità costituente di primo livello di un paese, che costituisce il suo secondo livello amministrativo NUTS.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="en">Region</rdfs:label>
+        <rdfs:label xml:lang="it">Regione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/Sea -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Sea">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe per rappresentare le istanze di mare.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The concept of sea.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <rdfs:label xml:lang="it">Mare</rdfs:label>
+        <rdfs:label xml:lang="en">Sea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Concept -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Concept"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Entity -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Entity"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Location -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Location"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/UniqueIdentifier -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/UniqueIdentifier"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Country"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/MetropolitanCity"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Municipality"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Province"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Region"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/MetropolitanCity"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Municipality"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Province"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/place/Region"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

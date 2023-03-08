@@ -1,0 +1,1328 @@
+@prefix : <https://w3id.org/italia/env/onto/top/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/italia/env/onto/top> .
+
+<https://w3id.org/italia/env/onto/top> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#time
+xsd:time rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/italia/env/onto/top/associatedWith
+:associatedWith rdf:type owl:ObjectProperty ;
+                rdfs:comment "La relazione più generica nella rete di ontologie ISPRA."@it ,
+                             "The most generic relation that can be used within the ISPRA ontonet."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                rdfs:label "associated with"@en ,
+                           "associato a"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/atTime
+:atTime rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :associatedWith ;
+        owl:inverseOf :isTimeOf ;
+        rdfs:domain :Entity ;
+        rdfs:range :TemporalEntity ;
+        rdfs:comment "La relazione esistente tra una qualsiasi entità ed un'entità temporale."@it ,
+                     "The relation holding between an entity ad a temporal entity."@en ;
+        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+        rdfs:label "al tempo"@it ,
+                   "at time"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/classifies
+:classifies rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :associatedWith ;
+            owl:inverseOf :isClassifiedBy ;
+            rdfs:domain :Concept ;
+            rdfs:range :Entity ;
+            rdfs:comment "La proprietà utilizzata per affermare che un concetto classificava una certa entità."@it ,
+                         "The property used to state that a concept classified a certain entity."@en ;
+            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+            rdfs:label "classifica"@it ,
+                       "classifies"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/directlyFollows
+:directlyFollows rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :follows ;
+                 owl:inverseOf :directlyPrecedes ;
+                 rdfs:domain :Entity ;
+                 rdfs:range :Entity ;
+                 rdfs:comment "L'intransitivo segue la relazione. Ad esempio, il martedì segue direttamente il lunedì. L'immediatezza della precedenza dipende dalla concettualizzazione del progettista."@it ,
+                              "The intransitive follows relation. For example, Tuesday directly follows Monday. Directness of precedence depends on the designer conceptualization."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                 rdfs:label "directly follows"@en ,
+                            "segue direttamente"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/directlyPrecedes
+:directlyPrecedes rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :precedes ;
+                  rdfs:domain :Entity ;
+                  rdfs:range :Entity ;
+                  rdfs:comment "L'intransitivo precede la relazione. Ad esempio, il lunedì precede direttamente il martedì. L'immediatezza della precedenza dipende dalla concettualizzazione del progettista."@it ,
+                               "The intransitive precedes relation. For example, Monday directly precedes Tuesday. Directness of precedence depends on the designer conceptualization."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                  rdfs:label "directly precedes"@en ,
+                             "precede direttamente"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/follows
+:follows rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :associatedWith ;
+         owl:inverseOf :precedes ;
+         rdf:type owl:TransitiveProperty ;
+         rdfs:domain :Entity ;
+         rdfs:range :Entity ;
+         rdfs:comment "A relation between entities, expressing a 'sequence' schema."@en ,
+                      "Una relazione tra entità, che esprime uno schema di 'sequenza'."@it ;
+         rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+         rdfs:label "follows"@en ,
+                    "segue"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/hasAgentRole
+:hasAgentRole rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasEventuality ;
+              owl:inverseOf :isAgentRoleOf ;
+              rdfs:domain :Entity ;
+              rdfs:range :AgentRole ;
+              rdfs:comment "La relazione che permette di collegare un'entità alla relazione n-aria che rappresenta il ruolo ricoperto da un agente."@it ,
+                           "The relationship that allows you to connect an entity to the n-aria relationship that represents the role played by an agent."@en ;
+              rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+              rdfs:label "ha ruolo-agente"@it ,
+                         "has agent-role"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasBroader
+:hasBroader rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :associatedWith ;
+            owl:inverseOf :hasNarrower ;
+            rdf:type owl:TransitiveProperty ;
+            rdfs:domain :Concept ;
+            rdfs:range :Concept ;
+            rdfs:comment "La relazione per creare tassonomie di concetti dal più specifico al più generale."@it ,
+                         "The relation for creating hierarchies of concepts from the most specific to the most general."@en ;
+            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+            rdfs:label "ha più generale"@it ,
+                       "has broader"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasCharacteristic
+:hasCharacteristic rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :associatedWith ;
+                   owl:inverseOf :isCharacteristicOf ;
+                   rdfs:domain :Entity ;
+                   rdfs:range :Characteristic ;
+                   rdfs:comment "La relazione di primo livello che intercorre tra un'entità e una delle sue caratteristiche."@it ,
+                                "The top-level relation holding between an entity and one of its characteristics."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                   rdfs:label "ha caratteristica"@it ,
+                              "has characteristic"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasCollection
+:hasCollection rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :associatedWith ;
+               owl:inverseOf :isCollectionOf ;
+               rdfs:domain :Entity ;
+               rdfs:range :Collection ;
+               rdfs:comment "La relazione esistente tra un'entità ed una collezione."@it ,
+                            "The relation holding between an entity and a collection."@en ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+               rdfs:label "ha collezione"@it ,
+                          "has collection"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasCreator
+:hasCreator rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :associatedWith ;
+            owl:inverseOf :isCreatorOf ;
+            rdfs:domain :Entity ;
+            rdfs:range :Agent ;
+            rdfs:comment "Relazione per associare ad un'entità un agente creatore."@it ,
+                         "The relation for associating an entity to an agent being the creator."@en ;
+            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+            rdfs:label "ha creatore"@it ,
+                       "has creator"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasDataSchema
+:hasDataSchema rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasDescription ;
+               owl:inverseOf :isDataSchemaOf ;
+               rdfs:domain :Media ;
+               rdfs:range :DataSchema ;
+               rdfs:comment "La relazione che sussiste tra un media e il suo schema di dati."@it ,
+                            "The relation holding between a media and its data schema."@en ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+               rdfs:label "ha schema di dati"@it ,
+                          "has data schema"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasDescription
+:hasDescription rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :associatedWith ;
+                owl:inverseOf :isDescriptionOf ;
+                rdfs:domain :Entity ;
+                rdfs:range :Description ;
+                rdfs:comment "Property that associates an entity with its description."@en ,
+                             "Proprietà che associa un'entità alla sua descrizione."@it ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                rdfs:label "ha descrizione"@it ,
+                           "has description"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasDownloadURL
+:hasDownloadURL rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :associatedWith ;
+                rdfs:domain :Media ;
+                rdfs:comment "Questo è un link diretto al file scaricabile in un dato formato. E.g. un file CSV o un file RDF. Il formato è descritto dal dct:format e/o dal dcat:mediaType della distribuzione."@it ,
+                             "The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                rdfs:label "ha URL di scaricamento"@it ,
+                           "has download URL"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasEventuality
+:hasEventuality rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :associatedWith ;
+                owl:inverseOf :isEventualityOf ;
+                rdfs:domain :Entity ;
+                rdfs:range :Eventuality ;
+                rdfs:comment "La relazione esistente tra una qualsiasi entità ed una di tipo Eventualità."@it ,
+                             "The relationship existing between any entity and another typed as Eventuality."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                rdfs:label "ha eventualità"@it ,
+                           "has eventuality"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasIdentifierSchema
+:hasIdentifierSchema rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasDescription ;
+                     owl:inverseOf :isIdentifierSchemaOf ;
+                     rdfs:domain :UniqueIdentifier ;
+                     rdfs:range :IdentifierSchema ;
+                     rdfs:comment "La relazione che lega un identificativo unico al suo schema di definizione."@it ,
+                                  "The relation that associates a unique identifier to its defining schema."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                     rdfs:label "ha schema di identificazione"@it ,
+                                "has identifier schema"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :associatedWith ;
+             owl:inverseOf :isLocationOf ;
+             rdfs:domain :Entity ;
+             rdfs:range :Location ;
+             rdfs:comment "La relazione esistente tra un qualsiasi tipo di entità ed un luogo."@it ,
+                          "The relation holding between any kind of entity and a place."@en ;
+             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+             rdfs:label "ha luogo"@it ,
+                        "has place"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasMedia
+:hasMedia rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :associatedWith ;
+          owl:inverseOf :isMediaOf ;
+          rdfs:domain :Entity ;
+          rdfs:range :Media ;
+          rdfs:comment "La relazione tra un'entità ed un'istanza della classe Media."@it ,
+                       "The relationship between an entity and an instance of the middle class."@en ;
+          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+          rdfs:label "ha media"@it ,
+                     "has media"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasMember
+:hasMember rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :associatedWith ;
+           owl:inverseOf :isMemberOf ;
+           rdfs:domain :Collection ;
+           rdfs:range :Entity ;
+           rdfs:comment "La relazione di membership."@it ,
+                        "The membership relation."@en ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+           rdfs:label "ha membro"@it ,
+                      "has member"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasNarrower
+:hasNarrower rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :associatedWith ;
+             rdf:type owl:TransitiveProperty ;
+             rdfs:domain :Concept ;
+             rdfs:range :Concept ;
+             rdfs:comment "La relazione per creare tassonomie di concetti dal più generale al più specifico."@it ,
+                          "The relation for generating taxonomies of concepts from the most general to the most specific."@en ;
+             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+             rdfs:label "ha più specifico"@it ,
+                        "has narrower"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasPart
+:hasPart rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :associatedWith ;
+         owl:inverseOf :isPartOf ;
+         rdf:type owl:TransitiveProperty ,
+                  owl:ReflexiveProperty ;
+         rdfs:domain :Entity ;
+         rdfs:range :Entity ;
+         rdfs:comment "La relazione di parte definita come proprietà transitiva e riflessiva."@it ,
+                      "The parthood relation defined as a transitive and reflexive property."@en ;
+         rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+         rdfs:label "ha parte"@it ,
+                    "has part"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasRole
+:hasRole rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :isClassifiedBy ;
+         owl:inverseOf :isRoleOf ;
+         rdfs:domain :Entity ;
+         rdfs:range :Role ;
+         owl:propertyChainAxiom ( :isAgentInvolvedIn
+                                  :involvesRole
+                                ) ;
+         rdfs:comment "La relazione che permette di classificare un'entità in base al ruolo che essa ricopre."@it ,
+                      "The relationship that allows you to classify an entity based on the role it holds."@en ;
+         rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+         rdfs:label "ha il ruolo"@it ,
+                    "has role"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasSchemaAttribute
+:hasSchemaAttribute rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasCharacteristic ;
+                    owl:inverseOf :isSchemaAttributeOf ;
+                    rdfs:domain :DataSchema ;
+                    rdfs:range :SchemaAttribute ;
+                    rdfs:comment "La relazione che consente di associare uno schema di dati ai suoi attributi dello schema."@it ,
+                                 "The relation that allows one to associate a data schema with its schema attributes."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                    rdfs:label "ha attributo di schema di dati"@it ,
+                               "has data schema attribute"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasSource
+:hasSource rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :associatedWith ;
+           owl:inverseOf :isSouceOf ;
+           rdfs:domain :Entity ;
+           rdfs:range :Entity ;
+           rdfs:comment "La relazione che permette di stabilire che una certa entità è sorgente di un'altra."@it ,
+                        "The relation that allows one that a certain entity is the source of another."@en ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+           rdfs:label "ha sorgente"@it ,
+                      "has source"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasSystem
+:hasSystem rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :associatedWith ;
+           owl:inverseOf :isSystemOf ;
+           rdfs:domain :Entity ;
+           rdfs:range :System ;
+           rdfs:comment "La relazione che sussiste tra una qualsiasi entità ed un sistema."@it ,
+                        "The relation holding between any entity and a system."@en ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+           rdfs:label "has system"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasUniqueIdentifier
+:hasUniqueIdentifier rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasCharacteristic ;
+                     owl:inverseOf :isUniqueIdentifierOf ;
+                     rdfs:domain :Entity ;
+                     rdfs:range :UniqueIdentifier ;
+                     rdfs:comment "La relazione esistente tra un'entità e il suo identificatore univoco."@it ,
+                                  "The relation holding between an entity and its unique identifier."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                     rdfs:label "ha identificativo univoco"@it ,
+                                "has unique identifier"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasUnitOfMeasure
+:hasUnitOfMeasure rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasCharacteristic ;
+                  owl:inverseOf :isUnitOfMeasureOf ;
+                  rdfs:domain :Entity ;
+                  rdfs:range :UnitOfMeasure ;
+                  rdfs:comment "Property that links an object that can be measured to its corresponding unit of measure."@en ,
+                               "Proprietà che collega un oggetto misurabile alla sua unità di misura corrispondente."@it ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                  rdfs:label "ha unità di misura"@it ,
+                             "has unit of measure"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/hasValue
+:hasValue rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasCharacteristic ;
+          owl:inverseOf :isValueOf ;
+          rdfs:domain :Entity ;
+          rdfs:range :Value ;
+          rdfs:comment "La relazione esistente tra un'entità ed il valore ad essa associata."@it ,
+                       "The relationship between an entity and the value it is associated with."@en ;
+          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+          rdfs:label "ha valore"@it ,
+                     "has value"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/involvesAgent
+:involvesAgent rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :isEventualityOf ;
+               owl:inverseOf :isAgentInvolvedIn ;
+               rdfs:domain :AgentRole ;
+               rdfs:range :Agent ;
+               rdfs:comment "La relazione che collega una situazione ruolo-agente a un agente coinvolto in tale situazione."@it ,
+                            "The relationship that links an agent-role situation to an agent involved in such a situation."@en ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+               rdfs:label "coinvolge l'agente"@it ,
+                          "involves agent"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/involvesRole
+:involvesRole rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :isEventualityOf ;
+              owl:inverseOf :isRoleInvolvedIn ;
+              rdfs:domain :AgentRole ;
+              rdfs:range :Role ;
+              rdfs:comment "La relazione che sussiste tra l'eventualità identificata da un ruolo-agente ed uno o più ruoli ad esso associata."@it ,
+                           "The relation holding between an agent-role eventualoty and the one or more roles."@en ;
+              rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+              rdfs:label "coinvolge il ruolo"@it ,
+                         "involves role"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/isAgentInvolvedIn
+:isAgentInvolvedIn rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasEventuality ;
+                   rdfs:domain :Agent ;
+                   rdfs:range :AgentRole ;
+                   rdfs:comment "La relazione che lega un agente alla situazione ruolo-agente in cui è coinvolto."@it ,
+                                "The relationship that links an agent to the agent-role situation it is involved in."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                   rdfs:label "is agent involved in"@en ,
+                              "è l'agente coinvolto in"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isAgentRoleOf
+:isAgentRoleOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :isEventualityOf ;
+               rdfs:domain :AgentRole ;
+               rdfs:range :Entity ;
+               rdfs:comment "La relazione che collega un ruolo-agente ad un'entità."@it ,
+                            "The relation that links an agent-role to an entity."@en ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+               rdfs:label "is agent-role of"@en ,
+                          "è ruolo-agente di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isCharacteristicOf
+:isCharacteristicOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :associatedWith ;
+                    rdfs:domain :Characteristic ;
+                    rdfs:range :Entity ;
+                    rdfs:comment "La relazione che collega una caratteristica all'entità a cui essa può essere associata."@it ,
+                                 "The relationship that links a characteristic to the entity it can be associated with."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                    rdfs:label "is characteristic of"@en ,
+                               "è caratteristica di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isClassifiedBy
+:isClassifiedBy rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :associatedWith ;
+                rdfs:domain :Entity ;
+                rdfs:range :Concept ;
+                rdfs:comment "La proprietà per stabilire che un certo concetto viene usato per classificare una certa entità."@it ,
+                             "The property to state that a certain concept is used to classify a certain entity."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                rdfs:label "is classified by"@en ,
+                           "è classificato da"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isCollectionOf
+:isCollectionOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :associatedWith ;
+                rdfs:domain :Collection ;
+                rdfs:range :Entity ;
+                rdfs:comment "La relazione esistente tra una collezione ed una qualsiasi entità."@it ,
+                             "The relation holding between a collection and any possible entity."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                rdfs:label "is collection of"@en ,
+                           "è collezione di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isCreatorOf
+:isCreatorOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :associatedWith ;
+             rdfs:domain :Agent ;
+             rdfs:range :Entity ;
+             rdfs:comment "La relazione per associare un agente creatore ad un'entità creata."@it ,
+                          "The relation for asserting that a certain agent is the creator of an entity."@en ;
+             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+             rdfs:label "is creator of"@en ,
+                        "è creatore di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isDataSchemaOf
+:isDataSchemaOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :isDescriptionOf ;
+                rdfs:domain :DataSchema ;
+                rdfs:range :Media ;
+                rdfs:comment "La relazione esistente tra uno schema di dati e il supporto."@it ,
+                             "The relation existing between a data schema and the media."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                rdfs:label "is data schema of"@en ,
+                           "è schema di dati di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isDescriptionOf
+:isDescriptionOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :associatedWith ;
+                 rdfs:domain :Description ;
+                 rdfs:range :Entity ;
+                 rdfs:comment "La relazione esistente tra una descrizione e l'entità descritta."@it ,
+                              "The relationship between a description and the entity described."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                 rdfs:label "is description of"@en ,
+                            "è descrizione di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isEventualityOf
+:isEventualityOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :associatedWith ;
+                 rdfs:domain :Eventuality ;
+                 rdfs:range :Entity ;
+                 rdfs:comment "Il rapporto esistente tra un'eventualità e qualsiasi entità possibile."@it ,
+                              "The relationship existing between an eventuality and any possible entity."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                 rdfs:label "is eventuality of"@it ,
+                            "è eventualità di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isIdentifierSchemaOf
+:isIdentifierSchemaOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :isDescriptionOf ;
+                      rdfs:domain :IdentifierSchema ;
+                      rdfs:range :UniqueIdentifier ;
+                      rdfs:comment "La relazione che lega uno schema di identificazione ad un identificativo unico."@it ,
+                                   "The relation between an identifier schema and a unique identifier."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                      rdfs:label "is identifier schema of"@en ,
+                                 "è schema identificativo di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isIssuedBy
+:isIssuedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :associatedWith ;
+            owl:inverseOf :issues ;
+            rdfs:domain :Entity ;
+            rdfs:range :Agent ;
+            rdfs:comment "La relazione che consente di affermare che un'entità è creata da un determinato agente."@it ,
+                         "The relation that allows one to state that an entity is created by a given agent."@en ;
+            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+            rdfs:label "ha creatore"@it ,
+                       "has creator"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/isLocationOf
+:isLocationOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :associatedWith ;
+              rdfs:domain :Location ;
+              rdfs:range :Entity ;
+              rdfs:comment "La proprietà che permette di dire che un determinato luogo è la posizione di un dato oggetto."@it ,
+                           "La relazione esistente tra un luogo ed un'entità di un qualsiasi tipo."@it ,
+                           "The property that allows to say that a certain place is the location of a given object."@en ,
+                           "The relation holding between a place and an entity of any possible type."@en ;
+              rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+              rdfs:label "is location of"@it ,
+                         "is place of"@en ,
+                         "è luogo di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isMediaOf
+:isMediaOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :associatedWith ;
+           rdfs:domain :Media ;
+           rdfs:range :Entity ;
+           rdfs:comment "La relazione tra un'istanza di un'entità di classe Media e un'entità."@it ,
+                        "The relationship between an instance Media class entity and an entity."@en ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+           rdfs:label "is media of"@en ,
+                      "è media di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isMemberOf
+:isMemberOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :associatedWith ;
+            rdfs:domain :Entity ;
+            rdfs:range :Collection ;
+            rdfs:comment "La relazione inversa di 'ha membro'. Come la sua inversa permette di stabilire relazione di memberhip tra un elemento ed la sua collezione."@it ,
+                         "The inverse relation of 'has member'. It allows to represent membership relations."@en ;
+            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+            rdfs:label "is member of"@en ,
+                       "è membro di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isParametrisedBy
+:isParametrisedBy rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :isClassifiedBy ;
+                  owl:inverseOf :parametrises ;
+                  rdfs:domain :Entity ;
+                  rdfs:range :Parameter ;
+                  rdfs:comment "La relazione che sussiste tra l'entità oggetto della parametrizzazione ed il parametro."@it ,
+                               "The relation holding between the entity being object of the parametrisation and a parameter."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                  rdfs:label "is parametrised by"@en ,
+                             "è parametrizzato da"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isPartOf
+:isPartOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :associatedWith ;
+          rdf:type owl:TransitiveProperty ,
+                   owl:ReflexiveProperty ;
+          rdfs:domain :Entity ;
+          rdfs:range :Entity ;
+          rdfs:comment "L'inversa di 'ha parte' per rappresentare la relazione di parte dal punto di vista della parte. La proprietà è definita come riflessiva e transitiva."@it ,
+                       "The inverse of 'has part' for representing parthood from the perspective of the part. The property is defined as reflexive and transitive."@en ;
+          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+          rdfs:label "is part of"@en ,
+                     "è parte di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isRoleInvolvedIn
+:isRoleInvolvedIn rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasEventuality ;
+                  rdfs:domain :Role ;
+                  rdfs:range :AgentRole ;
+                  rdfs:comment "La relazione che collega un ruolo alla situazione ruolo-agente in cui esso partecipa."@it ,
+                               "The relationship that links a role to the agent-role situation it is involved in."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                  rdfs:label "is role involved in"@en ,
+                             "è il ruolo coinvolto in"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isRoleOf
+:isRoleOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :classifies ;
+          rdfs:domain :Role ;
+          rdfs:range :Entity ;
+          owl:propertyChainAxiom ( :isRoleInvolvedIn
+                                   :involvesAgent
+                                 ) ;
+          rdfs:comment "La relazione che consente di utilizzare un ruolo per classificare una determinata entità."@it ,
+                       "The relation that allows you to use a role for classifying a certain entity."@en ;
+          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+          rdfs:label "is role of"@en ,
+                     "è ruolo di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isSatisfiedBy
+:isSatisfiedBy rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :associatedWith ;
+               owl:inverseOf :satisfies ;
+               rdfs:domain :Description ;
+               rdfs:range :Eventuality ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+               rdfs:label "La relazione tra una descrizione ed un'eventualità."@it ,
+                          "The relation between a description and an eventuality."@en ,
+                          "is satisfied by"@en ,
+                          "è soddisfatto da"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isSchemaAttributeOf
+:isSchemaAttributeOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :isCharacteristicOf ;
+                     rdfs:domain :SchemaAttribute ;
+                     rdfs:range :DataSchema ;
+                     rdfs:comment "La proprietà che permette di collegare un attributo allo schema di dati."@it ,
+                                  "The property that allows you to link an attribute to the data schema."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                     rdfs:label "is data schema attribute of"@en ,
+                                "è attributo di schema di dati di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isSouceOf
+:isSouceOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :associatedWith ;
+           rdfs:domain :Entity ;
+           rdfs:range :Entity ;
+           rdfs:comment "Inverse object property of hasSource."@en ,
+                        "Object property inversa di hasSource."@it ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+           rdfs:label "is source of"@en ,
+                      "è sorgente di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isSpecialisedBy
+:isSpecialisedBy rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :associatedWith ;
+                 owl:inverseOf :specialises ;
+                 rdf:type owl:TransitiveProperty ;
+                 rdfs:domain :Entity ;
+                 rdfs:range :Entity ;
+                 rdfs:comment "La relazione inverse di 'specializza'."@it ,
+                              "The inverse releation of 'specialises'"@en ;
+                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                 rdfs:label "is specialised by"@en ,
+                            "è specializzato da"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isSystemOf
+:isSystemOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :associatedWith ;
+            rdfs:domain :System ;
+            rdfs:range :Entity ;
+            rdfs:comment "La relazione che sussiste tra un sistema ed una qualsiasi entità."@it ,
+                         "The relationship holding between a system and any entity."@en ;
+            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+            rdfs:label "is system of"@en ,
+                       "è sistema di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isTimeOf
+:isTimeOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :associatedWith ;
+          rdfs:domain :TemporalEntity ;
+          rdfs:range :Entity ;
+          rdfs:comment "La relazione esistente tra un'entità temporale ed una qualsiasi altra entità."@it ,
+                       "The relationship existing between a time entity and any other entity."@en ;
+          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+          rdfs:label "is time of"@en ,
+                     "è tempo di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isUniqueIdentifierOf
+:isUniqueIdentifierOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :isCharacteristicOf ;
+                      rdfs:comment "La relazione che sussiste tra un identificatore univoco e l'entità che identifica."@en ,
+                                   "The relation holding between a unique identifier and the entity it identifies."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                      rdfs:label "is unique identifier of"@en ,
+                                 "è identificativo univoco di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isUnitOfMeasureOf
+:isUnitOfMeasureOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :isCharacteristicOf ;
+                   rdfs:domain :UnitOfMeasure ;
+                   rdfs:range :Entity ;
+                   rdfs:comment "Property that links a unit of measure to the object or measured value."@en ,
+                                "Proprietà che collega un'unità di misura all'oggetto o al valore misurato."@it ;
+                   rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                   rdfs:label "is unit of measure of"@en ,
+                              "è unità di misura di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/isValueOf
+:isValueOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :isCharacteristicOf ;
+           rdfs:domain :Value ;
+           rdfs:range :Entity ;
+           rdfs:comment "La relazione esistente tra un valore ed un'entità a cui tale valore è associato."@it ,
+                        "The relationship between a value and an entity to which that value is associated."@en ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+           rdfs:label "is value of"@en ,
+                      "è valore di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/issues
+:issues rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :associatedWith ;
+        rdfs:domain :Agent ;
+        rdfs:range :Entity ;
+        rdfs:comment "La relazione che consente di affermare che un determinato agente è il creatore di una certa entità."@it ,
+                     "The property that allows us to state that a certain agent is the creator of a certain entity."@en ;
+        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+        rdfs:label "is creator of"@en ,
+                   "è creatore di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/parametrises
+:parametrises rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :classifies ;
+              rdfs:domain :Parameter ;
+              rdfs:range :Entity ;
+              rdfs:comment "La relazione che sussiste tra un parametro e l'entità oggetto della parametrizzazione."@it ,
+                           "The relation holding between a parameter and the entity being object of the parametrisation."@en ;
+              rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+              rdfs:label "parametrises"@en ,
+                         "parametrizza"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/precedes
+:precedes rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :associatedWith ;
+          rdf:type owl:TransitiveProperty ;
+          rdfs:domain :Entity ;
+          rdfs:range :Entity ;
+          rdfs:comment "A relation between entities, expressing a 'sequence' schema."@en ,
+                       "Una relazione tra entità, che esprime uno schema di 'sequenza'."@it ;
+          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+          rdfs:label "precede"@it ,
+                     "precedes"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/satisfies
+:satisfies rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :associatedWith ;
+           rdfs:domain :Eventuality ;
+           rdfs:range :Description ;
+           rdfs:comment "La proprietà usata per asserire che un'eventualità soddisfa una certa descrizione."@it ,
+                        "The property for asserting that an eventuality satisfies a description."@en ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+           rdfs:label "satisfies"@en ,
+                      "soddisfa"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/specialises
+:specialises rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :associatedWith ;
+             rdf:type owl:TransitiveProperty ;
+             rdfs:domain :Entity ;
+             rdfs:range :Entity ;
+             rdfs:comment "La proprietà per esprimere relazioni di specializzazione."@it ,
+                          "The property for expressing specialisation relations."@en ;
+             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+             rdfs:label "specialises"@en ,
+                        "specializza"@it .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/italia/env/onto/top/acronym
+:acronym rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Entity ;
+         rdfs:range rdfs:Literal ;
+         rdfs:comment "A value for the acronym that is used for referring to an entity."@en ,
+                      "Un valore per l'acronimo utilizzato per fare riferimento a un'entità."@it ;
+         rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+         rdfs:label "acronimo"@it ,
+                    "acronym"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/endTime
+:endTime rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :time ;
+         rdfs:domain :TimeInterval ;
+         rdfs:range [ rdf:type rdfs:Datatype ;
+                      owl:unionOf ( xsd:date
+                                    xsd:dateTime
+                                    xsd:time
+                                  )
+                    ] ;
+         rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+         rdfs:label "end time"@en ,
+                    "tempo di fine"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:comment "Il valore letterale di un identificativo, ex. il codice WMO '6100218'."@it ,
+                         "The literal value of an identifier, e.g. the WMO code '6100218'."@en ;
+            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+            rdfs:label "identificativo"@it ,
+                       "identifier"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/mediaType
+:mediaType rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Media ;
+           rdfs:range rdfs:Literal ;
+           rdfs:comment "A value for the media type, e.g. text/csv, rdf/xml, etc."@en ,
+                        "Un valore per il tipo di supporto, ad es. text/csv, rdf/xml, ecc."@it ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+           rdfs:label "media type"@en ,
+                      "tipo di supporto"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Entity ;
+      rdfs:range rdfs:Literal ;
+      rdfs:comment "Il letterale che rappresenta il nome di un'entità."@it ,
+                   "The literal representing the name of an entity."@en ;
+      rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+      rdfs:label "name"@en ,
+                 "nome"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/startTime
+:startTime rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :time ;
+           rdfs:domain :TimeInterval ;
+           rdfs:range [ rdf:type rdfs:Datatype ;
+                        owl:unionOf ( xsd:date
+                                      xsd:dateTime
+                                      xsd:time
+                                    )
+                      ] ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+           rdfs:label "start time"@en ,
+                      "tempo di inizio"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/symbol
+:symbol rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Entity ;
+        rdfs:range rdf:PlainLiteral ;
+        rdfs:comment "Property used to specify a symbol. For instance the symbol of a unit of measure"@en ,
+                     "Proprietà  utilizzata per specificare un simbolo. Ad esempio il simbolo dell'unità di misura"@it ;
+        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+        rdfs:label "simbolo"@it ,
+                   "symbol"@en ;
+        owl:versionInfo "stabile"@it ,
+                        "stable"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/time
+:time rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Entity ;
+      rdfs:range rdfs:Literal ;
+      rdfs:comment "La proprietà per associare la rappresentazione letterale del tempo a un'entità."@it ,
+                   "The property for associating the literal representation of time to an entity."@en ;
+      rdfs:isDefinedBy "https://w3id.org/italia/env/onto/top"@en ;
+      rdfs:label "tempo"@it ,
+                 "time"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/value
+:value rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Entity ;
+       rdfs:range rdfs:Literal ;
+       rdfs:comment "La rappresentazione letterale di un valore."@it ,
+                    "The literal representation of a value."@en ;
+       rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+       rdfs:label "valore"@it ,
+                  "value"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/year
+:year rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf :time ;
+      rdfs:domain :TemporalEntity ;
+      rdfs:range xsd:gYear ;
+      rdfs:comment "La proprietà per collegare il valore in gYear ad un istanza della classe TemporalEntity."@it ,
+                   "The property that relates a valued expressed a gYear to an instance of the class TemporalEntity."@en ;
+      rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+      rdfs:label "anno"@it ,
+                 "year"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/italia/env/onto/top/Agent
+:Agent rdf:type owl:Class ;
+       rdfs:subClassOf :Entity ;
+       rdfs:comment "Il concetto astratto di agente. Esempi di agente sono le persone e le organizzazioni."@it ,
+                    "The abstract concept of agent. Examples of agents are people and organisations."@it ;
+       rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+       rdfs:label "Agent"@en ,
+                  "Agente"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/AgentRole
+:AgentRole rdf:type owl:Class ;
+           rdfs:subClassOf :Eventuality ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :atTime ;
+                             owl:someValuesFrom :TemporalEntity
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :involvesAgent ;
+                             owl:someValuesFrom :Agent
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :involvesRole ;
+                             owl:someValuesFrom :Role
+                           ] .
+
+
+###  https://w3id.org/italia/env/onto/top/Characteristic
+:Characteristic rdf:type owl:Class ;
+                rdfs:subClassOf :Entity ;
+                rdfs:comment "La classe delle caratteristiche, intese come aspetti, attributi o qualità di un'entità. Ex. una quantità, qualità estetica, colore, etc."@it ,
+                             "The class of characteristics, intended as any aspect, attribuite, or quality of an entity. E.g. a certain size, aesthetic quality, color, etc."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                rdfs:label "Caratteristica"@it ,
+                           "Characteristic"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/Collection
+:Collection rdf:type owl:Class ;
+            rdfs:subClassOf :Entity ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasPart ;
+                              owl:allValuesFrom :Collection
+                            ] ;
+            rdfs:comment "La classe per rappresentare collezioni che rendono possibile l'aggregazione di oggetti."@it ,
+                         "The class for representing collections and aggregating objects into collections."@en ;
+            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+            rdfs:label "Collection"@en ,
+                       "Collezione"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/Concept
+:Concept rdf:type owl:Class ;
+         rdfs:subClassOf :Entity ;
+         rdfs:comment "It is an object that is defined in some description. Once defined it can be used in other descriptions"@en ,
+                      "È un oggetto che è definito in qualche descrizione. Una volta definito può essere utilizzato in altre descrizioni"@it ;
+         rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+         rdfs:label "Concept"@en ,
+                    "Concetto"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/DataSchema
+:DataSchema rdf:type owl:Class ;
+            rdfs:subClassOf :Description ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasSchemaAttribute ;
+                              owl:someValuesFrom :SchemaAttribute
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasSchemaAttribute ;
+                              owl:allValuesFrom :SchemaAttribute
+                            ] ;
+            owl:disjointWith :IdentifierSchema ;
+            rdfs:comment "La classe per la rappresentazione di schemi di dati."@it ,
+                         "The class for representing data schemata."@en ;
+            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+            rdfs:label "Data schema"@en ,
+                       "Schema di dati."@it .
+
+
+###  https://w3id.org/italia/env/onto/top/Dataset
+:Dataset rdf:type owl:Class ;
+         rdfs:subClassOf :Collection ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasPart ;
+                           owl:allValuesFrom :Dataset
+                         ] ;
+         rdfs:comment "A collection of data."@en ,
+                      "Una collezione di dati."@it ;
+         rdfs:isDefinedBy : ;
+         rdfs:label "Dataset"@en ,
+                    "Dataset"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/Description
+:Description rdf:type owl:Class ;
+             rdfs:subClassOf :Entity ;
+             owl:disjointWith :Eventuality ;
+             rdfs:comment "La classe degli oggetti costruiti socialmente (testi, valori, categorie, relazioni, contesti) usati per descrivere qualcos'altro in modo structuratto. Gli esempi includono i piani (come descrizioni strutturate di azioni da eseguire ex. in un processo industriale), le diagnosi (come descrizioni strutturate di situazioni osservate ex. clinicamente), le spiegazioni (come testi strutturati per chiarire ex. un concetto in un sistema normativo), osservazioni oggettive (come insiemi di valori strutturati che identificano una situazione rilevante ex. da un sistema di sensori)."@it ,
+                          "The class of socially-created objects (texts, values, categories, relations, contexts) used to describe something else in a structured way. Examples include plans (as structured descriptions of actions to be executed), diagnoses (as structured descriptions of observed situations, explanations (as structured texts clarifying e.g. a concept), objective observations (as structured sets of values that identify a relevant situation)."@en ;
+             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+             rdfs:label "Description"@en ,
+                        "Descrizione"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/Entity
+:Entity rdf:type owl:Class ;
+        rdfs:comment "La classe più generica in ISPRA ontonet."@it ,
+                     "The top level class of ISPRA ontonet."@en ;
+        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+        rdfs:label "Entity"@en ,
+                   "Entità"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/Eventuality
+:Eventuality rdf:type owl:Class ;
+             rdfs:subClassOf :Entity ;
+             rdfs:comment """Any event, situation, activity, event type, etc. Used to abstract from formal criteria that distinguish between event occurrences, their types, and constructed objects (situations, tropes, qua-entities) that provide a setting for multiple entities.
+This is a catch all class to make sense of ambiguous data that cannot be made more precise, e.g. at the lexical level.
+This is the same concept as defined in http://www.ontologydesignpatterns.org/ont/d0.owl."""@en ,
+                          """Qualsiasi evento, situazione, attività, tipo di evento, ecc. Utilizzato per astrarre da criteri formali che distinguono tra occorrenze di eventi, i loro tipi e oggetti costruiti (situazioni, tropi, qua-entità) che forniscono un'ambientazione per più entità.
+Questa è una classe catch all per dare un senso a dati ambigui che non possono essere resi più precisi, ad es. a livello lessicale.
+Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/ont/d0.owl."""@it ;
+             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+             rdfs:label "Accadimento"@it ,
+                        "Eventuality"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/IdentifierSchema
+:IdentifierSchema rdf:type owl:Class ;
+                  rdfs:subClassOf :Description ;
+                  rdfs:comment "A schema for identifiers."@en ,
+                               "Uno schema di identificativi."@it ;
+                  rdfs:isDefinedBy : ;
+                  rdfs:label "Identifier schema"@en ,
+                             "Schema di identificatori"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf :Entity ;
+          rdfs:comment "Il concetto più generico per rappresentare ad alto livello qualsiasi tipo di oggetto che possa essere identificato come luogo."@it ,
+                       "The most generic concept for any kind of location."@en ;
+          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+          rdfs:label "Luogo"@it ,
+                     "Place"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/Material
+:Material rdf:type owl:Class ;
+          rdfs:subClassOf :Characteristic ;
+          rdfs:comment "La classe dei materiali."@it ,
+                       "The material class"@en ;
+          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+          rdfs:label "Material"@en ,
+                     "Materiale"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/Media
+:Media rdf:type owl:Class ;
+       rdfs:subClassOf :Entity ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :isSouceOf ;
+                         owl:someValuesFrom :Entity
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasDataSchema ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :DataSchema
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasDownloadURL ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :mediaType ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                       ] ;
+       rdfs:comment "Any media encoding data in any format."@en ,
+                    "Qualsiasi supporto che codifica i dati in qualsiasi formato."@it ;
+       rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+       rdfs:label "Media"@en ,
+                  "Media"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/Organisation
+:Organisation rdf:type owl:Class ;
+              rdfs:subClassOf :Agent ;
+              owl:disjointWith :Person ;
+              rdfs:comment "An organisation."@en ,
+                           "Un'organizzazione."@it ;
+              rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+              rdfs:label "Organisation"@en ,
+                         "Organizzazione"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/Parameter
+:Parameter rdf:type owl:Class ;
+           rdfs:subClassOf :Characteristic ,
+                           :Concept ;
+           rdfs:comment "La classe dei parametri. Esempio, il parametro di un'osservazione."@it ,
+                        "The class of parameters. Example, the parameter of an observation."@en ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+           rdfs:label "Parameter"@en ,
+                      "Parametro"@it ;
+           owl:versionInfo "stabile"@it ,
+                           "stable"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf :Agent ;
+        rdfs:comment "A person"@en ,
+                     "Una persona."@it ;
+        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+        rdfs:label "Person"@en ,
+                   "Persona"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/Role
+:Role rdf:type owl:Class ;
+      rdfs:subClassOf :Concept ;
+      rdfs:comment "La classe per rappresentare i ruoli."@it ,
+                   "The class for representing roles."@en ;
+      rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+      rdfs:label "Role"@en ,
+                 "Ruolo"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/SchemaAttribute
+:SchemaAttribute rdf:type owl:Class ;
+                 rdfs:subClassOf :Characteristic ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :isClassifiedBy ;
+                                   owl:someValuesFrom :Concept
+                                 ] ;
+                 rdfs:comment "La classe degli attributi di uno schema dati"@it ,
+                              "The class of the attributes of a data schema."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                 rdfs:label "Attributo dello Schema"@it ,
+                            "Schema Attribute"@en ;
+                 owl:versionInfo "stabile"@it ,
+                                 "stable"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/System
+:System rdf:type owl:Class ;
+        rdfs:subClassOf :Entity ;
+        rdfs:comment "Any possible kind of system."@en ,
+                     "Ogni possibile tipo di sistema."@it ;
+        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+        rdfs:label "Sistema"@it ,
+                   "System"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/TemporalEntity
+:TemporalEntity rdf:type owl:Class ;
+                rdfs:subClassOf :Entity ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :time ;
+                                  owl:someValuesFrom xsd:dateTime
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :time ;
+                                  owl:allValuesFrom xsd:dateTime
+                                ] ;
+                rdfs:comment "Questa classe rappresenta qualsiasi tipo di entità temporale, ad es. intervalli di tempo, mesi, giorni, ecc..."@it ,
+                             "This class represents a temporal entity."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                rdfs:label "Entità temporale"@it ,
+                           "Temporal entity"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/TimeInterval
+:TimeInterval rdf:type owl:Class ;
+              rdfs:subClassOf :TemporalEntity ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :endTime ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                  owl:unionOf ( xsd:date
+                                                                xsd:dateTime
+                                                                xsd:time
+                                                              )
+                                                ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :startTime ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                  owl:unionOf ( xsd:date
+                                                                xsd:dateTime
+                                                                xsd:time
+                                                              )
+                                                ]
+                              ] ;
+              rdfs:comment "La classe per rappresentare gli intervalli temporali aventi un inizio ed una fine."@it ,
+                           "The class for representing time intervals having a start and end time."@en ;
+              rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+              rdfs:label "Intervallo di tempo"@it ,
+                         "Time interval"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/UniqueIdentifier
+:UniqueIdentifier rdf:type owl:Class ;
+                  rdfs:subClassOf :Characteristic ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasIdentifierSchema ;
+                                    owl:someValuesFrom :IdentifierSchema
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :isIssuedBy ;
+                                    owl:someValuesFrom :Organisation
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :isIssuedBy ;
+                                    owl:allValuesFrom :Organisation
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :identifier ;
+                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                  ] ;
+                  owl:hasKey ( :hasIdentifierSchema
+                               :isIssuedBy
+                               :identifier
+                             ) ;
+                  rdfs:comment "La classe per rappresentare identificativi univoci su cui poi specificare altre proprietà (e.g., chi li ha rilasciati, la validità, il valore assunto dall'identificativo stesso)"@it ,
+                               "The class to represent unique identifiers on which to specify other properties (e.g., who issued them, validity, the value assumed by the identifier itself)"@en ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                  rdfs:label "Identificativo Univoco"@it ,
+                             "Unique Identifier"@en ;
+                  owl:versionInfo "stabile"@it ,
+                                  "stable"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/UnitOfMeasure
+:UnitOfMeasure rdf:type owl:Class ;
+               rdfs:subClassOf :Parameter ;
+               rdfs:comment "Questa classe viene utilizzata per modellare un'unità di misura, ad es. metro, chilometro, grammo, ecc..."@it ,
+                            "This class is used to model a measurement unit, e.g. meter, kilometer, gram, etc."@en ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+               rdfs:label "Unit of measure"@en ,
+                          "Unità di misura"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/Value
+:Value rdf:type owl:Class ;
+       rdfs:subClassOf :Characteristic ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasUnitOfMeasure ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :UnitOfMeasure
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :value ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                       ] ;
+       owl:hasKey ( :hasUnitOfMeasure
+                    :value
+                  ) ;
+       rdfs:comment "La classe che modella generici valori che tipicamente hanno un'unità di misura e il valore stesso."@it ,
+                    "The generic class for the values that typically have the unit of measure and the value itself."@en ;
+       rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+       rdfs:label "Valore"@it ,
+                  "Value"@en ;
+       owl:versionInfo "stabile"@it ,
+                       "stable"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/Year
+:Year rdf:type owl:Class ;
+      rdfs:subClassOf :TemporalEntity ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :year ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:gYear
+                      ] ;
+      rdfs:comment "La classe per rappresentare un anno."@it ,
+                   "The class for representing a year."@en ;
+      rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+      rdfs:label "Anno"@it ,
+                 "Year"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

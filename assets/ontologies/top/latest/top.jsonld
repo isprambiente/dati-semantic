@@ -1,0 +1,3117 @@
+[ {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/atTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/involvesAgent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Agent"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/involvesRole"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Role"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Collection"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasPart"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasSchemaAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/SchemaAttribute"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/SchemaAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasSchemaAttribute"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Dataset"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasPart"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isSouceOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/DataSchema"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasDataSchema"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasDownloadURL"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/mediaType"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/time"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/time"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid28"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/endTime"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#time"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid33"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/startTime"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#time"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasIdentifierSchema"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/IdentifierSchema"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isIssuedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Organisation"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Organisation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isIssuedBy"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/identifier"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/UnitOfMeasure"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasUnitOfMeasure"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/value"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/year"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#time"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#time"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#gYear",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#time",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il concetto astratto di agente. Esempi di agente sono le persone e le organizzazioni."
+  }, {
+    "@language" : "it",
+    "@value" : "The abstract concept of agent. Examples of agents are people and organisations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Agent"
+  }, {
+    "@language" : "it",
+    "@value" : "Agente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/AgentRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Characteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe delle caratteristiche, intese come aspetti, attributi o qualità di un'entità. Ex. una quantità, qualità estetica, colore, etc."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of characteristics, intended as any aspect, attribuite, or quality of an entity. E.g. a certain size, aesthetic quality, color, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Caratteristica"
+  }, {
+    "@language" : "en",
+    "@value" : "Characteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare collezioni che rendono possibile l'aggregazione di oggetti."
+  }, {
+    "@language" : "en",
+    "@value" : "The class for representing collections and aggregating objects into collections."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Collection"
+  }, {
+    "@language" : "it",
+    "@value" : "Collezione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  }, {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It is an object that is defined in some description. Once defined it can be used in other descriptions"
+  }, {
+    "@language" : "it",
+    "@value" : "È un oggetto che è definito in qualche descrizione. Una volta definito può essere utilizzato in altre descrizioni"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Concept"
+  }, {
+    "@language" : "it",
+    "@value" : "Concetto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/DataSchema",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per la rappresentazione di schemi di dati."
+  }, {
+    "@language" : "en",
+    "@value" : "The class for representing data schemata."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Data schema"
+  }, {
+    "@language" : "it",
+    "@value" : "Schema di dati."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/IdentifierSchema"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection of data."
+  }, {
+    "@language" : "it",
+    "@value" : "Una collezione di dati."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dataset"
+  }, {
+    "@language" : "it",
+    "@value" : "Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Collection"
+  }, {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe degli oggetti costruiti socialmente (testi, valori, categorie, relazioni, contesti) usati per descrivere qualcos'altro in modo structuratto. Gli esempi includono i piani (come descrizioni strutturate di azioni da eseguire ex. in un processo industriale), le diagnosi (come descrizioni strutturate di situazioni osservate ex. clinicamente), le spiegazioni (come testi strutturati per chiarire ex. un concetto in un sistema normativo), osservazioni oggettive (come insiemi di valori strutturati che identificano una situazione rilevante ex. da un sistema di sensori)."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of socially-created objects (texts, values, categories, relations, contexts) used to describe something else in a structured way. Examples include plans (as structured descriptions of actions to be executed), diagnoses (as structured descriptions of observed situations, explanations (as structured texts clarifying e.g. a concept), objective observations (as structured sets of values that identify a relevant situation)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Description"
+  }, {
+    "@language" : "it",
+    "@value" : "Descrizione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe più generica in ISPRA ontonet."
+  }, {
+    "@language" : "en",
+    "@value" : "The top level class of ISPRA ontonet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Entity"
+  }, {
+    "@language" : "it",
+    "@value" : "Entità"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Eventuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any event, situation, activity, event type, etc. Used to abstract from formal criteria that distinguish between event occurrences, their types, and constructed objects (situations, tropes, qua-entities) that provide a setting for multiple entities.\nThis is a catch all class to make sense of ambiguous data that cannot be made more precise, e.g. at the lexical level.\nThis is the same concept as defined in http://www.ontologydesignpatterns.org/ont/d0.owl."
+  }, {
+    "@language" : "it",
+    "@value" : "Qualsiasi evento, situazione, attività, tipo di evento, ecc. Utilizzato per astrarre da criteri formali che distinguono tra occorrenze di eventi, i loro tipi e oggetti costruiti (situazioni, tropi, qua-entità) che forniscono un'ambientazione per più entità.\nQuesta è una classe catch all per dare un senso a dati ambigui che non possono essere resi più precisi, ad es. a livello lessicale.\nQuesto è lo stesso concetto definito in http://www.ontologydesignpatterns.org/ont/d0.owl."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Accadimento"
+  }, {
+    "@language" : "en",
+    "@value" : "Eventuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/IdentifierSchema",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A schema for identifiers."
+  }, {
+    "@language" : "it",
+    "@value" : "Uno schema di identificativi."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Identifier schema"
+  }, {
+    "@language" : "it",
+    "@value" : "Schema di identificatori"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il concetto più generico per rappresentare ad alto livello qualsiasi tipo di oggetto che possa essere identificato come luogo."
+  }, {
+    "@language" : "en",
+    "@value" : "The most generic concept for any kind of location."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Luogo"
+  }, {
+    "@language" : "en",
+    "@value" : "Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe dei materiali."
+  }, {
+    "@language" : "en",
+    "@value" : "The material class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material"
+  }, {
+    "@language" : "it",
+    "@value" : "Materiale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any media encoding data in any format."
+  }, {
+    "@language" : "it",
+    "@value" : "Qualsiasi supporto che codifica i dati in qualsiasi formato."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Media"
+  }, {
+    "@language" : "it",
+    "@value" : "Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  }, {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
+  }, {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Organisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An organisation."
+  }, {
+    "@language" : "it",
+    "@value" : "Un'organizzazione."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organisation"
+  }, {
+    "@language" : "it",
+    "@value" : "Organizzazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Person"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe dei parametri. Esempio, il parametro di un'osservazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of parameters. Example, the parameter of an observation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Parameter"
+  }, {
+    "@language" : "it",
+    "@value" : "Parametro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
+  }, {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person"
+  }, {
+    "@language" : "it",
+    "@value" : "Una persona."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person"
+  }, {
+    "@language" : "it",
+    "@value" : "Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Agent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare i ruoli."
+  }, {
+    "@language" : "en",
+    "@value" : "The class for representing roles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Role"
+  }, {
+    "@language" : "it",
+    "@value" : "Ruolo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/SchemaAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe degli attributi di uno schema dati"
+  }, {
+    "@language" : "en",
+    "@value" : "The class of the attributes of a data schema."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Attributo dello Schema"
+  }, {
+    "@language" : "en",
+    "@value" : "Schema Attribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
+  }, {
+    "@id" : "_:genid24"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any possible kind of system."
+  }, {
+    "@language" : "it",
+    "@value" : "Ogni possibile tipo di sistema."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Sistema"
+  }, {
+    "@language" : "en",
+    "@value" : "System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa classe rappresenta qualsiasi tipo di entità temporale, ad es. intervalli di tempo, mesi, giorni, ecc..."
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents a temporal entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Entità temporale"
+  }, {
+    "@language" : "en",
+    "@value" : "Temporal entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  }, {
+    "@id" : "_:genid25"
+  }, {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/TimeInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare gli intervalli temporali aventi un inizio ed una fine."
+  }, {
+    "@language" : "en",
+    "@value" : "The class for representing time intervals having a start and end time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Intervallo di tempo"
+  }, {
+    "@language" : "en",
+    "@value" : "Time interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  }, {
+    "@id" : "_:genid27"
+  }, {
+    "@id" : "_:genid32"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/UniqueIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare identificativi univoci su cui poi specificare altre proprietà (e.g., chi li ha rilasciati, la validità, il valore assunto dall'identificativo stesso)"
+  }, {
+    "@language" : "en",
+    "@value" : "The class to represent unique identifiers on which to specify other properties (e.g., who issued them, validity, the value assumed by the identifier itself)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Identificativo Univoco"
+  }, {
+    "@language" : "en",
+    "@value" : "Unique Identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
+  }, {
+    "@id" : "_:genid37"
+  }, {
+    "@id" : "_:genid38"
+  }, {
+    "@id" : "_:genid39"
+  }, {
+    "@id" : "_:genid40"
+  } ],
+  "http://www.w3.org/2002/07/owl#hasKey" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/top/hasIdentifierSchema"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/top/isIssuedBy"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/top/identifier"
+    } ]
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/UnitOfMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa classe viene utilizzata per modellare un'unità di misura, ad es. metro, chilometro, grammo, ecc..."
+  }, {
+    "@language" : "en",
+    "@value" : "This class is used to model a measurement unit, e.g. meter, kilometer, gram, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Unit of measure"
+  }, {
+    "@language" : "it",
+    "@value" : "Unità di misura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe che modella generici valori che tipicamente hanno un'unità di misura e il valore stesso."
+  }, {
+    "@language" : "en",
+    "@value" : "The generic class for the values that typically have the unit of measure and the value itself."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Valore"
+  }, {
+    "@language" : "en",
+    "@value" : "Value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
+  }, {
+    "@id" : "_:genid44"
+  }, {
+    "@id" : "_:genid45"
+  } ],
+  "http://www.w3.org/2002/07/owl#hasKey" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/top/hasUnitOfMeasure"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/top/value"
+    } ]
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare un anno."
+  }, {
+    "@language" : "en",
+    "@value" : "The class for representing a year."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Anno"
+  }, {
+    "@language" : "en",
+    "@value" : "Year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  }, {
+    "@id" : "_:genid48"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/acronym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A value for the acronym that is used for referring to an entity."
+  }, {
+    "@language" : "it",
+    "@value" : "Un valore per l'acronimo utilizzato per fare riferimento a un'entità."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "acronimo"
+  }, {
+    "@language" : "en",
+    "@value" : "acronym"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/associatedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione più generica nella rete di ontologie ISPRA."
+  }, {
+    "@language" : "en",
+    "@value" : "The most generic relation that can be used within the ISPRA ontonet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "associated with"
+  }, {
+    "@language" : "it",
+    "@value" : "associato a"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/atTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra una qualsiasi entità ed un'entità temporale."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an entity ad a temporal entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "al tempo"
+  }, {
+    "@language" : "en",
+    "@value" : "at time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isTimeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/classifies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà utilizzata per affermare che un concetto classificava una certa entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The property used to state that a concept classified a certain entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "classifica"
+  }, {
+    "@language" : "en",
+    "@value" : "classifies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/directlyFollows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "L'intransitivo segue la relazione. Ad esempio, il martedì segue direttamente il lunedì. L'immediatezza della precedenza dipende dalla concettualizzazione del progettista."
+  }, {
+    "@language" : "en",
+    "@value" : "The intransitive follows relation. For example, Tuesday directly follows Monday. Directness of precedence depends on the designer conceptualization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "directly follows"
+  }, {
+    "@language" : "it",
+    "@value" : "segue direttamente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/follows"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/directlyPrecedes"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/directlyPrecedes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "L'intransitivo precede la relazione. Ad esempio, il lunedì precede direttamente il martedì. L'immediatezza della precedenza dipende dalla concettualizzazione del progettista."
+  }, {
+    "@language" : "en",
+    "@value" : "The intransitive precedes relation. For example, Monday directly precedes Tuesday. Directness of precedence depends on the designer conceptualization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "directly precedes"
+  }, {
+    "@language" : "it",
+    "@value" : "precede direttamente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/precedes"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/endTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TimeInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "end time"
+  }, {
+    "@language" : "it",
+    "@value" : "tempo di fine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/time"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/follows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between entities, expressing a 'sequence' schema."
+  }, {
+    "@language" : "it",
+    "@value" : "Una relazione tra entità, che esprime uno schema di 'sequenza'."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "follows"
+  }, {
+    "@language" : "it",
+    "@value" : "segue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/precedes"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasAgentRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che permette di collegare un'entità alla relazione n-aria che rappresenta il ruolo ricoperto da un agente."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship that allows you to connect an entity to the n-aria relationship that represents the role played by an agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha ruolo-agente"
+  }, {
+    "@language" : "en",
+    "@value" : "has agent-role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isAgentRoleOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasBroader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione per creare tassonomie di concetti dal più specifico al più generale."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation for creating hierarchies of concepts from the most specific to the most general."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha più generale"
+  }, {
+    "@language" : "en",
+    "@value" : "has broader"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasNarrower"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione di primo livello che intercorre tra un'entità e una delle sue caratteristiche."
+  }, {
+    "@language" : "en",
+    "@value" : "The top-level relation holding between an entity and one of its characteristics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha caratteristica"
+  }, {
+    "@language" : "en",
+    "@value" : "has characteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isCharacteristicOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra un'entità ed una collezione."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an entity and a collection."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha collezione"
+  }, {
+    "@language" : "en",
+    "@value" : "has collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isCollectionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasCreator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Relazione per associare ad un'entità un agente creatore."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation for associating an entity to an agent being the creator."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha creatore"
+  }, {
+    "@language" : "en",
+    "@value" : "has creator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isCreatorOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasDataSchema",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra un media e il suo schema di dati."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between a media and its data schema."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha schema di dati"
+  }, {
+    "@language" : "en",
+    "@value" : "has data schema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/DataSchema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isDataSchemaOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that associates an entity with its description."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che associa un'entità alla sua descrizione."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha descrizione"
+  }, {
+    "@language" : "en",
+    "@value" : "has description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isDescriptionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasDownloadURL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questo è un link diretto al file scaricabile in un dato formato. E.g. un file CSV o un file RDF. Il formato è descritto dal dct:format e/o dal dcat:mediaType della distribuzione."
+  }, {
+    "@language" : "en",
+    "@value" : "The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha URL di scaricamento"
+  }, {
+    "@language" : "en",
+    "@value" : "has download URL"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra una qualsiasi entità ed una di tipo Eventualità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship existing between any entity and another typed as Eventuality."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha eventualità"
+  }, {
+    "@language" : "en",
+    "@value" : "has eventuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isEventualityOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasIdentifierSchema",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che lega un identificativo unico al suo schema di definizione."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation that associates a unique identifier to its defining schema."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/UniqueIdentifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha schema di identificazione"
+  }, {
+    "@language" : "en",
+    "@value" : "has identifier schema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/IdentifierSchema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isIdentifierSchemaOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra un qualsiasi tipo di entità ed un luogo."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between any kind of entity and a place."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha luogo"
+  }, {
+    "@language" : "en",
+    "@value" : "has place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isLocationOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasMedia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un'entità ed un'istanza della classe Media."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between an entity and an instance of the middle class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha media"
+  }, {
+    "@language" : "en",
+    "@value" : "has media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isMediaOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione di membership."
+  }, {
+    "@language" : "en",
+    "@value" : "The membership relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha membro"
+  }, {
+    "@language" : "en",
+    "@value" : "has member"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isMemberOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasNarrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione per creare tassonomie di concetti dal più generale al più specifico."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation for generating taxonomies of concepts from the most general to the most specific."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha più specifico"
+  }, {
+    "@language" : "en",
+    "@value" : "has narrower"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione di parte definita come proprietà transitiva e riflessiva."
+  }, {
+    "@language" : "en",
+    "@value" : "The parthood relation defined as a transitive and reflexive property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha parte"
+  }, {
+    "@language" : "en",
+    "@value" : "has part"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isPartOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che permette di classificare un'entità in base al ruolo che essa ricopre."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship that allows you to classify an entity based on the role it holds."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha il ruolo"
+  }, {
+    "@language" : "en",
+    "@value" : "has role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isRoleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/top/isAgentInvolvedIn"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/top/involvesRole"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasSchemaAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che consente di associare uno schema di dati ai suoi attributi dello schema."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation that allows one to associate a data schema with its schema attributes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/DataSchema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha attributo di schema di dati"
+  }, {
+    "@language" : "en",
+    "@value" : "has data schema attribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/SchemaAttribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasCharacteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isSchemaAttributeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che permette di stabilire che una certa entità è sorgente di un'altra."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation that allows one that a certain entity is the source of another."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha sorgente"
+  }, {
+    "@language" : "en",
+    "@value" : "has source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isSouceOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra una qualsiasi entità ed un sistema."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between any entity and a system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isSystemOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasUniqueIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra un'entità e il suo identificatore univoco."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an entity and its unique identifier."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha identificativo univoco"
+  }, {
+    "@language" : "en",
+    "@value" : "has unique identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/UniqueIdentifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasCharacteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isUniqueIdentifierOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasUnitOfMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that links an object that can be measured to its corresponding unit of measure."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che collega un oggetto misurabile alla sua unità di misura corrispondente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha unità di misura"
+  }, {
+    "@language" : "en",
+    "@value" : "has unit of measure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/UnitOfMeasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasCharacteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isUnitOfMeasureOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra un'entità ed il valore ad essa associata."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between an entity and the value it is associated with."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha valore"
+  }, {
+    "@language" : "en",
+    "@value" : "has value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasCharacteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isValueOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il valore letterale di un identificativo, ex. il codice WMO '6100218'."
+  }, {
+    "@language" : "en",
+    "@value" : "The literal value of an identifier, e.g. the WMO code '6100218'."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "identificativo"
+  }, {
+    "@language" : "en",
+    "@value" : "identifier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/involvesAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che collega una situazione ruolo-agente a un agente coinvolto in tale situazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship that links an agent-role situation to an agent involved in such a situation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "coinvolge l'agente"
+  }, {
+    "@language" : "en",
+    "@value" : "involves agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isEventualityOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isAgentInvolvedIn"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/involvesRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra l'eventualità identificata da un ruolo-agente ed uno o più ruoli ad esso associata."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an agent-role eventualoty and the one or more roles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "coinvolge il ruolo"
+  }, {
+    "@language" : "en",
+    "@value" : "involves role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isEventualityOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isRoleInvolvedIn"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isAgentInvolvedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che lega un agente alla situazione ruolo-agente in cui è coinvolto."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship that links an agent to the agent-role situation it is involved in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is agent involved in"
+  }, {
+    "@language" : "it",
+    "@value" : "è l'agente coinvolto in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isAgentRoleOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che collega un ruolo-agente ad un'entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation that links an agent-role to an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is agent-role of"
+  }, {
+    "@language" : "it",
+    "@value" : "è ruolo-agente di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isEventualityOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isCharacteristicOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che collega una caratteristica all'entità a cui essa può essere associata."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship that links a characteristic to the entity it can be associated with."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is characteristic of"
+  }, {
+    "@language" : "it",
+    "@value" : "è caratteristica di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà per stabilire che un certo concetto viene usato per classificare una certa entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The property to state that a certain concept is used to classify a certain entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is classified by"
+  }, {
+    "@language" : "it",
+    "@value" : "è classificato da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isCollectionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra una collezione ed una qualsiasi entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between a collection and any possible entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is collection of"
+  }, {
+    "@language" : "it",
+    "@value" : "è collezione di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isCreatorOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione per associare un agente creatore ad un'entità creata."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation for asserting that a certain agent is the creator of an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is creator of"
+  }, {
+    "@language" : "it",
+    "@value" : "è creatore di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isDataSchemaOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra uno schema di dati e il supporto."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation existing between a data schema and the media."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/DataSchema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is data schema of"
+  }, {
+    "@language" : "it",
+    "@value" : "è schema di dati di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isDescriptionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isDescriptionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra una descrizione e l'entità descritta."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between a description and the entity described."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is description of"
+  }, {
+    "@language" : "it",
+    "@value" : "è descrizione di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isEventualityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il rapporto esistente tra un'eventualità e qualsiasi entità possibile."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship existing between an eventuality and any possible entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "is eventuality of"
+  }, {
+    "@language" : "it",
+    "@value" : "è eventualità di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isIdentifierSchemaOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che lega uno schema di identificazione ad un identificativo unico."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation between an identifier schema and a unique identifier."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/IdentifierSchema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is identifier schema of"
+  }, {
+    "@language" : "it",
+    "@value" : "è schema identificativo di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/UniqueIdentifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isDescriptionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isIssuedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che consente di affermare che un'entità è creata da un determinato agente."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation that allows one to state that an entity is created by a given agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha creatore"
+  }, {
+    "@language" : "en",
+    "@value" : "has creator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/issues"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isLocationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che permette di dire che un determinato luogo è la posizione di un dato oggetto."
+  }, {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra un luogo ed un'entità di un qualsiasi tipo."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that allows to say that a certain place is the location of a given object."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between a place and an entity of any possible type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "is location of"
+  }, {
+    "@language" : "en",
+    "@value" : "is place of"
+  }, {
+    "@language" : "it",
+    "@value" : "è luogo di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isMediaOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un'istanza di un'entità di classe Media e un'entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between an instance Media class entity and an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is media of"
+  }, {
+    "@language" : "it",
+    "@value" : "è media di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isMemberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione inversa di 'ha membro'. Come la sua inversa permette di stabilire relazione di memberhip tra un elemento ed la sua collezione."
+  }, {
+    "@language" : "en",
+    "@value" : "The inverse relation of 'has member'. It allows to represent membership relations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is member of"
+  }, {
+    "@language" : "it",
+    "@value" : "è membro di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isParametrisedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra l'entità oggetto della parametrizzazione ed il parametro."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between the entity being object of the parametrisation and a parameter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is parametrised by"
+  }, {
+    "@language" : "it",
+    "@value" : "è parametrizzato da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/parametrises"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "L'inversa di 'ha parte' per rappresentare la relazione di parte dal punto di vista della parte. La proprietà è definita come riflessiva e transitiva."
+  }, {
+    "@language" : "en",
+    "@value" : "The inverse of 'has part' for representing parthood from the perspective of the part. The property is defined as reflexive and transitive."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is part of"
+  }, {
+    "@language" : "it",
+    "@value" : "è parte di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isRoleInvolvedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che collega un ruolo alla situazione ruolo-agente in cui esso partecipa."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship that links a role to the agent-role situation it is involved in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is role involved in"
+  }, {
+    "@language" : "it",
+    "@value" : "è il ruolo coinvolto in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isRoleOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che consente di utilizzare un ruolo per classificare una determinata entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation that allows you to use a role for classifying a certain entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is role of"
+  }, {
+    "@language" : "it",
+    "@value" : "è ruolo di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/top/isRoleInvolvedIn"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/top/involvesAgent"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isSatisfiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra una descrizione ed un'eventualità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation between a description and an eventuality."
+  }, {
+    "@language" : "en",
+    "@value" : "is satisfied by"
+  }, {
+    "@language" : "it",
+    "@value" : "è soddisfatto da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/satisfies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isSchemaAttributeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che permette di collegare un attributo allo schema di dati."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that allows you to link an attribute to the data schema."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/SchemaAttribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is data schema attribute of"
+  }, {
+    "@language" : "it",
+    "@value" : "è attributo di schema di dati di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/DataSchema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isCharacteristicOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isSouceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse object property of hasSource."
+  }, {
+    "@language" : "it",
+    "@value" : "Object property inversa di hasSource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is source of"
+  }, {
+    "@language" : "it",
+    "@value" : "è sorgente di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isSpecialisedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione inverse di 'specializza'."
+  }, {
+    "@language" : "en",
+    "@value" : "The inverse releation of 'specialises'"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is specialised by"
+  }, {
+    "@language" : "it",
+    "@value" : "è specializzato da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/specialises"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isSystemOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra un sistema ed una qualsiasi entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship holding between a system and any entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is system of"
+  }, {
+    "@language" : "it",
+    "@value" : "è sistema di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isTimeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra un'entità temporale ed una qualsiasi altra entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship existing between a time entity and any other entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is time of"
+  }, {
+    "@language" : "it",
+    "@value" : "è tempo di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isUniqueIdentifierOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "La relazione che sussiste tra un identificatore univoco e l'entità che identifica."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between a unique identifier and the entity it identifies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is unique identifier of"
+  }, {
+    "@language" : "it",
+    "@value" : "è identificativo univoco di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isCharacteristicOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isUnitOfMeasureOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that links a unit of measure to the object or measured value."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che collega un'unità di misura all'oggetto o al valore misurato."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/UnitOfMeasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is unit of measure of"
+  }, {
+    "@language" : "it",
+    "@value" : "è unità di misura di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isCharacteristicOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isValueOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra un valore ed un'entità a cui tale valore è associato."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between a value and an entity to which that value is associated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is value of"
+  }, {
+    "@language" : "it",
+    "@value" : "è valore di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isCharacteristicOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/issues",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che consente di affermare che un determinato agente è il creatore di una certa entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that allows us to state that a certain agent is the creator of a certain entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is creator of"
+  }, {
+    "@language" : "it",
+    "@value" : "è creatore di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/mediaType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A value for the media type, e.g. text/csv, rdf/xml, etc."
+  }, {
+    "@language" : "it",
+    "@value" : "Un valore per il tipo di supporto, ad es. text/csv, rdf/xml, ecc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "media type"
+  }, {
+    "@language" : "it",
+    "@value" : "tipo di supporto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il letterale che rappresenta il nome di un'entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The literal representing the name of an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name"
+  }, {
+    "@language" : "it",
+    "@value" : "nome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/parametrises",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra un parametro e l'entità oggetto della parametrizzazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between a parameter and the entity being object of the parametrisation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "parametrises"
+  }, {
+    "@language" : "it",
+    "@value" : "parametrizza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/precedes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between entities, expressing a 'sequence' schema."
+  }, {
+    "@language" : "it",
+    "@value" : "Una relazione tra entità, che esprime uno schema di 'sequenza'."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "precede"
+  }, {
+    "@language" : "en",
+    "@value" : "precedes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/satisfies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà usata per asserire che un'eventualità soddisfa una certa descrizione."
+  }, {
+    "@language" : "en",
+    "@value" : "The property for asserting that an eventuality satisfies a description."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "satisfies"
+  }, {
+    "@language" : "it",
+    "@value" : "soddisfa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/specialises",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà per esprimere relazioni di specializzazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The property for expressing specialisation relations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "specialises"
+  }, {
+    "@language" : "it",
+    "@value" : "specializza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/startTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TimeInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "start time"
+  }, {
+    "@language" : "it",
+    "@value" : "tempo di inizio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/time"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/symbol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to specify a symbol. For instance the symbol of a unit of measure"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà  utilizzata per specificare un simbolo. Ad esempio il simbolo dell'unità di misura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "simbolo"
+  }, {
+    "@language" : "en",
+    "@value" : "symbol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà per associare la rappresentazione letterale del tempo a un'entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The property for associating the literal representation of time to an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "tempo"
+  }, {
+    "@language" : "en",
+    "@value" : "time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La rappresentazione letterale di un valore."
+  }, {
+    "@language" : "en",
+    "@value" : "The literal representation of a value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "valore"
+  }, {
+    "@language" : "en",
+    "@value" : "value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà per collegare il valore in gYear ad un istanza della classe TemporalEntity."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that relates a valued expressed a gYear to an instance of the class TemporalEntity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "anno"
+  }, {
+    "@language" : "en",
+    "@value" : "year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/time"
+  } ]
+} ]

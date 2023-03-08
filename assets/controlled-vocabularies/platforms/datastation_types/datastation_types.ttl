@@ -1,0 +1,41 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://w3id.org/italia/env/vocab/platforms/datastation_types>
+  a skos:ConceptScheme ;
+  dct:title "Vocabolario delle tipologie di stazioni di misura"@it, "Vocabulary of type of data station"@en ;
+  rdfs:label "Vocabolario delle tipologie di stazioni di misura"@it, "Vocabulary of type of data station"@en ;
+  dct:description "Vocabolario delle tipologie di stazioni di misura (es. Stazione Marina, Stazione Metereologica, ...)"@it, "Vocabulary of type of data station (e.g. Marine Station, Metereological Station, ...)"@en ;
+  rdfs:comment "Vocabolario delle tipologie di stazioni di misura (es. Stazione Marina, Stazione Metereologica, ...)"@it, "Vocabulary of type of data station (e.g. Marine Station, Metereological Station, ...)"@en ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA>, <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2023-03-03"^^xsd:date .
+
+<https://w3id.org/italia/env/vocab/platforms/datastation_types/marine_station>
+  a skos:Concept ;
+  skos:prefLabel "Stazione Marina"@it, "Marine Station"@en ;
+  skos:definition "Measurement station for the detection of the physical sea state."@en, "Stazione di misura per il rilevamento  dei parametri fisici del mare."@it ;
+  dct:identifier "marine_station" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/platforms/datastation_types> .
+
+<https://w3id.org/italia/env/vocab/platforms/datastation_types/tsunami_station>
+  a skos:Concept ;
+  skos:prefLabel "Stazione Tsunamometrica"@it, "Tsunami Station"@en ;
+  skos:definition "Measurement station for the detection of tsunami/freak waves."@en, "Stazione di misura per il rilevamento di tsunami/onde anomale."@it ;
+  dct:identifier "tsunami_station" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/platforms/datastation_types> .
+
+<https://w3id.org/italia/env/vocab/platforms/datastation_types/quality_station>
+  a skos:Concept ;
+  skos:prefLabel "Stazione di Qualità"@it, "Quality Station"@en ;
+  skos:definition "Measurement station for the detection of the water quality."@en, "Stazione di misura per il rilevamento dello stato di qualità delle acque."@it ;
+  dct:identifier "quality_station" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/platforms/datastation_types> .
+
+<https://w3id.org/italia/env/vocab/platforms/datastation_types/meteorological_station>
+  a skos:Concept ;
+  skos:prefLabel "Stazione Meteorologica"@it, "Meteorological Station"@en ;
+  skos:definition "Measurement station for the detection of the meteorological state."@en, "Stazione di misura per il rilevamento dei parametri meteorologici."@it ;
+  dct:identifier "meteorological_station" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/platforms/datastation_types> .

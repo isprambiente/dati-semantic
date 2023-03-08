@@ -1,0 +1,1632 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/italia/env/onto/rendis/"
+     xml:base="https://w3id.org/italia/env/onto/rendis/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:top="https://w3id.org/italia/env/onto/top/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/italia/env/onto/rendis">
+        <owl:imports rdf:resource="https://w3id.org/italia/env/onto/top/"/>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/associatedWith -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/associatedWith"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/classifies -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/classifies"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/directlyFollows -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/directlyFollows"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/directlyPrecedes -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/directlyPrecedes"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/follows -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/follows"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/hasAgentRole -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasAgentRole"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/hasDescription -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasDescription"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/hasEventuality -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasEventuality"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/hasLocation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasLocation"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/hasMember -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasMember"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/hasPart -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasPart"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/hasValue -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasValue"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/isClassifiedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/isDescriptionOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isDescriptionOf"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/isEventualityOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isEventualityOf"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/isLocationOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isLocationOf"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/isParametrisedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isParametrisedBy"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isPartOf"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/isSatisfiedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isSatisfiedBy"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/isSpecialisedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isSpecialisedBy"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/isValueOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isValueOf"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/parametrises -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/parametrises"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/precedes -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/precedes"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/satisfies -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/satisfies"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/specialises -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/specialises"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/addressesInstability -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/addressesInstability">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isInstabilityAddressedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Lot"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Instability"/>
+        <rdfs:comment xml:lang="it">La relazione che permette di affermare che un lotto di una procedura è volto a combattere una certa instabilità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship allowing you to state that a lot of a procedure is aimed at facing a certain instability.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">addresses instability</rdfs:label>
+        <rdfs:label xml:lang="it">affronta instabilità</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/addressesInstabilityType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/addressesInstabilityType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isAddressedByProcedure"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/InstabilityType"/>
+        <rdfs:comment xml:lang="it">La relazione che permette di affermare che una procedura affronta un certo tipo di instabilità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation that allows you to state that a procedure addresses a certain instability type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">addresses instability type</rdfs:label>
+        <rdfs:label xml:lang="it">affronta tipo di instabilità</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasAlternativeLocation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasAlternativeLocation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/hasLocation"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isAlternativeLocationOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Location"/>
+        <rdfs:comment xml:lang="it">La relazione tra un una procedura ed un luogo che rappresenta un luogo di intervento secondario.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship between a procedure and a place that represents a secondary intervention site.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha luogo alternativo</rdfs:label>
+        <rdfs:label xml:lang="en">has alternative location</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasAmount -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasAmount">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/hasValue"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isAmountOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Amount"/>
+        <rdfs:comment xml:lang="it">La relazione esistente tra un&apos;entità ed in suo importo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The association between an entity and its corresponding amount.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha importo</rdfs:label>
+        <rdfs:label xml:lang="en">has amount</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasCurrency -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasCurrency">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isParametrisedBy"/>
+        <rdfs:comment xml:lang="it">La proprietà per collegare un&apos;entità ad una valuta.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The association between an entity and a currency.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha valuta</rdfs:label>
+        <rdfs:label xml:lang="en">has currency</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanAction -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanAction">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+        <rdfs:comment xml:lang="it">La relazione che sussiste tra l&apos;esecuzione di un piano di attuazione e una delle sue azioni finali. Le azioni finali potrebbero essere multiple.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between an implementation plan execution and one of its final actions. The final actions might be multiple.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha azione finale</rdfs:label>
+        <rdfs:label xml:lang="en">has final implementation plan action</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanStep -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanStep">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlan"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">La proprietà che collega un piano di attuazione al suo ultimo passo.</rdfs:label>
+        <rdfs:label xml:lang="en">The property that links an implementation plan to its last step.</rdfs:label>
+        <rdfs:label xml:lang="it">ha ultimo passo di piano di attuazione</rdfs:label>
+        <rdfs:label xml:lang="en">has last implementation plan step</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasFinancedAmount -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasFinancedAmount">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/rendis/hasAmount"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isFinancedAmountOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Amount"/>
+        <rdfs:comment xml:lang="it">La proprietà che viene usata per indicare l&apos;importo finanziato per una procedura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that is used to indicate the amount financed for a procedure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha importo finanziato</rdfs:label>
+        <rdfs:label xml:lang="en">has financed amount</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasImplementationPlan -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasImplementationPlan">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/hasDescription"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isImplementationPlanOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlan"/>
+        <rdfs:comment xml:lang="it">La relazione esistente tra un&apos;entità ed un piano di attuazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between an entity and an implementation plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha piano di attuazione</rdfs:label>
+        <rdfs:label xml:lang="en">has implementation plan</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/hasPart"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+        <rdfs:comment xml:lang="it">La relazione che sussiste tra l&apos;esecuzione di un piano di attuazione e una delle sue azioni.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between an implementation plan execution and one of its actions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha azione in piano di attuazione</rdfs:label>
+        <rdfs:label xml:lang="en">has implementation plan action</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasImplementationPlanExecution -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasImplementationPlanExecution">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/hasEventuality"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isImplementationPlanExecutionOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"/>
+        <rdfs:comment xml:lang="it">La relazione tra un&apos;entità e l&apos;esecuzione di un piano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation between an entity and a plan execution.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha esecuzione di piano di implementazione</rdfs:label>
+        <rdfs:label xml:lang="en">has implementation plan execution</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/hasPart"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlan"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+        <rdfs:comment xml:lang="it">La relazione che sussiste tra un piano di attuazione e una delle sue fasi.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between an implementation plan and one of its steps.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha fase</rdfs:label>
+        <rdfs:label xml:lang="en">has implementation plan step</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanAction -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanAction">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isInitialImplementationPlanActionOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+        <rdfs:comment xml:lang="it">La relazione che sussiste tra l&apos;esecuzione di un piano di attuazione e la sua azione iniziale. Le azioni iniziali potrebbero essere multiple.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between an implementation plan execution and its initial action. The initial actions might be multiple.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha azione iniziale</rdfs:label>
+        <rdfs:label xml:lang="en">has initial implementation plan action</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanStep -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanStep">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isFirstImplementationPlanStepOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlan"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+        <rdfs:comment xml:lang="it">La proprietà che collega un piano di implementazione alla sua prima fase.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that links an implementation plan to its first plan step.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha primo passo di piano di attuazione</rdfs:label>
+        <rdfs:label xml:lang="en">has first implementation plan</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasInstability -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasInstability">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/hasEventuality"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isInstabilityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Instability"/>
+        <rdfs:comment xml:lang="it">La relazione tra un&apos;entità ed un&apos;instabilità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation between an entity and an instability.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha instabilità</rdfs:label>
+        <rdfs:label xml:lang="en">has instability</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasInstabilityType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasInstabilityType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isInstabilityTypeOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Instability"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/InstabilityType"/>
+        <rdfs:comment xml:lang="it">La relazione utilizzata per classificare un&apos;instabilità con un tipo di instabilità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation used for classifying an instability with an instability type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha tipo di instabilità</rdfs:label>
+        <rdfs:label xml:lang="en">has instability type</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasLegalBasis -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasLegalBasis">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isLegalBasisOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/LegalAct"/>
+        <rdfs:comment xml:lang="it">La relazione che fornisce la base giuridica ad un&apos;entità collegandola a un atto giuridico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation that provides legal basis to an entity by linking it to a legal act.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha base legale</rdfs:label>
+        <rdfs:label xml:lang="en">has legal basis</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasLithology -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasLithology">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isLithologyOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Lithology"/>
+        <rdfs:comment xml:lang="it">La relazione esistente tra una possibile entità ed una litologia.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between an entity and a lithology.</rdfs:comment>
+        <rdfs:comment xml:lang="it">ha litologia</rdfs:comment>
+        <rdfs:comment xml:lang="en">has lithology</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasLithologyType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasLithologyType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isLithologyTypeOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Lithology"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/LithologyType"/>
+        <rdfs:comment xml:lang="it">La relazione che permette di classificare un individuo della classe Lithology con un tipo di litologia.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation that allows one to classify a lithology individual with its type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha tipo di litologia</rdfs:label>
+        <rdfs:label xml:lang="en">has lithology type</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasPrimaryLocation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasPrimaryLocation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/hasLocation"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isPrimaryLocationOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Location"/>
+        <rdfs:comment xml:lang="it">La proprietà per associare un luogo ad una procedura o a una collezione di procedure e rappresentare questa associazione come primaria.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property for associating a location to a procedure or a procedure collection and representing this association as a primary one.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha luogo primario</rdfs:label>
+        <rdfs:label xml:lang="en">has primary location</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasProcedureType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasProcedureType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isProcedureTypeOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ProcedureType"/>
+        <rdfs:comment xml:lang="it">La relazione esistente tra una procedura ed il suo tipo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between a procedure and its type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha tipo di procedura</rdfs:label>
+        <rdfs:label xml:lang="en">has procedure type</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/hasRepairWorkExecution -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/hasRepairWorkExecution">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/hasEventuality"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isRepairWorkExecutionOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/RepairWork"/>
+        <rdfs:comment xml:lang="it">La relazione valida tra un&apos;entità ed un&apos;opeara di risanamento attesa.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between an entity and an expected repair operation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">ha opera di risanemento prevista</rdfs:label>
+        <rdfs:label xml:lang="en">has expected repair operation</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/includesLot -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/includesLot">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isIncludedInProcedure"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Lot"/>
+        <rdfs:comment xml:lang="en">Property that links a procedure to the lot. A procedure has at least a lot</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega una procedura a un lotto. Una procedura ha almeno un lotto.</rdfs:comment>
+        <rdfs:comment xml:lang="it">include lotto</rdfs:comment>
+        <rdfs:comment xml:lang="en">includes lot</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isAddressedByProcedure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isAddressedByProcedure">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/classifies"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/InstabilityType"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        <rdfs:comment xml:lang="it">La proprietà che associa un tipo di instabilità alla procedura in cui questo è affrontato.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that associates a type of instability with the procedure in which it is addressed.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is addressed by procedure</rdfs:label>
+        <rdfs:label xml:lang="it">è affrontato dalla procedura</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isAlternativeLocationOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isAlternativeLocationOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isLocationOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Location"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        <rdfs:comment xml:lang="it">La relazione che sussiste tra un luogo e una procedura. Il luogo rappresenta quindi un posto di intervento alternativo per il procedimento.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between a location and procedure. Hence, the location represents an alternative place of intervention for the procedure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is alternative location of</rdfs:label>
+        <rdfs:label xml:lang="it">è luogo alternativo di</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isAmountOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isAmountOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isValueOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Amount"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">La relazione tra un importo e l&apos;entità a cui si riferisce.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship between an amount and the entity it refers to.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is amount of</rdfs:label>
+        <rdfs:label xml:lang="it">è importo di</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isCurrencyOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isCurrencyOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/parametrises"/>
+        <rdfs:comment xml:lang="it">La proprietà che collega una valuta ad un&apos;entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that links a currency to an entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is currency of</rdfs:label>
+        <rdfs:label xml:lang="it">è valuta di</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isFinalImplementationPlanActionOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isFinalImplementationPlanActionOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"/>
+        <rdfs:comment xml:lang="it">La relazione che sussiste tra un&apos;azione e l&apos;esecuzione del piano di attuazione di cui fa parte. La relazione significa che l&apos;azione è una di quelle finali dell&apos;esecuzione del piano (il piano può avere più azioni terminali).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between an action and the implementation plan execution it is part of. The relation means that the action in one of the final actions of the plan execution, i.e. the plan execution has more than one final action).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is final implementation plan action of</rdfs:label>
+        <rdfs:label xml:lang="it">è azione finale dell&apos;esecuzione del piano di attuazione</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isFinancedAmountOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isFinancedAmountOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isAmountOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Amount"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        <rdfs:comment xml:lang="it">La proprietà che viene utilizzata per associare un importo che è stato finanziato per una procedura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that is used to associate an amount that has been financed for a procedure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is financed amount of</rdfs:label>
+        <rdfs:label xml:lang="it">è importo finanziato di</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isFirstImplementationPlanStepOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isFirstImplementationPlanStepOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlan"/>
+        <rdfs:comment xml:lang="it">La proprietà che permette di rappresentare un determinato passo come il primo passo di un piano di attuazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that represents a step as the first step of the target implementation plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is first implementation plan step of</rdfs:label>
+        <rdfs:label xml:lang="it">è promo passo di piano di attuzione</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"/>
+        <rdfs:comment xml:lang="it">La relazione tra una singola azione ed il piano di attuazione di cui essa è parte.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship between the actiob and an implementation plan the former is a part of.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is implementation plan action of</rdfs:label>
+        <rdfs:label xml:lang="it">è azione in piano di attuazione</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isImplementationPlanExecutionOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isImplementationPlanExecutionOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isEventualityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="en">Relation holding between an implementation plan execution and a possible associated entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione tra un&apos;esecuzione di piano di implementazione ed un entità ad essa associata.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is implementation plan execution of</rdfs:label>
+        <rdfs:label xml:lang="it">è esecuzione di piano di implementazione di</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isImplementationPlanOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isImplementationPlanOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isDescriptionOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlan"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">La relazione esistente tra un piano di attuazione ed un&apos;entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between an implementation plan and an entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is implementation plan of</rdfs:label>
+        <rdfs:label xml:lang="it">è piano di attuazione di</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlan"/>
+        <rdfs:comment xml:lang="it">La proprietà per collegare una fase ad un piano di attuazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation for linking a step to an implementation plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is implementation step of</rdfs:label>
+        <rdfs:label xml:lang="it">è fase implementativa del piano</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isIncludedInProcedure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isIncludedInProcedure">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Lot"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        <rdfs:comment xml:lang="en">Inverse property of &quot;includes lot&quot; that links a lot to its procedure</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di &quot;include lotto&quot; che lega il lotto alla sua procedura</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is included in procedure</rdfs:label>
+        <rdfs:label xml:lang="it">è incluso in procedura</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isInitialImplementationPlanActionOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isInitialImplementationPlanActionOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"/>
+        <rdfs:comment xml:lang="it">La relazione che sussiste tra un&apos;azione e l&apos;esecuzione del piano di attuazione di cui fa parte. La relazione significa che l&apos;azione è una delle azioni iniziali dell&apos;esecuzione del piano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between an action and the implementation plan execution it is part of. The relation means that the action in one of the initial actions of the plan execution.</rdfs:comment>
+        <rdfs:comment xml:lang="en">is initial implementation plan action of</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">è azione iniziale dell&apos;esecuzione del piano di attuazione</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isInstabilityAddressedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isInstabilityAddressedBy">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Instability"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Lot"/>
+        <rdfs:comment xml:lang="it">La proprietà per rappresentare il fatto che un dissesto è affrontato da un determinato lotto incluso in una procedura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property for representing the fact that an instability is addressed by a certain lot included in a procedure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is instability addressed by</rdfs:label>
+        <rdfs:label xml:lang="it">è instabilità affrontata da</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isInstabilityOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isInstabilityOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isEventualityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Instability"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="en">Relation between an instability and any possible entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione tra un&apos;instabilità ed un&apos;entità ad essa collegata.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is instability of</rdfs:label>
+        <rdfs:label xml:lang="it">è instabilità di</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isInstabilityTypeOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isInstabilityTypeOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/classifies"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/InstabilityType"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Instability"/>
+        <rdfs:comment xml:lang="it">La relazione che permette di affermare che un tipo di instabilità classifica una certa instabilità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation that allows you to state that an instability type classifies a certain instability.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is instability type of</rdfs:label>
+        <rdfs:label xml:lang="it">è tipo di instabilità di</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isLastImplementationStepOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isLastImplementationStepOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isLegalBasisOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isLegalBasisOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/LegalAct"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">La relazione che collega un atto giuridico ad un&apos;entità con la funzione di fornire a quest&apos;ultima la base legale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship that links a legal act to an entity with the function of providing the latter with the legal basis.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is legal basis of</rdfs:label>
+        <rdfs:label xml:lang="it">è base legale di</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isLithologyOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isLithologyOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/Lithology"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">La relazione sussistente tra una litologia ed una possibile entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between a lithology and a possible entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is lithology of</rdfs:label>
+        <rdfs:label xml:lang="it">è litologia di</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isLithologyTypeOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isLithologyTypeOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/classifies"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/LithologyType"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Lithology"/>
+        <rdfs:comment xml:lang="en">Property for associating a type of lithology to a specific lithology individual.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà per associare un concetto di tipo di litologia ad una litologia specifica.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is lithology type of</rdfs:label>
+        <rdfs:label xml:lang="it">è tipo di litologia di</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isPrimaryLocationOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isPrimaryLocationOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isLocationOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Location"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        <rdfs:comment xml:lang="it">La relazione tra un luogo primario ed una procedura o collezione di procedure.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property for representing relations between a primary location and a procedure or procedure collection.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isProcedureTypeOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isProcedureTypeOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/classifies"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/ProcedureType"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        <rdfs:comment xml:lang="it">La relazione esistente tra un concetto che classifica una procedura e la procedura stessa.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relationship between a concept that classifies a procedure and the procedure itself.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is procedure type of</rdfs:label>
+        <rdfs:label xml:lang="it">è tipo di procedura di</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/isRepairWorkExecutionOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/rendis/isRepairWorkExecutionOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/isEventualityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/rendis/RepairWork"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">La relazione valida tra un&apos;attività di risanamento ed un&apos;entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between a repair activity and an entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">is repair activity of</rdfs:label>
+        <rdfs:label xml:lang="it">è attività di risanemento di</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/hasMember -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasMember"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error1 -->
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/AgentRole -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/AgentRole"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Characteristic -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Characteristic"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Collection -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Collection"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Concept -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Concept"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Description -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Description"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Entity -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Entity"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Eventuality -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Eventuality"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Location -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Location"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/UnitOfMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/UnitOfMeasure"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Value -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Value"/>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/AlternativeLocProcedureCollection -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/AlternativeLocProcedureCollection">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/rendis/ProcedureCollection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/hasMember"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasAlternativeLocation"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/top/Location"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">Alternative Location Procedure Collection</rdfs:label>
+        <rdfs:label xml:lang="it">Collezione di Interventi con Assegnato Comune Secondario</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/Amount -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/Amount">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Value"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasCurrency"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/env/onto/rendis/Currency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An amount.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un importo.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">Amount</rdfs:label>
+        <rdfs:label xml:lang="it">Importo</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/Contract -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/Contract">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/rendis/Document"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasRepairWorkExecution"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/RepairWork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An instance of this class represents a contract made between two or more agents: for example, between a contracting station and a supplier.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una istanza di questa classe rappresenta un contratto realizzato tra due o più agenti: ad esempio, tra una stazione appaltante ed un fornitore.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">Contract</rdfs:label>
+        <rdfs:label xml:lang="it">Contratto</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/Currency -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/Currency">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/UnitOfMeasure"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">Currency</rdfs:label>
+        <rdfs:label xml:lang="it">Questa classe rappresenta una valuta.</rdfs:label>
+        <rdfs:label xml:lang="en">This class represents a currency.</rdfs:label>
+        <rdfs:label xml:lang="it">Valuta</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/Document -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/Document">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="en">A set of interrelated Business Information representing the business facts. Additional Information: Documents may convey information in any language, medium or form, including textual, numerical, graphic, cartographic, audio-visual forms, etc. WG Approval 23/05/2019</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un insieme di informazioni aziendali correlate che rappresentano i fatti aziendali. Informazioni aggiuntive: i documenti possono trasmettere informazioni in qualsiasi lingua, supporto o forma, comprese le forme testuali, numeriche, grafiche, cartografiche, audiovisive, ecc. Approvazione WG 23/05/2019.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">Document</rdfs:label>
+        <rdfs:label xml:lang="en">Documento</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/EconomicSummary -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/EconomicSummary">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Characteristic"/>
+        <rdfs:comment xml:lang="en">An instance of this class represents the economic summary of a lot.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un&apos;istanza di questa classe rappresenta il prospetto economico di un lotto.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">Economic summary</rdfs:label>
+        <rdfs:label xml:lang="it">Prospette economico</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/ImplementationPlan -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/ImplementationPlan">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Description"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanStep"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanStep"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/isSatisfiedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An implementation plan. E.g. the implementation plan of a certain lot associated with a procedure.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un piano di attuazione. Per esempio il piano di attuazione di un determinato lotto associato ad una procedura.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">Implementation plan</rdfs:label>
+        <rdfs:label xml:lang="it">Piano di attuazione</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Eventuality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/satisfies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/directlyFollows"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/directlyPrecedes"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/follows"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/precedes"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/satisfies"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">L&apos;esecuzione di un singolo passo di un piano di attuazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The execution of a single step part of an implementation plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">Esecuzione di passo di piano di attuazione</rdfs:label>
+        <rdfs:label xml:lang="en">Implementation plan step execution</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Eventuality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/satisfies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanAction"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanAction"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/satisfies"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe per rappresentare l&apos;esecuzione di un piano di attuazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class for representing the execution of an implementation plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">Esecuzione di piano di attuazione</rdfs:label>
+        <rdfs:label xml:lang="en">Implementation plan execution</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Description"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/directlyFollows"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/directlyPrecedes"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/follows"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/isSatisfiedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/precedes"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe per rappresentare un passo di un piano di attuazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class that represents a step of an implementation plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">Implementation plan step</rdfs:label>
+        <rdfs:label xml:lang="it">Passo di piano di attuazione</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/Instability -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/Instability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Eventuality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasInstabilityType"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/InstabilityType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe per rappresentare un dissesto.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">Dissesto</rdfs:label>
+        <rdfs:label xml:lang="en">Instability</rdfs:label>
+        <rdfs:label xml:lang="en">The class for representing instability.</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/InstabilityType -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/InstabilityType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Concept"/>
+        <rdfs:comment xml:lang="en">A concept representing a certain instability type.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto che rappresenta un tipo di dissesto.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">Tipo di dissesto</rdfs:label>
+        <rdfs:label xml:lang="en">Type of instability</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/LegalAct -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/LegalAct">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/rendis/Document"/>
+        <rdfs:comment xml:lang="en">Any law o regulatory measure that supports a procedure.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Qualsiasi legge o provvedimento normativo a supporto di una procedura.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">Atto legale</rdfs:label>
+        <rdfs:label xml:lang="en">Legal act</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/Lithology -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/Lithology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Eventuality"/>
+        <rdfs:comment xml:lang="it">La classe per rappresentare una litologia.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class for representing a lithology.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">Lithology</rdfs:label>
+        <rdfs:label xml:lang="it">Litologia</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/LithologyType -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/LithologyType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Concept"/>
+        <rdfs:comment xml:lang="it">Concetto per tipo di litologia.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class for representing lithology types as concepts.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">Lithology type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di litologia</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/Lot -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/Lot">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Eventuality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/hasAgentRole"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/top/AgentRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/top/Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/addressesInstability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/Instability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasImplementationPlan"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ImplementationPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasInstability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/Instability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasLithology"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/Lithology"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasRepairWorkExecution"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/RepairWork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/isIncludedInProcedure"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">One of the parts of a procurement project that is being subdivided to allow the buyer to award different lots to different economic operators under different contracts.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una delle parti di un progetto di appalto che viene suddivisa per consentire all&apos;acquirente di aggiudicare lotti diversi a operatori economici diversi nell&apos;ambito di contratti diversi.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">Lot</rdfs:label>
+        <rdfs:label xml:lang="it">Lotto</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/Plan -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/Plan">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Description"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/PrimaryLocProcedureCollection -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/PrimaryLocProcedureCollection">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/rendis/ProcedureCollection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/hasMember"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasPrimaryLocation"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/top/Location"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">Collezione di Procedure con Assegnato Comune Capofila</rdfs:label>
+        <rdfs:label xml:lang="en">Primary Location Procedure Collection</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/Procedure -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/Procedure">
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Eventuality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/hasAgentRole"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/top/AgentRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/PrimaryLocProcedureCollection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/addressesInstabilityType"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/InstabilityType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasFinancedAmount"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/Amount"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasLegalBasis"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/LegalAct"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/hasProcedureType"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/ProcedureType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/includesLot"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/Lot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/hasLocation"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/top/Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/isPartOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/AlternativeLocProcedureCollection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe che comprende le attività che una stazione appaltante mette in atto per realizzare un progetto di procurement, ad esempio le attività svolte tramite un contratto di appalto o di concessione, le attività realizzate attraverso amministrazione diretta, parternariato pubblico/privato o adesione ad un accordo quadro. Le attività prevedono step procedurali che possono variare in relazione alla modalità di realizzazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class that represents the activities that a contracting authority carries out in order to actualize a procurement project, such as those carried out through public procurement, concession, direct administration, public/private partnership or framework agreement. The steps of the procedure may vary according to the type of the procedure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">Administrative Procedure</rdfs:label>
+        <rdfs:label xml:lang="it">Procedura Amministrativa/Intervento</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/ProcedureCollection -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/ProcedureCollection">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Collection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/hasMember"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A collection whose members are procedures only.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una collezione i cui membri sono esclusivamente istanze di procedura.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">Collezione di Procedure</rdfs:label>
+        <rdfs:label xml:lang="en">Procedure Collection</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/ProcedureType -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/ProcedureType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Concept"/>
+        <rdfs:comment xml:lang="en">A type of administrative procedure.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un tipo di procedura amministrativa o intervento.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="en">Administrative Procedure Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Procedura Amministrativa</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/RepairWork -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/RepairWork">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Description"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/isSatisfiedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/RepairWorkExecution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/isSpecialisedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/RepairWork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/specialises"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/RepairWork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La descrizione di un&apos;opera di risanamento di dissesti.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The description of a work for repairing instabilities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">Opere di risanamento</rdfs:label>
+        <rdfs:label xml:lang="en">Repair work</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/rendis/RepairWorkExecution -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/rendis/RepairWorkExecution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Eventuality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/satisfies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/RepairWork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/rendis/isRepairWorkExecutionOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/Lot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/satisfies"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/rendis/RepairWork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A repair work carried out in a lot for repairing an instability.</rdfs:comment>
+        <rdfs:comment xml:lang="it">L&apos;esacuzione di un&apos;opera di risanamento nell&apos;ambito delle iniziative di riisanamento di un dissesto.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/rendis"/>
+        <rdfs:label xml:lang="it">Esecuzione di opere di risanamento</rdfs:label>
+        <rdfs:label xml:lang="en">Repair work execution</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Location -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Location"/>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/AgentRole"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/rendis/Instability"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/rendis/Lot"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/AgentRole"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/rendis/Lot"/>
+            <rdf:Description rdf:about="https://w3id.org/italia/env/onto/rendis/Procedure"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->

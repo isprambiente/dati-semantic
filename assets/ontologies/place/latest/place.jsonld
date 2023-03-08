@@ -1,0 +1,1441 @@
+[ {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasUniqueIdentifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/UniqueIdentifier"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/istat"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasDirectLowerRank"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Region"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasLowerRank"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/place/MetropolitanCity"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Province"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Region"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Region"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasDirectLowerRank"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid22"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasLowerRank"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/place/MetropolitanCity"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Province"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Region"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/GeometryType"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/lat"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/long"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/geometry"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasDirectLowerRank"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasLowerRank"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasDirectLowerRank"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasLowerRank"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasDirectLowerRank"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasLowerRank"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasDirectLowerRank"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasLowerRank"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasDirectLowerRank"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid40"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/place/MetropolitanCity"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Province"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasLowerRank"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid44"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/place/MetropolitanCity"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Province"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid49"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasDirectLowerRank"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/place/MetropolitanCity"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Province"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid53"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasLowerRank"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/place/MetropolitanCity"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Province"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasGeometry"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Geometry"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/place/Country"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/MetropolitanCity"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Province"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Region"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/place/MetropolitanCity"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Province"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/Region"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasGeometry"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Geometry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/AdministrativeUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A place meant as administrative unit."
+  }, {
+    "@language" : "it",
+    "@value" : "Un luogo inteso come unità amministrativa."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Administrative unit"
+  }, {
+    "@language" : "it",
+    "@value" : "Unità amministrativa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Feature"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Geometry"
+  }, {
+    "@id" : "https://w3id.org/italia/env/onto/place/Sea"
+  } ],
+  "http://www.w3.org/2002/07/owl#hasKey" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/place/istat"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa classe rappresenta lo Stato. Esempio: \"Italia - Italy\" oppure \"United Kingdom\", ecc. E' l'unità amministrativa più alta nella gerarchia di contenimento territoriale dell'indirizzo. Nel Core Location Vocabulary del programma ISA2 essa è modellata con la proprietà dell'indirizzo nominata adminUnit1"
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents the uppermost administrative unit for the address, almost always a country. \"United Kingdom\", \"Italy\", etc. In the Core Location Vocabulary this is modelled as adminUnit1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Country"
+  }, {
+    "@language" : "it",
+    "@value" : "Stato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/AdministrativeUnit"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Feature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A feature meant as a location."
+  }, {
+    "@language" : "it",
+    "@value" : "Una feature intesa come luogo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature"
+  }, {
+    "@language" : "it",
+    "@value" : "Luogo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Geometry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa classe rappresenta la geometria di un luogo."
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents the geometry of a location."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Geometria"
+  }, {
+    "@language" : "en",
+    "@value" : "Geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  }, {
+    "@id" : "_:genid27"
+  }, {
+    "@id" : "_:genid28"
+  }, {
+    "@id" : "_:genid29"
+  }, {
+    "@id" : "_:genid30"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Sea"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/GeometryType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A geometry type, such as a point, polygon, multipolygon, etc."
+  }, {
+    "@language" : "it",
+    "@value" : "Un tipo di geometrica, come ad esempio punto, poligono, multipoligono, ecc..."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Geometry type"
+  }, {
+    "@language" : "it",
+    "@value" : "Tipo di geometria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/MetropolitanCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Le città metropolitane d'Italia sono divisioni amministrative dell'Italia, operative dal 2015, che sono un tipo speciale di provincia. La città metropolitana, così come definita dalla legge, comprende un grande nucleo urbano e i centri minori circostanti che sono ad esso strettamente collegati per quanto riguarda le attività economiche e i servizi pubblici essenziali, nonché le relazioni culturali e le caratteristiche territoriali."
+  }, {
+    "@language" : "en",
+    "@value" : "The metropolitan cities of Italy are administrative divisions of Italy, operative since 2015, which are a special type of province. The metropolitan city, as defined by law, includes a large core city and the smaller surrounding towns that are closely related to it with regard to economic activities and essential public services, as well as to cultural relations and to territorial features."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Città Metropolitana"
+  }, {
+    "@language" : "en",
+    "@value" : "Metropolitan City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/AdministrativeUnit"
+  }, {
+    "@id" : "_:genid31"
+  }, {
+    "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid33"
+  }, {
+    "@id" : "_:genid34"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Municipality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare comuni come Roma o Milano."
+  }, {
+    "@language" : "en",
+    "@value" : "The class for representing municipalities such as Rome or Milan."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Municipality"
+  }, {
+    "@language" : "it",
+    "@value" : "Municipalità (Comune)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/AdministrativeUnit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Province",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare province come la Provincia di Ancona o L'Aquila."
+  }, {
+    "@language" : "en",
+    "@value" : "The class for representing provinces such as the Province of Ancona or L'Aquila."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Province"
+  }, {
+    "@language" : "it",
+    "@value" : "Provincia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/AdministrativeUnit"
+  }, {
+    "@id" : "_:genid35"
+  }, {
+    "@id" : "_:genid36"
+  }, {
+    "@id" : "_:genid37"
+  }, {
+    "@id" : "_:genid38"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A region is the first-level constituent entity of a country, constituting its second NUTS administrative level."
+  }, {
+    "@language" : "it",
+    "@value" : "Una regione è l'entità costituente di primo livello di un paese, che costituisce il suo secondo livello amministrativo NUTS."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Region"
+  }, {
+    "@language" : "it",
+    "@value" : "Regione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/AdministrativeUnit"
+  }, {
+    "@id" : "_:genid39"
+  }, {
+    "@id" : "_:genid43"
+  }, {
+    "@id" : "_:genid48"
+  }, {
+    "@id" : "_:genid52"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Sea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare le istanze di mare."
+  }, {
+    "@language" : "en",
+    "@value" : "The concept of sea."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Mare"
+  }, {
+    "@language" : "en",
+    "@value" : "Sea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  }, {
+    "@id" : "_:genid57"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/coordinateSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to indicate the coordinate system or reference system (e.g., WGS84, ETRS89, etc.)"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per indicare il sistema di coordinate o sistema di riferimento (e.g., WGS84, ETRS89, ecc,.)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "coordinate system"
+  }, {
+    "@language" : "it",
+    "@value" : "sistema di coordinate di riferimento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the serialization of the geometry object (e.g., kml, gml, etc.)."
+  }, {
+    "@language" : "it",
+    "@value" : "This property represents the serialization of the geometry object (e.g., kml, gml, etc.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "geometry serialisation"
+  }, {
+    "@language" : "it",
+    "@value" : "serializzazione della geometria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà per associare un'entità al paese in cui si trova."
+  }, {
+    "@language" : "en",
+    "@value" : "The property for associating an entity with the country it is located in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha paese"
+  }, {
+    "@language" : "en",
+    "@value" : "has country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/isCountryOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasDirectHigherRank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa proprietà mette in relazione componenti dell'indirizzo con un nome, dove la prima è più specifica della seconda in maniera diretta senza transitività."
+  }, {
+    "@language" : "en",
+    "@value" : "This property relates two named address components, where the first is directly more specific then the second without any transitiveness."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is direct lower rank of"
+  }, {
+    "@language" : "it",
+    "@value" : "è il livello diretto più basso di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasHigherRank"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasDirectLowerRank"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasDirectLowerRank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa proprietà mette in relazione componenti dell'indirizzo con un nome, dove la prima è meno specifica della seconda e non esise un'altra componente dell'indirizzo con nome che è sia più specifica della prima che più generale della seconda."
+  }, {
+    "@language" : "en",
+    "@value" : "This property relates two named address components, where the first is less specific then the second and there is no other named address component that is both more specific than the first and more general than the second."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha livello diretto più basso"
+  }, {
+    "@language" : "en",
+    "@value" : "has direct lower rank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasLowerRank"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra un'entità ed una feature geografica."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between any possible entity an a feature."
+  }, {
+    "@language" : "it",
+    "@value" : "ha feature"
+  }, {
+    "@language" : "en",
+    "@value" : "has feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/isFeatureOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa proprietà collega un'entità alla sua geometria."
+  }, {
+    "@language" : "en",
+    "@value" : "This property links an entity to its geometry."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha geometria"
+  }, {
+    "@language" : "en",
+    "@value" : "has geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/isGeometryOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasGeometryType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione per classificare una geometria con il suo tipo."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation for classifying a geometry with its type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha tipo di geometria"
+  }, {
+    "@language" : "en",
+    "@value" : "has geometry type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/GeometryType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/isGeometryTypeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasHigherRank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa proprietà mette in relazione due componenti dell'indirizzo con nomi, dove la prima è più specifica della seconda."
+  }, {
+    "@language" : "en",
+    "@value" : "This property relates two named address components, where the first is more specific than the second."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is lower rank of"
+  }, {
+    "@language" : "it",
+    "@value" : "è il livello più basso di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasLowerRank"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasLowerRank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa proprietà mette in relazione due componenti dell'indirizzo con nomi, dove la prima è meno specifica della seconda."
+  }, {
+    "@language" : "en",
+    "@value" : "This property relates two named address components, where the first is less specific than the second."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha livello più basso"
+  }, {
+    "@language" : "en",
+    "@value" : "has lower rank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasMetropolitanCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il caso particolare di localizzazione di un oggetto in cui tale oggetto si trova in una città metropolitana."
+  }, {
+    "@language" : "en",
+    "@value" : "The special case of location associated with an object in which such an object is located in a metropolitan city."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha città metropolitana"
+  }, {
+    "@language" : "en",
+    "@value" : "has metropolitan city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/MetropolitanCity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/isMetropolitanCityOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/place/hasMunicipality"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/hasMetropolitanCity"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasMunicipality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il caso particolare di localizzazione di un oggetto in cui tale oggetto si trova in un comune."
+  }, {
+    "@language" : "en",
+    "@value" : "The special case of location associated with an object in which such an object is located in a municipality."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha municipalità"
+  }, {
+    "@language" : "en",
+    "@value" : "has municipality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/isMunicipalityOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasNearbyLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione di vicinanza che può essere utilizzata per associare qualsiasi entità a un luogo secondo una vaga nozione di prossimità."
+  }, {
+    "@language" : "en",
+    "@value" : "The nearby relation that can be used to associate any entity to a place according to a vague notion of proximity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha luogo nelle vicinanze"
+  }, {
+    "@language" : "en",
+    "@value" : "has nearby location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasProvince",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il caso particolare di localizzazione di un oggetto in cui tale oggetto si trova in una provincia."
+  }, {
+    "@language" : "en",
+    "@value" : "The special case of location associated with an object in which such an object is located in a province."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha provincia"
+  }, {
+    "@language" : "en",
+    "@value" : "has province"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Province"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/isProvinceOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/place/hasMunicipality"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/hasProvince"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il caso speciale di posizione associata a un oggetto in cui tale oggetto si trova in una regione."
+  }, {
+    "@language" : "en",
+    "@value" : "The special case of location associated with an object in which such an object is located in a region."
+  }, {
+    "@language" : "en",
+    "@value" : "has region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha regione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/isRegionOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/place/hasMetropolitanCity"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/hasRegion"
+    } ]
+  }, {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/place/hasProvince"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/place/hasRegion"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/isCountryOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione per associare un paese a un'entità situata in tale paese."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation for associating a country with an entity located in such a country."
+  }, {
+    "@language" : "en",
+    "@value" : "is country of"
+  }, {
+    "@language" : "it",
+    "@value" : "è paese di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/isFeatureOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/isFeatureOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra una feature geografica e una qualsiasi entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between a feature and any entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is feature of"
+  }, {
+    "@language" : "it",
+    "@value" : "è feature di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isLocationOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/isGeometryOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra una geometria e la sua entità corrispondente."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between a geometry and its corresponding entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is geometry of"
+  }, {
+    "@language" : "it",
+    "@value" : "è geometria di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/isGeometryTypeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione per classificare con un tipo di geometria una geometria."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation that can be used for classifying a geometry with a geometry type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/GeometryType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is geometry type of"
+  }, {
+    "@language" : "it",
+    "@value" : "è tipo di geometria di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/isMetropolitanCityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il caso speciale di \"è la posizione di\" in cui una città metropolitana è la posizione in cui si trova un oggetto."
+  }, {
+    "@language" : "en",
+    "@value" : "The special case of 'is location of' in which a metropolitan city is the location an object is located in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/MetropolitanCity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is metropolitan city of"
+  }, {
+    "@language" : "it",
+    "@value" : "è città metropolitana di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/isFeatureOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/isMunicipalityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il caso particolare di 'è luogo di' in cui un comune è il luogo in cui si trova un oggetto."
+  }, {
+    "@language" : "en",
+    "@value" : "The special case of 'is location of' in which a municipality is the location an object is located in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is municipality of"
+  }, {
+    "@language" : "it",
+    "@value" : "è municipalità di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/isFeatureOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/isProvinceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il caso particolare di 'è luogo di' in cui una provincia è il luogo in cui si trova un oggetto."
+  }, {
+    "@language" : "en",
+    "@value" : "The special case of 'is location of' in which a province is the location an object is located in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Province"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is province of"
+  }, {
+    "@language" : "it",
+    "@value" : "è provincia di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/isFeatureOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/isRegionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il caso speciale di \"è la posizione di\" in cui una regione è la posizione in cui si trova un oggetto."
+  }, {
+    "@language" : "en",
+    "@value" : "The special case of 'is location of' in which a region is the location an object is located in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is region of"
+  }, {
+    "@language" : "it",
+    "@value" : "è regione di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/isFeatureOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/istat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il codice identificativo dei luoghi previsto dall'ISTAT."
+  }, {
+    "@language" : "en",
+    "@value" : "The identification code for places as provided by ISTAT."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/AdministrativeUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ISTAT code"
+  }, {
+    "@language" : "it",
+    "@value" : "codice ISTAT"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/lat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà per la latitudine."
+  }, {
+    "@language" : "en",
+    "@value" : "This property represents the latitude."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "latitude"
+  }, {
+    "@language" : "it",
+    "@value" : "latitudine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa proprietà rappresenta la longitudine."
+  }, {
+    "@language" : "en",
+    "@value" : "This property represents longitude."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "longitude"
+  }, {
+    "@language" : "it",
+    "@value" : "longitudine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/UniqueIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/associatedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/classifies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasUniqueIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isLocationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]

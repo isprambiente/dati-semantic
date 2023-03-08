@@ -1,0 +1,1146 @@
+@prefix : <https://w3id.org/italia/env/onto/inspire-mf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/italia/env/onto/inspire-mf> .
+
+<https://w3id.org/italia/env/onto/inspire-mf> rdf:type owl:Ontology ;
+                                               owl:imports top: .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/italia/env/onto/inspire-mf/basedOnMetric
+:basedOnMetric rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf top:hasDescription ;
+               owl:inverseOf :isMetricUsedBy ;
+               rdfs:domain top:Entity ;
+               rdfs:range :Metric ;
+               rdfs:comment "La relazione tra un'entità e la metrica utilizzata per eseguire la misurazione."@it ,
+                            "The relation between an entity and the metric used for performing the measurement."@en ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+               rdfs:label "basato sulla metrica"@it ,
+                          "based on metric"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/generationTime
+:generationTime rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf top:atTime ;
+                owl:inverseOf :isGenerationTimeOf ;
+                rdfs:domain :Observation ;
+                rdfs:range top:TemporalEntity ;
+                rdfs:comment "La relazione che sussiste tra un'osservazione e l'entità temporale in cui essa è stata generata."@it ,
+                             "The relation holding between an observation and its generation time."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                rdfs:label "entità temporale di generazione dell'osservazione"@it ,
+                           "temporal entity of observation generation"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest
+:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf top:associatedWith ;
+                      owl:inverseOf :isFeatureOfInterestOf ;
+                      rdfs:domain top:Entity ;
+                      rdfs:range :FeatureOfInterest ;
+                      rdfs:comment "La relazione esistente tra una qualsiasi entità ed una caratteristica di interesse."@it ,
+                                   "The relationship between any entity and a feature of interest."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                      rdfs:label "ha caratteristica di interesse"@it ,
+                                 "has feature of interest"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasIndicator
+:hasIndicator rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf top:associatedWith ;
+              owl:inverseOf :isIndicatorOf ;
+              rdfs:domain top:Entity ;
+              rdfs:range :Indicator ;
+              rdfs:comment "La relazione tra un'entità ed un indicatore."@it ,
+                           "The relation between an entity and an indicator."@en ;
+              rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+              rdfs:label "ha indicatore"@it ,
+                         "has indicator"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasManufacturer
+:hasManufacturer rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf top:associatedWith ;
+                 rdfs:domain top:Entity ;
+                 rdfs:range top:Organisation ;
+                 rdfs:comment "Property used to link the platform model to its manufacturer (intended as an organisation)"@en ,
+                              "Proprietà utilizzata per collegare il modello della piattaforma al relativo costruttore (inteso come organizzazione)"@it ;
+                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                 rdfs:label "ha costruttore"@it ,
+                            "has manufacturer"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter
+:hasObservationParameter rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf top:isParametrisedBy ;
+                         owl:inverseOf :isObservationParameterFor ;
+                         rdfs:domain :Observation ;
+                         rdfs:range :ObservationParameter ;
+                         rdfs:comment "Property that links an observation to its parameter being observed."@en ,
+                                      "Proprietà che collega un'osservazione al suo parametro osservato."@it ;
+                         rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                         rdfs:label "ha parametro di osservazione"@it ,
+                                    "has observation parameter"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasObservationValue
+:hasObservationValue rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf top:hasValue ;
+                     owl:inverseOf :isObservationValueOf ;
+                     rdfs:domain :Observation ;
+                     rdfs:range :ObservationValue ;
+                     rdfs:comment "La proprietà che collega un'osservazione al suo valore."@it ,
+                                  "The property that links an observation to its value."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire/> ;
+                     rdfs:label "ha valore di osservazione"@it ,
+                                "has observation value"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasOperationalStatus
+:hasOperationalStatus rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf top:associatedWith ;
+                      rdfs:domain :Platform ;
+                      rdfs:range top:Concept ;
+                      rdfs:comment "Property used to link the platform at its operational status."@en ,
+                                   "Proprietà utilizzata per collegare lo stato operativo alla piattaforma"@it ;
+                      rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                      rdfs:label "ha stato operativo"@it ,
+                                 "has operational status"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasPlatform
+:hasPlatform rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf top:associatedWith ;
+             owl:inverseOf :isPlatformOf ;
+             rdfs:domain top:Entity ;
+             rdfs:range :Platform ;
+             rdfs:comment "La relazione tra un'entità e una piattaforma."@it ,
+                          "The relation between an entity and a platform."@en ;
+             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+             rdfs:label "ha piattaforma"@it ,
+                        "has platform"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasPlatformModel
+:hasPlatformModel rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf top:hasDescription ;
+                  owl:inverseOf :isPlatformModelOf ;
+                  rdfs:domain :Platform ;
+                  rdfs:range :PlatformModel ;
+                  rdfs:comment "La proprietà che consente di associare una piattaforma al modello di piattaforma corrispondente."@it ,
+                               "The property that allows one to associate a platform with its corresponding platform model."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                  rdfs:label "ha modello di piattaforma"@it ,
+                             "has platform model"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasPlatformType
+:hasPlatformType rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf top:isClassifiedBy ;
+                 owl:inverseOf :isPlatformTypeOf ;
+                 rdfs:domain :Platform ;
+                 rdfs:range :PlatformType ;
+                 rdfs:comment "La proprietà che consente di classificare un piattaforma utilizzando il concetto rappresentato dal tipo di piattaforma."@it ,
+                              "The property that allows you to classify a platform using the concept represented by the type of platform."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                 rdfs:label "ha tipo di piattaforma"@it ,
+                            "has platform type"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasResponsibleParty
+:hasResponsibleParty rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf top:associatedWith ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( :MonitoringFacility
+                                                 :MonitoringNetwork
+                                               )
+                                 ] ;
+                     rdfs:range top:Organisation ;
+                     rdfs:comment "The relation holding between a monitiroring facility or network and the agent is in charge of some responsibility role." ;
+                     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                     rdfs:label "ha parte responsabile"@it ,
+                                "has responsible party"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasSensorModel
+:hasSensorModel rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf top:hasDescription ;
+                owl:inverseOf :isSensorModelOf ;
+                rdfs:domain :Sensor ;
+                rdfs:range :SensorModel ;
+                rdfs:comment "La relazione tra un sensore e la descrizione del sensore rappresentata dal suo modello."@it ,
+                             "The relation between a sensor and the sensor description represented by its model."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                rdfs:label "ha modello di sensore"@it ,
+                           "has sensor model"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasSensorType
+:hasSensorType rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf top:isClassifiedBy ;
+               owl:inverseOf :isSensorTypeOf ;
+               rdfs:domain :Sensor ;
+               rdfs:range :SensorType ;
+               rdfs:comment "La proprietà che permette di classificare un sensore rispetto ad un concetto che identifica il tipo di sensore."@it ,
+                            "The property that allows you to classify a sensor with respect to a concept that identifies the type of sensor."@en ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+               rdfs:label "ha tipo di sensore"@it ,
+                          "has sensor type"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasSubMonitoringObject
+:hasSubMonitoringObject rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf top:hasPart ;
+                        owl:inverseOf :hasSuperMonitoringObject ;
+                        rdfs:domain :MonitoringObject ;
+                        rdfs:range :MonitoringObject ;
+                        rdfs:comment "La relazione per esprimere che un determinato oggetto di monitoraggio ha un altro oggetto di monitoraggio come uno dei suoi sottocomponenti."@it ,
+                                     "The relation for expressing that a certain monitoring object has another monitoring object as on of its sub-components."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                        rdfs:label "ha sotto-oggetto di monitoraggio"@it ,
+                                   "has sub-monitoring object"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasSuperMonitoringObject
+:hasSuperMonitoringObject rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf top:isPartOf ;
+                          rdfs:domain :MonitoringObject ;
+                          rdfs:range :MonitoringObject ;
+                          rdfs:comment "La relazione per esprimere che un determinato oggetto di monitoraggio è un sottocomponente di un altro oggetto di monitoraggio."@it ,
+                                       "The relationship to express that a given monitoring object is a sub-component of another monitoring object."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                          rdfs:label "ha oggetto di monitoraggio superiore"@it ,
+                                     "has super monitoring object"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasSystemCapability
+:hasSystemCapability rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf top:hasCharacteristic ;
+                     owl:inverseOf :isSystemCapabilityOf ;
+                     rdfs:domain top:System ;
+                     rdfs:range :SystemCapability ;
+                     rdfs:comment "La proprietà che associa un sistema a una determinata proprietà."@it ,
+                                  "The property that associate a system with a certain property."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                     rdfs:label "ha proprietà del sistema"@it ,
+                                "has system property"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasSystemDeployment
+:hasSystemDeployment rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf top:hasEventuality ;
+                     rdfs:domain top:System ;
+                     rdfs:range :SystemDeployment ;
+                     rdfs:comment "Proprietà utilizzata per collegare il sistema al suo dislocamento in un contesto specifico."@it ;
+                     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                     rdfs:label "ha dislocamento del sistema"@it ,
+                                "has system deployment"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasValidationLevel
+:hasValidationLevel rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf top:isClassifiedBy ;
+                    owl:inverseOf :isValidationLevelOf ;
+                    rdfs:domain top:Entity ;
+                    rdfs:range :ValidationLevel ;
+                    rdfs:comment "La relazione tra un'entità e il livello di validazione evenutale."@it ,
+                                 "The relation between an entity and a validation level."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                    rdfs:label "ha livello di validazione"@it ,
+                               "has validation level"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hosts
+:hosts rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf top:associatedWith ;
+       owl:inverseOf :isHostedBy ;
+       rdfs:domain :Platform ;
+       rdfs:range :MonitoringFacility ;
+       rdfs:comment "La relazione che sussiste tra una piattaforma e un eventuale sistema ospitato dalla prima."@it ,
+                    "The relation holding between a platform and any possible system hosted by the former."@en ;
+       rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+       rdfs:label "hosts"@en ,
+                  "ospita"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/implementsProcedure
+:implementsProcedure rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf top:hasDescription ;
+                     owl:inverseOf :isProcedureImplementedBy ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( :MonitoringFacility
+                                                 :Observation
+                                               )
+                                 ] ;
+                     rdfs:range :Procedure ;
+                     rdfs:comment "La relazione che sussiste tra un ente e la procedura utilizzata da tale ente per svolgere alcune attività, ad es. un'osservazione."@it ,
+                                  "The relation holding between an entity and the procedure used by such an entity for performing some activity, e.g. an observation."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                     rdfs:label "implementa procedura"@it ,
+                                "implements procedure"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isFeatureOfInterestOf
+:isFeatureOfInterestOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf top:associatedWith ;
+                       rdfs:domain :FeatureOfInterest ;
+                       rdfs:range top:Entity ;
+                       rdfs:comment "La relazione che collega una caratteristica di interesse ad una qualsiasi entità possibile."@it ,
+                                    "The relationship that links a feature of interest to any possible entity."@en ;
+                       rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                       rdfs:label "is feature of interest of"@en ,
+                                  "è caratteristica di interesse di"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isGenerationTimeOf
+:isGenerationTimeOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf top:isTimeOf ;
+                    rdfs:domain top:TemporalEntity ;
+                    rdfs:range :Observation ;
+                    rdfs:comment "La relazione che sussiste tra un'entità temporale ed un'osservazione. La relazione fornisce l'informazione sul momento in cui l'osservazione è stata generata."@it ,
+                                 "The relationship that exists between a temporal entity and an observation. The relation suggests when the observation was generated."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                    rdfs:label "is generation time of"@en ,
+                               "è tempo di generazione di"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isHostedBy
+:isHostedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf top:associatedWith ;
+            rdfs:domain :MonitoringFacility ;
+            rdfs:range :Platform ;
+            rdfs:comment "La relazione esistente tra un qualsiasi sistema e la piattaforma su cui è ospitato."@it ,
+                         "The relationship between any system and the platform it is hosted by."@en ;
+            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+            rdfs:label "is hosted by"@en ,
+                       "è ospitato da"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isIndicatorOf
+:isIndicatorOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf top:associatedWith ;
+               rdfs:domain :Indicator ;
+               rdfs:range top:Entity ;
+               rdfs:comment "La relazione tra un indicatore ed un'entità ad esso associata."@it ,
+                            "The relation holding between an indicator and a possible associated entity."@en ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+               rdfs:label "is indicator of"@en ,
+                          "è indicatore di"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isMetricUsedBy
+:isMetricUsedBy rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf top:isDescriptionOf ;
+                rdfs:domain :Metric ;
+                rdfs:range top:Entity ;
+                rdfs:comment "La relazione tra una metrica ed l'entità che si basa su tale metrica per una misurazione."@it ,
+                             "The relationship between a metric and an entity that relies on that metric for a measurement."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                rdfs:label "is metric used by"@en ,
+                           "è metrica usata da"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isObservationCollectionMadeBySensor
+:isObservationCollectionMadeBySensor rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf top:isCollectionOf ;
+                                     owl:inverseOf :makesObservationCollection ;
+                                     rdfs:domain :ObservationCollection ;
+                                     rdfs:range :Sensor ;
+                                     rdfs:comment "La relazione che collega una collezione di osservazioni ad un sensore."@it ,
+                                                  "The relation linking an observation collection to a sensor."@en ;
+                                     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                                     rdfs:label "is observation collection made by sensor"@en ,
+                                                "è collezione di osservazioni fatta da sensore"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isObservationMadeBySensor
+:isObservationMadeBySensor rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf top:associatedWith ;
+                           owl:inverseOf :makesObservation ;
+                           rdfs:domain :Observation ;
+                           rdfs:range :Sensor ;
+                           rdfs:comment "La proprietà che collega un'osservazione al sensore che effettua tale osservazione."@it ,
+                                        "The property that links an observation to the sensor making such an observation."@en ;
+                           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                           rdfs:label "is observation made by sensor"@en ,
+                                      "è osservazione emessa da sensore"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isObservationParameterFor
+:isObservationParameterFor rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf top:parametrises ;
+                           rdfs:domain :ObservationParameter ;
+                           rdfs:range :Observation ;
+                           rdfs:comment "Inverse property of hasObservationParameter that links a parameter to its related observation."@en ,
+                                        "Proprietà inversa di hasObservationParameter che collega un parametro alla relativa osservazione."@it ;
+                           rdfs:isDefinedBy : ;
+                           rdfs:label "is observation parameter for"@en ,
+                                      "è parametro di osservazione per"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isObservationValueOf
+:isObservationValueOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf top:isValueOf ;
+                      rdfs:domain :ObservationValue ;
+                      rdfs:range :Observation ;
+                      rdfs:comment "La proprietà che collega un valore di osservazione alla sua osservazione."@it ,
+                                   "The property that links an observation value to its observation."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire/> ;
+                      rdfs:label "is observation value of"@en ,
+                                 "è valore di osservazione di"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isPhenomenonTimeOf
+:isPhenomenonTimeOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf top:isTimeOf ;
+                    owl:inverseOf :phenomenonTime ;
+                    rdfs:domain top:TemporalEntity ;
+                    rdfs:range :Observation ;
+                    rdfs:comment "La proprietà che collega un'entità temporale ad un osservazione con il valore di fornire l'informazione sul momento in cui il fenomeno oggetto dell'osservazione si è verificato."@en ,
+                                 "La proprietà che collega un'entità temporale ad un osservazione con il valore di fornire l'informazione sul momento in cui il fenomeno oggetto dell'osservazione si è verificato."@it ;
+                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                    rdfs:label "is phenomenon time of"@en ,
+                               "è il tempo in cui si è verificato il fenomeno di"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isPlatformModelOf
+:isPlatformModelOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf top:isDescriptionOf ;
+                   rdfs:domain :PlatformModel ;
+                   rdfs:range :Platform ;
+                   rdfs:comment "La proprietà che consente di associare un modello di piattaforma ad una piattaforma."@it ,
+                                "The property that allows you to associate a platform model to a platform."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                   rdfs:label "is platform model of"@en ,
+                              "è modello di piattaforma di"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isPlatformOf
+:isPlatformOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf top:associatedWith ;
+              rdfs:domain :Platform ;
+              rdfs:range top:Entity ;
+              rdfs:comment "La relazione tra una piattaforma ed un'entità  ."@it ,
+                           "The relationship between a platform and an entity."@en ;
+              rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+              rdfs:label "is platform of"@en ,
+                         "è piattaforma di"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isPlatformTypeOf
+:isPlatformTypeOf rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf top:classifies ;
+                  rdfs:domain :PlatformType ;
+                  rdfs:range :Platform ;
+                  rdfs:comment "La proprietà che consente di utilizzare un tipo di piattaforma come concetto che classifica una determinata piattaforma."@it ,
+                               "The property that allows to use a platform type as the concept that classifies a certain platform."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire/> ;
+                  rdfs:label "is platform type of"@en ,
+                             "è tipo di piattaforma di"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isProcedureImplementedBy
+:isProcedureImplementedBy rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf top:isDescriptionOf ;
+                           rdfs:domain :Procedure ;
+                           rdfs:range [ rdf:type owl:Class ;
+                                        owl:unionOf ( :MonitoringFacility
+                                                      :Observation
+                                                    )
+                                      ] ;
+                           rdfs:comment "La relazione tra una procedura e l'entità utilizza tale procedura per svolgere un'attività, ad es. un'osservazione."@it ,
+                                        "The relation holding by a procedure and the entity is using such a procedure for performing an activity, e.g. an observation."@en ;
+                           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                           rdfs:label "is procedure implemented by"@en ,
+                                      "è procedura implementata da"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isSensorModelOf
+:isSensorModelOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf top:isDescriptionOf ;
+                 rdfs:domain :SensorModel ;
+                 rdfs:range :Sensor ;
+                 rdfs:comment "La relazione che permette di collegare un modello di sensore al sensore di quel modello."@en ,
+                              "La relazione che permette di collegare un modello di sensore al sensore di quel modello."@it ;
+                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                 rdfs:label "is sensor model of"@en ,
+                            "è modello di sensore di"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isSensorTypeOf
+:isSensorTypeOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf top:classifies ;
+                rdfs:domain :SensorType ;
+                rdfs:range :Sensor ;
+                rdfs:comment "La proprietà che consente di utilizzare un concetto che identifica il tipo di sensore per classificare un sensore."@it ,
+                             "The property that allows you to use a concept that identifies the type of sensor to classify a sensor."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire/> ;
+                rdfs:label "is sensor type of"@en ,
+                           "è tipo di sensore di"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isSystemCapabilityOf
+:isSystemCapabilityOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf top:isCharacteristicOf ;
+                      rdfs:domain :SystemCapability ;
+                      rdfs:range top:System ;
+                      rdfs:comment "La proprietà che associa una determinata abilità ad un sistema."@it ,
+                                   "The property that associates a certain capability  with a system."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire/> ;
+                      rdfs:label "is system capability of"@en ,
+                                 "è capability di sistema di"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isValidationLevelOf
+:isValidationLevelOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf top:classifies ;
+                     rdfs:domain :ValidationLevel ;
+                     rdfs:range top:Entity ;
+                     rdfs:comment "La relazione tra un livello di validazione ed un'entità."@it ,
+                                  "The relation between a validation level and its entity."@en ;
+                     rdfs:isDefinedBy : ;
+                     rdfs:label "is validation level of"@en ,
+                                "è livello di validazione di"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/makesObservation
+:makesObservation rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf top:associatedWith ;
+                  rdfs:domain :Sensor ;
+                  rdfs:range :Observation ;
+                  rdfs:comment "La proprietà che collega un sensore a un'osservazione fatta da tale sensore."@it ,
+                               "The property that links a sensor to an observation made by such a sensor."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                  rdfs:label "emette osservazione"@it ,
+                             "makes observation"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/makesObservationCollection
+:makesObservationCollection rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf top:hasCollection ;
+                            rdfs:domain :Sensor ;
+                            rdfs:range :ObservationCollection ;
+                            rdfs:comment "La relazione che permette di dire che un sensore ha generato una certa collezione di osservazioni."@it ,
+                                         "The relation that allows one to assert a sensor made an observation collection."@it ;
+                            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                            rdfs:label "fa collezione di osservazioni"@it ,
+                                       "makes observation collection"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/phenomenonTime
+:phenomenonTime rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf top:atTime ;
+                rdfs:domain :Observation ;
+                rdfs:range top:TemporalEntity ;
+                rdfs:comment "La proprietà che associa ad un'osservazione l'entità temporale che stabilisce quando il fenomeno oggetto dell'osservazione si è manifestato."@it ,
+                             "The property that associates to an observation the temporal entity that establishes when the phenomenon object of the observation occurred."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                rdfs:label "entità temporale in cui si è verificato il fenomeno"@it ,
+                           "phenomenon time"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/associatedWith
+top:associatedWith rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/atTime
+top:atTime rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/classifies
+top:classifies rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasCharacteristic
+top:hasCharacteristic rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasCollection
+top:hasCollection rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasDescription
+top:hasDescription rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasEventuality
+top:hasEventuality rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasLocation
+top:hasLocation rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasMember
+top:hasMember rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasPart
+top:hasPart rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasSystem
+top:hasSystem rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasValue
+top:hasValue rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isCharacteristicOf
+top:isCharacteristicOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isClassifiedBy
+top:isClassifiedBy rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isCollectionOf
+top:isCollectionOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isDescriptionOf
+top:isDescriptionOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isParametrisedBy
+top:isParametrisedBy rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isPartOf
+top:isPartOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isTimeOf
+top:isTimeOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isValueOf
+top:isValueOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/parametrises
+top:parametrises rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/italia/env/onto/inspire-mf/timedObservationValue
+:timedObservationValue rdf:type owl:DatatypeProperty ;
+                       rdfs:domain top:Entity ;
+                       rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest
+:FeatureOfInterest rdf:type owl:Class ;
+                   rdfs:subClassOf top:Entity ;
+                   rdfs:comment "It represents the Feature whose Observed Attribute is being observed by a Sensor in order to get an Observed Value. For instance, if we say that the temperature of the kitchen is 28 celsius degrees, the Feature of Interest is the kitchen."@en ,
+                                "Rappresenta la caratteristica di interesse il cui attributo osservato è osservato da un sensor per ottenere un valore osservato. Per esempio, se diciamo che la temperatura della cucina è di 28 gradi celsius, la caratteristica di interesse è la cucina."@it ;
+                   rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                   rdfs:label "Caratteristica di Interesse"@it ,
+                              "Feature of interest"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/Indicator
+:Indicator rdf:type owl:Class ;
+           rdfs:subClassOf top:Eventuality ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :basedOnMetric ;
+                             owl:someValuesFrom :Metric
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasFeatureOfInterest ;
+                             owl:someValuesFrom :FeatureOfInterest
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty top:atTime ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass top:TemporalEntity
+                           ] ;
+           rdfs:comment "An indicator that reports a certain value typically with its unit of measure. Examples of indicators are those resulting from the measurement of land consumption."@en ,
+                        "Un indicatore che riporta un certo valore tipicamente con la sua unità di misura. Esempi di indicatori sono quelli risultanti dalla misurazione del consumo di suolo."@it ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+           rdfs:label "Indicator"@en ,
+                      "Indicatore"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/IndicatorCollection
+:IndicatorCollection rdf:type owl:Class ;
+                     rdfs:subClassOf top:Collection ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty top:hasMember ;
+                                       owl:allValuesFrom :Indicator
+                                     ] ;
+                     rdfs:comment "A collection whose members are indicators only."@en ,
+                                  "Una collezione i cui membri sono solo indicatori."@it ;
+                     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                     rdfs:label "Collezione di indicatori"@it ,
+                                "Indicator collection"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/Metric
+:Metric rdf:type owl:Class ;
+        rdfs:subClassOf top:Description ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty top:isParametrisedBy ;
+                          owl:someValuesFrom top:Parameter
+                        ] ;
+        rdfs:comment "A metric, which is used for performing measurements."@en ,
+                     "Una metrica utilizzata per eseguire misurazioni."@it ;
+        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+        rdfs:label "Metric"@en ,
+                   "Metrica"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility
+:MonitoringFacility rdf:type owl:Class ;
+                    rdfs:subClassOf :MonitoringObject ;
+                    rdfs:comment "A georeferenced object directly collecting or processing data about objects whose properties (e.g. physical, chemical, biological or other aspects of environmental conditions) are repeatedly observed or measured. A monitoring facility can also host other monitoring facilities."@en ,
+                                 "Oggetto georeferenziato che collega direttamente o elabora i dati su oggetti le cui proprietà (per esempio, fisiche, chimiche, biologiche o altri aspetti delle condizioni ambientali) sono ripetutamente osservate o misurate. Un impianto di monitoraggio può ospitare altri impianti di monitoraggio."@it ;
+                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                    rdfs:label "Impianto di Monitoraggio"@it ,
+                               "Monitoring Facility"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/MonitoringNetwork
+:MonitoringNetwork rdf:type owl:Class ;
+                   rdfs:subClassOf :MonitoringObject ;
+                   rdfs:comment "Insieme di piattaforme di monitoraggio collegate dallo stesso programma di monitoraggio"@it ;
+                   rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                   rdfs:label "Monitoring Network"@en ,
+                              "Rete di Monitoraggio"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/MonitoringObject
+:MonitoringObject rdf:type owl:Class ;
+                  rdfs:subClassOf top:System ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasResponsibleParty ;
+                                    owl:someValuesFrom top:AgentRole
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty top:hasLocation ;
+                                    owl:someValuesFrom top:Location
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty top:hasMember ;
+                                    owl:allValuesFrom :MonitoringFacility
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty top:hasPart ;
+                                    owl:allValuesFrom :MonitoringObject
+                                  ] ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                  rdfs:label "Monitoring Object"@en ,
+                             "Oggetto per il Monitoraggio"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/Observation
+:Observation rdf:type owl:Class ;
+             rdfs:subClassOf top:Eventuality ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasFeatureOfInterest ;
+                               owl:allValuesFrom :FeatureOfInterest
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty top:isParametrisedBy ;
+                               owl:allValuesFrom :ObservationParameter
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasObservationValue ;
+                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :ObservationValue
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :generationTime ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass top:TemporalEntity
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasFeatureOfInterest ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :FeatureOfInterest
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :isObservationMadeBySensor ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :Sensor
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :phenomenonTime ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass top:TemporalEntity
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty top:isParametrisedBy ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :ObservationParameter
+                             ] ;
+             rdfs:comment "An observation performed by a sensor reporting a certain result about a given feature of interest."@en ,
+                          "Un'osservazione eseguita da un sensore che riporta un determinato risultato su una determinata caratteristica di interesse."@it ;
+             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+             rdfs:label "Observation"@en ,
+                        "Osservazione"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/ObservationCollection
+:ObservationCollection rdf:type owl:Class ;
+                       rdfs:subClassOf top:Collection ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty top:hasMember ;
+                                         owl:allValuesFrom :Observation
+                                       ] ;
+                       rdfs:comment "A collection containing only observations."@en ,
+                                    "Una collezione i cui membri sono solo osservazioni."@it ;
+                       rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                       rdfs:label "Collection of observations"@en ,
+                                  "Collezione di osservazioni"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter
+:ObservationParameter rdf:type owl:Class ;
+                      rdfs:subClassOf top:Parameter ;
+                      rdfs:comment "An observation parameter (property, characteristic) of a feature of interest. For instance, if we say that the temperature of the kitchen is 28 clesius degrees, the observed attribute is temperature."@en ,
+                                   "Rappresenta un parametro (proprietà) dell'osservazione di una caratteristica di interesse. Per esempio, se diciamo che la temperatura della cucina è di 28 gradi celsius, la temperatura rappresenta l'attributo osservato."@it ;
+                      rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                      rdfs:label "Observation parameter"@en ,
+                                 "Parametro di osservazione"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/ObservationSeries
+:ObservationSeries rdf:type owl:Class ;
+                   rdfs:subClassOf [ owl:intersectionOf ( :Observation
+                                                          :ObservationCollection
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :timedObservationValue ;
+                                     owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                   ] .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/ObservationValue
+:ObservationValue rdf:type owl:Class ;
+                  rdfs:subClassOf top:Value ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :isObservationValueOf ;
+                                    owl:someValuesFrom :Observation
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty top:atTime ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass top:TemporalEntity
+                                  ] ;
+                  rdfs:comment "La classe dei risultati dell'osservazione"@it ,
+                               "The class of the result of an observation"@en ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                  rdfs:label "Observation Value"@en ,
+                             "Valore dell'Osservazione"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/Platform
+:Platform rdf:type owl:Class ;
+          rdfs:subClassOf :MonitoringFacility ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasPlatformType ;
+                            owl:someValuesFrom :PlatformType
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hosts ;
+                            owl:allValuesFrom top:System
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasPlatformModel ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :PlatformModel
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty top:hasLocation ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass top:Location
+                          ] ;
+          rdfs:comment "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en ,
+                       "Una piattaforma è un'entità che ospita altre entità, in particolare sensori, attuatori, campionatori e altre piattaforme."@it ;
+          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+          rdfs:label "Piattaforma"@it ,
+                     "Platform"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/PlatformCollection
+:PlatformCollection rdf:type owl:Class ;
+                    rdfs:subClassOf top:Collection ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty top:hasMember ;
+                                      owl:allValuesFrom :Platform
+                                    ] ;
+                    rdfs:comment "Una raggruppamento di piattaforme"@it ;
+                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                    rdfs:label "Collezione di Piattaforme"@it ,
+                               "Platform Collection"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/PlatformModel
+:PlatformModel rdf:type owl:Class ;
+               rdfs:subClassOf top:Description ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+               rdfs:label "Modello della Piattaforma"@it ,
+                          "Platform Model"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/PlatformType
+:PlatformType rdf:type owl:Class ;
+              rdfs:subClassOf top:Concept ;
+              rdfs:comment "A platform type that classified a certain platform, such as 'Fixed Buoy'."@en ,
+                           "Un tipo di piattaforma che ha classificato una determinata piattaforma, ad esempio \"Boa fissa\"."@it ;
+              rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+              rdfs:label "Platform Type"@en ,
+                         "Tipo di piattaforma"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/Procedure
+:Procedure rdf:type owl:Class ;
+           rdfs:subClassOf top:Description ;
+           rdfs:comment "A workflow, protocol, plan, algorithm, or computational method specifying how to make an Observation or create an Indicator."@en ,
+                        "Un flusso di lavoro, protocollo, piano, algoritmo, per un metodo computazionale che specifica come effettuare un'osservazione o creare un indicatore."@it ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+           rdfs:label "Procedura"@it ,
+                      "Procedure"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/Sensor
+:Sensor rdf:type owl:Class ;
+        rdfs:subClassOf :MonitoringFacility ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasSensorModel ;
+                          owl:someValuesFrom :SensorModel
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasSensorType ;
+                          owl:someValuesFrom :SensorType
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :isHostedBy ;
+                          owl:someValuesFrom :Platform
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :isHostedBy ;
+                          owl:allValuesFrom :Platform
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :makesObservation ;
+                          owl:allValuesFrom :Observation
+                        ] ;
+        rdfs:comment "La classe per i sensori."@it ,
+                     "The class for sensors."@en ;
+        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+        rdfs:label "Sensor"@en ,
+                   "Sensore"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/SensorModel
+:SensorModel rdf:type owl:Class ;
+             rdfs:subClassOf top:Description ;
+             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+             rdfs:label "Modello del Sensore"@it ,
+                        "Sensor Model"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/SensorType
+:SensorType rdf:type owl:Class ;
+            rdfs:subClassOf top:Concept ;
+            rdfs:comment "La classificazione di un sensore rispetto ad un determinato tipo."@it ,
+                         "The classification of a sensor with respect to a certain type."@en ;
+            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+            rdfs:label "Sensor Type"@en ,
+                       "Tipo di Sensore"@it .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/SystemCapability
+:SystemCapability rdf:type owl:Class ;
+                  rdfs:subClassOf top:Characteristic ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty top:hasSystem ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass top:System
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty top:hasValue ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass top:Value
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty top:isParametrisedBy ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass top:Parameter
+                                  ] ;
+                  rdfs:comment "A property that characterizes the system."@en ,
+                               "Una proprietà che caratterizza il sistema."@it ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                  rdfs:label "Abilità del sistema"@it ,
+                             "System capability"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/SystemDeployment
+:SystemDeployment rdf:type owl:Class ;
+                  rdfs:subClassOf top:Eventuality ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :implementsProcedure ;
+                                    owl:someValuesFrom :Procedure
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasPlatform ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :Platform
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty top:hasSystem ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass top:System
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty top:hasValue ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass top:Value
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty top:isParametrisedBy ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass top:Parameter
+                                  ] ;
+                  rdfs:comment "Il dislocamento di un sistema in un contesto specifico."@it ,
+                               "The deployment of a system in a specific context."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                  rdfs:label "Collocamento del sistema"@it ,
+                             "System deployment"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/ValidationLevel
+:ValidationLevel rdf:type owl:Class ;
+                 rdfs:subClassOf top:Concept ;
+                 rdfs:comment "La classe per rappresentare i livelli di validazione."@it ,
+                              "The class for representing a validation level."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/inspire-mf> ;
+                 rdfs:label "Livello di Validazione"@it ,
+                            "Validation Level"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/AgentRole
+top:AgentRole rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Characteristic
+top:Characteristic rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Collection
+top:Collection rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Concept
+top:Concept rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Description
+top:Description rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Entity
+top:Entity rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Eventuality
+top:Eventuality rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Location
+top:Location rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Organisation
+top:Organisation rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Parameter
+top:Parameter rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/SchemaAttribute
+top:SchemaAttribute rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/System
+top:System rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasSystemCapability ;
+                             owl:someValuesFrom :SystemCapability
+                           ] .
+
+
+###  https://w3id.org/italia/env/onto/top/TemporalEntity
+top:TemporalEntity rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/UniqueIdentifier
+top:UniqueIdentifier rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Value
+top:Value rdf:type owl:Class .
+
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( :Indicator
+                 :Observation
+                 :SystemDeployment
+                 top:AgentRole
+               )
+ ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :SystemCapability
+                top:Parameter
+                top:SchemaAttribute
+                top:UniqueIdentifier
+                top:Value
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

@@ -1,0 +1,2478 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringNetwork"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/basedOnMetric"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Metric"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/atTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Indicator"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasMember"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isParametrisedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasResponsibleParty"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasMember"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringObject"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasPart"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isParametrisedBy"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasObservationValue"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/generationTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sensor"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isObservationMadeBySensor"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/phenomenonTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isParametrisedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasMember"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationCollection"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/timedObservationValue"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isObservationValueOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/atTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasPlatformType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/PlatformType"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/System"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hosts"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/PlatformModel"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasPlatformModel"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasMember"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSensorModel"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorModel"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSensorType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorType"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isHostedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isHostedBy"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/makesObservation"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/System"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Value"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isParametrisedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/implementsProcedure"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Procedure"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasPlatform"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/System"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Value"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isParametrisedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSystemCapability"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SystemCapability"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Indicator"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SystemDeployment"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SystemCapability"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/top/SchemaAttribute"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/top/UniqueIdentifier"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/top/Value"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It represents the Feature whose Observed Attribute is being observed by a Sensor in order to get an Observed Value. For instance, if we say that the temperature of the kitchen is 28 celsius degrees, the Feature of Interest is the kitchen."
+  }, {
+    "@language" : "it",
+    "@value" : "Rappresenta la caratteristica di interesse il cui attributo osservato è osservato da un sensor per ottenere un valore osservato. Per esempio, se diciamo che la temperatura della cucina è di 28 gradi celsius, la caratteristica di interesse è la cucina."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Caratteristica di Interesse"
+  }, {
+    "@language" : "en",
+    "@value" : "Feature of interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Indicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An indicator that reports a certain value typically with its unit of measure. Examples of indicators are those resulting from the measurement of land consumption."
+  }, {
+    "@language" : "it",
+    "@value" : "Un indicatore che riporta un certo valore tipicamente con la sua unità di misura. Esempi di indicatori sono quelli risultanti dalla misurazione del consumo di suolo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Indicator"
+  }, {
+    "@language" : "it",
+    "@value" : "Indicatore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/IndicatorCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection whose members are indicators only."
+  }, {
+    "@language" : "it",
+    "@value" : "Una collezione i cui membri sono solo indicatori."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Collezione di indicatori"
+  }, {
+    "@language" : "en",
+    "@value" : "Indicator collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Collection"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Metric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A metric, which is used for performing measurements."
+  }, {
+    "@language" : "it",
+    "@value" : "Una metrica utilizzata per eseguire misurazioni."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Metric"
+  }, {
+    "@language" : "it",
+    "@value" : "Metrica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  }, {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A georeferenced object directly collecting or processing data about objects whose properties (e.g. physical, chemical, biological or other aspects of environmental conditions) are repeatedly observed or measured. A monitoring facility can also host other monitoring facilities."
+  }, {
+    "@language" : "it",
+    "@value" : "Oggetto georeferenziato che collega direttamente o elabora i dati su oggetti le cui proprietà (per esempio, fisiche, chimiche, biologiche o altri aspetti delle condizioni ambientali) sono ripetutamente osservate o misurate. Un impianto di monitoraggio può ospitare altri impianti di monitoraggio."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Impianto di Monitoraggio"
+  }, {
+    "@language" : "en",
+    "@value" : "Monitoring Facility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Insieme di piattaforme di monitoraggio collegate dallo stesso programma di monitoraggio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Monitoring Network"
+  }, {
+    "@language" : "it",
+    "@value" : "Rete di Monitoraggio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Monitoring Object"
+  }, {
+    "@language" : "it",
+    "@value" : "Oggetto per il Monitoraggio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/System"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An observation performed by a sensor reporting a certain result about a given feature of interest."
+  }, {
+    "@language" : "it",
+    "@value" : "Un'osservazione eseguita da un sensore che riporta un determinato risultato su una determinata caratteristica di interesse."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Observation"
+  }, {
+    "@language" : "it",
+    "@value" : "Osservazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  }, {
+    "@id" : "_:genid19"
+  }, {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
+  }, {
+    "@id" : "_:genid23"
+  }, {
+    "@id" : "_:genid24"
+  }, {
+    "@id" : "_:genid25"
+  }, {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection containing only observations."
+  }, {
+    "@language" : "it",
+    "@value" : "Una collezione i cui membri sono solo osservazioni."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Collection of observations"
+  }, {
+    "@language" : "it",
+    "@value" : "Collezione di osservazioni"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Collection"
+  }, {
+    "@id" : "_:genid27"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An observation parameter (property, characteristic) of a feature of interest. For instance, if we say that the temperature of the kitchen is 28 clesius degrees, the observed attribute is temperature."
+  }, {
+    "@language" : "it",
+    "@value" : "Rappresenta un parametro (proprietà) dell'osservazione di una caratteristica di interesse. Per esempio, se diciamo che la temperatura della cucina è di 28 gradi celsius, la temperatura rappresenta l'attributo osservato."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Observation parameter"
+  }, {
+    "@language" : "it",
+    "@value" : "Parametro di osservazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid28"
+  }, {
+    "@id" : "_:genid31"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe dei risultati dell'osservazione"
+  }, {
+    "@language" : "en",
+    "@value" : "The class of the result of an observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Observation Value"
+  }, {
+    "@language" : "it",
+    "@value" : "Valore dell'Osservazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Value"
+  }, {
+    "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."
+  }, {
+    "@language" : "it",
+    "@value" : "Una piattaforma è un'entità che ospita altre entità, in particolare sensori, attuatori, campionatori e altre piattaforme."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Piattaforma"
+  }, {
+    "@language" : "en",
+    "@value" : "Platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"
+  }, {
+    "@id" : "_:genid34"
+  }, {
+    "@id" : "_:genid35"
+  }, {
+    "@id" : "_:genid36"
+  }, {
+    "@id" : "_:genid37"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/PlatformCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Una raggruppamento di piattaforme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Collezione di Piattaforme"
+  }, {
+    "@language" : "en",
+    "@value" : "Platform Collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Collection"
+  }, {
+    "@id" : "_:genid38"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/PlatformModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Modello della Piattaforma"
+  }, {
+    "@language" : "en",
+    "@value" : "Platform Model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/PlatformType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A platform type that classified a certain platform, such as 'Fixed Buoy'."
+  }, {
+    "@language" : "it",
+    "@value" : "Un tipo di piattaforma che ha classificato una determinata piattaforma, ad esempio \"Boa fissa\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Platform Type"
+  }, {
+    "@language" : "it",
+    "@value" : "Tipo di piattaforma"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Procedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A workflow, protocol, plan, algorithm, or computational method specifying how to make an Observation or create an Indicator."
+  }, {
+    "@language" : "it",
+    "@value" : "Un flusso di lavoro, protocollo, piano, algoritmo, per un metodo computazionale che specifica come effettuare un'osservazione o creare un indicatore."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Procedura"
+  }, {
+    "@language" : "en",
+    "@value" : "Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per i sensori."
+  }, {
+    "@language" : "en",
+    "@value" : "The class for sensors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sensor"
+  }, {
+    "@language" : "it",
+    "@value" : "Sensore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"
+  }, {
+    "@id" : "_:genid39"
+  }, {
+    "@id" : "_:genid40"
+  }, {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  }, {
+    "@id" : "_:genid43"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Modello del Sensore"
+  }, {
+    "@language" : "en",
+    "@value" : "Sensor Model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classificazione di un sensore rispetto ad un determinato tipo."
+  }, {
+    "@language" : "en",
+    "@value" : "The classification of a sensor with respect to a certain type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sensor Type"
+  }, {
+    "@language" : "it",
+    "@value" : "Tipo di Sensore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SystemCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A property that characterizes the system."
+  }, {
+    "@language" : "it",
+    "@value" : "Una proprietà che caratterizza il sistema."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Abilità del sistema"
+  }, {
+    "@language" : "en",
+    "@value" : "System capability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
+  }, {
+    "@id" : "_:genid44"
+  }, {
+    "@id" : "_:genid45"
+  }, {
+    "@id" : "_:genid46"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SystemDeployment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il dislocamento di un sistema in un contesto specifico."
+  }, {
+    "@language" : "en",
+    "@value" : "The deployment of a system in a specific context."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Collocamento del sistema"
+  }, {
+    "@language" : "en",
+    "@value" : "System deployment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  }, {
+    "@id" : "_:genid47"
+  }, {
+    "@id" : "_:genid48"
+  }, {
+    "@id" : "_:genid49"
+  }, {
+    "@id" : "_:genid50"
+  }, {
+    "@id" : "_:genid51"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ValidationLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare i livelli di validazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The class for representing a validation level."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Livello di Validazione"
+  }, {
+    "@language" : "en",
+    "@value" : "Validation Level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/basedOnMetric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un'entità e la metrica utilizzata per eseguire la misurazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation between an entity and the metric used for performing the measurement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "basato sulla metrica"
+  }, {
+    "@language" : "en",
+    "@value" : "based on metric"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Metric"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isMetricUsedBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/generationTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra un'osservazione e l'entità temporale in cui essa è stata generata."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an observation and its generation time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "entità temporale di generazione dell'osservazione"
+  }, {
+    "@language" : "en",
+    "@value" : "temporal entity of observation generation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/atTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isGenerationTimeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra una qualsiasi entità ed una caratteristica di interesse."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between any entity and a feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha caratteristica di interesse"
+  }, {
+    "@language" : "en",
+    "@value" : "has feature of interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isFeatureOfInterestOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un'entità ed un indicatore."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation between an entity and an indicator."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha indicatore"
+  }, {
+    "@language" : "en",
+    "@value" : "has indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isIndicatorOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to link the platform model to its manufacturer (intended as an organisation)"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per collegare il modello della piattaforma al relativo costruttore (inteso come organizzazione)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha costruttore"
+  }, {
+    "@language" : "en",
+    "@value" : "has manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Organisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that links an observation to its parameter being observed."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che collega un'osservazione al suo parametro osservato."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha parametro di osservazione"
+  }, {
+    "@language" : "en",
+    "@value" : "has observation parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isParametrisedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isObservationParameterFor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasObservationValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che collega un'osservazione al suo valore."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that links an observation to its value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha valore di osservazione"
+  }, {
+    "@language" : "en",
+    "@value" : "has observation value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isObservationValueOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasOperationalStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to link the platform at its operational status."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per collegare lo stato operativo alla piattaforma"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha stato operativo"
+  }, {
+    "@language" : "en",
+    "@value" : "has operational status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasPlatform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un'entità e una piattaforma."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation between an entity and a platform."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha piattaforma"
+  }, {
+    "@language" : "en",
+    "@value" : "has platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isPlatformOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasPlatformModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che consente di associare una piattaforma al modello di piattaforma corrispondente."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that allows one to associate a platform with its corresponding platform model."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha modello di piattaforma"
+  }, {
+    "@language" : "en",
+    "@value" : "has platform model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/PlatformModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isPlatformModelOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasPlatformType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che consente di classificare un piattaforma utilizzando il concetto rappresentato dal tipo di piattaforma."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that allows you to classify a platform using the concept represented by the type of platform."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha tipo di piattaforma"
+  }, {
+    "@language" : "en",
+    "@value" : "has platform type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/PlatformType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isPlatformTypeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasResponsibleParty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The relation holding between a monitiroring facility or network and the agent is in charge of some responsibility role."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha parte responsabile"
+  }, {
+    "@language" : "en",
+    "@value" : "has responsible party"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Organisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSensorModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un sensore e la descrizione del sensore rappresentata dal suo modello."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation between a sensor and the sensor description represented by its model."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha modello di sensore"
+  }, {
+    "@language" : "en",
+    "@value" : "has sensor model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isSensorModelOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSensorType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che permette di classificare un sensore rispetto ad un concetto che identifica il tipo di sensore."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that allows you to classify a sensor with respect to a concept that identifies the type of sensor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha tipo di sensore"
+  }, {
+    "@language" : "en",
+    "@value" : "has sensor type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isSensorTypeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSubMonitoringObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione per esprimere che un determinato oggetto di monitoraggio ha un altro oggetto di monitoraggio come uno dei suoi sottocomponenti."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation for expressing that a certain monitoring object has another monitoring object as on of its sub-components."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha sotto-oggetto di monitoraggio"
+  }, {
+    "@language" : "en",
+    "@value" : "has sub-monitoring object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSuperMonitoringObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSuperMonitoringObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione per esprimere che un determinato oggetto di monitoraggio è un sottocomponente di un altro oggetto di monitoraggio."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship to express that a given monitoring object is a sub-component of another monitoring object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha oggetto di monitoraggio superiore"
+  }, {
+    "@language" : "en",
+    "@value" : "has super monitoring object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isPartOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSystemCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che associa un sistema a una determinata proprietà."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that associate a system with a certain property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha proprietà del sistema"
+  }, {
+    "@language" : "en",
+    "@value" : "has system property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SystemCapability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasCharacteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isSystemCapabilityOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSystemDeployment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per collegare il sistema al suo dislocamento in un contesto specifico."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha dislocamento del sistema"
+  }, {
+    "@language" : "en",
+    "@value" : "has system deployment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SystemDeployment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasValidationLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un'entità e il livello di validazione evenutale."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation between an entity and a validation level."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha livello di validazione"
+  }, {
+    "@language" : "en",
+    "@value" : "has validation level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ValidationLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isValidationLevelOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hosts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra una piattaforma e un eventuale sistema ospitato dalla prima."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between a platform and any possible system hosted by the former."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hosts"
+  }, {
+    "@language" : "it",
+    "@value" : "ospita"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isHostedBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/implementsProcedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra un ente e la procedura utilizzata da tale ente per svolgere alcune attività, ad es. un'osservazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an entity and the procedure used by such an entity for performing some activity, e.g. an observation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "implementa procedura"
+  }, {
+    "@language" : "en",
+    "@value" : "implements procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isProcedureImplementedBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isFeatureOfInterestOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che collega una caratteristica di interesse ad una qualsiasi entità possibile."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship that links a feature of interest to any possible entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is feature of interest of"
+  }, {
+    "@language" : "it",
+    "@value" : "è caratteristica di interesse di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isGenerationTimeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra un'entità temporale ed un'osservazione. La relazione fornisce l'informazione sul momento in cui l'osservazione è stata generata."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship that exists between a temporal entity and an observation. The relation suggests when the observation was generated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is generation time of"
+  }, {
+    "@language" : "it",
+    "@value" : "è tempo di generazione di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isTimeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isHostedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra un qualsiasi sistema e la piattaforma su cui è ospitato."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between any system and the platform it is hosted by."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is hosted by"
+  }, {
+    "@language" : "it",
+    "@value" : "è ospitato da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isIndicatorOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un indicatore ed un'entità ad esso associata."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an indicator and a possible associated entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is indicator of"
+  }, {
+    "@language" : "it",
+    "@value" : "è indicatore di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isMetricUsedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra una metrica ed l'entità che si basa su tale metrica per una misurazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between a metric and an entity that relies on that metric for a measurement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Metric"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is metric used by"
+  }, {
+    "@language" : "it",
+    "@value" : "è metrica usata da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isDescriptionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isObservationCollectionMadeBySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che collega una collezione di osservazioni ad un sensore."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation linking an observation collection to a sensor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationCollection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is observation collection made by sensor"
+  }, {
+    "@language" : "it",
+    "@value" : "è collezione di osservazioni fatta da sensore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isCollectionOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/makesObservationCollection"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isObservationMadeBySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che collega un'osservazione al sensore che effettua tale osservazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that links an observation to the sensor making such an observation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is observation made by sensor"
+  }, {
+    "@language" : "it",
+    "@value" : "è osservazione emessa da sensore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/makesObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isObservationParameterFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of hasObservationParameter that links a parameter to its related observation."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà inversa di hasObservationParameter che collega un parametro alla relativa osservazione."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is observation parameter for"
+  }, {
+    "@language" : "it",
+    "@value" : "è parametro di osservazione per"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/parametrises"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isObservationValueOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che collega un valore di osservazione alla sua osservazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that links an observation value to its observation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is observation value of"
+  }, {
+    "@language" : "it",
+    "@value" : "è valore di osservazione di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isValueOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isPhenomenonTimeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "La proprietà che collega un'entità temporale ad un osservazione con il valore di fornire l'informazione sul momento in cui il fenomeno oggetto dell'osservazione si è verificato."
+  }, {
+    "@language" : "it",
+    "@value" : "La proprietà che collega un'entità temporale ad un osservazione con il valore di fornire l'informazione sul momento in cui il fenomeno oggetto dell'osservazione si è verificato."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is phenomenon time of"
+  }, {
+    "@language" : "it",
+    "@value" : "è il tempo in cui si è verificato il fenomeno di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isTimeOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/phenomenonTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isPlatformModelOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che consente di associare un modello di piattaforma ad una piattaforma."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that allows you to associate a platform model to a platform."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/PlatformModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is platform model of"
+  }, {
+    "@language" : "it",
+    "@value" : "è modello di piattaforma di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isDescriptionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isPlatformOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra una piattaforma ed un'entità  ."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between a platform and an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is platform of"
+  }, {
+    "@language" : "it",
+    "@value" : "è piattaforma di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isPlatformTypeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che consente di utilizzare un tipo di piattaforma come concetto che classifica una determinata piattaforma."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that allows to use a platform type as the concept that classifies a certain platform."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/PlatformType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is platform type of"
+  }, {
+    "@language" : "it",
+    "@value" : "è tipo di piattaforma di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isProcedureImplementedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra una procedura e l'entità utilizza tale procedura per svolgere un'attività, ad es. un'osservazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding by a procedure and the entity is using such a procedure for performing an activity, e.g. an observation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is procedure implemented by"
+  }, {
+    "@language" : "it",
+    "@value" : "è procedura implementata da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isDescriptionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isSensorModelOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "La relazione che permette di collegare un modello di sensore al sensore di quel modello."
+  }, {
+    "@language" : "it",
+    "@value" : "La relazione che permette di collegare un modello di sensore al sensore di quel modello."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is sensor model of"
+  }, {
+    "@language" : "it",
+    "@value" : "è modello di sensore di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isDescriptionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isSensorTypeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che consente di utilizzare un concetto che identifica il tipo di sensore per classificare un sensore."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that allows you to use a concept that identifies the type of sensor to classify a sensor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is sensor type of"
+  }, {
+    "@language" : "it",
+    "@value" : "è tipo di sensore di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isSystemCapabilityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che associa una determinata abilità ad un sistema."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that associates a certain capability  with a system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SystemCapability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is system capability of"
+  }, {
+    "@language" : "it",
+    "@value" : "è capability di sistema di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isCharacteristicOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isValidationLevelOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un livello di validazione ed un'entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation between a validation level and its entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ValidationLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is validation level of"
+  }, {
+    "@language" : "it",
+    "@value" : "è livello di validazione di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/makesObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che collega un sensore a un'osservazione fatta da tale sensore."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that links a sensor to an observation made by such a sensor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "emette osservazione"
+  }, {
+    "@language" : "en",
+    "@value" : "makes observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/makesObservationCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che permette di dire che un sensore ha generato una certa collezione di osservazioni."
+  }, {
+    "@language" : "it",
+    "@value" : "The relation that allows one to assert a sensor made an observation collection."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "fa collezione di osservazioni"
+  }, {
+    "@language" : "en",
+    "@value" : "makes observation collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationCollection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasCollection"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/phenomenonTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che associa ad un'osservazione l'entità temporale che stabilisce quando il fenomeno oggetto dell'osservazione si è manifestato."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that associates to an observation the temporal entity that establishes when the phenomenon object of the observation occurred."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "entità temporale in cui si è verificato il fenomeno"
+  }, {
+    "@language" : "en",
+    "@value" : "phenomenon time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/atTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/timedObservationValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/AgentRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Characteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Eventuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Organisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/SchemaAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid52"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/UniqueIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/associatedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/atTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/classifies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isCharacteristicOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isCollectionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isDescriptionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isParametrisedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isTimeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isValueOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/parametrises",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]

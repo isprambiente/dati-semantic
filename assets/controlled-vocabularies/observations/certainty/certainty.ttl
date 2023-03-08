@@ -1,0 +1,41 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://w3id.org/italia/env/vocab/observations/certainty>
+  a skos:ConceptScheme ;
+  dct:title "Vocabolario livello di validazione dei dati"@it, "Vocabulary of data quality control levels"@en ;
+  rdfs:label "Vocabolario livello di validazione dei dati"@it, "Vocabulary of data quality control levels"@en ;
+  dct:description "Vocabolario livello di validazione dei dati (es. Nessuna operazione di validazione, Controllo dei dati attraverso valori soglia, ...)"@it, "Vocabulary of data quality control levels (e.g. No validation procedure, Data quality control through the application of thresholds, ...)"@en ;
+  rdfs:comment "Vocabolario livello di validazione dei dati (es. Nessuna operazione di validazione, Controllo dei dati attraverso valori soglia, ...)"@it, "Vocabulary of data quality control levels (e.g. No validation procedure, Data quality control through the application of thresholds, ...)"@en ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA>, <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2023-03-03"^^xsd:date .
+
+<https://w3id.org/italia/env/vocab/observations/certainty/l0>
+  a skos:Concept ;
+  skos:prefLabel "l0"@it, "l0"@en ;
+  skos:definition "Raw Data. No validation procedure on measured data."@en, "Dati grezzi. Nessuna operazione di validazione effettuata sui valori misurati."@it ;
+  dct:identifier "l0" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/observations/certainty> .
+
+<https://w3id.org/italia/env/vocab/observations/certainty/l1>
+  a skos:Concept ;
+  skos:prefLabel "l1"@it, "l1"@en ;
+  skos:definition "Validation level l1. Data quality control through the application of thresholds and acceptance values for any single data."@en, "Livello di validazione l1. Controllo dei dati attraverso valori soglia e limiti di ammissibilità del singolo dato."@it ;
+  dct:identifier "l1" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/observations/certainty> .
+
+<https://w3id.org/italia/env/vocab/observations/certainty/l2>
+  a skos:Concept ;
+  skos:prefLabel "l2"@it, "l2"@en ;
+  skos:definition "Validation level l2. Data quality control through the evaluation of the coherence of the time series."@en, "Livello di validazione l2. Controlli di coerenza delle serie storiche."@it ;
+  dct:identifier "l2" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/observations/certainty> .
+
+<https://w3id.org/italia/env/vocab/observations/certainty/l3>
+  a skos:Concept ;
+  skos:prefLabel "l3"@it, "l3"@en ;
+  skos:definition "Validation level l3. Data quality control through the comparison of neighbourhood and the use of statistical models."@en, "Livello di validazione l3. Confronto tra serie storiche limitrofe e modelli di natura statistica."@it ;
+  dct:identifier "l3" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/observations/certainty> .

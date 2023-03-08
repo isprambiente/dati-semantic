@@ -1,0 +1,2592 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasMember"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/directlyFollows"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/directlyPrecedes"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/follows"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/precedes"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/satisfies"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/satisfies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/satisfies"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasAlternativeLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/directlyFollows"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/directlyPrecedes"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/follows"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isSatisfiedBy"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/precedes"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasInstabilityType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasAgentRole"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/addressesInstability"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Currency"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasCurrency"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlan"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasInstability"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lithology"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasLithology"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasRepairWorkExecution"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isIncludedInProcedure"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasMember"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasPrimaryLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasAgentRole"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isPartOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/PrimaryLocProcedureCollection"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/addressesInstabilityType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasRepairWorkExecution"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasFinancedAmount"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Amount"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasLegalBasis"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/LegalAct"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasProcedureType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureType"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/includesLot"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasLocation"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/AlternativeLocProcedureCollection"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isPartOf"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasMember"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWorkExecution"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isSatisfiedBy"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isSpecialisedBy"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/specialises"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/satisfies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isRepairWorkExecutionOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/satisfies"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isSatisfiedBy"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/satisfies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/AgentRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Characteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Eventuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/UnitOfMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/associatedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/classifies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/directlyFollows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/directlyPrecedes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/follows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasAgentRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isDescriptionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isEventualityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isLocationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isParametrisedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isSatisfiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isSpecialisedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isValueOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/parametrises",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/precedes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/satisfies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/specialises",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/AlternativeLocProcedureCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Alternative Location Procedure Collection"
+  }, {
+    "@language" : "it",
+    "@value" : "Collezione di Interventi con Assegnato Comune Secondario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureCollection"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Amount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An amount."
+  }, {
+    "@language" : "it",
+    "@value" : "Un importo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Amount"
+  }, {
+    "@language" : "it",
+    "@value" : "Importo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Value"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Contract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An instance of this class represents a contract made between two or more agents: for example, between a contracting station and a supplier."
+  }, {
+    "@language" : "it",
+    "@value" : "Una istanza di questa classe rappresenta un contratto realizzato tra due o più agenti: ad esempio, tra una stazione appaltante ed un fornitore."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contract"
+  }, {
+    "@language" : "it",
+    "@value" : "Contratto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Document"
+  }, {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Currency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Currency"
+  }, {
+    "@language" : "it",
+    "@value" : "Questa classe rappresenta una valuta."
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents a currency."
+  }, {
+    "@language" : "it",
+    "@value" : "Valuta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/UnitOfMeasure"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A set of interrelated Business Information representing the business facts. Additional Information: Documents may convey information in any language, medium or form, including textual, numerical, graphic, cartographic, audio-visual forms, etc. WG Approval 23/05/2019"
+  }, {
+    "@language" : "it",
+    "@value" : "Un insieme di informazioni aziendali correlate che rappresentano i fatti aziendali. Informazioni aggiuntive: i documenti possono trasmettere informazioni in qualsiasi lingua, supporto o forma, comprese le forme testuali, numeriche, grafiche, cartografiche, audiovisive, ecc. Approvazione WG 23/05/2019."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Document"
+  }, {
+    "@language" : "en",
+    "@value" : "Documento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/EconomicSummary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An instance of this class represents the economic summary of a lot."
+  }, {
+    "@language" : "it",
+    "@value" : "Un'istanza di questa classe rappresenta il prospetto economico di un lotto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Economic summary"
+  }, {
+    "@language" : "it",
+    "@value" : "Prospette economico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An implementation plan. E.g. the implementation plan of a certain lot associated with a procedure."
+  }, {
+    "@language" : "it",
+    "@value" : "Un piano di attuazione. Per esempio il piano di attuazione di un determinato lotto associato ad una procedura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Implementation plan"
+  }, {
+    "@language" : "it",
+    "@value" : "Piano di attuazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "L'esecuzione di un singolo passo di un piano di attuazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The execution of a single step part of an implementation plan."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Esecuzione di passo di piano di attuazione"
+  }, {
+    "@language" : "en",
+    "@value" : "Implementation plan step execution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare l'esecuzione di un piano di attuazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The class for representing the execution of an implementation plan."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Esecuzione di piano di attuazione"
+  }, {
+    "@language" : "en",
+    "@value" : "Implementation plan execution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare un passo di un piano di attuazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The class that represents a step of an implementation plan."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Implementation plan step"
+  }, {
+    "@language" : "it",
+    "@value" : "Passo di piano di attuazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  }, {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
+  }, {
+    "@id" : "_:genid23"
+  }, {
+    "@id" : "_:genid24"
+  }, {
+    "@id" : "_:genid25"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Instability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare un dissesto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Dissesto"
+  }, {
+    "@language" : "en",
+    "@value" : "Instability"
+  }, {
+    "@language" : "en",
+    "@value" : "The class for representing instability."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  }, {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A concept representing a certain instability type."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto che rappresenta un tipo di dissesto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Tipo di dissesto"
+  }, {
+    "@language" : "en",
+    "@value" : "Type of instability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/LegalAct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any law o regulatory measure that supports a procedure."
+  }, {
+    "@language" : "it",
+    "@value" : "Qualsiasi legge o provvedimento normativo a supporto di una procedura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Atto legale"
+  }, {
+    "@language" : "en",
+    "@value" : "Legal act"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Document"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Lithology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare una litologia."
+  }, {
+    "@language" : "en",
+    "@value" : "The class for representing a lithology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lithology"
+  }, {
+    "@language" : "it",
+    "@value" : "Litologia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/LithologyType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Concetto per tipo di litologia."
+  }, {
+    "@language" : "en",
+    "@value" : "The class for representing lithology types as concepts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lithology type"
+  }, {
+    "@language" : "it",
+    "@value" : "Tipo di litologia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Lot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "One of the parts of a procurement project that is being subdivided to allow the buyer to award different lots to different economic operators under different contracts."
+  }, {
+    "@language" : "it",
+    "@value" : "Una delle parti di un progetto di appalto che viene suddivisa per consentire all'acquirente di aggiudicare lotti diversi a operatori economici diversi nell'ambito di contratti diversi."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lot"
+  }, {
+    "@language" : "it",
+    "@value" : "Lotto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  }, {
+    "@id" : "_:genid27"
+  }, {
+    "@id" : "_:genid28"
+  }, {
+    "@id" : "_:genid29"
+  }, {
+    "@id" : "_:genid30"
+  }, {
+    "@id" : "_:genid31"
+  }, {
+    "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid33"
+  }, {
+    "@id" : "_:genid34"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Plan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/PrimaryLocProcedureCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Collezione di Procedure con Assegnato Comune Capofila"
+  }, {
+    "@language" : "en",
+    "@value" : "Primary Location Procedure Collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureCollection"
+  }, {
+    "@id" : "_:genid35"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe che comprende le attività che una stazione appaltante mette in atto per realizzare un progetto di procurement, ad esempio le attività svolte tramite un contratto di appalto o di concessione, le attività realizzate attraverso amministrazione diretta, parternariato pubblico/privato o adesione ad un accordo quadro. Le attività prevedono step procedurali che possono variare in relazione alla modalità di realizzazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The class that represents the activities that a contracting authority carries out in order to actualize a procurement project, such as those carried out through public procurement, concession, direct administration, public/private partnership or framework agreement. The steps of the procedure may vary according to the type of the procedure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Administrative Procedure"
+  }, {
+    "@language" : "it",
+    "@value" : "Procedura Amministrativa/Intervento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error1"
+  }, {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  }, {
+    "@id" : "_:genid37"
+  }, {
+    "@id" : "_:genid38"
+  }, {
+    "@id" : "_:genid39"
+  }, {
+    "@id" : "_:genid40"
+  }, {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  }, {
+    "@id" : "_:genid43"
+  }, {
+    "@id" : "_:genid44"
+  }, {
+    "@id" : "_:genid45"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection whose members are procedures only."
+  }, {
+    "@language" : "it",
+    "@value" : "Una collezione i cui membri sono esclusivamente istanze di procedura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Collezione di Procedure"
+  }, {
+    "@language" : "en",
+    "@value" : "Procedure Collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Collection"
+  }, {
+    "@id" : "_:genid46"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A type of administrative procedure."
+  }, {
+    "@language" : "it",
+    "@value" : "Un tipo di procedura amministrativa o intervento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Administrative Procedure Type"
+  }, {
+    "@language" : "it",
+    "@value" : "Tipo di Procedura Amministrativa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La descrizione di un'opera di risanamento di dissesti."
+  }, {
+    "@language" : "en",
+    "@value" : "The description of a work for repairing instabilities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Opere di risanamento"
+  }, {
+    "@language" : "en",
+    "@value" : "Repair work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  }, {
+    "@id" : "_:genid47"
+  }, {
+    "@id" : "_:genid48"
+  }, {
+    "@id" : "_:genid49"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWorkExecution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A repair work carried out in a lot for repairing an instability."
+  }, {
+    "@language" : "it",
+    "@value" : "L'esacuzione di un'opera di risanamento nell'ambito delle iniziative di riisanamento di un dissesto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Esecuzione di opere di risanamento"
+  }, {
+    "@language" : "en",
+    "@value" : "Repair work execution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  }, {
+    "@id" : "_:genid50"
+  }, {
+    "@id" : "_:genid51"
+  }, {
+    "@id" : "_:genid52"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/addressesInstability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che permette di affermare che un lotto di una procedura è volto a combattere una certa instabilità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship allowing you to state that a lot of a procedure is aimed at facing a certain instability."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "addresses instability"
+  }, {
+    "@language" : "it",
+    "@value" : "affronta instabilità"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isInstabilityAddressedBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/addressesInstabilityType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che permette di affermare che una procedura affronta un certo tipo di instabilità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation that allows you to state that a procedure addresses a certain instability type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "addresses instability type"
+  }, {
+    "@language" : "it",
+    "@value" : "affronta tipo di instabilità"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isAddressedByProcedure"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasAlternativeLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un una procedura ed un luogo che rappresenta un luogo di intervento secondario."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between a procedure and a place that represents a secondary intervention site."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha luogo alternativo"
+  }, {
+    "@language" : "en",
+    "@value" : "has alternative location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isAlternativeLocationOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasAmount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra un'entità ed in suo importo."
+  }, {
+    "@language" : "en",
+    "@value" : "The association between an entity and its corresponding amount."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha importo"
+  }, {
+    "@language" : "en",
+    "@value" : "has amount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Amount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isAmountOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasCurrency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà per collegare un'entità ad una valuta."
+  }, {
+    "@language" : "en",
+    "@value" : "The association between an entity and a currency."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha valuta"
+  }, {
+    "@language" : "en",
+    "@value" : "has currency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isParametrisedBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra l'esecuzione di un piano di attuazione e una delle sue azioni finali. Le azioni finali potrebbero essere multiple."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an implementation plan execution and one of its final actions. The final actions might be multiple."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha azione finale"
+  }, {
+    "@language" : "en",
+    "@value" : "has final implementation plan action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che collega un piano di attuazione al suo ultimo passo."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that links an implementation plan to its last step."
+  }, {
+    "@language" : "it",
+    "@value" : "ha ultimo passo di piano di attuazione"
+  }, {
+    "@language" : "en",
+    "@value" : "has last implementation plan step"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasFinancedAmount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che viene usata per indicare l'importo finanziato per una procedura."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that is used to indicate the amount financed for a procedure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha importo finanziato"
+  }, {
+    "@language" : "en",
+    "@value" : "has financed amount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Amount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasAmount"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isFinancedAmountOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra un'entità ed un piano di attuazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an entity and an implementation plan."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha piano di attuazione"
+  }, {
+    "@language" : "en",
+    "@value" : "has implementation plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra l'esecuzione di un piano di attuazione e una delle sue azioni."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an implementation plan execution and one of its actions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha azione in piano di attuazione"
+  }, {
+    "@language" : "en",
+    "@value" : "has implementation plan action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanExecution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un'entità e l'esecuzione di un piano."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation between an entity and a plan execution."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha esecuzione di piano di implementazione"
+  }, {
+    "@language" : "en",
+    "@value" : "has implementation plan execution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanExecutionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra un piano di attuazione e una delle sue fasi."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an implementation plan and one of its steps."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha fase"
+  }, {
+    "@language" : "en",
+    "@value" : "has implementation plan step"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra l'esecuzione di un piano di attuazione e la sua azione iniziale. Le azioni iniziali potrebbero essere multiple."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an implementation plan execution and its initial action. The initial actions might be multiple."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha azione iniziale"
+  }, {
+    "@language" : "en",
+    "@value" : "has initial implementation plan action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isInitialImplementationPlanActionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che collega un piano di implementazione alla sua prima fase."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that links an implementation plan to its first plan step."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha primo passo di piano di attuazione"
+  }, {
+    "@language" : "en",
+    "@value" : "has first implementation plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isFirstImplementationPlanStepOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasInstability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un'entità ed un'instabilità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation between an entity and an instability."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha instabilità"
+  }, {
+    "@language" : "en",
+    "@value" : "has instability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isInstabilityOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasInstabilityType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione utilizzata per classificare un'instabilità con un tipo di instabilità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation used for classifying an instability with an instability type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha tipo di instabilità"
+  }, {
+    "@language" : "en",
+    "@value" : "has instability type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isInstabilityTypeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasLegalBasis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che fornisce la base giuridica ad un'entità collegandola a un atto giuridico."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation that provides legal basis to an entity by linking it to a legal act."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha base legale"
+  }, {
+    "@language" : "en",
+    "@value" : "has legal basis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/LegalAct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isLegalBasisOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasLithology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra una possibile entità ed una litologia."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an entity and a lithology."
+  }, {
+    "@language" : "it",
+    "@value" : "ha litologia"
+  }, {
+    "@language" : "en",
+    "@value" : "has lithology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lithology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isLithologyOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasLithologyType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che permette di classificare un individuo della classe Lithology con un tipo di litologia."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation that allows one to classify a lithology individual with its type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lithology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha tipo di litologia"
+  }, {
+    "@language" : "en",
+    "@value" : "has lithology type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/LithologyType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isLithologyTypeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasPrimaryLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà per associare un luogo ad una procedura o a una collezione di procedure e rappresentare questa associazione come primaria."
+  }, {
+    "@language" : "en",
+    "@value" : "The property for associating a location to a procedure or a procedure collection and representing this association as a primary one."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha luogo primario"
+  }, {
+    "@language" : "en",
+    "@value" : "has primary location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isPrimaryLocationOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasProcedureType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra una procedura ed il suo tipo."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between a procedure and its type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha tipo di procedura"
+  }, {
+    "@language" : "en",
+    "@value" : "has procedure type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isProcedureTypeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasRepairWorkExecution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione valida tra un'entità ed un'opeara di risanamento attesa."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an entity and an expected repair operation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha opera di risanemento prevista"
+  }, {
+    "@language" : "en",
+    "@value" : "has expected repair operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isRepairWorkExecutionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/includesLot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that links a procedure to the lot. A procedure has at least a lot"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che collega una procedura a un lotto. Una procedura ha almeno un lotto."
+  }, {
+    "@language" : "it",
+    "@value" : "include lotto"
+  }, {
+    "@language" : "en",
+    "@value" : "includes lot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isIncludedInProcedure"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isAddressedByProcedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che associa un tipo di instabilità alla procedura in cui questo è affrontato."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that associates a type of instability with the procedure in which it is addressed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is addressed by procedure"
+  }, {
+    "@language" : "it",
+    "@value" : "è affrontato dalla procedura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isAlternativeLocationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra un luogo e una procedura. Il luogo rappresenta quindi un posto di intervento alternativo per il procedimento."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between a location and procedure. Hence, the location represents an alternative place of intervention for the procedure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is alternative location of"
+  }, {
+    "@language" : "it",
+    "@value" : "è luogo alternativo di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isLocationOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isAmountOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un importo e l'entità a cui si riferisce."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between an amount and the entity it refers to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Amount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is amount of"
+  }, {
+    "@language" : "it",
+    "@value" : "è importo di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isValueOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isCurrencyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che collega una valuta ad un'entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that links a currency to an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is currency of"
+  }, {
+    "@language" : "it",
+    "@value" : "è valuta di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/parametrises"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isFinalImplementationPlanActionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra un'azione e l'esecuzione del piano di attuazione di cui fa parte. La relazione significa che l'azione è una di quelle finali dell'esecuzione del piano (il piano può avere più azioni terminali)."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an action and the implementation plan execution it is part of. The relation means that the action in one of the final actions of the plan execution, i.e. the plan execution has more than one final action)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is final implementation plan action of"
+  }, {
+    "@language" : "it",
+    "@value" : "è azione finale dell'esecuzione del piano di attuazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isFinancedAmountOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che viene utilizzata per associare un importo che è stato finanziato per una procedura."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that is used to associate an amount that has been financed for a procedure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Amount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is financed amount of"
+  }, {
+    "@language" : "it",
+    "@value" : "è importo finanziato di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isAmountOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isFirstImplementationPlanStepOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà che permette di rappresentare un determinato passo come il primo passo di un piano di attuazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The property that represents a step as the first step of the target implementation plan."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is first implementation plan step of"
+  }, {
+    "@language" : "it",
+    "@value" : "è promo passo di piano di attuzione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra una singola azione ed il piano di attuazione di cui essa è parte."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between the actiob and an implementation plan the former is a part of."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is implementation plan action of"
+  }, {
+    "@language" : "it",
+    "@value" : "è azione in piano di attuazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isPartOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanExecutionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation holding between an implementation plan execution and a possible associated entity."
+  }, {
+    "@language" : "it",
+    "@value" : "Relazione tra un'esecuzione di piano di implementazione ed un entità ad essa associata."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is implementation plan execution of"
+  }, {
+    "@language" : "it",
+    "@value" : "è esecuzione di piano di implementazione di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isEventualityOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra un piano di attuazione ed un'entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an implementation plan and an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is implementation plan of"
+  }, {
+    "@language" : "it",
+    "@value" : "è piano di attuazione di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isDescriptionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà per collegare una fase ad un piano di attuazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation for linking a step to an implementation plan."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is implementation step of"
+  }, {
+    "@language" : "it",
+    "@value" : "è fase implementativa del piano"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isPartOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isIncludedInProcedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of \"includes lot\" that links a lot to its procedure"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà inversa di \"include lotto\" che lega il lotto alla sua procedura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is included in procedure"
+  }, {
+    "@language" : "it",
+    "@value" : "è incluso in procedura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isInitialImplementationPlanActionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che sussiste tra un'azione e l'esecuzione del piano di attuazione di cui fa parte. La relazione significa che l'azione è una delle azioni iniziali dell'esecuzione del piano."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between an action and the implementation plan execution it is part of. The relation means that the action in one of the initial actions of the plan execution."
+  }, {
+    "@language" : "en",
+    "@value" : "is initial implementation plan action of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "è azione iniziale dell'esecuzione del piano di attuazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isInstabilityAddressedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà per rappresentare il fatto che un dissesto è affrontato da un determinato lotto incluso in una procedura."
+  }, {
+    "@language" : "en",
+    "@value" : "The property for representing the fact that an instability is addressed by a certain lot included in a procedure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is instability addressed by"
+  }, {
+    "@language" : "it",
+    "@value" : "è instabilità affrontata da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isInstabilityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between an instability and any possible entity."
+  }, {
+    "@language" : "it",
+    "@value" : "Relazione tra un'instabilità ed un'entità ad essa collegata."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is instability of"
+  }, {
+    "@language" : "it",
+    "@value" : "è instabilità di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isEventualityOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isInstabilityTypeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che permette di affermare che un tipo di instabilità classifica una certa instabilità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation that allows you to state that an instability type classifies a certain instability."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is instability type of"
+  }, {
+    "@language" : "it",
+    "@value" : "è tipo di instabilità di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isLastImplementationStepOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isLegalBasisOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione che collega un atto giuridico ad un'entità con la funzione di fornire a quest'ultima la base legale."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship that links a legal act to an entity with the function of providing the latter with the legal basis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/LegalAct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is legal basis of"
+  }, {
+    "@language" : "it",
+    "@value" : "è base legale di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isLithologyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione sussistente tra una litologia ed una possibile entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between a lithology and a possible entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lithology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is lithology of"
+  }, {
+    "@language" : "it",
+    "@value" : "è litologia di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isLithologyTypeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property for associating a type of lithology to a specific lithology individual."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà per associare un concetto di tipo di litologia ad una litologia specifica."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/LithologyType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is lithology type of"
+  }, {
+    "@language" : "it",
+    "@value" : "è tipo di litologia di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lithology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isPrimaryLocationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione tra un luogo primario ed una procedura o collezione di procedure."
+  }, {
+    "@language" : "en",
+    "@value" : "The property for representing relations between a primary location and a procedure or procedure collection."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isLocationOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isProcedureTypeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione esistente tra un concetto che classifica una procedura e la procedura stessa."
+  }, {
+    "@language" : "en",
+    "@value" : "The relationship between a concept that classifies a procedure and the procedure itself."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is procedure type of"
+  }, {
+    "@language" : "it",
+    "@value" : "è tipo di procedura di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isRepairWorkExecutionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La relazione valida tra un'attività di risanamento ed un'entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The relation holding between a repair activity and an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is repair activity of"
+  }, {
+    "@language" : "it",
+    "@value" : "è attività di risanemento di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isEventualityOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]

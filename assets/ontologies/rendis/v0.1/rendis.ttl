@@ -1,0 +1,1211 @@
+@prefix : <https://w3id.org/italia/env/onto/rendis/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/italia/env/onto/rendis> .
+
+<https://w3id.org/italia/env/onto/rendis> rdf:type owl:Ontology ;
+                                                owl:imports top: .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/italia/env/onto/rendis/addressesInstability
+:addressesInstability rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf top:associatedWith ;
+                      owl:inverseOf :isInstabilityAddressedBy ;
+                      rdfs:domain :Lot ;
+                      rdfs:range :Instability ;
+                      rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                      rdfs:comment "La relazione che permette di affermare che un lotto di una procedura è volto a combattere una certa instabilità."@it ,
+                                   "The relationship allowing you to state that a lot of a procedure is aimed at facing a certain instability."@en ;
+                      rdfs:label "addresses instability"@en ,
+                                 "affronta instabilità"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/addressesInstabilityType
+:addressesInstabilityType rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf top:isClassifiedBy ;
+                          owl:inverseOf :isAddressedByProcedure ;
+                          rdfs:domain :Procedure ;
+                          rdfs:range :InstabilityType ;
+                          rdfs:comment "La relazione che permette di affermare che una procedura affronta un certo tipo di instabilità."@it ,
+                                       "The relation that allows you to state that a procedure addresses a certain instability type."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                          rdfs:label "addresses instability type"@en ,
+                                     "affronta tipo di instabilità"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasAlternativeLocation
+:hasAlternativeLocation rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf top:hasLocation ;
+                        owl:inverseOf :isAlternativeLocationOf ;
+                        rdfs:domain :Procedure ;
+                        rdfs:range top:Location ;
+                        rdfs:comment "La relazione tra un una procedura ed un luogo che rappresenta un luogo di intervento secondario."@it ,
+                                     "The relationship between a procedure and a place that represents a secondary intervention site."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                        rdfs:label "ha luogo alternativo"@it ,
+                                   "has alternative location"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasAmount
+:hasAmount rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf top:hasValue ;
+           owl:inverseOf :isAmountOf ;
+           rdfs:domain top:Entity ;
+           rdfs:range :Amount ;
+           rdfs:comment "La relazione esistente tra un'entità ed in suo importo."@it ,
+                        "The association between an entity and its corresponding amount."@en ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+           rdfs:label "ha importo"@it ,
+                      "has amount"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasCurrency
+:hasCurrency rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf top:isParametrisedBy ;
+             rdfs:comment "La proprietà per collegare un'entità ad una valuta."@it ,
+                          "The association between an entity and a currency."@en ;
+             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+             rdfs:label "ha valuta"@it ,
+                        "has currency"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanAction
+:hasFinalImplementationPlanAction rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf :hasImplementationPlanAction ;
+                                  rdf:type owl:AsymmetricProperty ;
+                                  rdfs:domain :ImplementationPlanExecution ;
+                                  rdfs:range :ImplementationPlanAction ;
+                                  rdfs:comment "La relazione che sussiste tra l'esecuzione di un piano di attuazione e una delle sue azioni finali. Le azioni finali potrebbero essere multiple."@it ,
+                                               "The relation holding between an implementation plan execution and one of its final actions. The final actions might be multiple."@en ;
+                                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                                  rdfs:label "ha azione finale"@it ,
+                                             "has final implementation plan action"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanStep
+:hasFinalImplementationPlanStep rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf :hasImplementationPlanStep ;
+                                rdf:type owl:AsymmetricProperty ;
+                                rdfs:domain :ImplementationPlan ;
+                                rdfs:range :ImplementationPlanStep ;
+                                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                                rdfs:label "La proprietà che collega un piano di attuazione al suo ultimo passo."@it ,
+                                           "The property that links an implementation plan to its last step."@en ,
+                                           "ha ultimo passo di piano di attuazione"@it ,
+                                           "has last implementation plan step"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasFinancedAmount
+:hasFinancedAmount rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasAmount ;
+                   owl:inverseOf :isFinancedAmountOf ;
+                   rdfs:domain :Procedure ;
+                   rdfs:range :Amount ;
+                   rdfs:comment "La proprietà che viene usata per indicare l'importo finanziato per una procedura."@it ,
+                                "The property that is used to indicate the amount financed for a procedure."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                   rdfs:label "ha importo finanziato"@it ,
+                              "has financed amount"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasImplementationPlan
+:hasImplementationPlan rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf top:hasDescription ;
+                       owl:inverseOf :isImplementationPlanOf ;
+                       rdfs:domain top:Entity ;
+                       rdfs:range :ImplementationPlan ;
+                       rdfs:comment "La relazione esistente tra un'entità ed un piano di attuazione."@it ,
+                                    "The relation holding between an entity and an implementation plan."@en ;
+                       rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                       rdfs:label "ha piano di attuazione"@it ,
+                                  "has implementation plan"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction
+:hasImplementationPlanAction rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf top:hasPart ;
+                             owl:inverseOf :isImplementationPlanActionOf ;
+                             rdf:type owl:AsymmetricProperty ;
+                             rdfs:domain :ImplementationPlanExecution ;
+                             rdfs:range :ImplementationPlanAction ;
+                             rdfs:comment "La relazione che sussiste tra l'esecuzione di un piano di attuazione e una delle sue azioni."@it ,
+                                          "The relation holding between an implementation plan execution and one of its actions."@en ;
+                             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                             rdfs:label "ha azione in piano di attuazione"@it ,
+                                        "has implementation plan action"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasImplementationPlanExecution
+:hasImplementationPlanExecution rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf top:hasEventuality ;
+                                owl:inverseOf :isImplementationPlanExecutionOf ;
+                                rdfs:domain top:Entity ;
+                                rdfs:range :ImplementationPlanExecution ;
+                                rdfs:comment "La relazione tra un'entità e l'esecuzione di un piano."@it ,
+                                             "The relation between an entity and a plan execution."@en ;
+                                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                                rdfs:label "ha esecuzione di piano di implementazione"@it ,
+                                           "has implementation plan execution"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep
+:hasImplementationPlanStep rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf top:hasPart ;
+                           owl:inverseOf :isImplementationPlanStepOf ;
+                           rdf:type owl:AsymmetricProperty ;
+                           rdfs:domain :ImplementationPlan ;
+                           rdfs:range :ImplementationPlanStep ;
+                           rdfs:comment "La relazione che sussiste tra un piano di attuazione e una delle sue fasi."@it ,
+                                        "The relation holding between an implementation plan and one of its steps."@en ;
+                           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                           rdfs:label "ha fase"@it ,
+                                      "has implementation plan step"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanAction
+:hasInitialImplementationPlanAction rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf :hasImplementationPlanAction ;
+                                    owl:inverseOf :isInitialImplementationPlanActionOf ;
+                                    rdf:type owl:AsymmetricProperty ;
+                                    rdfs:domain :ImplementationPlanExecution ;
+                                    rdfs:range :ImplementationPlanAction ;
+                                    rdfs:comment "La relazione che sussiste tra l'esecuzione di un piano di attuazione e la sua azione iniziale. Le azioni iniziali potrebbero essere multiple."@it ,
+                                                 "The relation holding between an implementation plan execution and its initial action. The initial actions might be multiple."@en ;
+                                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                                    rdfs:label "ha azione iniziale"@it ,
+                                               "has initial implementation plan action"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanStep
+:hasInitialImplementationPlanStep rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf :hasImplementationPlanStep ;
+                                  owl:inverseOf :isFirstImplementationPlanStepOf ;
+                                  rdf:type owl:AsymmetricProperty ;
+                                  rdfs:domain :ImplementationPlan ;
+                                  rdfs:range :ImplementationPlanStep ;
+                                  rdfs:comment "La proprietà che collega un piano di implementazione alla sua prima fase."@it ,
+                                               "The property that links an implementation plan to its first plan step."@en ;
+                                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                                  rdfs:label "ha primo passo di piano di attuazione"@it ,
+                                             "has first implementation plan"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasInstability
+:hasInstability rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf top:hasEventuality ;
+                owl:inverseOf :isInstabilityOf ;
+                rdfs:domain top:Entity ;
+                rdfs:range :Instability ;
+                rdfs:comment "La relazione tra un'entità ed un'instabilità."@it ,
+                             "The relation between an entity and an instability."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                rdfs:label "ha instabilità"@it ,
+                           "has instability"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasInstabilityType
+:hasInstabilityType rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf top:isClassifiedBy ;
+                    owl:inverseOf :isInstabilityTypeOf ;
+                    rdfs:domain :Instability ;
+                    rdfs:range :InstabilityType ;
+                    rdfs:comment "La relazione utilizzata per classificare un'instabilità con un tipo di instabilità."@it ,
+                                 "The relation used for classifying an instability with an instability type."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                    rdfs:label "ha tipo di instabilità"@it ,
+                               "has instability type"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasLegalBasis
+:hasLegalBasis rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf top:associatedWith ;
+               owl:inverseOf :isLegalBasisOf ;
+               rdfs:domain top:Entity ;
+               rdfs:range :LegalAct ;
+               rdfs:comment "La relazione che fornisce la base giuridica ad un'entità collegandola a un atto giuridico."@it ,
+                            "The relation that provides legal basis to an entity by linking it to a legal act."@en ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+               rdfs:label "ha base legale"@it ,
+                          "has legal basis"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasLithology
+:hasLithology rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf top:associatedWith ;
+              owl:inverseOf :isLithologyOf ;
+              rdfs:domain top:Entity ;
+              rdfs:range :Lithology ;
+              rdfs:comment "La relazione esistente tra una possibile entità ed una litologia."@it ,
+                           "The relation holding between an entity and a lithology."@en ,
+                           "ha litologia"@it ,
+                           "has lithology"@en ;
+              rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasLithologyType
+:hasLithologyType rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf top:isClassifiedBy ;
+                  owl:inverseOf :isLithologyTypeOf ;
+                  rdfs:domain :Lithology ;
+                  rdfs:range :LithologyType ;
+                  rdfs:comment "La relazione che permette di classificare un individuo della classe Lithology con un tipo di litologia."@it ,
+                               "The relation that allows one to classify a lithology individual with its type."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                  rdfs:label "ha tipo di litologia"@it ,
+                             "has lithology type"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasPrimaryLocation
+:hasPrimaryLocation rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf top:hasLocation ;
+                    owl:inverseOf :isPrimaryLocationOf ;
+                    rdfs:domain :Procedure ;
+                    rdfs:range top:Location ;
+                    rdfs:comment "La proprietà per associare un luogo ad una procedura o a una collezione di procedure e rappresentare questa associazione come primaria."@it ,
+                                 "The property for associating a location to a procedure or a procedure collection and representing this association as a primary one."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                    rdfs:label "ha luogo primario"@it ,
+                               "has primary location"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasProcedureType
+:hasProcedureType rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf top:isClassifiedBy ;
+                  owl:inverseOf :isProcedureTypeOf ;
+                  rdfs:domain :Procedure ;
+                  rdfs:range :ProcedureType ;
+                  rdfs:comment "La relazione esistente tra una procedura ed il suo tipo."@it ,
+                               "The relation holding between a procedure and its type."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                  rdfs:label "ha tipo di procedura"@it ,
+                             "has procedure type"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/hasRepairWorkExecution
+:hasRepairWorkExecution rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf top:hasEventuality ;
+                        owl:inverseOf :isRepairWorkExecutionOf ;
+                        rdfs:domain top:Entity ;
+                        rdfs:range :RepairWork ;
+                        rdfs:comment "La relazione valida tra un'entità ed un'opeara di risanamento attesa."@it ,
+                                     "The relation holding between an entity and an expected repair operation."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                        rdfs:label "ha opera di risanemento prevista"@it ,
+                                   "has expected repair operation"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/includesLot
+:includesLot rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf top:associatedWith ;
+             owl:inverseOf :isIncludedInProcedure ;
+             rdfs:domain :Procedure ;
+             rdfs:range :Lot ;
+             rdfs:comment "Property that links a procedure to the lot. A procedure has at least a lot"@en ,
+                          "Proprietà che collega una procedura a un lotto. Una procedura ha almeno un lotto."@it ,
+                          "include lotto"@it ,
+                          "includes lot"@en ;
+             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isAddressedByProcedure
+:isAddressedByProcedure rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf top:classifies ;
+                        rdfs:domain :InstabilityType ;
+                        rdfs:range :Procedure ;
+                        rdfs:comment "La proprietà che associa un tipo di instabilità alla procedura in cui questo è affrontato."@it ,
+                                     "The property that associates a type of instability with the procedure in which it is addressed."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                        rdfs:label "is addressed by procedure"@en ,
+                                   "è affrontato dalla procedura"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isAlternativeLocationOf
+:isAlternativeLocationOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf top:isLocationOf ;
+                         rdfs:domain top:Location ;
+                         rdfs:range :Procedure ;
+                         rdfs:comment "La relazione che sussiste tra un luogo e una procedura. Il luogo rappresenta quindi un posto di intervento alternativo per il procedimento."@it ,
+                                      "The relation holding between a location and procedure. Hence, the location represents an alternative place of intervention for the procedure."@en ;
+                         rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                         rdfs:label "is alternative location of"@en ,
+                                    "è luogo alternativo di"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isAmountOf
+:isAmountOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf top:isValueOf ;
+            rdfs:domain :Amount ;
+            rdfs:range top:Entity ;
+            rdfs:comment "La relazione tra un importo e l'entità a cui si riferisce."@it ,
+                         "The relationship between an amount and the entity it refers to."@en ;
+            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+            rdfs:label "is amount of"@en ,
+                       "è importo di"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isCurrencyOf
+:isCurrencyOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf top:parametrises ;
+              rdfs:comment "La proprietà che collega una valuta ad un'entità."@it ,
+                           "The property that links a currency to an entity."@en ;
+              rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+              rdfs:label "is currency of"@en ,
+                         "è valuta di"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isFinalImplementationPlanActionOf
+:isFinalImplementationPlanActionOf rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf :isImplementationPlanActionOf ;
+                                   rdf:type owl:AsymmetricProperty ;
+                                   rdfs:domain :ImplementationPlanAction ;
+                                   rdfs:range :ImplementationPlanExecution ;
+                                   rdfs:comment "La relazione che sussiste tra un'azione e l'esecuzione del piano di attuazione di cui fa parte. La relazione significa che l'azione è una di quelle finali dell'esecuzione del piano (il piano può avere più azioni terminali)."@it ,
+                                                "The relation holding between an action and the implementation plan execution it is part of. The relation means that the action in one of the final actions of the plan execution, i.e. the plan execution has more than one final action)."@en ;
+                                   rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                                   rdfs:label "is final implementation plan action of"@en ,
+                                              "è azione finale dell'esecuzione del piano di attuazione"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isFinancedAmountOf
+:isFinancedAmountOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :isAmountOf ;
+                    rdfs:domain :Amount ;
+                    rdfs:range :Procedure ;
+                    rdfs:comment "La proprietà che viene utilizzata per associare un importo che è stato finanziato per una procedura."@it ,
+                                 "The property that is used to associate an amount that has been financed for a procedure."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                    rdfs:label "is financed amount of"@en ,
+                               "è importo finanziato di"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isFirstImplementationPlanStepOf
+:isFirstImplementationPlanStepOf rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf :isImplementationPlanStepOf ;
+                                 rdf:type owl:AsymmetricProperty ;
+                                 rdfs:domain :ImplementationPlanStep ;
+                                 rdfs:range :ImplementationPlan ;
+                                 rdfs:comment "La proprietà che permette di rappresentare un determinato passo come il primo passo di un piano di attuazione."@it ,
+                                              "The property that represents a step as the first step of the target implementation plan."@en ;
+                                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                                 rdfs:label "is first implementation plan step of"@en ,
+                                            "è promo passo di piano di attuzione"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf
+:isImplementationPlanActionOf rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf top:isPartOf ;
+                              rdf:type owl:AsymmetricProperty ;
+                              rdfs:domain :ImplementationPlanAction ;
+                              rdfs:range :ImplementationPlanExecution ;
+                              rdfs:comment "La relazione tra una singola azione ed il piano di attuazione di cui essa è parte."@it ,
+                                           "The relationship between the actiob and an implementation plan the former is a part of."@en ;
+                              rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                              rdfs:label "is implementation plan action of"@en ,
+                                         "è azione in piano di attuazione"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isImplementationPlanExecutionOf
+:isImplementationPlanExecutionOf rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf top:isEventualityOf ;
+                                 rdfs:domain :ImplementationPlanExecution ;
+                                 rdfs:range top:Entity ;
+                                 rdfs:comment "Relation holding between an implementation plan execution and a possible associated entity."@en ,
+                                              "Relazione tra un'esecuzione di piano di implementazione ed un entità ad essa associata."@it ;
+                                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                                 rdfs:label "is implementation plan execution of"@en ,
+                                            "è esecuzione di piano di implementazione di"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isImplementationPlanOf
+:isImplementationPlanOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf top:isDescriptionOf ;
+                        rdfs:domain :ImplementationPlan ;
+                        rdfs:range top:Entity ;
+                        rdfs:comment "La relazione esistente tra un piano di attuazione ed un'entità."@it ,
+                                     "The relation holding between an implementation plan and an entity."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                        rdfs:label "is implementation plan of"@en ,
+                                   "è piano di attuazione di"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf
+:isImplementationPlanStepOf rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf top:isPartOf ;
+                            rdf:type owl:AsymmetricProperty ;
+                            rdfs:domain :ImplementationPlanStep ;
+                            rdfs:range :ImplementationPlan ;
+                            rdfs:comment "La proprietà per collegare una fase ad un piano di attuazione."@it ,
+                                         "The relation for linking a step to an implementation plan."@en ;
+                            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                            rdfs:label "is implementation step of"@en ,
+                                       "è fase implementativa del piano"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isIncludedInProcedure
+:isIncludedInProcedure rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf top:associatedWith ;
+                       rdfs:domain :Lot ;
+                       rdfs:range :Procedure ;
+                       rdfs:comment "Inverse property of \"includes lot\" that links a lot to its procedure"@en ,
+                                    "Proprietà inversa di \"include lotto\" che lega il lotto alla sua procedura"@it ;
+                       rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                       rdfs:label "is included in procedure"@en ,
+                                  "è incluso in procedura"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isInitialImplementationPlanActionOf
+:isInitialImplementationPlanActionOf rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf :isImplementationPlanActionOf ;
+                                     rdf:type owl:AsymmetricProperty ;
+                                     rdfs:domain :ImplementationPlanAction ;
+                                     rdfs:range :ImplementationPlanExecution ;
+                                     rdfs:comment "La relazione che sussiste tra un'azione e l'esecuzione del piano di attuazione di cui fa parte. La relazione significa che l'azione è una delle azioni iniziali dell'esecuzione del piano."@it ,
+                                                  "The relation holding between an action and the implementation plan execution it is part of. The relation means that the action in one of the initial actions of the plan execution."@en ,
+                                                  "is initial implementation plan action of"@en ;
+                                     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                                     rdfs:label "è azione iniziale dell'esecuzione del piano di attuazione"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isInstabilityAddressedBy
+:isInstabilityAddressedBy rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf top:associatedWith ;
+                          rdfs:domain :Instability ;
+                          rdfs:range :Lot ;
+                          rdfs:comment "La proprietà per rappresentare il fatto che un dissesto è affrontato da un determinato lotto incluso in una procedura."@it ,
+                                       "The property for representing the fact that an instability is addressed by a certain lot included in a procedure."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                          rdfs:label "is instability addressed by"@en ,
+                                     "è instabilità affrontata da"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isInstabilityOf
+:isInstabilityOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf top:isEventualityOf ;
+                 rdfs:domain :Instability ;
+                 rdfs:range top:Entity ;
+                 rdfs:comment "Relation between an instability and any possible entity."@en ,
+                              "Relazione tra un'instabilità ed un'entità ad essa collegata."@it ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                 rdfs:label "is instability of"@en ,
+                            "è instabilità di"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isInstabilityTypeOf
+:isInstabilityTypeOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf top:classifies ;
+                     rdfs:domain :InstabilityType ;
+                     rdfs:range :Instability ;
+                     rdfs:comment "La relazione che permette di affermare che un tipo di instabilità classifica una certa instabilità."@it ,
+                                  "The relation that allows you to state that an instability type classifies a certain instability."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                     rdfs:label "is instability type of"@en ,
+                                "è tipo di instabilità di"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isLastImplementationStepOf
+:isLastImplementationStepOf rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :isImplementationPlanStepOf ;
+                            rdf:type owl:AsymmetricProperty ;
+                            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isLegalBasisOf
+:isLegalBasisOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf top:associatedWith ;
+                rdfs:domain :LegalAct ;
+                rdfs:range top:Entity ;
+                rdfs:comment "La relazione che collega un atto giuridico ad un'entità con la funzione di fornire a quest'ultima la base legale."@it ,
+                             "The relationship that links a legal act to an entity with the function of providing the latter with the legal basis."@en ;
+                rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                rdfs:label "is legal basis of"@en ,
+                           "è base legale di"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isLithologyOf
+:isLithologyOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf top:associatedWith ;
+               rdfs:domain :Lithology ;
+               rdfs:range top:Entity ;
+               rdfs:comment "La relazione sussistente tra una litologia ed una possibile entità."@it ,
+                            "The relation holding between a lithology and a possible entity."@en ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+               rdfs:label "is lithology of"@en ,
+                          "è litologia di"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isLithologyTypeOf
+:isLithologyTypeOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf top:classifies ;
+                   rdfs:domain :LithologyType ;
+                   rdfs:range :Lithology ;
+                   rdfs:comment "Property for associating a type of lithology to a specific lithology individual."@en ,
+                                "Proprietà per associare un concetto di tipo di litologia ad una litologia specifica."@it ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                   rdfs:label "is lithology type of"@en ,
+                              "è tipo di litologia di"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isPrimaryLocationOf
+:isPrimaryLocationOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf top:isLocationOf ;
+                     rdfs:domain top:Location ;
+                     rdfs:range :Procedure ;
+                     rdfs:comment "La relazione tra un luogo primario ed una procedura o collezione di procedure."@it ,
+                                  "The property for representing relations between a primary location and a procedure or procedure collection."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isProcedureTypeOf
+:isProcedureTypeOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf top:classifies ;
+                   rdfs:domain :ProcedureType ;
+                   rdfs:range :Procedure ;
+                   rdfs:comment "La relazione esistente tra un concetto che classifica una procedura e la procedura stessa."@it ,
+                                "The relationship between a concept that classifies a procedure and the procedure itself."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                   rdfs:label "is procedure type of"@en ,
+                              "è tipo di procedura di"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/isRepairWorkExecutionOf
+:isRepairWorkExecutionOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf top:isEventualityOf ;
+                         rdfs:domain :RepairWork ;
+                         rdfs:range top:Entity ;
+                         rdfs:comment "La relazione valida tra un'attività di risanamento ed un'entità."@it ,
+                                      "The relation holding between a repair activity and an entity."@en ;
+                         rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                         rdfs:label "is repair activity of"@en ,
+                                    "è attività di risanemento di"@it .
+
+
+###  https://w3id.org/italia/env/onto/top/associatedWith
+top:associatedWith rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/classifies
+top:classifies rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/directlyFollows
+top:directlyFollows rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/directlyPrecedes
+top:directlyPrecedes rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/follows
+top:follows rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasAgentRole
+top:hasAgentRole rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasDescription
+top:hasDescription rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasEventuality
+top:hasEventuality rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasLocation
+top:hasLocation rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasMember
+top:hasMember rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasPart
+top:hasPart rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasValue
+top:hasValue rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isClassifiedBy
+top:isClassifiedBy rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isDescriptionOf
+top:isDescriptionOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isEventualityOf
+top:isEventualityOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isLocationOf
+top:isLocationOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isParametrisedBy
+top:isParametrisedBy rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isPartOf
+top:isPartOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isSatisfiedBy
+top:isSatisfiedBy rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isSpecialisedBy
+top:isSpecialisedBy rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isValueOf
+top:isValueOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/parametrises
+top:parametrises rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/precedes
+top:precedes rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/satisfies
+top:satisfies rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/specialises
+top:specialises rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/hasMember
+<https://w3id.org/italia/env/onto/top/hasMember> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/rendis/AlternativeLocProcedureCollection
+:AlternativeLocProcedureCollection rdf:type owl:Class ;
+                                   rdfs:subClassOf :ProcedureCollection ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://w3id.org/italia/env/onto/top/hasMember> ;
+                                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :hasAlternativeLocation ;
+                                                                          owl:someValuesFrom <https://w3id.org/italia/env/onto/top/Location>
+                                                                        ]
+                                                   ] ;
+                                   rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                                   rdfs:label "Alternative Location Procedure Collection"@en ,
+                                              "Collezione di Interventi con Assegnato Comune Secondario"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/Amount
+:Amount rdf:type owl:Class ;
+        rdfs:subClassOf top:Value ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasCurrency ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Currency
+                        ] ;
+        rdfs:comment "An amount."@en ,
+                     "Un importo."@it ;
+        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+        rdfs:label "Amount"@en ,
+                   "Importo"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/Contract
+:Contract rdf:type owl:Class ;
+          rdfs:subClassOf :Document ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasRepairWorkExecution ;
+                            owl:someValuesFrom :RepairWork
+                          ] ;
+          rdfs:comment "An instance of this class represents a contract made between two or more agents: for example, between a contracting station and a supplier."@en ,
+                       "Una istanza di questa classe rappresenta un contratto realizzato tra due o più agenti: ad esempio, tra una stazione appaltante ed un fornitore."@it ;
+          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+          rdfs:label "Contract"@en ,
+                     "Contratto"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/Currency
+:Currency rdf:type owl:Class ;
+          rdfs:subClassOf top:UnitOfMeasure ;
+          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+          rdfs:label "Currency"@en ,
+                     "Questa classe rappresenta una valuta."@it ,
+                     "This class represents a currency."@en ,
+                     "Valuta"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/Document
+:Document rdf:type owl:Class ;
+          rdfs:subClassOf top:Entity ;
+          rdfs:comment "A set of interrelated Business Information representing the business facts. Additional Information: Documents may convey information in any language, medium or form, including textual, numerical, graphic, cartographic, audio-visual forms, etc. WG Approval 23/05/2019"@en ,
+                       "Un insieme di informazioni aziendali correlate che rappresentano i fatti aziendali. Informazioni aggiuntive: i documenti possono trasmettere informazioni in qualsiasi lingua, supporto o forma, comprese le forme testuali, numeriche, grafiche, cartografiche, audiovisive, ecc. Approvazione WG 23/05/2019."@it ;
+          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+          rdfs:label "Document"@en ,
+                     "Documento"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/EconomicSummary
+:EconomicSummary rdf:type owl:Class ;
+                 rdfs:subClassOf top:Characteristic ;
+                 rdfs:comment "An instance of this class represents the economic summary of a lot."@en ,
+                              "Un'istanza di questa classe rappresenta il prospetto economico di un lotto."@it ;
+                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                 rdfs:label "Economic summary"@en ,
+                            "Prospette economico"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/ImplementationPlan
+:ImplementationPlan rdf:type owl:Class ;
+                    rdfs:subClassOf top:Description ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasFinalImplementationPlanStep ;
+                                      owl:someValuesFrom :ImplementationPlanStep
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasImplementationPlanStep ;
+                                      owl:someValuesFrom :ImplementationPlanStep
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasInitialImplementationPlanStep ;
+                                      owl:someValuesFrom :ImplementationPlanStep
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty top:isSatisfiedBy ;
+                                      owl:allValuesFrom :ImplementationPlanExecution
+                                    ] ;
+                    rdfs:comment "An implementation plan. E.g. the implementation plan of a certain lot associated with a procedure."@en ,
+                                 "Un piano di attuazione. Per esempio il piano di attuazione di un determinato lotto associato ad una procedura."@it ;
+                    rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                    rdfs:label "Implementation plan"@en ,
+                               "Piano di attuazione"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction
+:ImplementationPlanAction rdf:type owl:Class ;
+                          rdfs:subClassOf top:Eventuality ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty top:satisfies ;
+                                            owl:someValuesFrom :ImplementationPlanStep
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty top:directlyFollows ;
+                                            owl:allValuesFrom :ImplementationPlanAction
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty top:directlyPrecedes ;
+                                            owl:allValuesFrom :ImplementationPlanAction
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty top:follows ;
+                                            owl:allValuesFrom :ImplementationPlanAction
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty top:precedes ;
+                                            owl:allValuesFrom :ImplementationPlanAction
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty top:satisfies ;
+                                            owl:allValuesFrom :ImplementationPlanStep
+                                          ] ;
+                          rdfs:comment "L'esecuzione di un singolo passo di un piano di attuazione."@it ,
+                                       "The execution of a single step part of an implementation plan."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                          rdfs:label "Esecuzione di passo di piano di attuazione"@it ,
+                                     "Implementation plan step execution"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution
+:ImplementationPlanExecution rdf:type owl:Class ;
+                             rdfs:subClassOf top:Eventuality ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasFinalImplementationPlanAction ;
+                                               owl:someValuesFrom :ImplementationPlanAction
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasImplementationPlanAction ;
+                                               owl:someValuesFrom :ImplementationPlanAction
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasInitialImplementationPlanAction ;
+                                               owl:someValuesFrom :ImplementationPlanAction
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty top:satisfies ;
+                                               owl:someValuesFrom :ImplementationPlan
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty top:satisfies ;
+                                               owl:allValuesFrom :ImplementationPlan
+                                             ] ;
+                             rdfs:comment "La classe per rappresentare l'esecuzione di un piano di attuazione."@it ,
+                                          "The class for representing the execution of an implementation plan."@en ;
+                             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                             rdfs:label "Esecuzione di piano di attuazione"@it ,
+                                        "Implementation plan execution"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep
+:ImplementationPlanStep rdf:type owl:Class ;
+                        rdfs:subClassOf top:Description ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :isImplementationPlanStepOf ;
+                                          owl:someValuesFrom :ImplementationPlan
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty top:directlyFollows ;
+                                          owl:allValuesFrom :ImplementationPlanStep
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty top:directlyPrecedes ;
+                                          owl:allValuesFrom :ImplementationPlanStep
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty top:follows ;
+                                          owl:allValuesFrom :ImplementationPlanStep
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty top:isSatisfiedBy ;
+                                          owl:allValuesFrom :ImplementationPlanAction
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty top:precedes ;
+                                          owl:allValuesFrom :ImplementationPlanStep
+                                        ] ;
+                        rdfs:comment "La classe per rappresentare un passo di un piano di attuazione."@it ,
+                                     "The class that represents a step of an implementation plan."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                        rdfs:label "Implementation plan step"@en ,
+                                   "Passo di piano di attuazione"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/Instability
+:Instability rdf:type owl:Class ;
+             rdfs:subClassOf top:Eventuality ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasInstabilityType ;
+                               owl:someValuesFrom :InstabilityType
+                             ] ;
+             rdfs:comment "La classe per rappresentare un dissesto."@it ;
+             rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+             rdfs:label "Dissesto"@it ,
+                        "Instability"@en ,
+                        "The class for representing instability."@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/InstabilityType
+:InstabilityType rdf:type owl:Class ;
+                 rdfs:subClassOf top:Concept ;
+                 rdfs:comment "A concept representing a certain instability type."@en ,
+                              "Un concetto che rappresenta un tipo di dissesto."@it ;
+                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                 rdfs:label "Tipo di dissesto"@it ,
+                            "Type of instability"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/LegalAct
+:LegalAct rdf:type owl:Class ;
+          rdfs:subClassOf :Document ;
+          rdfs:comment "Any law o regulatory measure that supports a procedure."@en ,
+                       "Qualsiasi legge o provvedimento normativo a supporto di una procedura."@it ;
+          rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+          rdfs:label "Atto legale"@it ,
+                     "Legal act"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/Lithology
+:Lithology rdf:type owl:Class ;
+           rdfs:subClassOf top:Eventuality ;
+           rdfs:comment "La classe per rappresentare una litologia."@it ,
+                        "The class for representing a lithology."@en ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+           rdfs:label "Lithology"@en ,
+                      "Litologia"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/LithologyType
+:LithologyType rdf:type owl:Class ;
+               rdfs:subClassOf top:Concept ;
+               rdfs:comment "Concetto per tipo di litologia."@it ,
+                            "The class for representing lithology types as concepts."@en ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+               rdfs:label "Lithology type"@en ,
+                          "Tipo di litologia"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/Lot
+:Lot rdf:type owl:Class ;
+     rdfs:subClassOf top:Eventuality ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :addressesInstability ;
+                       owl:someValuesFrom :Instability
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasImplementationPlan ;
+                       owl:someValuesFrom :ImplementationPlan
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasInstability ;
+                       owl:someValuesFrom :Instability
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty top:hasAgentRole ;
+                       owl:someValuesFrom top:AgentRole
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty top:hasLocation ;
+                       owl:someValuesFrom top:Location
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasLithology ;
+                       owl:allValuesFrom :Lithology
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasRepairWorkExecution ;
+                       owl:allValuesFrom :RepairWork
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :isIncludedInProcedure ;
+                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onClass :Procedure
+                     ] ;
+     rdfs:comment "One of the parts of a procurement project that is being subdivided to allow the buyer to award different lots to different economic operators under different contracts."@en ,
+                  "Una delle parti di un progetto di appalto che viene suddivisa per consentire all'acquirente di aggiudicare lotti diversi a operatori economici diversi nell'ambito di contratti diversi."@it ;
+     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+     rdfs:label "Lot"@en ,
+                "Lotto"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/Plan
+:Plan rdf:type owl:Class ;
+      rdfs:subClassOf top:Description ;
+      rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> .
+
+
+###  https://w3id.org/italia/env/onto/rendis/PrimaryLocProcedureCollection
+:PrimaryLocProcedureCollection rdf:type owl:Class ;
+                               rdfs:subClassOf :ProcedureCollection ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <https://w3id.org/italia/env/onto/top/hasMember> ;
+                                                 owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :hasPrimaryLocation ;
+                                                                      owl:someValuesFrom <https://w3id.org/italia/env/onto/top/Location>
+                                                                    ]
+                                               ] ;
+                               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                               rdfs:label "Collezione di Procedure con Assegnato Comune Capofila"@it ,
+                                          "Primary Location Procedure Collection"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/Procedure
+:Procedure rdf:type owl:Class ;
+           rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
+                           top:Eventuality ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :addressesInstabilityType ;
+                             owl:someValuesFrom :InstabilityType
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasFinancedAmount ;
+                             owl:someValuesFrom :Amount
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasLegalBasis ;
+                             owl:someValuesFrom :LegalAct
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasProcedureType ;
+                             owl:someValuesFrom :ProcedureType
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :includesLot ;
+                             owl:someValuesFrom :Lot
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty top:hasAgentRole ;
+                             owl:someValuesFrom top:AgentRole
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty top:isPartOf ;
+                             owl:someValuesFrom :PrimaryLocProcedureCollection
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty top:hasLocation ;
+                             owl:allValuesFrom top:Location
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty top:isPartOf ;
+                             owl:allValuesFrom :AlternativeLocProcedureCollection
+                           ] ;
+           rdfs:comment "La classe che comprende le attività che una stazione appaltante mette in atto per realizzare un progetto di procurement, ad esempio le attività svolte tramite un contratto di appalto o di concessione, le attività realizzate attraverso amministrazione diretta, parternariato pubblico/privato o adesione ad un accordo quadro. Le attività prevedono step procedurali che possono variare in relazione alla modalità di realizzazione."@it ,
+                        "The class that represents the activities that a contracting authority carries out in order to actualize a procurement project, such as those carried out through public procurement, concession, direct administration, public/private partnership or framework agreement. The steps of the procedure may vary according to the type of the procedure."@en ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+           rdfs:label "Administrative Procedure"@en ,
+                      "Procedura Amministrativa/Intervento"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/ProcedureCollection
+:ProcedureCollection rdf:type owl:Class ;
+                     rdfs:subClassOf top:Collection ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty top:hasMember ;
+                                       owl:allValuesFrom :Procedure
+                                     ] ;
+                     rdfs:comment "A collection whose members are procedures only."@en ,
+                                  "Una collezione i cui membri sono esclusivamente istanze di procedura."@it ;
+                     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                     rdfs:label "Collezione di Procedure"@it ,
+                                "Procedure Collection"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/ProcedureType
+:ProcedureType rdf:type owl:Class ;
+               rdfs:subClassOf top:Concept ;
+               rdfs:comment "A type of administrative procedure."@en ,
+                            "Un tipo di procedura amministrativa o intervento."@it ;
+               rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+               rdfs:label "Administrative Procedure Type"@en ,
+                          "Tipo di Procedura Amministrativa"@it .
+
+
+###  https://w3id.org/italia/env/onto/rendis/RepairWork
+:RepairWork rdf:type owl:Class ;
+            rdfs:subClassOf top:Description ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty top:isSatisfiedBy ;
+                              owl:allValuesFrom :RepairWorkExecution
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty top:isSpecialisedBy ;
+                              owl:allValuesFrom :RepairWork
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty top:specialises ;
+                              owl:allValuesFrom :RepairWork
+                            ] ;
+            rdfs:comment "La descrizione di un'opera di risanamento di dissesti."@it ,
+                         "The description of a work for repairing instabilities."@en ;
+            rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+            rdfs:label "Opere di risanamento"@it ,
+                       "Repair work"@en .
+
+
+###  https://w3id.org/italia/env/onto/rendis/RepairWorkExecution
+:RepairWorkExecution rdf:type owl:Class ;
+                     rdfs:subClassOf top:Eventuality ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :isRepairWorkExecutionOf ;
+                                       owl:someValuesFrom :Lot
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty top:satisfies ;
+                                       owl:someValuesFrom :RepairWork
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty top:satisfies ;
+                                       owl:allValuesFrom :RepairWork
+                                     ] ;
+                     rdfs:comment "A repair work carried out in a lot for repairing an instability."@en ,
+                                  "L'esacuzione di un'opera di risanamento nell'ambito delle iniziative di riisanamento di un dissesto."@it ;
+                     rdfs:isDefinedBy <https://w3id.org/italia/env/onto/rendis> ;
+                     rdfs:label "Esecuzione di opere di risanamento"@it ,
+                                "Repair work execution"@en .
+
+
+###  https://w3id.org/italia/env/onto/top/AgentRole
+top:AgentRole rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Characteristic
+top:Characteristic rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Collection
+top:Collection rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Concept
+top:Concept rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Description
+top:Description rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Entity
+top:Entity rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Eventuality
+top:Eventuality rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Location
+top:Location rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/UnitOfMeasure
+top:UnitOfMeasure rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Value
+top:Value rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Location
+<https://w3id.org/italia/env/onto/top/Location> rdf:type owl:Class .
+
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( :Instability
+                 :Lot
+                 :Procedure
+                 top:AgentRole
+               )
+ ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Lot
+                :Procedure
+                top:AgentRole
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

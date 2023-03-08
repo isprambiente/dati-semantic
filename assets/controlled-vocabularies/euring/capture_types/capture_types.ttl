@@ -1,0 +1,29 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/italia/env/vocab/euring/capture_types/first_capture>
+  a skos:Concept ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/euring/capture_types> ;
+  dct:identifier "capture" ;
+  skos:prefLabel "capture"@en , "cattura"@it ;
+  skos:definition "Bird that has been captured without any marking"@en, "Uccello che è stato catturato privo di alcun marcaggio"@it .
+
+<https://w3id.org/italia/env/vocab/euring/capture_types/recapture>
+  a skos:Concept ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/euring/capture_types> ;
+  dct:identifier "recapture" ;
+  skos:prefLabel "Recapture"@en, "Ricattura"@it ;
+  skos:definition "Bird that has been caught with at least one marking"@en, "Uccello che è stato catturato con almeno un marcaggio"@it .
+
+
+<https://w3id.org/italia/env/vocab/euring/capture_types>
+  a skos:ConceptScheme ;
+  dct:title "Controlled Vocabulary on EURING data"@en, "Vocabolario Controllato sui dati EURING"@it ;
+  rdfs:comment "Controlled Vocabulary on EURING data (European Union for Bird Ringing)"@en, "Vocabolario Controllato sui dati EURING (Unione Europea per l'Inanellamento degli Uccelli)"@it ;
+  dct:description "Controlled Vocabulary on EURING data (European Union for Bird Ringing)"@en, "Vocabolario Controllato sui dati EURING (Unione Europea per l'Inanellamento degli Uccelli)"@it ;
+  rdfs:comment "Controlled Vocabulary on EURING data (European Union for Bird Ringing)"@en ,
+               "Vocabolario Controllato sui dati EURING (Unione Europea per l'Inanellamento degli Uccelli)"@it ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA>, <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2023-03-03"^^xsd:date .

@@ -1,0 +1,27 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://w3id.org/italia/env/vocab/platforms/operational_status>
+  a skos:ConceptScheme ;
+  dct:title "Vocabolario dello stato operativo delle stazioni di misura"@it, "Vocabulary of the Operational Status of the Network/Measure Stations"@en ;
+  rdfs:label "Vocabolario dello stato operativo delle stazioni di misura"@it, "Vocabulary of the Operational Status of the Network/Measure Stations"@en ;
+  dct:description "Vocabolario dello stato operativo delle stazioni di misura (Operativo/Cessato)"@it, "Vocabulary of the Operational Status of the Network/Measure Stations (Operational/Ceased)"@en ;
+  rdfs:comment "Vocabolario dello stato operativo delle stazioni di misura (Operativo/Cessato)"@it, "Vocabulary of the Operational Status of the Network/Measure Stations (Operational/Ceased)"@en ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA>, <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2023-03-03"^^xsd:date .
+
+<https://w3id.org/italia/env/vocab/platforms/operational_status/operational>
+  a skos:Concept ;
+  skos:prefLabel "Operativo"@it, "Operational"@en ;
+  skos:definition "The measuring station is operative nowadays."@en, "Stazione di misura attualmente operativa."@it ;
+  dct:identifier "operational" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/platforms/operational_status> .
+
+<https://w3id.org/italia/env/vocab/platforms/operational_status/ceased>
+  a skos:Concept ;
+  skos:prefLabel "Cessato"@it, "Ceased"@en ;
+  skos:definition "The measuring station is no more operative."@en, "Stazione di misura non più operativa."@it ;
+  dct:identifier "ceased" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/platforms/operational_status> .
