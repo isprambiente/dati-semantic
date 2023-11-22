@@ -1,0 +1,57 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://w3id.org/italia/env/vocab/bathing_waters/quality>
+  a skos:ConceptScheme ;
+  dct:title "Vocabolario dello stato della qualit\u00e0 delle acque di balneazione"@it , "Vocabulary of bathing water quality status"@en ;
+  rdfs:label "Vocabolario dello stato della qualit\u00e0 delle acque di balneazione"@it , "Vocabulary of bathing water quality"@en ;
+  dct:description  "Vocabolario dello stato della qualit\u00e0 delle aree protette segnalate ai sensi della direttiva sulle acque di balneazione ('0 - Not classified', '1 - Excellent', '2 - Good', '3 - Good or Sufficient', '3 - Sufficient', '4 - Poor': Le classi di qualit\u00e0 'Buona' e 'Sufficiente' sono state accorpate per comparabilit\u00e0 con la classificazione della precedente direttiva sulle acque di balneazione 76/160/CEE)"@it ,
+    "Vocabulary of quality status of the protected areas reported under the Bathing Water Directive ('0 - Not classified', '1 - Excellent', '2 - Good', '3 - Good or Sufficient', '3 - Sufficient', '4 - Poor': Quality classes 'Good' and 'Sufficient' are merged for comparability with classification of the preceding Bathing Water Directive 76/160/EEC)"@en ;
+  rdfs:comment "Vocabolario dello stato della qualit\u00e0 delle aree protette segnalate ai sensi della direttiva sulle acque di balneazione ('0 - Not classified', '1 - Excellent', '2 - Good', '3 - Good or Sufficient', '3 - Sufficient', '4 - Poor': Le classi di qualit\u00e0 'Buona' e 'Sufficiente' sono state accorpate per comparabilit\u00e0 con la classificazione della precedente direttiva sulle acque di balneazione 76/160/CEE)"@it ,
+    "Vocabulary of quality status of the protected areas reported under the Bathing Water Directive ('0 - Not classified', '1 - Excellent', '2 - Good', '3 - Good or Sufficient', '3 - Sufficient', '4 - Poor': Quality classes 'Good' and 'Sufficient' are merged for comparability with classification of the preceding Bathing Water Directive 76/160/EEC)"@en ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA>, <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2023-11-13"^^xsd:date .
+
+<https://w3id.org/italia/env/vocab/bathing_waters/quality/0>
+  a skos:Concept ;
+  skos:prefLabel "Non classificata"@it, "Not classified"@en ;
+  skos:definition "For Bathing Water Directive, the value of quality status '0 - Not classified'"@en, "Per la direttiva sulle acque di balneazione, il valore dello stato di qualit\u00e0 '0 - Not classified' (Non classificata)."@it ;
+  dct:identifier "0 - Not classified" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/bathing_waters/quality> .
+
+<https://w3id.org/italia/env/vocab/bathing_waters/quality/1>
+  a skos:Concept ;
+  skos:prefLabel "Eccellente"@it, "Excellent"@en ;
+  skos:definition "For Bathing Water Directive, the value of quality status '1 - Excellent'"@en, "Per la direttiva sulle acque di balneazione, il valore dello stato di qualit\u00e0 '1 - Excellent' (Eccellente)."@it ;
+  dct:identifier "1 - Excellent" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/bathing_waters/quality> .
+
+<https://w3id.org/italia/env/vocab/bathing_waters/quality/2>
+  a skos:Concept ;
+  skos:prefLabel "Buona"@it, "Good"@en ;
+  skos:definition "For Bathing Water Directive, the value of quality status '2 - Good'"@en, "Per la direttiva sulle acque di balneazione, il valore dello stato di qualit\u00e0 '2 - Good' (Buona)."@it ;
+  dct:identifier "2 - Good" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/bathing_waters/quality> .
+
+<https://w3id.org/italia/env/vocab/bathing_waters/quality/3>
+  a skos:Concept ;
+  skos:prefLabel "Sufficiente"@it, "Sufficient"@en ;
+  skos:definition "For Bathing Water Directive, the value of quality status '3 - Sufficient'"@en, "Per la direttiva sulle acque di balneazione, il valore dello stato di qualit\u00e0 '3 - Sufficient' (Sufficiente)."@it ;
+  dct:identifier "3 - Sufficient" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/bathing_waters/quality> .
+
+<https://w3id.org/italia/env/vocab/bathing_waters/quality/3p>
+  a skos:Concept ;
+  skos:prefLabel "Buona o Sufficiente"@it, "Good or Sufficient"@en ;
+  skos:definition "For Bathing Water Directive, the value of quality status '3 - Good or Sufficient'"@en, "Per la direttiva sulle acque di balneazione, il valore dello stato di qualit\u00e0 '3 - Good or Sufficient' (Buona o Sufficiente)."@it ;
+  dct:identifier "3 - Good or Sufficient" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/bathing_waters/quality> .
+
+<https://w3id.org/italia/env/vocab/bathing_waters/quality/4>
+  a skos:Concept ;
+  skos:prefLabel "Scarsa"@it, "Poor"@en ;
+  skos:definition "For Bathing Water Directive, the value of quality status '4 - Poor'"@en, "Per la direttiva sulle acque di balneazione, il valore dello stato di qualit\u00e0 '4 - Poor' (Scarsa)."@it ;
+  dct:identifier "4 - Poor" ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/bathing_waters/quality> .

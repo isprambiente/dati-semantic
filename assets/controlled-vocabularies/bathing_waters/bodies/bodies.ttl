@@ -1,0 +1,57 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://w3id.org/italia/env/vocab/bathing_waters/bodies>
+  a skos:ConceptScheme ;
+  dct:title "Vocabolario dei tipi di zona acque di balneazione"@it , "Vocabulary of bathing water zone types"@en ;
+  rdfs:label "Vocabolario dei tipi di zona acque di balneazione"@it, "Vocabulary of bathing water zone types"@en ;
+  dct:description  "Vocabolario dei tipi di zona ('bathingWaters': acque di balneazione) e tipi di zona specializzata ('coastalBathingWater': acque di balneazione costiere, 'transitionalBathingWater': acque di balneazione di transizione, 'lakeBathingWater': acque di balneazione lacustri o 'riverBathingWater': acque di balneazione fluviali) delle aree protette segnalate ai sensi della direttiva sulle acque di balneazione"@it ,
+    "Vocabulary of zone types ('bathingWaters') and specialised zone types ('coastalBathingWater', 'transitionalBathingWater', 'lakeBathingWater' or 'riverBathingWater') of the protected areas reported under the Bathing Water Directive"@en ;
+  rdfs:comment "Vocabolario dei tipi di zona ('bathingWaters': acque di balneazione) e tipi di zona specializzata ('coastalBathingWater': acque di balneazione costiere, 'transitionalBathingWater': acque di balneazione di transizione, 'lakeBathingWater': acque di balneazione lacustri o 'riverBathingWater': acque di balneazione fluviali) delle aree protette segnalate ai sensi della direttiva sulle acque di balneazione"@it ,
+    "Vocabulary of zone types ('bathingWaters') and specialised zone types ('coastalBathingWater', 'transitionalBathingWater', 'lakeBathingWater' or 'riverBathingWater') of the protected areas reported under the Bathing Water Directive"@en ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ITA>, <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2023-11-13"^^xsd:date .
+
+<https://w3id.org/italia/env/vocab/bathing_waters/bodies/river_bathing_water>
+  a skos:Concept ;
+  skos:prefLabel "Acque di balneazione fluviali"@it, "River Bathing Water"@en ;
+  skos:definition "For Bathing Water Directive, the value of this specialisedZoneType element is: 'riverBathingWater'"@en, "Per la direttiva sulle acque di balneazione, il valore di questo elemento specialisedZoneType è: 'riverBathingWater'."@it ;
+  dct:identifier "riverBathingWater" ;
+  skos:broader <https://w3id.org/italia/env/vocab/bathing_waters/bodies/bathing_waters> ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/bathing_waters/bodies> .
+
+<https://w3id.org/italia/env/vocab/bathing_waters/bodies/lake_bathing_water>
+  a skos:Concept ;
+  skos:prefLabel "Acque di balneazione lacustri"@it, "Lake Bathing Water"@en ;
+  skos:definition "For Bathing Water Directive, the value of this specialisedZoneType element is: 'lakeBathingWater'"@en, "Per la direttiva sulle acque di balneazione, il valore di questo elemento specializedZoneType è: 'lakeBathingWater'."@it ;
+  dct:identifier "lakeBathingWater" ;
+  skos:broader <https://w3id.org/italia/env/vocab/bathing_waters/bodies/bathing_waters> ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/bathing_waters/bodies> .
+
+<https://w3id.org/italia/env/vocab/bathing_waters/bodies/transitional_bathing_water>
+  a skos:Concept ;
+  skos:prefLabel "Acque di balneazione in acque di transizione"@it, "Transitional Bathing Water"@en ;
+  skos:definition "For Bathing Water Directive, the value of this specialisedZoneType element is: 'transitionalBathingWater'"@en, "Per la direttiva sulle acque di balneazione, il valore di questo elemento specializedZoneType è: 'transitionalBathingWater'."@it ;
+  dct:identifier "transitionalBathingWater" ;
+  skos:broader <https://w3id.org/italia/env/vocab/bathing_waters/bodies/bathing_waters> ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/bathing_waters/bodies> .
+
+<https://w3id.org/italia/env/vocab/bathing_waters/bodies/coastal_bathing_water>
+  a skos:Concept ;
+  skos:prefLabel "Acque di balneazione costiere"@it, "Coastal Bathing Water"@en ;
+  skos:definition "For Bathing Water Directive, the value of this specialisedZoneType element is: 'coastalBathingWater'"@en, "Per la direttiva sulle acque di balneazione, il valore di questo elemento specializedZoneType è: 'coastalBathingWater'."@it ;
+  dct:identifier "coastalBathingWater" ;
+  skos:broader <https://w3id.org/italia/env/vocab/bathing_waters/bodies/bathing_waters> ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/bathing_waters/bodies> .
+
+<https://w3id.org/italia/env/vocab/bathing_waters/bodies/bathing_waters>
+  a skos:Concept ;
+  skos:exactMatch <http://inspire.ec.europa.eu/codelist/ZoneTypeCode/bathingWaters> ;
+  skos:prefLabel "Acque di balneazione"@it, "Bathing Waters"@en ;
+  skos:definition "For Bathing Water Directive, the value of this zoneType element is: 'bathingWaters'"@en, "Per la direttiva sulle acque di balneazione, il valore di questo elemento zoneType è: 'bathingWaters'."@it ;
+  dct:identifier "bathingWaters" ;
+  skos:narrower <https://w3id.org/italia/env/vocab/bathing_waters/bodies/river_bathing_water>, <https://w3id.org/italia/env/vocab/bathing_waters/bodies/lake_bathing_water>,
+    <https://w3id.org/italia/env/vocab/bathing_waters/bodies/transitional_bathing_water>, <https://w3id.org/italia/env/vocab/bathing_waters/bodies/coastal_bathing_water> ;
+  skos:inScheme <https://w3id.org/italia/env/vocab/bathing_waters/bodies> .
