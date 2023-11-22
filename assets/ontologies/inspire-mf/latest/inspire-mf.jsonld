@@ -484,19 +484,6 @@
 }, {
   "@id" : "_:genid66",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sampler"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isSamplingSeriesMadeBySampler"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid67",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
@@ -505,7 +492,7 @@
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/timedObservationValue"
   } ]
 }, {
-  "@id" : "_:genid68",
+  "@id" : "_:genid67",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isSamplingValueOf"
@@ -514,7 +501,7 @@
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sampling"
   } ]
 }, {
-  "@id" : "_:genid69",
+  "@id" : "_:genid68",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
@@ -525,6 +512,15 @@
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSensorModel"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorModel"
   } ]
 }, {
   "@id" : "_:genid7",
@@ -540,22 +536,13 @@
   "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSensorModel"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorModel"
-  } ]
-}, {
-  "@id" : "_:genid71",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSensorType"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorType"
   } ]
 }, {
-  "@id" : "_:genid72",
+  "@id" : "_:genid71",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isHostedBy"
@@ -564,7 +551,7 @@
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
   } ]
 }, {
-  "@id" : "_:genid73",
+  "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
@@ -573,7 +560,7 @@
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isHostedBy"
   } ]
 }, {
-  "@id" : "_:genid74",
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
@@ -582,7 +569,7 @@
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/makesObservation"
   } ]
 }, {
-  "@id" : "_:genid75",
+  "@id" : "_:genid74",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/System"
@@ -595,7 +582,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid76",
+  "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Value"
@@ -608,7 +595,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid77",
+  "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
@@ -621,7 +608,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid78",
+  "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/implementsProcedure"
@@ -630,7 +617,7 @@
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Procedure"
   } ]
 }, {
-  "@id" : "_:genid79",
+  "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
@@ -643,7 +630,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid80",
+  "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/System"
@@ -656,7 +643,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid81",
+  "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Value"
@@ -669,7 +656,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid82",
+  "@id" : "_:genid81",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
@@ -682,13 +669,19 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid83",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSystemCapability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SystemCapability"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid84",
@@ -704,12 +697,6 @@
   } ]
 }, {
   "@id" : "_:genid86",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid87",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -723,7 +710,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid92",
+  "@id" : "_:genid91",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -737,7 +724,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid97",
+  "@id" : "_:genid96",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1326,8 +1313,6 @@
     "@id" : "_:genid63"
   }, {
     "@id" : "_:genid66"
-  }, {
-    "@id" : "_:genid67"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SamplingValue",
@@ -1352,9 +1337,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Value"
   }, {
-    "@id" : "_:genid68"
+    "@id" : "_:genid67"
   }, {
-    "@id" : "_:genid69"
+    "@id" : "_:genid68"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sensor",
@@ -1379,6 +1364,8 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"
   }, {
+    "@id" : "_:genid69"
+  }, {
     "@id" : "_:genid70"
   }, {
     "@id" : "_:genid71"
@@ -1386,8 +1373,6 @@
     "@id" : "_:genid72"
   }, {
     "@id" : "_:genid73"
-  }, {
-    "@id" : "_:genid74"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorModel",
@@ -1451,11 +1436,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
   }, {
+    "@id" : "_:genid74"
+  }, {
     "@id" : "_:genid75"
   }, {
     "@id" : "_:genid76"
-  }, {
-    "@id" : "_:genid77"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SystemDeployment",
@@ -1480,6 +1465,8 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
   }, {
+    "@id" : "_:genid77"
+  }, {
     "@id" : "_:genid78"
   }, {
     "@id" : "_:genid79"
@@ -1487,8 +1474,6 @@
     "@id" : "_:genid80"
   }, {
     "@id" : "_:genid81"
-  }, {
-    "@id" : "_:genid82"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ValidationLevel",
@@ -2765,38 +2750,6 @@
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/makesSampling"
   } ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isSamplingSeriesMadeBySampler",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La proprietà che collega una serie di campionamenti al campionatore che effettua tale serie di campionamenti."
-  }, {
-    "@language" : "en",
-    "@value" : "The property that links a series of samplings to the sampler that performs that samplings series."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SamplingSeries"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is series of samplings made by sampler"
-  }, {
-    "@language" : "it",
-    "@value" : "è serie di campionamenti emessa da un campionatore"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sampler"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isSamplingMadeBySampler"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/makesSamplingSeries"
-  } ]
-}, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isSamplingValueOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3029,35 +2982,6 @@
     "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
   } ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/makesSamplingSeries",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "La proprietà che collega un campionatore a una serie di campionamenti fatti da tale campionatore."
-  }, {
-    "@language" : "en",
-    "@value" : "The property that links a sampler to a series of samplings made by such a sampler."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sampler"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "emette serie di campionamenti"
-  }, {
-    "@language" : "en",
-    "@value" : "makes series of samplings"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SamplingSeries"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/makesSampling"
-  } ]
-}, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/phenomenonTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3132,7 +3056,7 @@
   "@id" : "https://w3id.org/italia/env/onto/top/System",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid83"
+    "@id" : "_:genid82"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity",

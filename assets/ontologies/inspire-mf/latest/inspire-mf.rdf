@@ -10,10 +10,10 @@
     <owl:Ontology rdf:about="https://w3id.org/italia/env/onto/inspire-mf">
         <owl:imports rdf:resource="https://w3id.org/italia/env/onto/top/"/>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -21,16 +21,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -38,7 +38,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/basedOnMetric -->
@@ -54,7 +54,7 @@
         <rdfs:label xml:lang="it">basato sulla metrica</rdfs:label>
         <rdfs:label xml:lang="en">based on metric</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/generationTime -->
@@ -77,7 +77,7 @@
         <rdfs:label xml:lang="it">entità temporale di generazione dell&apos;osservazione (o del campionamento)</rdfs:label>
         <rdfs:label xml:lang="en">temporal entity of observation (or sampling) generation</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest -->
@@ -93,7 +93,7 @@
         <rdfs:label xml:lang="it">ha caratteristica di interesse</rdfs:label>
         <rdfs:label xml:lang="en">has feature of interest</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasIndicator -->
@@ -109,7 +109,7 @@
         <rdfs:label xml:lang="it">ha indicatore</rdfs:label>
         <rdfs:label xml:lang="en">has indicator</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasManufacturer -->
@@ -124,7 +124,7 @@
         <rdfs:label xml:lang="it">ha costruttore</rdfs:label>
         <rdfs:label xml:lang="en">has manufacturer</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter -->
@@ -140,7 +140,7 @@
         <rdfs:label xml:lang="it">ha parametro di osservazione</rdfs:label>
         <rdfs:label xml:lang="en">has observation parameter</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasObservationValue -->
@@ -156,7 +156,7 @@
         <rdfs:label xml:lang="it">ha valore di osservazione</rdfs:label>
         <rdfs:label xml:lang="en">has observation value</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasOperationalStatus -->
@@ -171,7 +171,7 @@
         <rdfs:label xml:lang="it">ha stato operativo</rdfs:label>
         <rdfs:label xml:lang="en">has operational status</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasPlatform -->
@@ -187,7 +187,7 @@
         <rdfs:label xml:lang="it">ha piattaforma</rdfs:label>
         <rdfs:label xml:lang="en">has platform</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasPlatformModel -->
@@ -203,7 +203,7 @@
         <rdfs:label xml:lang="it">ha modello di piattaforma</rdfs:label>
         <rdfs:label xml:lang="en">has platform model</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasPlatformType -->
@@ -219,7 +219,7 @@
         <rdfs:label xml:lang="it">ha tipo di piattaforma</rdfs:label>
         <rdfs:label xml:lang="en">has platform type</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasResponsibleParty -->
@@ -240,7 +240,7 @@
         <rdfs:label xml:lang="it">ha parte responsabile</rdfs:label>
         <rdfs:label xml:lang="en">has responsible party</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasSamplerModel -->
@@ -256,7 +256,7 @@
         <rdfs:label xml:lang="it">ha modello di campionatore</rdfs:label>
         <rdfs:label xml:lang="en">has sampler model</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasSamplerType -->
@@ -272,7 +272,7 @@
         <rdfs:label xml:lang="it">ha tipo di campionatore</rdfs:label>
         <rdfs:label xml:lang="en">has sampler type</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasSamplingValue -->
@@ -288,7 +288,7 @@
         <rdfs:label xml:lang="it">ha valore di campionamento</rdfs:label>
         <rdfs:label xml:lang="en">has sampling value</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasSensorModel -->
@@ -304,7 +304,7 @@
         <rdfs:label xml:lang="it">ha modello di sensore</rdfs:label>
         <rdfs:label xml:lang="en">has sensor model</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasSensorType -->
@@ -320,7 +320,7 @@
         <rdfs:label xml:lang="it">ha tipo di sensore</rdfs:label>
         <rdfs:label xml:lang="en">has sensor type</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasSubMonitoringObject -->
@@ -336,7 +336,7 @@
         <rdfs:label xml:lang="it">ha sotto-oggetto di monitoraggio</rdfs:label>
         <rdfs:label xml:lang="en">has sub-monitoring object</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasSuperMonitoringObject -->
@@ -351,7 +351,7 @@
         <rdfs:label xml:lang="it">ha oggetto di monitoraggio superiore</rdfs:label>
         <rdfs:label xml:lang="en">has super monitoring object</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasSystemCapability -->
@@ -367,7 +367,7 @@
         <rdfs:label xml:lang="it">ha proprietà del sistema</rdfs:label>
         <rdfs:label xml:lang="en">has system property</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasSystemDeployment -->
@@ -381,7 +381,7 @@
         <rdfs:label xml:lang="it">ha dislocamento del sistema</rdfs:label>
         <rdfs:label xml:lang="en">has system deployment</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasValidationLevel -->
@@ -397,7 +397,7 @@
         <rdfs:label xml:lang="it">ha livello di validazione</rdfs:label>
         <rdfs:label xml:lang="en">has validation level</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hosts -->
@@ -413,7 +413,7 @@
         <rdfs:label xml:lang="en">hosts</rdfs:label>
         <rdfs:label xml:lang="it">ospita</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/implementsProcedure -->
@@ -436,7 +436,7 @@
         <rdfs:label xml:lang="it">implementa procedura</rdfs:label>
         <rdfs:label xml:lang="en">implements procedure</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isFeatureOfInterestOf -->
@@ -451,7 +451,7 @@
         <rdfs:label xml:lang="en">is feature of interest of</rdfs:label>
         <rdfs:label xml:lang="it">è caratteristica di interesse di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isGenerationTimeOf -->
@@ -473,7 +473,7 @@
         <rdfs:label xml:lang="en">is generation time of</rdfs:label>
         <rdfs:label xml:lang="it">è tempo di generazione di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isHostedBy -->
@@ -488,7 +488,7 @@
         <rdfs:label xml:lang="en">is hosted by</rdfs:label>
         <rdfs:label xml:lang="it">è ospitato da</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isIndicatorOf -->
@@ -503,7 +503,7 @@
         <rdfs:label xml:lang="en">is indicator of</rdfs:label>
         <rdfs:label xml:lang="it">è indicatore di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isMetricUsedBy -->
@@ -518,7 +518,7 @@
         <rdfs:label xml:lang="en">is metric used by</rdfs:label>
         <rdfs:label xml:lang="it">è metrica usata da</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isObservationCollectionMadeBySensor -->
@@ -534,7 +534,7 @@
         <rdfs:label xml:lang="en">is observation collection made by sensor</rdfs:label>
         <rdfs:label xml:lang="it">è collezione di osservazioni fatta da sensore</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isObservationMadeBySensor -->
@@ -550,7 +550,7 @@
         <rdfs:label xml:lang="en">is observation made by sensor</rdfs:label>
         <rdfs:label xml:lang="it">è osservazione emessa da sensore</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isObservationParameterFor -->
@@ -565,7 +565,7 @@
         <rdfs:label xml:lang="en">is observation parameter for</rdfs:label>
         <rdfs:label xml:lang="it">è parametro di osservazione per</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isObservationValueOf -->
@@ -580,7 +580,7 @@
         <rdfs:label xml:lang="en">is observation value of</rdfs:label>
         <rdfs:label xml:lang="it">è valore di osservazione di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isPhenomenonTimeOf -->
@@ -603,7 +603,7 @@
         <rdfs:label xml:lang="en">is phenomenon time of</rdfs:label>
         <rdfs:label xml:lang="it">è il tempo in cui si è verificato il fenomeno di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isPlatformModelOf -->
@@ -618,7 +618,7 @@
         <rdfs:label xml:lang="en">is platform model of</rdfs:label>
         <rdfs:label xml:lang="it">è modello di piattaforma di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isPlatformOf -->
@@ -633,7 +633,7 @@
         <rdfs:label xml:lang="en">is platform of</rdfs:label>
         <rdfs:label xml:lang="it">è piattaforma di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isPlatformTypeOf -->
@@ -648,7 +648,7 @@
         <rdfs:label xml:lang="en">is platform type of</rdfs:label>
         <rdfs:label xml:lang="it">è tipo di piattaforma di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isProcedureImplementedBy -->
@@ -670,7 +670,7 @@
         <rdfs:label xml:lang="en">is procedure implemented by</rdfs:label>
         <rdfs:label xml:lang="it">è procedura implementata da</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isSamplerModelOf -->
@@ -685,7 +685,7 @@
         <rdfs:label xml:lang="en">is sampler model of</rdfs:label>
         <rdfs:label xml:lang="it">è modello di campionatore di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isSamplerTypeOf -->
@@ -700,7 +700,7 @@
         <rdfs:label xml:lang="en">is sampler type of</rdfs:label>
         <rdfs:label xml:lang="it">è tipo di campionatore di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isSamplingMadeBySampler -->
@@ -716,23 +716,7 @@
         <rdfs:label xml:lang="en">is sampling made by sampler</rdfs:label>
         <rdfs:label xml:lang="it">è campionamento emesso da campionatore</rdfs:label>
     </owl:ObjectProperty>
-
-
-
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/isSamplingSeriesMadeBySampler -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/inspire-mf/isSamplingSeriesMadeBySampler">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/isSamplingMadeBySampler"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/makesSamplingSeries"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/SamplingSeries"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/Sampler"/>
-        <rdfs:comment xml:lang="it">La proprietà che collega una serie di campionamenti al campionatore che effettua tale serie di campionamenti.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The property that links a series of samplings to the sampler that performs that samplings series.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/inspire-mf"/>
-        <rdfs:label xml:lang="en">is series of samplings made by sampler</rdfs:label>
-        <rdfs:label xml:lang="it">è serie di campionamenti emessa da un campionatore</rdfs:label>
-    </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isSamplingValueOf -->
@@ -747,7 +731,7 @@
         <rdfs:label xml:lang="en">is sampling value of</rdfs:label>
         <rdfs:label xml:lang="it">è valore di campionamento di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isSensorModelOf -->
@@ -762,7 +746,7 @@
         <rdfs:label xml:lang="en">is sensor model of</rdfs:label>
         <rdfs:label xml:lang="it">è modello di sensore di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isSensorTypeOf -->
@@ -777,7 +761,7 @@
         <rdfs:label xml:lang="en">is sensor type of</rdfs:label>
         <rdfs:label xml:lang="it">è tipo di sensore di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isSystemCapabilityOf -->
@@ -792,7 +776,7 @@
         <rdfs:label xml:lang="en">is system capability of</rdfs:label>
         <rdfs:label xml:lang="it">è capability di sistema di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isValidationLevelOf -->
@@ -807,7 +791,7 @@
         <rdfs:label xml:lang="en">is validation level of</rdfs:label>
         <rdfs:label xml:lang="it">è livello di validazione di</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/makesObservation -->
@@ -822,7 +806,7 @@
         <rdfs:label xml:lang="it">emette osservazione</rdfs:label>
         <rdfs:label xml:lang="en">makes observation</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/makesObservationCollection -->
@@ -837,7 +821,7 @@
         <rdfs:label xml:lang="it">fa collezione di osservazioni</rdfs:label>
         <rdfs:label xml:lang="en">makes observation collection</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/makesSampling -->
@@ -852,22 +836,7 @@
         <rdfs:label xml:lang="it">emette campionamento</rdfs:label>
         <rdfs:label xml:lang="en">makes sampling</rdfs:label>
     </owl:ObjectProperty>
-
-
-
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/makesSamplingSeries -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/inspire-mf/makesSamplingSeries">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/makesSampling"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/Sampler"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/SamplingSeries"/>
-        <rdfs:comment xml:lang="it">La proprietà che collega un campionatore a una serie di campionamenti fatti da tale campionatore.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The property that links a sampler to a series of samplings made by such a sampler.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/inspire-mf"/>
-        <rdfs:label xml:lang="it">emette serie di campionamenti</rdfs:label>
-        <rdfs:label xml:lang="en">makes series of samplings</rdfs:label>
-    </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/phenomenonTime -->
@@ -889,136 +858,136 @@
         <rdfs:label xml:lang="it">entità temporale in cui si è verificato il fenomeno</rdfs:label>
         <rdfs:label xml:lang="en">phenomenon time</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/associatedWith -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/associatedWith"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/atTime -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/atTime"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/classifies -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/classifies"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/hasCharacteristic -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasCharacteristic"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/hasCollection -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasCollection"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/hasDescription -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasDescription"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/hasEventuality -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasEventuality"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/hasLocation -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasLocation"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/hasMember -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasMember"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/hasPart -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasPart"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/hasSystem -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasSystem"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/hasValue -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/hasValue"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/isCharacteristicOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isCharacteristicOf"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/isClassifiedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/isCollectionOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isCollectionOf"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/isDescriptionOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isDescriptionOf"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/isParametrisedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isParametrisedBy"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/isPartOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isPartOf"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/isTimeOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isTimeOf"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/isValueOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isValueOf"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/parametrises -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/parametrises"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -1026,7 +995,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/timedObservationValue -->
@@ -1035,10 +1004,10 @@
         <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -1046,7 +1015,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest -->
@@ -1059,7 +1028,7 @@
         <rdfs:label xml:lang="it">Caratteristica di Interesse</rdfs:label>
         <rdfs:label xml:lang="en">Feature of interest</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/Indicator -->
@@ -1091,7 +1060,7 @@
         <rdfs:label xml:lang="en">Indicator</rdfs:label>
         <rdfs:label xml:lang="it">Indicatore</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/IndicatorCollection -->
@@ -1110,7 +1079,7 @@
         <rdfs:label xml:lang="it">Collezione di indicatori</rdfs:label>
         <rdfs:label xml:lang="en">Indicator collection</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/Metric -->
@@ -1129,7 +1098,7 @@
         <rdfs:label xml:lang="en">Metric</rdfs:label>
         <rdfs:label xml:lang="it">Metrica</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility -->
@@ -1142,7 +1111,7 @@
         <rdfs:label xml:lang="it">Impianto di Monitoraggio</rdfs:label>
         <rdfs:label xml:lang="en">Monitoring Facility</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/MonitoringNetwork -->
@@ -1154,7 +1123,7 @@
         <rdfs:label xml:lang="en">Monitoring Network</rdfs:label>
         <rdfs:label xml:lang="it">Rete di Monitoraggio</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/MonitoringObject -->
@@ -1189,7 +1158,7 @@
         <rdfs:label xml:lang="en">Monitoring Object</rdfs:label>
         <rdfs:label xml:lang="it">Oggetto per il Monitoraggio</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/Observation -->
@@ -1256,7 +1225,7 @@
         <rdfs:label xml:lang="en">Observation</rdfs:label>
         <rdfs:label xml:lang="it">Osservazione</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/ObservationCollection -->
@@ -1275,7 +1244,7 @@
         <rdfs:label xml:lang="en">Collection of observations</rdfs:label>
         <rdfs:label xml:lang="it">Collezione di osservazioni</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter -->
@@ -1288,7 +1257,7 @@
         <rdfs:label xml:lang="en">Observation parameter</rdfs:label>
         <rdfs:label xml:lang="it">Parametro di osservazione</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/ObservationSeries -->
@@ -1312,7 +1281,7 @@
         <rdfs:label xml:lang="it">Serie di osservazioni</rdfs:label>
         <rdfs:label xml:lang="en">Series of observations</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/ObservationValue -->
@@ -1338,7 +1307,7 @@
         <rdfs:label xml:lang="en">Observation Value</rdfs:label>
         <rdfs:label xml:lang="it">Valore dell&apos;Osservazione</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/Platform -->
@@ -1377,7 +1346,7 @@
         <rdfs:label xml:lang="it">Piattaforma</rdfs:label>
         <rdfs:label xml:lang="en">Platform</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/PlatformCollection -->
@@ -1395,7 +1364,7 @@
         <rdfs:label xml:lang="it">Collezione di Piattaforme</rdfs:label>
         <rdfs:label xml:lang="en">Platform Collection</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/PlatformModel -->
@@ -1406,7 +1375,7 @@
         <rdfs:label xml:lang="it">Modello della Piattaforma</rdfs:label>
         <rdfs:label xml:lang="en">Platform Model</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/PlatformType -->
@@ -1419,7 +1388,7 @@
         <rdfs:label xml:lang="en">Platform Type</rdfs:label>
         <rdfs:label xml:lang="it">Tipo di piattaforma</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/Procedure -->
@@ -1432,7 +1401,7 @@
         <rdfs:label xml:lang="it">Procedura</rdfs:label>
         <rdfs:label xml:lang="en">Procedure</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/Sampler -->
@@ -1475,7 +1444,7 @@
         <rdfs:label xml:lang="it">Campionatore</rdfs:label>
         <rdfs:label xml:lang="en">Sampler</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/SamplerModel -->
@@ -1486,7 +1455,7 @@
         <rdfs:label xml:lang="it">Modello di Campionatore</rdfs:label>
         <rdfs:label xml:lang="en">Sampler Model</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/SamplerType -->
@@ -1499,7 +1468,7 @@
         <rdfs:label xml:lang="en">Sampler Type</rdfs:label>
         <rdfs:label xml:lang="it">Tipo di campionatore</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/Sampling -->
@@ -1553,7 +1522,7 @@
         <rdfs:label xml:lang="it">Campionamento</rdfs:label>
         <rdfs:label xml:lang="en">Sampling</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/SamplingCollection -->
@@ -1572,7 +1541,7 @@
         <rdfs:label xml:lang="en">Collection of samplings</rdfs:label>
         <rdfs:label xml:lang="it">Collezione di campionamenti</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/SamplingSeries -->
@@ -1588,13 +1557,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/isSamplingSeriesMadeBySampler"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/Sampler"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/timedObservationValue"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
@@ -1603,7 +1565,7 @@
         <rdfs:label xml:lang="it">Serie di campionamenti</rdfs:label>
         <rdfs:label xml:lang="en">Series of samplings</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/SamplingValue -->
@@ -1629,7 +1591,7 @@
         <rdfs:label xml:lang="en">Sampling Value</rdfs:label>
         <rdfs:label xml:lang="it">Valore del Campionamento</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/Sensor -->
@@ -1672,7 +1634,7 @@
         <rdfs:label xml:lang="en">Sensor</rdfs:label>
         <rdfs:label xml:lang="it">Sensore</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/SensorModel -->
@@ -1683,7 +1645,7 @@
         <rdfs:label xml:lang="it">Modello del Sensore</rdfs:label>
         <rdfs:label xml:lang="en">Sensor Model</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/SensorType -->
@@ -1696,7 +1658,7 @@
         <rdfs:label xml:lang="en">Sensor Type</rdfs:label>
         <rdfs:label xml:lang="it">Tipo di Sensore</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/SystemCapability -->
@@ -1730,7 +1692,7 @@
         <rdfs:label xml:lang="it">Abilità del sistema</rdfs:label>
         <rdfs:label xml:lang="en">System capability</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/SystemDeployment -->
@@ -1777,7 +1739,7 @@
         <rdfs:label xml:lang="it">Collocamento del sistema</rdfs:label>
         <rdfs:label xml:lang="en">System deployment</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/ValidationLevel -->
@@ -1790,73 +1752,73 @@
         <rdfs:label xml:lang="it">Livello di Validazione</rdfs:label>
         <rdfs:label xml:lang="en">Validation Level</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/AgentRole -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/AgentRole"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Characteristic -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Characteristic"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Collection -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Collection"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Concept -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Concept"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Description -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Description"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Entity -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Entity"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Eventuality -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Eventuality"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Location -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Location"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Organisation -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Organisation"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Parameter -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Parameter"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/SchemaAttribute -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/SchemaAttribute"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/System -->
@@ -1869,19 +1831,19 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/TemporalEntity -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/TemporalEntity"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/UniqueIdentifier -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/UniqueIdentifier"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Value -->
@@ -1896,10 +1858,10 @@
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // General axioms
@@ -1940,3 +1902,4 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
