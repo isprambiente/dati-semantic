@@ -1,0 +1,310 @@
+@prefix : <https://w3id.org/italia/env/onto/top-aligns/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@base <https://w3id.org/italia/env/onto/top-aligns/> .
+
+<https://w3id.org/italia/env/onto/top-aligns> rdf:type owl:Ontology ;
+                                               owl:versionIRI <https://w3id.org/italia/env/onto/top-aligns/0.1> ;
+                                               owl:imports <https://w3id.org/italia/env/onto/top> ,
+                                                           <https://w3id.org/italia/onto/TI> ;
+                                               dct:creator <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> ,
+                                                           <https://w3id.org/italia/env/ld/common/organisation/001> ;
+                                               dct:identifier "https://w3id.org/italia/env/onto/top-aligns" ;
+                                               dct:issued "2024-03-01"^^xsd:date ;
+                                               dct:modified "2024-03-01"^^xsd:date ;
+                                               dct:title "Questi sono gli allineamenti a DOLCE UtlraLight e all&apos;ontologia L0 di OntoPiA. La prima &egrave; un&apos;ontologia fondazionale largamente usata nel Semantic Web, mentre la seconda &egrave; il top-level della rete di ontologie della Pubblica Amministrazione italiana."@it ,
+                                                         "These are the alignments to DOLCE UtlraLight and OntoPiA&apos;s L0 ontology. The former is a foundational ontology widely used in the Semantic Web, while the latter is the top-level ontology network of the Italian Public Administration."@en ;
+                                               rdfs:label "TOP ontology alignments"@en ,
+                                                          "allineamenti ontologia TOP"@it .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+dct:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+dct:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dct:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dct:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#fn
+vcard:fn rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/italia/env/onto/top/directlyFollows
+<https://w3id.org/italia/env/onto/top/directlyFollows> owl:equivalentProperty <https://w3id.org/italia/onto/l0/directlyFollows> .
+
+
+###  https://w3id.org/italia/env/onto/top/directlyPrecedes
+<https://w3id.org/italia/env/onto/top/directlyPrecedes> owl:equivalentProperty <https://w3id.org/italia/onto/l0/directlyPrecedes> .
+
+
+###  https://w3id.org/italia/env/onto/top/follows
+<https://w3id.org/italia/env/onto/top/follows> owl:equivalentProperty <https://w3id.org/italia/onto/l0/follows> .
+
+
+###  https://w3id.org/italia/env/onto/top/hasDescription
+<https://w3id.org/italia/env/onto/top/hasDescription> owl:equivalentProperty <https://w3id.org/italia/onto/l0/hasDescription> .
+
+
+###  https://w3id.org/italia/env/onto/top/hasMember
+<https://w3id.org/italia/env/onto/top/hasMember> owl:equivalentProperty <https://w3id.org/italia/onto/l0/hasMember> .
+
+
+###  https://w3id.org/italia/env/onto/top/isDescriptionOf
+<https://w3id.org/italia/env/onto/top/isDescriptionOf> owl:equivalentProperty <https://w3id.org/italia/onto/l0/isDescriptionOf> .
+
+
+###  https://w3id.org/italia/env/onto/top/isMemberOf
+<https://w3id.org/italia/env/onto/top/isMemberOf> owl:equivalentProperty <https://w3id.org/italia/onto/l0/isMemberOf> .
+
+
+###  https://w3id.org/italia/env/onto/top/precedes
+<https://w3id.org/italia/env/onto/top/precedes> owl:equivalentProperty <https://w3id.org/italia/onto/l0/precedes> .
+
+
+###  https://w3id.org/italia/onto/l0/directlyFollows
+<https://w3id.org/italia/onto/l0/directlyFollows> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/l0/directlyPrecedes
+<https://w3id.org/italia/onto/l0/directlyPrecedes> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/l0/follows
+<https://w3id.org/italia/onto/l0/follows> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/l0/hasDescription
+<https://w3id.org/italia/onto/l0/hasDescription> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/l0/hasMember
+<https://w3id.org/italia/onto/l0/hasMember> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/l0/isDescriptionOf
+<https://w3id.org/italia/onto/l0/isDescriptionOf> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/l0/isMemberOf
+<https://w3id.org/italia/onto/l0/isMemberOf> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/l0/precedes
+<https://w3id.org/italia/onto/l0/precedes> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/italia/env/onto/top/identifier
+<https://w3id.org/italia/env/onto/top/identifier> owl:equivalentProperty <https://w3id.org/italia/onto/l0/identifier> .
+
+
+###  https://w3id.org/italia/env/onto/top/name
+<https://w3id.org/italia/env/onto/top/name> owl:equivalentProperty <https://w3id.org/italia/onto/l0/name> .
+
+
+###  https://w3id.org/italia/onto/l0/identifier
+<https://w3id.org/italia/onto/l0/identifier> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/italia/onto/l0/name
+<https://w3id.org/italia/onto/l0/name> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dati.gov.it/onto/dcatapit#Agent
+<http://dati.gov.it/onto/dcatapit#Agent> rdf:type owl:Class .
+
+
+###  http://dati.gov.it/onto/dcatapit#Organization
+<http://dati.gov.it/onto/dcatapit#Organization> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Kind
+vcard:Kind rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Organization
+vcard:Organization rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+foaf:Agent rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Agent
+<https://w3id.org/italia/env/onto/top/Agent> rdf:type owl:Class ;
+                                             owl:equivalentClass <https://w3id.org/italia/onto/l0/Agent> .
+
+
+###  https://w3id.org/italia/env/onto/top/Characteristic
+<https://w3id.org/italia/env/onto/top/Characteristic> rdf:type owl:Class ;
+                                                      owl:equivalentClass <https://w3id.org/italia/onto/l0/Characteristic> .
+
+
+###  https://w3id.org/italia/env/onto/top/Concept
+<https://w3id.org/italia/env/onto/top/Concept> rdf:type owl:Class ;
+                                               owl:equivalentClass <https://w3id.org/italia/onto/l0/Concept> .
+
+
+###  https://w3id.org/italia/env/onto/top/Description
+<https://w3id.org/italia/env/onto/top/Description> rdf:type owl:Class ;
+                                                   owl:equivalentClass <https://w3id.org/italia/onto/l0/Description> .
+
+
+###  https://w3id.org/italia/env/onto/top/Entity
+<https://w3id.org/italia/env/onto/top/Entity> rdf:type owl:Class ;
+                                              owl:equivalentClass <https://w3id.org/italia/onto/l0/Entity> .
+
+
+###  https://w3id.org/italia/env/onto/top/Location
+<https://w3id.org/italia/env/onto/top/Location> rdf:type owl:Class ;
+                                                owl:equivalentClass <https://w3id.org/italia/onto/l0/Location> .
+
+
+###  https://w3id.org/italia/env/onto/top/Organisation
+<https://w3id.org/italia/env/onto/top/Organisation> rdf:type owl:Class ;
+                                                    owl:equivalentClass <https://w3id.org/italia/onto/COV/Organization> .
+
+
+###  https://w3id.org/italia/env/onto/top/System
+<https://w3id.org/italia/env/onto/top/System> rdf:type owl:Class ;
+                                              owl:equivalentClass <https://w3id.org/italia/onto/l0/System> .
+
+
+###  https://w3id.org/italia/env/onto/top/TemporalEntity
+<https://w3id.org/italia/env/onto/top/TemporalEntity> rdf:type owl:Class ;
+                                                      owl:equivalentClass <https://w3id.org/italia/onto/TI/TemporalEntity> .
+
+
+###  https://w3id.org/italia/env/onto/top/UnitOfMeasure
+<https://w3id.org/italia/env/onto/top/UnitOfMeasure> rdf:type owl:Class ;
+                                                     owl:equivalentClass <https://w3id.org/italia/onto/MU/MeasurementUnit> .
+
+
+###  https://w3id.org/italia/env/onto/top/Value
+<https://w3id.org/italia/env/onto/top/Value> rdf:type owl:Class ;
+                                             owl:equivalentClass <https://w3id.org/italia/onto/MU/Value> .
+
+
+###  https://w3id.org/italia/onto/COV/Organization
+<https://w3id.org/italia/onto/COV/Organization> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/MU/MeasurementUnit
+<https://w3id.org/italia/onto/MU/MeasurementUnit> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/MU/Value
+<https://w3id.org/italia/onto/MU/Value> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/TI/TemporalEntity
+<https://w3id.org/italia/onto/TI/TemporalEntity> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/l0/Agent
+<https://w3id.org/italia/onto/l0/Agent> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/l0/Characteristic
+<https://w3id.org/italia/onto/l0/Characteristic> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/l0/Collection
+<https://w3id.org/italia/onto/l0/Collection> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/l0/Concept
+<https://w3id.org/italia/onto/l0/Concept> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/l0/Description
+<https://w3id.org/italia/onto/l0/Description> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/l0/Entity
+<https://w3id.org/italia/onto/l0/Entity> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/l0/EventOrSituation
+<https://w3id.org/italia/onto/l0/EventOrSituation> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/l0/Location
+<https://w3id.org/italia/onto/l0/Location> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/l0/System
+<https://w3id.org/italia/onto/l0/System> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab
+<https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> rdf:type owl:NamedIndividual ,
+                                                                                   <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                                   foaf:Agent ;
+                                                                          dct:identifier "cnr - Z6HZEH - STLab" ;
+                                                                          foaf:name "Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)"@en ,
+                                                                                    "Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)"@it .
+
+
+###  https://w3id.org/italia/env/ld/common/organisation/001
+<https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
+                                                                  <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                  <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                                  vcard:Kind ,
+                                                                  vcard:Organization ,
+                                                                  <http://www.w3.org/ns/org#Organization> ,
+                                                                  foaf:Agent ,
+                                                                  <https://w3id.org/italia/env/onto/top/Organisation> ;
+                                                         dct:identifier "ispra_rm" ;
+                                                         vcard:fn "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+                                                                  "Italian National Institute for Environmental Protection and Research"@en ;
+                                                         foaf:name "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+                                                                   "Italian Institute for Environmental Protection and Research"@en .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

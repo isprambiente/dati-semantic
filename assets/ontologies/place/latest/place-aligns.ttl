@@ -1,0 +1,202 @@
+@prefix : <https://w3id.org/italia/env/onto/place-aligns/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ADMS: <https://w3id.org/italia/onto/ADMS/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@base <https://w3id.org/italia/env/onto/place-aligns/> .
+
+<https://w3id.org/italia/env/onto/place-aligns> rdf:type owl:Ontology ;
+                                                 owl:versionIRI <https://w3id.org/italia/env/onto/place-aligns/0.1> ;
+                                                 owl:imports <http://www.opengis.net/ont/geosparql> ,
+                                                             <https://w3id.org/italia/env/onto/place> ,
+                                                             <https://w3id.org/italia/onto/CLV> ;
+                                                 dct:creator <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> ,
+                                                             <https://w3id.org/italia/env/ld/common/organisation/001> ;
+                                                 dct:identifier "https://w3id.org/italia/env/onto/place-aligns" ;
+                                                 dct:issued "2024-03-01"^^xsd:date ;
+                                                 dct:modified "2024-03-01"^^xsd:date ;
+                                                 dct:title "Questi sono gli allineamenti a GeoSPARQL ed OntoPiA (la rete di ontologie della Pubblica Amministrazione italiana)."@it ,
+                                                           "These are the alignments to GeoSPARQL and OntoPiA (the ontology network of the Italian Public Administration)."@en ;
+                                                 rdfs:label "PLACE ontology alignments"@en ,
+                                                            "allineamenti ontologia PLACE"@it .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty ;
+                                                   owl:equivalentProperty <https://w3id.org/italia/env/onto/place/hasGeometry> .
+
+
+###  https://w3id.org/italia/env/onto/place/hasCountry
+<https://w3id.org/italia/env/onto/place/hasCountry> rdf:type owl:ObjectProperty ;
+                                                    owl:equivalentProperty CLV:hasCountry .
+
+
+###  https://w3id.org/italia/env/onto/place/hasDirectHigherRank
+<https://w3id.org/italia/env/onto/place/hasDirectHigherRank> rdf:type owl:ObjectProperty ;
+                                                             owl:equivalentProperty CLV:hasDirectHigherRank .
+
+
+###  https://w3id.org/italia/env/onto/place/hasDirectLowerRank
+<https://w3id.org/italia/env/onto/place/hasDirectLowerRank> rdf:type owl:ObjectProperty ;
+                                                            owl:equivalentProperty CLV:hasDirectLowerRank .
+
+
+###  https://w3id.org/italia/env/onto/place/hasGeometry
+<https://w3id.org/italia/env/onto/place/hasGeometry> rdf:type owl:ObjectProperty ;
+                                                     owl:equivalentProperty CLV:hasGeometry .
+
+
+###  https://w3id.org/italia/env/onto/place/hasGeometryType
+<https://w3id.org/italia/env/onto/place/hasGeometryType> rdf:type owl:ObjectProperty ;
+                                                         owl:equivalentProperty CLV:hasGeometryType .
+
+
+###  https://w3id.org/italia/env/onto/place/isGeometryOf
+<https://w3id.org/italia/env/onto/place/isGeometryOf> rdf:type owl:ObjectProperty ;
+                                                      owl:equivalentProperty CLV:isGeometryFor .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#hasSerialization
+<http://www.opengis.net/ont/geosparql#hasSerialization> rdf:type owl:DatatypeProperty ;
+                                                        owl:equivalentProperty <https://w3id.org/italia/env/onto/place/geometry> .
+
+
+###  https://w3id.org/italia/env/onto/place/coordinateSystem
+<https://w3id.org/italia/env/onto/place/coordinateSystem> rdf:type owl:DatatypeProperty ;
+                                                          owl:equivalentProperty CLV:coordinateSystem .
+
+
+###  https://w3id.org/italia/env/onto/place/geometry
+<https://w3id.org/italia/env/onto/place/geometry> rdf:type owl:DatatypeProperty ;
+                                                  owl:equivalentProperty CLV:serialization .
+
+
+###  https://w3id.org/italia/env/onto/place/lat
+<https://w3id.org/italia/env/onto/place/lat> rdf:type owl:DatatypeProperty ;
+                                             owl:equivalentProperty CLV:lat .
+
+
+###  https://w3id.org/italia/env/onto/place/long
+<https://w3id.org/italia/env/onto/place/long> rdf:type owl:DatatypeProperty ;
+                                              owl:equivalentProperty CLV:long .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
+                                               owl:equivalentClass <https://w3id.org/italia/env/onto/place/Feature> .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class ;
+                                                owl:equivalentClass <https://w3id.org/italia/env/onto/place/Geometry> .
+
+
+###  http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+foaf:Agent rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/place/AdministrativeUnit
+<https://w3id.org/italia/env/onto/place/AdministrativeUnit> rdf:type owl:Class ;
+                                                            owl:equivalentClass CLV:AdminUnitComponent ;
+                                                            rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> .
+
+
+###  https://w3id.org/italia/env/onto/place/Country
+<https://w3id.org/italia/env/onto/place/Country> rdf:type owl:Class ;
+                                                 owl:equivalentClass CLV:Country .
+
+
+###  https://w3id.org/italia/env/onto/place/Feature
+<https://w3id.org/italia/env/onto/place/Feature> rdf:type owl:Class ;
+                                                 owl:equivalentClass CLV:Feature .
+
+
+###  https://w3id.org/italia/env/onto/place/Geometry
+<https://w3id.org/italia/env/onto/place/Geometry> rdf:type owl:Class ;
+                                                  owl:equivalentClass CLV:Geometry .
+
+
+###  https://w3id.org/italia/env/onto/place/GeometryType
+<https://w3id.org/italia/env/onto/place/GeometryType> rdf:type owl:Class ;
+                                                      owl:equivalentClass CLV:GeometryType .
+
+
+###  https://w3id.org/italia/env/onto/place/MetropolitanCity
+<https://w3id.org/italia/env/onto/place/MetropolitanCity> rdf:type owl:Class ;
+                                                          rdfs:subClassOf CLV:Province .
+
+
+###  https://w3id.org/italia/env/onto/place/Municipality
+<https://w3id.org/italia/env/onto/place/Municipality> rdf:type owl:Class ;
+                                                      owl:equivalentClass CLV:City .
+
+
+###  https://w3id.org/italia/env/onto/place/Province
+<https://w3id.org/italia/env/onto/place/Province> rdf:type owl:Class ;
+                                                  rdfs:subClassOf CLV:Province .
+
+
+###  https://w3id.org/italia/env/onto/place/Region
+<https://w3id.org/italia/env/onto/place/Region> rdf:type owl:Class ;
+                                                owl:equivalentClass CLV:Region .
+
+
+###  https://w3id.org/italia/env/onto/top/Location
+<https://w3id.org/italia/env/onto/top/Location> rdf:type owl:Class ;
+                                                owl:equivalentClass l0:Location .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab
+<https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> rdf:type owl:NamedIndividual ,
+                                                                                   <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                                   foaf:Agent ;
+                                                                          dct:identifier "cnr - Z6HZEH - STLab" ;
+                                                                          foaf:name "Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)"@en ,
+                                                                                    "Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)"@it .
+
+
+###  https://w3id.org/italia/env/ld/common/organisation/001
+<https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
+                                                                  <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                  <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                                  vcard:Kind ,
+                                                                  vcard:Organization ,
+                                                                  <http://www.w3.org/ns/org#Organization> ,
+                                                                  foaf:Agent ,
+                                                                  <https://w3id.org/italia/env/onto/top/Organisation> ;
+                                                         dct:identifier "ispra_rm" ;
+                                                         vcard:fn "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+                                                                  "Italian National Institute for Environmental Protection and Research"@en ;
+                                                         foaf:name "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+                                                                   "Italian Institute for Environmental Protection and Research"@en .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

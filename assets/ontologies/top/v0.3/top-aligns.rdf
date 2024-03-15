@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/italia/env/onto/top-aligns/"
+     xml:base="https://w3id.org/italia/env/onto/top-aligns/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
+    <owl:Ontology rdf:about="https://w3id.org/italia/env/onto/top-aligns">
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/env/onto/top-aligns/0.1"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/env/onto/top"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/TI"/>
+        <dct:creator rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
+        <dct:creator rdf:resource="https://w3id.org/italia/env/ld/common/organisation/001"/>
+        <dct:identifier>https://w3id.org/italia/env/onto/top-aligns</dct:identifier>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-01</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-01</dct:modified>
+        <dct:title xml:lang="it">Questi sono gli allineamenti a DOLCE UtlraLight e all&amp;apos;ontologia L0 di OntoPiA. La prima &amp;egrave; un&amp;apos;ontologia fondazionale largamente usata nel Semantic Web, mentre la seconda &amp;egrave; il top-level della rete di ontologie della Pubblica Amministrazione italiana.</dct:title>
+        <dct:title xml:lang="en">These are the alignments to DOLCE UtlraLight and OntoPiA&amp;apos;s L0 ontology. The former is a foundational ontology widely used in the Semantic Web, while the latter is the top-level ontology network of the Italian Public Administration.</dct:title>
+        <rdfs:label xml:lang="en">TOP ontology alignments</rdfs:label>
+        <rdfs:label xml:lang="it">allineamenti ontologia TOP</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#fn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/directlyFollows -->
+
+    <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/directlyFollows">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/l0/directlyFollows"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/directlyPrecedes -->
+
+    <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/directlyPrecedes">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/l0/directlyPrecedes"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/follows -->
+
+    <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/follows">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/l0/follows"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/hasDescription -->
+
+    <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/hasDescription">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/l0/hasDescription"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/hasMember -->
+
+    <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/hasMember">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/l0/hasMember"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/isDescriptionOf -->
+
+    <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/isDescriptionOf">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/l0/isDescriptionOf"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/isMemberOf -->
+
+    <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/isMemberOf">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/l0/isMemberOf"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/precedes -->
+
+    <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/precedes">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/l0/precedes"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/directlyFollows -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/l0/directlyFollows"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/directlyPrecedes -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/l0/directlyPrecedes"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/follows -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/l0/follows"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/hasDescription -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/l0/hasDescription"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/hasMember -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/l0/hasMember"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/isDescriptionOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/l0/isDescriptionOf"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/l0/isMemberOf"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/precedes -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/l0/precedes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/identifier -->
+
+    <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/identifier">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/name -->
+
+    <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/name">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/identifier -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/identifier"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/name -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dati.gov.it/onto/dcatapit#Agent -->
+
+    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Agent"/>
+    
+
+
+    <!-- http://dati.gov.it/onto/dcatapit#Organization -->
+
+    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Organization"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Kind -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Kind"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Organization"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Agent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Agent">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Characteristic -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Characteristic">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Concept -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Concept">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Description -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Description">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Entity -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Entity">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/l0/Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Location -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Location">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Organisation -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Organisation">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/System -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/System">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/l0/System"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/TemporalEntity -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/TemporalEntity">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/TI/TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/UnitOfMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/UnitOfMeasure">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Value -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Value">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/COV/Organization -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/Organization"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/MU/MeasurementUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/MU/Value -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/MU/Value"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/TemporalEntity -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TemporalEntity"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Agent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Agent"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Characteristic -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Characteristic"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Collection -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Collection"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Concept -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Concept"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Description -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Description"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Entity -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Entity"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/EventOrSituation -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Location -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Location"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/System -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/System"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>cnr - Z6HZEH - STLab</dct:identifier>
+        <foaf:name xml:lang="en">Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)</foaf:name>
+        <foaf:name xml:lang="it">Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/env/ld/common/organisation/001 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/env/ld/common/organisation/001">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="https://w3id.org/italia/env/onto/top/Organisation"/>
+        <dct:identifier>ispra_rm</dct:identifier>
+        <vcard:fn xml:lang="it">Istituto Superiore per la Protezione e la Ricerca Ambientale</vcard:fn>
+        <vcard:fn xml:lang="en">Italian National Institute for Environmental Protection and Research</vcard:fn>
+        <foaf:name xml:lang="it">Istituto Superiore per la Protezione e la Ricerca Ambientale</foaf:name>
+        <foaf:name xml:lang="en">Italian Institute for Environmental Protection and Research</foaf:name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

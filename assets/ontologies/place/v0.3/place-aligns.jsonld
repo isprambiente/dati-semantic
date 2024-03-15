@@ -1,0 +1,230 @@
+[ {
+  "@id" : "http://www.opengis.net/ont/geosparql#Feature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Feature"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#Geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Geometry"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasGeometry"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#hasSerialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/geometry"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/org#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://dati.gov.it/onto/dcatapit#Agent", "http://xmlns.com/foaf/0.1/Agent" ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "cnr - Z6HZEH - STLab"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)"
+  }, {
+    "@language" : "it",
+    "@value" : "Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/ld/common/organisation/001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://dati.gov.it/onto/dcatapit#Agent", "http://dati.gov.it/onto/dcatapit#Organization", "http://www.w3.org/2006/vcard/ns#Kind", "http://www.w3.org/2006/vcard/ns#Organization", "http://www.w3.org/ns/org#Organization", "http://xmlns.com/foaf/0.1/Agent", "https://w3id.org/italia/env/onto/top/Organisation" ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "ispra_rm"
+  } ],
+  "http://www.w3.org/2006/vcard/ns#fn" : [ {
+    "@language" : "it",
+    "@value" : "Istituto Superiore per la Protezione e la Ricerca Ambientale"
+  }, {
+    "@language" : "en",
+    "@value" : "Italian National Institute for Environmental Protection and Research"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "it",
+    "@value" : "Istituto Superiore per la Protezione e la Ricerca Ambientale"
+  }, {
+    "@language" : "en",
+    "@value" : "Italian Institute for Environmental Protection and Research"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place-aligns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"
+  }, {
+    "@id" : "https://w3id.org/italia/env/ld/common/organisation/001"
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "https://w3id.org/italia/env/onto/place-aligns"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-03-01"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-03-01"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "it",
+    "@value" : "Questi sono gli allineamenti a GeoSPARQL ed OntoPiA (la rete di ontologie della Pubblica Amministrazione italiana)."
+  }, {
+    "@language" : "en",
+    "@value" : "These are the alignments to GeoSPARQL and OntoPiA (the ontology network of the Italian Public Administration)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PLACE ontology alignments"
+  }, {
+    "@language" : "it",
+    "@value" : "allineamenti ontologia PLACE"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql"
+  }, {
+    "@id" : "https://w3id.org/italia/env/onto/place"
+  }, {
+    "@id" : "https://w3id.org/italia/onto/CLV"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place-aligns/0.1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/AdministrativeUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/AdminUnitComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/Country"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Feature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/Feature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/Geometry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/GeometryType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/GeometryType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/MetropolitanCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/Province"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Municipality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/City"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Province",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/Province"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/Region"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/coordinateSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/coordinateSystem"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/serialization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/hasCountry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasDirectHigherRank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/hasDirectHigherRank"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasDirectLowerRank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/hasDirectLowerRank"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/hasGeometry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasGeometryType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/hasGeometryType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/isGeometryOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/isGeometryFor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/lat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/lat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/long"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Location"
+  } ]
+} ]

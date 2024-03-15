@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/italia/env/onto/place-aligns/"
+     xml:base="https://w3id.org/italia/env/onto/place-aligns/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
+    <owl:Ontology rdf:about="https://w3id.org/italia/env/onto/place-aligns">
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/env/onto/place-aligns/0.1"/>
+        <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/env/onto/place"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV"/>
+        <dct:creator rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
+        <dct:creator rdf:resource="https://w3id.org/italia/env/ld/common/organisation/001"/>
+        <dct:identifier>https://w3id.org/italia/env/onto/place-aligns</dct:identifier>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-01</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-01</dct:modified>
+        <dct:title xml:lang="it">Questi sono gli allineamenti a GeoSPARQL ed OntoPiA (la rete di ontologie della Pubblica Amministrazione italiana).</dct:title>
+        <dct:title xml:lang="en">These are the alignments to GeoSPARQL and OntoPiA (the ontology network of the Italian Public Administration).</dct:title>
+        <rdfs:label xml:lang="en">PLACE ontology alignments</rdfs:label>
+        <rdfs:label xml:lang="it">allineamenti ontologia PLACE</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasGeometry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasCountry -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasCountry">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasCountry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasDirectHigherRank -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasDirectHigherRank">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectHigherRank"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasDirectLowerRank -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasDirectLowerRank">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectLowerRank"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasGeometry">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasGeometry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/hasGeometryType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasGeometryType">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasGeometryType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/isGeometryOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/isGeometryOf">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/isGeometryFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#hasSerialization -->
+
+    <owl:DatatypeProperty rdf:about="http://www.opengis.net/ont/geosparql#hasSerialization">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/env/onto/place/geometry"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/coordinateSystem -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/place/coordinateSystem">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/coordinateSystem"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/geometry -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/place/geometry">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/serialization"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/lat -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/place/lat">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/lat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/long -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/place/long">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Feature -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/env/onto/place/Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/env/onto/place/Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/AdministrativeUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/AdministrativeUnit">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/Country -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Country">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/CLV/Country"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/Feature -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Feature">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/Geometry -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Geometry">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/CLV/Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/GeometryType -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/GeometryType">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/CLV/GeometryType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/MetropolitanCity -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/MetropolitanCity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Province"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/Municipality -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Municipality">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/CLV/City"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/Province -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Province">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Province"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/place/Region -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Region">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/CLV/Region"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Location -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Location">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>cnr - Z6HZEH - STLab</dct:identifier>
+        <foaf:name xml:lang="en">Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)</foaf:name>
+        <foaf:name xml:lang="it">Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/env/ld/common/organisation/001 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/env/ld/common/organisation/001">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="https://w3id.org/italia/env/onto/top/Organisation"/>
+        <dct:identifier>ispra_rm</dct:identifier>
+        <vcard:fn xml:lang="it">Istituto Superiore per la Protezione e la Ricerca Ambientale</vcard:fn>
+        <vcard:fn xml:lang="en">Italian National Institute for Environmental Protection and Research</vcard:fn>
+        <foaf:name xml:lang="it">Istituto Superiore per la Protezione e la Ricerca Ambientale</foaf:name>
+        <foaf:name xml:lang="en">Italian Institute for Environmental Protection and Research</foaf:name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

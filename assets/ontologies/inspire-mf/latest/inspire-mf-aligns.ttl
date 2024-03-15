@@ -1,0 +1,371 @@
+@prefix : <https://w3id.org/italia/env/onto/inspire-mf-aligns/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix schema: <http://schema.org/> .
+@base <https://w3id.org/italia/env/onto/inspire-mf-aligns/> .
+
+<https://w3id.org/italia/env/onto/inspire-mf-aligns> rdf:type owl:Ontology ;
+                                                      owl:versionIRI <https://w3id.org/italia/env/onto/inspire-mf-aligns/0.1> ;
+                                                      owl:imports <http://www.w3.org/ns/ssn/systems> ,
+                                                                  <https://w3id.org/italia/env/onto/inspire-mf> ,
+                                                                  <https://w3id.org/italia/onto/IoT> ;
+                                                      dct:creator <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> ,
+                                                                  <https://w3id.org/italia/env/ld/common/organisation/001> ;
+                                                      dct:identifier "https://w3id.org/italia/env/onto/inspire-mf-aligns" ;
+                                                      dct:issued "2024-03-01"^^xsd:date ;
+                                                      dct:modified "2024-03-01"^^xsd:date ;
+                                                      dct:title "Il modulo &egrave; allineato con gli assiomi di allineamento a SSN/SOSA ed OntoPiA."@it ,
+                                                                "The module is aligned with the alignment axioms to SSN/SOSA and OntoPiA."@en ;
+                                                      rdfs:label "INSPIRE-MF ontology alignments"@en ,
+                                                                 "allineamenti ontologia INSPIRE-MF"@it .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/identifier
+dct:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dct:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dct:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#fn
+vcard:fn rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/ns/sosa/hasFeatureOfInterest
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> rdf:type owl:ObjectProperty ;
+                                                 owl:equivalentProperty <https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest> .
+
+
+###  http://www.w3.org/ns/sosa/isFeatureOfInterestOf
+<http://www.w3.org/ns/sosa/isFeatureOfInterestOf> rdf:type owl:ObjectProperty ;
+                                                  owl:equivalentProperty <https://w3id.org/italia/env/onto/inspire-mf/isFeatureOfInterestOf> .
+
+
+###  http://www.w3.org/ns/sosa/madeBySensor
+<http://www.w3.org/ns/sosa/madeBySensor> rdf:type owl:ObjectProperty ;
+                                         owl:equivalentProperty <https://w3id.org/italia/env/onto/inspire-mf/isObservationMadeBySensor> .
+
+
+###  http://www.w3.org/ns/sosa/madeObservation
+<http://www.w3.org/ns/sosa/madeObservation> rdf:type owl:ObjectProperty ;
+                                            owl:equivalentProperty <https://w3id.org/italia/env/onto/inspire-mf/makesObservation> .
+
+
+###  http://www.w3.org/ns/sosa/observedProperty
+<http://www.w3.org/ns/sosa/observedProperty> rdf:type owl:ObjectProperty ;
+                                             owl:equivalentProperty <https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter> .
+
+
+###  http://www.w3.org/ns/sosa/usedProcedure
+<http://www.w3.org/ns/sosa/usedProcedure> rdf:type owl:ObjectProperty ;
+                                          owl:equivalentProperty <https://w3id.org/italia/env/onto/inspire-mf/implementsProcedure> .
+
+
+###  http://www.w3.org/ns/ssn/systems/hasSystemCapability
+<http://www.w3.org/ns/ssn/systems/hasSystemCapability> rdf:type owl:ObjectProperty ;
+                                                       owl:equivalentProperty <https://w3id.org/italia/env/onto/inspire-mf/hasSystemCapability> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/generationTime
+<https://w3id.org/italia/env/onto/inspire-mf/generationTime> owl:equivalentProperty <https://w3id.org/italia/onto/IoT/generationTime> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest
+<https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest> owl:equivalentProperty <https://w3id.org/italia/onto/IoT/hasFeatureOfInterest> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter
+<https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter> owl:equivalentProperty <https://w3id.org/italia/onto/IoT/hasObservationParameter> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasObservationValue
+<https://w3id.org/italia/env/onto/inspire-mf/hasObservationValue> owl:equivalentProperty <https://w3id.org/italia/onto/IoT/hasObservationValue> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hosts
+<https://w3id.org/italia/env/onto/inspire-mf/hosts> owl:equivalentProperty <https://w3id.org/italia/onto/IoT/hostsMonitoringFacility> ;
+                                                    rdfs:subPropertyOf <http://www.w3.org/ns/sosa/hosts> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/implementsProcedure
+<https://w3id.org/italia/env/onto/inspire-mf/implementsProcedure> owl:equivalentProperty <https://w3id.org/italia/onto/IoT/usedMethod> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isFeatureOfInterestOf
+<https://w3id.org/italia/env/onto/inspire-mf/isFeatureOfInterestOf> owl:equivalentProperty <https://w3id.org/italia/onto/IoT/isFeatureOfInterestFor> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isHostedBy
+<https://w3id.org/italia/env/onto/inspire-mf/isHostedBy> owl:equivalentProperty <https://w3id.org/italia/onto/IoT/isHostedByPlatform> ;
+                                                         rdfs:subPropertyOf <http://www.w3.org/ns/sosa/isHostedBy> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isObservationMadeBySensor
+<https://w3id.org/italia/env/onto/inspire-mf/isObservationMadeBySensor> owl:equivalentProperty <https://w3id.org/italia/onto/IoT/observationMadeBySensor> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isObservationParameterFor
+<https://w3id.org/italia/env/onto/inspire-mf/isObservationParameterFor> owl:equivalentProperty <https://w3id.org/italia/onto/IoT/isObservationParameterFor> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isObservationValueOf
+<https://w3id.org/italia/env/onto/inspire-mf/isObservationValueOf> owl:equivalentProperty <https://w3id.org/italia/onto/IoT/isObservationValueOf> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/makesObservation
+<https://w3id.org/italia/env/onto/inspire-mf/makesObservation> owl:equivalentProperty <https://w3id.org/italia/onto/IoT/makesObservation> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/phenomenonTime
+<https://w3id.org/italia/env/onto/inspire-mf/phenomenonTime> owl:equivalentProperty <https://w3id.org/italia/onto/IoT/phenomenonTime> .
+
+
+###  https://w3id.org/italia/onto/IoT/generationTime
+<https://w3id.org/italia/onto/IoT/generationTime> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/IoT/hasFeatureOfInterest
+<https://w3id.org/italia/onto/IoT/hasFeatureOfInterest> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/IoT/hasObservationParameter
+<https://w3id.org/italia/onto/IoT/hasObservationParameter> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/IoT/hasObservationValue
+<https://w3id.org/italia/onto/IoT/hasObservationValue> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/IoT/hostsMonitoringFacility
+<https://w3id.org/italia/onto/IoT/hostsMonitoringFacility> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/IoT/isFeatureOfInterestFor
+<https://w3id.org/italia/onto/IoT/isFeatureOfInterestFor> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/IoT/isHostedByPlatform
+<https://w3id.org/italia/onto/IoT/isHostedByPlatform> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/IoT/isObservationParameterFor
+<https://w3id.org/italia/onto/IoT/isObservationParameterFor> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/IoT/isObservationValueOf
+<https://w3id.org/italia/onto/IoT/isObservationValueOf> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/IoT/makesObservation
+<https://w3id.org/italia/onto/IoT/makesObservation> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/IoT/observationMadeBySensor
+<https://w3id.org/italia/onto/IoT/observationMadeBySensor> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/IoT/phenomenonTime
+<https://w3id.org/italia/onto/IoT/phenomenonTime> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/onto/IoT/usedMethod
+<https://w3id.org/italia/onto/IoT/usedMethod> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dati.gov.it/onto/dcatapit#Agent
+<http://dati.gov.it/onto/dcatapit#Agent> rdf:type owl:Class .
+
+
+###  http://dati.gov.it/onto/dcatapit#Organization
+<http://dati.gov.it/onto/dcatapit#Organization> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Kind
+vcard:Kind rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Organization
+vcard:Organization rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> rdf:type owl:Class ;
+                                              owl:equivalentClass <https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest> .
+
+
+###  http://www.w3.org/ns/sosa/ObservableProperty
+<http://www.w3.org/ns/sosa/ObservableProperty> rdf:type owl:Class ;
+                                               owl:equivalentClass <https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter> .
+
+
+###  http://www.w3.org/ns/sosa/Observation
+<http://www.w3.org/ns/sosa/Observation> rdf:type owl:Class ;
+                                        owl:equivalentClass <https://w3id.org/italia/env/onto/inspire-mf/Observation> .
+
+
+###  http://www.w3.org/ns/sosa/Platform
+<http://www.w3.org/ns/sosa/Platform> rdf:type owl:Class ;
+                                     owl:equivalentClass <https://w3id.org/italia/env/onto/inspire-mf/Platform> .
+
+
+###  http://www.w3.org/ns/sosa/Procedure
+<http://www.w3.org/ns/sosa/Procedure> rdf:type owl:Class ;
+                                      owl:equivalentClass <https://w3id.org/italia/env/onto/inspire-mf/Procedure> .
+
+
+###  http://www.w3.org/ns/sosa/Result
+<http://www.w3.org/ns/sosa/Result> rdf:type owl:Class ;
+                                   owl:equivalentClass <https://w3id.org/italia/env/onto/inspire-mf/ObservationValue> .
+
+
+###  http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> rdf:type owl:Class ;
+                                   owl:equivalentClass <https://w3id.org/italia/env/onto/inspire-mf/Sensor> .
+
+
+###  http://www.w3.org/ns/ssn/Deployment
+<http://www.w3.org/ns/ssn/Deployment> rdf:type owl:Class ;
+                                      owl:equivalentClass <https://w3id.org/italia/env/onto/inspire-mf/SystemDeployment> .
+
+
+###  http://www.w3.org/ns/ssn/System
+<http://www.w3.org/ns/ssn/System> rdf:type owl:Class ;
+                                  owl:equivalentClass <https://w3id.org/italia/env/onto/inspire-mf/MonitoringObject> .
+
+
+###  http://www.w3.org/ns/ssn/systems/SystemCapability
+<http://www.w3.org/ns/ssn/systems/SystemCapability> rdf:type owl:Class ;
+                                                    owl:equivalentClass <https://w3id.org/italia/env/onto/inspire-mf/SystemCapability> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest
+<https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest> owl:equivalentClass <https://w3id.org/italia/onto/IoT/FeatureOfInterest> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility
+<https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility> owl:equivalentClass <https://w3id.org/italia/onto/IoT/MonitoringFacility> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/Observation
+<https://w3id.org/italia/env/onto/inspire-mf/Observation> owl:equivalentClass <https://w3id.org/italia/onto/IoT/Observation> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter
+<https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter> owl:equivalentClass <https://w3id.org/italia/onto/IoT/ObservationParameter> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/ObservationValue
+<https://w3id.org/italia/env/onto/inspire-mf/ObservationValue> owl:equivalentClass <https://w3id.org/italia/onto/IoT/ObservationValue> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/Platform
+<https://w3id.org/italia/env/onto/inspire-mf/Platform> owl:equivalentClass <https://w3id.org/italia/onto/IoT/Platform> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/Procedure
+<https://w3id.org/italia/env/onto/inspire-mf/Procedure> owl:equivalentClass <https://w3id.org/italia/onto/IoT/Method> .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/Sensor
+<https://w3id.org/italia/env/onto/inspire-mf/Sensor> owl:equivalentClass <https://w3id.org/italia/onto/IoT/Sensor> .
+
+
+###  https://w3id.org/italia/env/onto/top/Parameter
+<https://w3id.org/italia/env/onto/top/Parameter> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> .
+
+
+###  https://w3id.org/italia/onto/IoT/FeatureOfInterest
+<https://w3id.org/italia/onto/IoT/FeatureOfInterest> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/IoT/Method
+<https://w3id.org/italia/onto/IoT/Method> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/IoT/MonitoringFacility
+<https://w3id.org/italia/onto/IoT/MonitoringFacility> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/IoT/Observation
+<https://w3id.org/italia/onto/IoT/Observation> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/IoT/ObservationCollection
+<https://w3id.org/italia/onto/IoT/ObservationCollection> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/IoT/ObservationParameter
+<https://w3id.org/italia/onto/IoT/ObservationParameter> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/IoT/ObservationValue
+<https://w3id.org/italia/onto/IoT/ObservationValue> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/IoT/Platform
+<https://w3id.org/italia/onto/IoT/Platform> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/onto/IoT/Sensor
+<https://w3id.org/italia/onto/IoT/Sensor> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab
+<https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> rdf:type owl:NamedIndividual ,
+                                                                                   <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                                   foaf:Agent ;
+                                                                          dct:identifier "cnr - Z6HZEH - STLab" ;
+                                                                          foaf:name "Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)"@en ,
+                                                                                    "Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)"@it .
+
+
+###  https://w3id.org/italia/env/ld/common/organisation/001
+<https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
+                                                                  <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                  <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                                  vcard:Kind ,
+                                                                  vcard:Organization ,
+                                                                  <http://www.w3.org/ns/org#Organization> ,
+                                                                  foaf:Agent ,
+                                                                  <https://w3id.org/italia/env/onto/top/Organisation> ;
+                                                         dct:identifier "ispra_rm" ;
+                                                         vcard:fn "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+                                                                  "Italian National Institute for Environmental Protection and Research"@en ;
+                                                         foaf:name "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+                                                                   "Italian Institute for Environmental Protection and Research"@en .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
