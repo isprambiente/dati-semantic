@@ -78,8 +78,7 @@
                                            admsapit:prev <https://w3id.org/italia/env/onto/rendis/0.1> ;
                                            admsapit:semanticAssetInUse <https://w3id.org/italia/env/ld/common/project/WHOW> ,
                                                                        <https://w3id.org/italia/env/ld/common/project/001-LD> ;
-                                           admsapit:status "catalogued" ,
-                                                           "published" ;
+                                           admsapit:status "draft" ;
                                            admsapit:target "Cittadini"@it ,
                                                            "Imprese"@it ,
                                                            "Pubbliche Amministrazioni"@it ;

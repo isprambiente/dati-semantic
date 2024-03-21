@@ -925,9 +925,7 @@
     "@id" : "https://w3id.org/italia/env/ld/common/project/001-LD"
   } ],
   "https://w3id.org/italia/onto/ADMS/status" : [ {
-    "@value" : "catalogued"
-  }, {
-    "@value" : "published"
+    "@value" : "draft"
   } ],
   "https://w3id.org/italia/onto/ADMS/target" : [ {
     "@language" : "it",

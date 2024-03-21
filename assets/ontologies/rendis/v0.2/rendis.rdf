@@ -78,8 +78,7 @@
         <admsapit:prev rdf:resource="https://w3id.org/italia/env/onto/rendis/0.1"/>
         <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/italia/env/ld/common/project/WHOW"/>
         <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/italia/env/ld/common/project/001-LD"/>
-        <admsapit:status>catalogued</admsapit:status>
-        <admsapit:status>published</admsapit:status>
+        <admsapit:status>draft</admsapit:status>
         <admsapit:target xml:lang="it">Cittadini</admsapit:target>
         <admsapit:target xml:lang="it">Imprese</admsapit:target>
         <admsapit:target xml:lang="it">Pubbliche Amministrazioni</admsapit:target>
