@@ -2,9 +2,20 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix ndc: <http://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix org: <http://www.w3.orgS/ns/org#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
 
 <https://w3id.org/italia/env/vocab/bathing_waters/quality>
-  a skos:ConceptScheme ;
+  a skos:ConceptScheme, dcatapit:Dataset, adms:Asset, dcat:Dataset ;
   dct:title "Vocabolario dello stato della qualit\u00e0 delle acque di balneazione"@it , "Vocabulary of bathing water quality status"@en ;
   rdfs:label "Vocabolario dello stato della qualit\u00e0 delle acque di balneazione"@it , "Vocabulary of bathing water quality"@en ;
   dct:description  "Vocabolario dello stato della qualit\u00e0 delle aree protette segnalate ai sensi della direttiva sulle acque di balneazione ('0 - Not classified', '1 - Excellent', '2 - Good', '3 - Good or Sufficient', '3 - Sufficient', '4 - Poor': Le classi di qualit\u00e0 'Buona' e 'Sufficiente' sono state accorpate per comparabilit\u00e0 con la classificazione della precedente direttiva sulle acque di balneazione 76/160/CEE)"@it ,
@@ -12,10 +23,68 @@
   rdfs:comment "Vocabolario dello stato della qualit\u00e0 delle aree protette segnalate ai sensi della direttiva sulle acque di balneazione ('0 - Not classified', '1 - Excellent', '2 - Good', '3 - Good or Sufficient', '3 - Sufficient', '4 - Poor': Le classi di qualit\u00e0 'Buona' e 'Sufficiente' sono state accorpate per comparabilit\u00e0 con la classificazione della precedente direttiva sulle acque di balneazione 76/160/CEE)"@it ,
     "Vocabulary of quality status of the protected areas reported under the Bathing Water Directive ('0 - Not classified', '1 - Excellent', '2 - Good', '3 - Good or Sufficient', '3 - Sufficient', '4 - Poor': Quality classes 'Good' and 'Sufficient' are merged for comparability with classification of the preceding Bathing Water Directive 76/160/EEC)"@en ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>, <http://publications.europa.eu/resource/authority/language/ENG> ;
-  dct:issued "2023-11-13"^^xsd:date .
+  dct:issued "2023-11-13"^^xsd:date ;
+  dct:modified "2024-03-25"^^xsd:date ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  dct:identifier "https://w3id.org/italia/env/vocab/bathing_waters/quality" ;
+  dct:creator <https://w3id.org/italia/env/ld/common/organisation/001> ;
+  dct:publisher <https://w3id.org/italia/env/ld/common/organisation/001> ;
+  dct:rightsHolder <https://w3id.org/italia/env/ld/common/organisation/001> ;
+  owl:versionInfo "Version 0.2 - updated in March 2024 - Vocabolary metadata inserted."@en ,
+                  "Versione 0.2 - aggiornata a marzo 2024 - Inseriti i metadati del vocabolario."@it ;
+  dct:type <http://purl.org/adms/assettype/CodeList>;
+  xkos:numberOfLevels "1" ;
+  ndc:keyConcept "quality" ;
+  dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+  dcat:contactPoint <https://w3id.org/italia/env/ld/common/organization/001-LD> ;
+  skos:hasTopConcept <https://w3id.org/italia/env/vocab/bathing_waters/quality/0> ,
+                     <https://w3id.org/italia/env/vocab/bathing_waters/quality/1> ,
+                     <https://w3id.org/italia/env/vocab/bathing_waters/quality/2> ,
+                     <https://w3id.org/italia/env/vocab/bathing_waters/quality/3> ,
+                     <https://w3id.org/italia/env/vocab/bathing_waters/quality/3p> ,
+                     <https://w3id.org/italia/env/vocab/bathing_waters/quality/4> ;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/bw-quality-RDF-TURTLE> ;
+  dcat:keyword "quality"@en ,
+               "qualità"@it ;
+  dct:subject <https://eurovoc.europa.eu/600> ;
+  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/ENVI> .
+
+<https://w3id.org/italia/env/ld/common/distribution/bw-quality-RDF-TURTLE> a dcatapit:Distribution, dcat:Distribution;
+  dct:format <https://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dct:title "Distribuzione RDF/Turtle del vocabolario controllato dello stato della qualità delle acque di balneazione"@it ,
+            "RDF/Turtle distribution of the controlled vocabulary of bathing water quality status"@en ;
+  dct:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato dello stato della qualità delle acque di balneazione"@it ,
+                  "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary of bathing water quality status"@en ;
+  dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/bathing_waters/quality> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/bathing_waters/quality/quality.ttl> .
+
+<https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
+                                                                  dcatapit:Agent ,
+                                                                  dcatapit:Organization ,
+                                                                  vcard:Kind ,
+                                                                  vcard:Organization ,
+                                                                  org:Organization ,
+                                                                  foaf:Agent ,
+                                                                  top:Organisation ;
+                                                         dct:identifier "ispra_rm" ;
+                                                         vcard:fn "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+                                                                  "Italian National Institute for Environmental Protection and Research"@en ;
+                                                         foaf:name "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+                                                                   "Italian Institute for Environmental Protection and Research"@en .
+
+<https://w3id.org/italia/env/ld/common/organization/001-LD> rdf:type owl:NamedIndividual ,
+                                                                  dcatapit:Organization ,
+                                                                  vcard:Kind ,
+                                                                  vcard:Organization ;
+                                                         vcard:fn "DG-SINA - Progetto Linked ISPRA" ;
+                                                         vcard:hasEmail <mailto:assistenza-lod@isprambiente.it> .
+
 
 <https://w3id.org/italia/env/vocab/bathing_waters/quality/0>
   a skos:Concept ;
+  skos:exactMatch <http://dd.eionet.europa.eu/vocabulary/wise/BWDStatus/0> ;
   skos:prefLabel "Non classificata"@it, "Not classified"@en ;
   skos:definition "For Bathing Water Directive, the value of quality status '0 - Not classified'"@en, "Per la direttiva sulle acque di balneazione, il valore dello stato di qualit\u00e0 '0 - Not classified' (Non classificata)."@it ;
   dct:identifier "0 - Not classified" ;
@@ -23,6 +92,7 @@
 
 <https://w3id.org/italia/env/vocab/bathing_waters/quality/1>
   a skos:Concept ;
+  skos:exactMatch <http://dd.eionet.europa.eu/vocabulary/wise/BWDStatus/1> ;
   skos:prefLabel "Eccellente"@it, "Excellent"@en ;
   skos:definition "For Bathing Water Directive, the value of quality status '1 - Excellent'"@en, "Per la direttiva sulle acque di balneazione, il valore dello stato di qualit\u00e0 '1 - Excellent' (Eccellente)."@it ;
   dct:identifier "1 - Excellent" ;
@@ -30,6 +100,7 @@
 
 <https://w3id.org/italia/env/vocab/bathing_waters/quality/2>
   a skos:Concept ;
+  skos:exactMatch <http://dd.eionet.europa.eu/vocabulary/wise/BWDStatus/2> ;
   skos:prefLabel "Buona"@it, "Good"@en ;
   skos:definition "For Bathing Water Directive, the value of quality status '2 - Good'"@en, "Per la direttiva sulle acque di balneazione, il valore dello stato di qualit\u00e0 '2 - Good' (Buona)."@it ;
   dct:identifier "2 - Good" ;
@@ -37,6 +108,7 @@
 
 <https://w3id.org/italia/env/vocab/bathing_waters/quality/3>
   a skos:Concept ;
+  skos:exactMatch <http://dd.eionet.europa.eu/vocabulary/wise/BWDStatus/3> ;
   skos:prefLabel "Sufficiente"@it, "Sufficient"@en ;
   skos:definition "For Bathing Water Directive, the value of quality status '3 - Sufficient'"@en, "Per la direttiva sulle acque di balneazione, il valore dello stato di qualit\u00e0 '3 - Sufficient' (Sufficiente)."@it ;
   dct:identifier "3 - Sufficient" ;
@@ -51,6 +123,7 @@
 
 <https://w3id.org/italia/env/vocab/bathing_waters/quality/4>
   a skos:Concept ;
+  skos:exactMatch <http://dd.eionet.europa.eu/vocabulary/wise/BWDStatus/4> ;
   skos:prefLabel "Scarsa"@it, "Poor"@en ;
   skos:definition "For Bathing Water Directive, the value of quality status '4 - Poor'"@en, "Per la direttiva sulle acque di balneazione, il valore dello stato di qualit\u00e0 '4 - Poor' (Scarsa)."@it ;
   dct:identifier "4 - Poor" ;

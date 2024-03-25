@@ -2,40 +2,105 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix ndc: <http://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix org: <http://www.w3.orgS/ns/org#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
 
 <https://w3id.org/italia/env/vocab/observations/certainty>
-  a skos:ConceptScheme ;
-  dct:title "Vocabolario livello di validazione dei dati"@it, "Vocabulary of data quality control levels"@en ;
-  rdfs:label "Vocabolario livello di validazione dei dati"@it, "Vocabulary of data quality control levels"@en ;
-  dct:description "Vocabolario livello di validazione dei dati (es. Nessuna operazione di validazione, Controllo dei dati attraverso valori soglia, ...)"@it, "Vocabulary of data quality control levels (e.g. No validation procedure, Data quality control through the application of thresholds, ...)"@en ;
-  rdfs:comment "Vocabolario livello di validazione dei dati (es. Nessuna operazione di validazione, Controllo dei dati attraverso valori soglia, ...)"@it, "Vocabulary of data quality control levels (e.g. No validation procedure, Data quality control through the application of thresholds, ...)"@en ;
+  a skos:ConceptScheme, dcatapit:Dataset, adms:Asset, dcat:Dataset ;
+  dct:title "Vocabolario livello di validazione dei dati"@it, "Vocabulary of data validation levels"@en ;
+  rdfs:label "Vocabolario livello di validazione dei dati"@it, "Vocabulary of data validation levels"@en ;
+  dct:description "Vocabolario livello di validazione dei dati (es. Nessuna operazione di validazione, Controllo dei dati attraverso valori soglia, ...)"@it, "Vocabulary of data validation levels (e.g. No validation procedure, Data quality control through the application of thresholds, ...)"@en ;
+  rdfs:comment "Vocabolario livello di validazione dei dati (es. Nessuna operazione di validazione, Controllo dei dati attraverso valori soglia, ...)"@it, "Vocabulary of data validation levels (e.g. No validation procedure, Data quality control through the application of thresholds, ...)"@en ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>, <http://publications.europa.eu/resource/authority/language/ENG> ;
-  dct:issued "2023-03-03"^^xsd:date .
+  dct:issued "2023-03-03"^^xsd:date ;
+  dct:modified "2024-03-25"^^xsd:date ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  dct:identifier "https://w3id.org/italia/env/vocab/observations/certainty" ;
+  dct:creator <https://w3id.org/italia/env/ld/common/organisation/001> ;
+  dct:publisher <https://w3id.org/italia/env/ld/common/organisation/001> ;
+  dct:rightsHolder <https://w3id.org/italia/env/ld/common/organisation/001> ;
+  owl:versionInfo "Version 0.2 - updated in March 2024 - Vocabolary metadata inserted."@en ,
+                  "Versione 0.2 - aggiornata a marzo 2024 - Inseriti i metadati del vocabolario."@it ;
+  dct:type <http://purl.org/adms/assettype/CodeList>;
+  xkos:numberOfLevels "1" ;
+  ndc:keyConcept "certainty" ;
+  dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+  dcat:contactPoint <https://w3id.org/italia/env/ld/common/organization/001-LD> ;
+  skos:hasTopConcept <https://w3id.org/italia/env/vocab/observations/certainty/l0> ,
+                     <https://w3id.org/italia/env/vocab/observations/certainty/l1> ,
+                     <https://w3id.org/italia/env/vocab/observations/certainty/l2> ,
+                     <https://w3id.org/italia/env/vocab/observations/certainty/l3> ;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/o-certainty-RDF-TURTLE> ;
+  dcat:keyword "data validation"@en ,
+               "validazione dati"@it ;
+  dct:subject <https://eurovoc.europa.eu/c_a935cf3f> ;
+  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/ENVI> .
+
+<https://w3id.org/italia/env/ld/common/distribution/o-certainty-RDF-TURTLE> a dcatapit:Distribution, dcat:Distribution;
+  dct:format <https://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dct:title "Distribuzione RDF/Turtle del vocabolario controllato dei livelli di validazione dei dati"@it ,
+            "RDF/Turtle distribution of the controlled vocabulary of data validazione levels"@en ;
+  dct:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato dei livelli di validazione dei dati"@it ,
+                  "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary of data validazione levels"@en ;
+  dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/observations/certainty> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/observations/certainty/certainty.ttl> .
+
+<https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
+                                                                  dcatapit:Agent ,
+                                                                  dcatapit:Organization ,
+                                                                  vcard:Kind ,
+                                                                  vcard:Organization ,
+                                                                  org:Organization ,
+                                                                  foaf:Agent ,
+                                                                  top:Organisation ;
+                                                         dct:identifier "ispra_rm" ;
+                                                         vcard:fn "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+                                                                  "Italian National Institute for Environmental Protection and Research"@en ;
+                                                         foaf:name "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+                                                                   "Italian Institute for Environmental Protection and Research"@en .
+
+<https://w3id.org/italia/env/ld/common/organization/001-LD> rdf:type owl:NamedIndividual ,
+                                                                  dcatapit:Organization ,
+                                                                  vcard:Kind ,
+                                                                  vcard:Organization ;
+                                                         vcard:fn "DG-SINA - Progetto Linked ISPRA" ;
+                                                         vcard:hasEmail <mailto:assistenza-lod@isprambiente.it> .
 
 <https://w3id.org/italia/env/vocab/observations/certainty/l0>
   a skos:Concept ;
-  skos:prefLabel "l0"@it, "l0"@en ;
+  skos:prefLabel "L0"@it, "L0"@en ;
   skos:definition "Raw Data. No validation procedure on measured data."@en, "Dati grezzi. Nessuna operazione di validazione effettuata sui valori misurati."@it ;
   dct:identifier "l0" ;
   skos:inScheme <https://w3id.org/italia/env/vocab/observations/certainty> .
 
 <https://w3id.org/italia/env/vocab/observations/certainty/l1>
   a skos:Concept ;
-  skos:prefLabel "l1"@it, "l1"@en ;
-  skos:definition "Validation level l1. Data quality control through the application of thresholds and acceptance values for any single data."@en, "Livello di validazione l1. Controllo dei dati attraverso valori soglia e limiti di ammissibilità del singolo dato."@it ;
+  skos:prefLabel "L1"@it, "L1"@en ;
+  skos:definition "Validation level L1. Data quality control through the application of thresholds and acceptance values for any single data."@en, "Livello di validazione L1. Controllo dei dati attraverso valori soglia e limiti di ammissibilità del singolo dato."@it ;
   dct:identifier "l1" ;
   skos:inScheme <https://w3id.org/italia/env/vocab/observations/certainty> .
 
 <https://w3id.org/italia/env/vocab/observations/certainty/l2>
   a skos:Concept ;
-  skos:prefLabel "l2"@it, "l2"@en ;
-  skos:definition "Validation level l2. Data quality control through the evaluation of the coherence of the time series."@en, "Livello di validazione l2. Controlli di coerenza delle serie storiche."@it ;
+  skos:prefLabel "L2"@it, "L2"@en ;
+  skos:definition "Validation level L2. Data quality control through the evaluation of the coherence of the time series."@en, "Livello di validazione L2. Controlli di coerenza delle serie storiche."@it ;
   dct:identifier "l2" ;
   skos:inScheme <https://w3id.org/italia/env/vocab/observations/certainty> .
 
 <https://w3id.org/italia/env/vocab/observations/certainty/l3>
   a skos:Concept ;
-  skos:prefLabel "l3"@it, "l3"@en ;
-  skos:definition "Validation level l3. Data quality control through the comparison of neighbourhood and the use of statistical models."@en, "Livello di validazione l3. Confronto tra serie storiche limitrofe e modelli di natura statistica."@it ;
+  skos:prefLabel "L3"@it, "L3"@en ;
+  skos:definition "Validation level L3. Data quality control through the comparison of neighbourhood and the use of statistical models."@en, "Livello di validazione L3. Confronto tra serie storiche limitrofe e modelli di natura statistica."@it ;
   dct:identifier "l3" ;
   skos:inScheme <https://w3id.org/italia/env/vocab/observations/certainty> .
