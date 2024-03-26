@@ -51,7 +51,7 @@
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> .
 
 <https://w3id.org/italia/env/ld/common/distribution/bw-quality-RDF-TURTLE> a dcatapit:Distribution, dcat:Distribution;
-  dct:format <https://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
   dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
   dct:title "Distribuzione RDF/Turtle del vocabolario controllato dello stato della qualità delle acque di balneazione"@it ,
             "RDF/Turtle distribution of the controlled vocabulary of bathing water quality status"@en ;
