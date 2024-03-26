@@ -6,7 +6,7 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
-@prefix ndc: <http://w3id.org/italia/onto/NDC/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
@@ -57,8 +57,6 @@
 
 <https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
                                                                   dcatapit:Agent ,
-                                                                  dcatapit:Organization ,
-                                                                  vcard:Kind ,
                                                                   vcard:Organization ,
                                                                   org:Organization ,
                                                                   foaf:Agent ,
