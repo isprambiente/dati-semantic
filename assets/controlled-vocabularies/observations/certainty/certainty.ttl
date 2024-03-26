@@ -44,7 +44,7 @@
   dcat:keyword "data validation"@en ,
                "validazione dati"@it ;
   dct:subject <https://eurovoc.europa.eu/c_a935cf3f> ;
-  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/ENVI> .
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> .
 
 <https://w3id.org/italia/env/ld/common/distribution/o-certainty-RDF-TURTLE> a dcatapit:Distribution, dcat:Distribution;
   dct:format <https://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
