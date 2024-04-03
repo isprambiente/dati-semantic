@@ -1,0 +1,5 @@
+"codice_1_livello","label_1_livello_ita","label_1_livello_en","def_1_livello_ita","def_1_livello_en"
+"l0","L0","L0","Dati grezzi. Nessuna operazione di validazione effettuata sui valori misurati.","Raw Data. No validation procedure on measured data."
+"l1","L1","L1","Livello di validazione L1. Controllo dei dati attraverso valori soglia e limiti di ammissibilità del singolo dato.","Validation level L1. Data quality control through the application of thresholds and acceptance values for any single data."
+"l2","L2","L2","Livello di validazione L2. Controlli di coerenza delle serie storiche.","Validation level L2. Data quality control through the evaluation of the coherence of the time series."
+"l3","L3","L3","Livello di validazione L3. Confronto tra serie storiche limitrofe e modelli di natura statistica.","Validation level L3. Data quality control through the comparison of neighbourhood and the use of statistical models."

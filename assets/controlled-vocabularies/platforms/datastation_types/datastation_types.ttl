@@ -40,7 +40,7 @@
                      <https://w3id.org/italia/env/vocab/platforms/datastation_types/quality_station> ,
                      <https://w3id.org/italia/env/vocab/platforms/datastation_types/meteorological_station> ;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/p-datastation-types-RDF-TURTLE> ;
+  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/p-datastation-types-RDF-TURTLE>, <https://w3id.org/italia/env/ld/common/distribution/p-datastation-types-CSV> ;
   dcat:keyword "data station"@en ,
                "stazione di misura"@it ;
   dct:subject <https://eurovoc.europa.eu/c_a935cf3f> ;
@@ -55,6 +55,16 @@
                   "This is the RDF/Turtle distribution of the Linked Open Data dataset of type of data station"@en ;
   dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/platforms/datastation_types> ;
   dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/platforms/datastation_types/datastation_types.ttl> .
+
+<https://w3id.org/italia/env/ld/common/distribution/p-datastation-types-CSV> a dcatapit:Distribution, dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dct:title "Distribuzione CSV del vocabolario controllato delle tipologie di stazioni di misura"@it ,
+            "CSV distribution of the controlled vocabulary of type of data station"@en ;
+  dct:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato delle tipologie di stazioni di misura"@it ,
+                  "This is the CSV distribution of the Linked Open Data dataset of type of data station"@en ;
+  dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/platforms/datastation_types> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/platforms/datastation_types/datastation_types.csv> .
 
 <https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
                                                                   dcatapit:Agent ,

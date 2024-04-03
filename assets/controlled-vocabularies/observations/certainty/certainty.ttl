@@ -40,7 +40,7 @@
                      <https://w3id.org/italia/env/vocab/observations/certainty/l2> ,
                      <https://w3id.org/italia/env/vocab/observations/certainty/l3> ;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/o-certainty-RDF-TURTLE> ;
+  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/o-certainty-RDF-TURTLE>, <https://w3id.org/italia/env/ld/common/distribution/o-certainty-CSV> ;
   dcat:keyword "data validation"@en ,
                "validazione dati"@it ;
   dct:subject <https://eurovoc.europa.eu/c_a935cf3f> ;
@@ -55,6 +55,16 @@
                   "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary of data validazione levels"@en ;
   dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/observations/certainty> ;
   dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/observations/certainty/certainty.ttl> .
+  
+<https://w3id.org/italia/env/ld/common/distribution/o-certainty-CSV> a dcatapit:Distribution, dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dct:title "Distribuzione CSV del vocabolario controllato dei livelli di validazione dei dati"@it ,
+            "CSV distribution of the controlled vocabulary of data validazione levels"@en ;
+  dct:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato dei livelli di validazione dei dati"@it ,
+                  "This is the CSV distribution of the Linked Open Data dataset of the controlled vocabulary of data validazione levels"@en ;
+  dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/observations/certainty> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/observations/certainty/certainty.csv> .
 
 <https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
                                                                   dcatapit:Agent ,

@@ -1,0 +1,5 @@
+"codice_1_livello","label_1_livello_ita","label_1_livello_en","def_1_livello_ita","def_1_livello_en"
+"marine_station","Stazione Marina","Marine Station","Stazione di misura per il rilevamento  dei parametri fisici del mare.","Measurement station for the detection of the physical sea state."
+"meteorological_station","Stazione Meteorologica","Meteorological Station","Stazione di misura per il rilevamento dei parametri meteorologici.","Measurement station for the detection of the meteorological state."
+"quality_station","Stazione di Qualità","Quality Station","Stazione di misura per il rilevamento dello stato di qualità delle acque.","Measurement station for the detection of the water quality."
+"tsunami_station","Stazione Tsunamometrica","Tsunami Station","Stazione di misura per il rilevamento di tsunami/onde anomale.","Measurement station for the detection of tsunami/freak waves."
