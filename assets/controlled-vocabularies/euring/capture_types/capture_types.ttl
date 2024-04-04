@@ -54,7 +54,7 @@
   skos:hasTopConcept <https://w3id.org/italia/env/vocab/euring/capture_types/first_capture> ,
                      <https://w3id.org/italia/env/vocab/euring/capture_types/recapture> ;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/e-capture-types-RDF-TURTLE> ;
+  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/e-capture-types-RDF-TURTLE>, <https://w3id.org/italia/env/ld/common/distribution/e-capture-types-CSV> ;
   dcat:keyword "euring"@en ,
                "euring"@it ;
   dct:subject <https://eurovoc.europa.eu/5463> ;
@@ -69,6 +69,16 @@
                   "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary on EURING data"@en ;
   dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/euring/capture_types> ;
   dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/euring/capture_types/capture_types.ttl> .
+  
+<https://w3id.org/italia/env/ld/common/distribution/e-capture-types-CSV> a dcatapit:Distribution, dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dct:title "Distribuzione CSV del vocabolario controllato sui dati EURING"@it ,
+            "CSV distribution of the controlled vocabulary on EURING data"@en ;
+  dct:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato sui dati EURING"@it ,
+                  "This is the CSV distribution of the Linked Open Data dataset of the controlled vocabulary on EURING data"@en ;
+  dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/euring/capture_types> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/euring/capture_types/capture_types.csv> .
 
 <https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
                                                                   dcatapit:Agent ,

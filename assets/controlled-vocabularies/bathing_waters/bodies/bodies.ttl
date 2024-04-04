@@ -39,7 +39,7 @@
   dcat:contactPoint <https://w3id.org/italia/env/ld/common/organization/001-LD> ;
   skos:hasTopConcept <https://w3id.org/italia/env/vocab/bathing_waters/bodies/bathing_waters> ;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/bw-bodies-RDF-TURTLE> ;
+  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/bw-bodies-RDF-TURTLE>, <https://w3id.org/italia/env/ld/common/distribution/bw-bodies-CSV> ;
   dcat:keyword "bathing"@en ,
                "balneazione"@it ;
   dct:subject <https://eurovoc.europa.eu/600> ;
@@ -54,6 +54,16 @@
                   "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary of bathing water zone types"@en ;
   dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/bathing_waters/bodies> ;
   dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/bathing_waters/bodies/bodies.ttl> .
+  
+<https://w3id.org/italia/env/ld/common/distribution/bw-bodies-CSV> a dcatapit:Distribution, dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dct:title "Distribuzione CSV del vocabolario controllato dei tipi di zona per le acque di balneazione"@it ,
+            "CSV distribution of the controlled vocabulary of bathing water zone types"@en ;
+  dct:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato dei tipi di zona per le acque di balneazione"@it ,
+                  "This is the CSV distribution of the Linked Open Data dataset of the controlled vocabulary of bathing water zone types"@en ;
+  dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/bathing_waters/bodies> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/bathing_waters/bodies/bodies.csv> .
 
 <https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
                                                                   dcatapit:Agent ,

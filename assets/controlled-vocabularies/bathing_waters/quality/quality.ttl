@@ -44,7 +44,7 @@
                      <https://w3id.org/italia/env/vocab/bathing_waters/quality/3p> ,
                      <https://w3id.org/italia/env/vocab/bathing_waters/quality/4> ;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/bw-quality-RDF-TURTLE> ;
+  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/bw-quality-RDF-TURTLE>, <https://w3id.org/italia/env/ld/common/distribution/bw-quality-CSV> ;
   dcat:keyword "quality"@en ,
                "qualità"@it ;
   dct:subject <https://eurovoc.europa.eu/600> ;
@@ -59,6 +59,16 @@
                   "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary of bathing water quality status"@en ;
   dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/bathing_waters/quality> ;
   dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/bathing_waters/quality/quality.ttl> .
+  
+<https://w3id.org/italia/env/ld/common/distribution/bw-quality-CSV> a dcatapit:Distribution, dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dct:title "Distribuzione CSV del vocabolario controllato dello stato della qualità delle acque di balneazione"@it ,
+            "CSV distribution of the controlled vocabulary of bathing water quality status"@en ;
+  dct:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato dello stato della qualità delle acque di balneazione"@it ,
+                  "This is the CSV distribution of the Linked Open Data dataset of the controlled vocabulary of bathing water quality status"@en ;
+  dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/bathing_waters/quality> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/bathing_waters/quality/quality.csv> .
 
 <https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
                                                                   dcatapit:Agent ,
