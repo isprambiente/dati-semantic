@@ -1,0 +1,1874 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix org: <http://www.w3.orgS/ns/org#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types> a skos:ConceptScheme ,
+        dcatapit:Dataset ,
+        adms:Asset ,
+        dcat:Dataset ;
+    dcterms:title "Vocabolario dei tipi di opere di difesa del suolo"@it ,
+        "Vocabulary of types of soil protection works"@en ;
+    rdfs:label "Vocabolario dei tipi di opere di difesa del suolo"@it ,
+        "Vocabulary of types of soil protection works"@en ;
+    dcterms:description  "Vocabolario dei tipi di opere di difesa del suolo (Categoria dell'opera di risanamento 'SIN': Incendio, 'SV': Valanga, 'SC': Aree costiere, 'SI': Idraulica o 'SF': Frana)"@it ,
+        "Vocabulary of types of soil protection works (Repair work category 'SIN': Fire, 'SV': Avalanche, 'SC': Coastal areas, 'SI': Hydraulics or 'SF': Landslide)"@en ;
+    rdfs:comment "Vocabolario dei tipi di opere di difesa del suolo (Categoria dell'opera di risanamento 'SIN': Incendio, 'SV': Valanga, 'SC': Aree costiere, 'SI': Idraulica o 'SF': Frana)"@it ,
+        "Vocabulary of types of soil protection works (Repair work category 'SIN': Fire, 'SV': Avalanche, 'SC': Coastal areas, 'SI': Hydraulics or 'SF': Landslide)"@en ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ITA> ,
+        <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dcterms:issued "2024-07-31"^^xsd:date ;
+    dcterms:modified "2024-07-31"^^xsd:date ;
+    dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dcterms:identifier "https://w3id.org/italia/env/vocab/soil-protection/repair-types" ;
+    dcterms:creator <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    dcterms:publisher <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    dcterms:rightsHolder <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    owl:versionInfo "Version 0.1 - created in July 2024."@en ,
+        "Versione 0.1 - creato a luglio 2024."@it ;
+    dcterms:type <http://purl.org/adms/assettype/Taxonomy> ;
+    xkos:numberOfLevels "3" ;
+    ndc:keyConcept "repair-types" ;
+    dcterms:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/env/ld/common/organization/001-LD> ;
+    skos:hasTopConcept <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/sp-repair-types-RDF-TURTLE> ,
+        <https://w3id.org/italia/env/ld/common/distribution/sp-repair-types-CSV> ;
+    dcat:keyword "works"@en ,
+        "opere"@it ;
+    dcterms:subject <http://eurovoc.europa.eu/2825> ,
+        <http://eurovoc.europa.eu/1440> ,
+        <http://eurovoc.europa.eu/3158> ,
+        <http://eurovoc.europa.eu/371> ,
+        <http://eurovoc.europa.eu/413> ,
+        <http://eurovoc.europa.eu/c_3f9a7b14> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+
+<https://w3id.org/italia/env/ld/common/distribution/sp-repair-types-RDF-TURTLE> a dcatapit:Distribution ,
+        dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "Distribuzione RDF/Turtle del vocabolario controllato dei tipi di opere di difesa del suolo"@it ,
+        "RDF/Turtle distribution of the controlled vocabulary of types of soil protection works"@en ;
+    dcterms:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato dei tipi di opere di difesa del suolo"@it ,
+        "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary of types of soil protection works"@en ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/soil-protection/repair-types> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/soil-protection/repair-types/repair-types.ttl> .
+
+<https://w3id.org/italia/env/ld/common/distribution/sp-repair-types-CSV> a dcatapit:Distribution ,
+        dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "Distribuzione CSV del vocabolario controllato dei tipi di opere di difesa del suolo"@it ,
+        "CSV distribution of the controlled vocabulary of types of soil protection works"@en ;
+    dcterms:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato dei tipi di opere di difesa del suolo"@it ,
+        "This is the CSV distribution of the Linked Open Data dataset of the controlled vocabulary of types of soil protection works"@en ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/soil-protection/repair-types> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/soil-protection/repair-types/repair-types.csv> .
+
+<https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
+        dcatapit:Agent ,
+        vcard:Organization ,
+        org:Organization ,
+        foaf:Agent ,
+        top:Organisation ;
+    dcterms:identifier "ispra_rm" ;
+    vcard:fn "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+        "Italian National Institute for Environmental Protection and Research"@en ;
+    foaf:name "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+        "Italian Institute for Environmental Protection and Research"@en .
+
+<https://w3id.org/italia/env/ld/common/organization/001-LD> rdf:type owl:NamedIndividual ,
+        dcatapit:Organization ,
+        vcard:Kind ,
+        vcard:Organization ;
+    vcard:fn "DG-SINA - Progetto Linked ISPRA" ;
+    vcard:hasEmail <mailto:assistenza-lod@isprambiente.it> .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-0> a skos:Concept ;
+    dcterms:identifier "SC-0" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-C> ;
+    skos:definition "Undefined coastal instability works (lack of information) (Category: Coastal areas, Group: Undefined works (info lacking))"@en,
+        "Opere non definite per dissesto costiero  (informazioni carenti) (Categoria: Aree costiere, Gruppo: Opere non definite (info carenti))"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Undefined coastal instability works (lack of information)"@en,
+        "Opere non definite per dissesto costiero  (informazioni carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-1> a skos:Concept ;
+    dcterms:identifier "SC-1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-B> ;
+    skos:definition "Reconstruction / renaturalization of dune cords (live / dead gratings, transplantation of tufts and rhizomes of grasses) (Category: Coastal areas, Group: Structural interventions)"@en,
+        "Ricostruzione/rinaturalizzazione cordoni dunali (graticciate vive/morte, trapianto cespi e rizomi di graminacee) (Categoria: Aree costiere, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Reconstruction / renaturalization of dune cords (live / dead gratings, transplantation of tufts and rhizomes of grasses)"@en,
+        "Ricostruzione/rinaturalizzazione cordoni dunali (graticciate vive/morte, trapianto cespi e rizomi di graminacee)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-10> a skos:Concept ;
+    dcterms:identifier "SC-10" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-B> ;
+    skos:definition "Coastal areas - Other structural interventions (Category: Coastal areas, Group: Structural interventions)"@en,
+        "Aree costiere - Altri interventi strutturali (Categoria: Aree costiere, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Coastal areas - Other structural interventions"@en,
+        "Aree costiere - Altri interventi strutturali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-11> a skos:Concept ;
+    dcterms:identifier "SC-11" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-A> ;
+    skos:definition "Instrumental monitoring (Category: Coastal areas, Group: Non-structural interventions)"@en,
+        "Monitoraggio strumentale (Categoria: Aree costiere, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Instrumental monitoring"@en,
+        "Monitoraggio strumentale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-12> a skos:Concept ;
+    dcterms:identifier "SC-12" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-A> ;
+    skos:definition "Relocation (Category: Coastal areas, Group: Non-structural interventions)"@en,
+        "Delocalizzazione (Categoria: Aree costiere, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Relocation"@en,
+        "Delocalizzazione"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-13> a skos:Concept ;
+    dcterms:identifier "SC-13" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-A> ;
+    skos:definition "Coastal areas - Other non-structural interventions (Category: Coastal areas, Group: Non-structural interventions)"@en,
+        "Aree costiere - Altri interventi non strutturali (Categoria: Aree costiere, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Coastal areas - Other non-structural interventions"@en,
+        "Aree costiere - Altri interventi non strutturali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-2> a skos:Concept ;
+    dcterms:identifier "SC-2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-B> ;
+    skos:definition "Beach nourishment (Category: Coastal areas, Group: Structural interventions)"@en,
+        "Ripascimento spiagge (Categoria: Aree costiere, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Beach nourishment"@en,
+        "Ripascimento spiagge"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-3> a skos:Concept ;
+    dcterms:identifier "SC-3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-B> ;
+    skos:definition "Longitudinal emerged works (barriers) (Category: Coastal areas, Group: Structural interventions)"@en,
+        "Opere longitudinali emerse (barriere) (Categoria: Aree costiere, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Longitudinal emerged works (barriers)"@en,
+        "Opere longitudinali emerse (barriere)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-4> a skos:Concept ;
+    dcterms:identifier "SC-4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-B> ;
+    skos:definition "Longitudinal submerged works (barriers) (Category: Coastal areas, Group: Structural interventions)"@en,
+        "Opere longitudinali sommerse (barriere) (Categoria: Aree costiere, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Longitudinal submerged works (barriers)"@en,
+        "Opere longitudinali sommerse (barriere)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-5> a skos:Concept ;
+    dcterms:identifier "SC-5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-B> ;
+    skos:definition "Transversal works that emerged (brushes) (Category: Coastal areas, Group: Structural interventions)"@en,
+        "Opere trasversali emerse (pennelli) (Categoria: Aree costiere, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Transversal works that emerged (brushes)"@en,
+        "Opere trasversali emerse (pennelli)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-6> a skos:Concept ;
+    dcterms:identifier "SC-6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-B> ;
+    skos:definition "Transversal submerged works (brushes) (Category: Coastal areas, Group: Structural interventions)"@en,
+        "Opere trasversali sommerse (pennelli) (Categoria: Aree costiere, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Transversal submerged works (brushes)"@en,
+        "Opere trasversali sommerse (pennelli)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-7> a skos:Concept ;
+    dcterms:identifier "SC-7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-B> ;
+    skos:definition "Dredging (Category: Coastal areas, Group: Structural interventions)"@en,
+        "Dragaggio (Categoria: Aree costiere, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Dredging"@en,
+        "Dragaggio"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-8> a skos:Concept ;
+    dcterms:identifier "SC-8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-B> ;
+    skos:definition "Breakwater dams (Category: Coastal areas, Group: Structural interventions)"@en,
+        "Dighe frangiflutti (Categoria: Aree costiere, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Breakwater dams"@en,
+        "Dighe frangiflutti"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-9> a skos:Concept ;
+    dcterms:identifier "SC-9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-B> ;
+    skos:definition "Adherent defense works (cliffs, walls, coatings) (Category: Coastal areas, Group: Structural interventions)"@en,
+        "Opere di difesa aderenti (scogliere, muri, rivestimenti) (Categoria: Aree costiere, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Adherent defense works (cliffs, walls, coatings)"@en,
+        "Opere di difesa aderenti (scogliere, muri, rivestimenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-0> a skos:Concept ;
+    dcterms:identifier "SF-0" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-G> ;
+    skos:definition "Undefined landslide works (lack of information) (Category: Landslide, Group: Undefined works (info lacking))"@en,
+        "Opere non definite su frana (informazioni carenti) (Categoria: Frana, Gruppo: Opere non definite (info carenti))"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Undefined landslide works (lack of information)"@en,
+        "Opere non definite su frana (informazioni carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-1> a skos:Concept ;
+    dcterms:identifier "SF-1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-E> ;
+    skos:definition "Re-profiling, benching, carrying over of the ground to weigh down the foot (Category: Landslide, Group: Operations on the slope)"@en,
+        "Riprofilatura, gradonatura, riporto terreno di appesantimento al piede (Categoria: Frana, Gruppo: Operazioni sul pendio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Re-profiling, benching, carrying over of the ground to weigh down the foot"@en,
+        "Riprofilatura, gradonatura, riporto terreno di appesantimento al piede"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-10> a skos:Concept ;
+    dcterms:identifier "SF-10" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-K> ;
+    skos:definition "Planting of cuttings, shrub and tree species (Category: Landslide, Group: Surface stabilization)"@en,
+        "Messa a dimora di talee, specie arbustive ed arboree (Categoria: Frana, Gruppo: Stabilizzazione superficiale)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Planting of cuttings, shrub and tree species"@en,
+        "Messa a dimora di talee, specie arbustive ed arboree"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-11> a skos:Concept ;
+    dcterms:identifier "SF-11" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-K> ;
+    skos:definition "Stairways / living curbstone, wickerwork / living grating, living palisade (Category: Landslide, Group: Surface stabilization)"@en,
+        "Gradonata/cordonata viva, viminata/graticciata viva, palizzata viva (Categoria: Frana, Gruppo: Stabilizzazione superficiale)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Stairways / living curbstone, wickerwork / living grating, living palisade"@en,
+        "Gradonata/cordonata viva, viminata/graticciata viva, palizzata viva"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-12> a skos:Concept ;
+    dcterms:identifier "SF-12" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-K> ;
+    skos:definition "Live gratitude (Category: Landslide, Group: Surface stabilization)"@en,
+        "Grata viva (Categoria: Frana, Gruppo: Stabilizzazione superficiale)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Live gratitude"@en,
+        "Grata viva"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-13> a skos:Concept ;
+    dcterms:identifier "SF-13" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J> ;
+    skos:definition "Dry stone wall (Category: Landslide, Group: Support)"@en,
+        "Muretto a secco (Categoria: Frana, Gruppo: Sostegno)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Dry stone wall"@en,
+        "Muretto a secco"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-14> a skos:Concept ;
+    dcterms:identifier "SF-14" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J> ;
+    skos:definition "Double timber piling with cuttings, double timber piling with cuttings based on micropiles (Category: Landslide, Group: Support)"@en,
+        "Palificata doppia in legname con talee, palificata doppia in legname con talee fondata su micropali (Categoria: Frana, Gruppo: Sostegno)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Double timber piling with cuttings, double timber piling with cuttings based on micropiles"@en,
+        "Palificata doppia in legname con talee, palificata doppia in legname con talee fondata su micropali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-15> a skos:Concept ;
+    dcterms:identifier "SF-15" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J> ;
+    skos:definition "Gabionade (Category: Landslide, Group: Support)"@en,
+        "Gabbionata (Categoria: Frana, Gruppo: Sostegno)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Gabionade"@en,
+        "Gabbionata"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-16> a skos:Concept ;
+    dcterms:identifier "SF-16" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J> ;
+    skos:definition "Green gabion (Category: Landslide, Group: Support)"@en,
+        "Gabbionata rinverdita (Categoria: Frana, Gruppo: Sostegno)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Green gabion"@en,
+        "Gabbionata rinverdita"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-17> a skos:Concept ;
+    dcterms:identifier "SF-17" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J> ;
+    skos:definition "Reinforced ground, Embanked on the ground (Category: Landslide, Group: Support)"@en,
+        "Terra rinforzata, Rilevati in terra (Categoria: Frana, Gruppo: Sostegno)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Reinforced ground, Embanked on the ground"@en,
+        "Terra rinforzata, Rilevati in terra"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-18> a skos:Concept ;
+    dcterms:identifier "SF-18" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J> ;
+    skos:definition "Reinforced soil revived (Category: Landslide, Group: Support)"@en,
+        "Terra rinforzata rinverdita (Categoria: Frana, Gruppo: Sostegno)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Reinforced soil revived"@en,
+        "Terra rinforzata rinverdita"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-19> a skos:Concept ;
+    dcterms:identifier "SF-19" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J> ;
+    skos:definition "Gravity wall (stone, masonry, concrete) (Category: Landslide, Group: Support)"@en,
+        "Muro a gravità (in pietrame, in muratura, in cls.) (Categoria: Frana, Gruppo: Sostegno)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Gravity wall (stone, masonry, concrete)"@en,
+        "Muro a gravità (in pietrame, in muratura, in cls.)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-2> a skos:Concept ;
+    dcterms:identifier "SF-2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-E> ;
+    skos:definition "Disgaggio, disgrace (Category: Landslide, Group: Operations on the slope)"@en,
+        "Disgaggio, scoronamento (Categoria: Frana, Gruppo: Operazioni sul pendio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Disgaggio, disgrace"@en,
+        "Disgaggio, scoronamento"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-20> a skos:Concept ;
+    dcterms:identifier "SF-20" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J> ;
+    skos:definition "Cell wall (Category: Landslide, Group: Support)"@en,
+        "Muro cellulare (Categoria: Frana, Gruppo: Sostegno)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Cell wall"@en,
+        "Muro cellulare"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-21> a skos:Concept ;
+    dcterms:identifier "SF-21" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J> ;
+    skos:definition "Reinforced concrete wall, reinforced concrete wall founded on micropiles, reinforced concrete wall tirantato (Category: Landslide, Group: Support)"@en,
+        "Muro in c.a., muro in c.a. fondato su micropali, muro in c.a. tirantato (Categoria: Frana, Gruppo: Sostegno)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Reinforced concrete wall, reinforced concrete wall founded on micropiles, reinforced concrete wall tirantato"@en,
+        "Muro in c.a., muro in c.a. fondato su micropali, muro in c.a. tirantato"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-22> a skos:Concept ;
+    dcterms:identifier "SF-22" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J> ;
+    skos:definition "Wall in c.a. covered in stones (Category: Landslide, Group: Support)"@en,
+        "Muro in c.a. rivestito in pietrame (Categoria: Frana, Gruppo: Sostegno)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Wall in c.a. covered in stones"@en,
+        "Muro in c.a. rivestito in pietrame"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-23> a skos:Concept ;
+    dcterms:identifier "SF-23" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J> ;
+    skos:definition "Piling, tying piling, micropile bulkhead, poles, sheet piles, reinforced concrete panels (Category: Landslide, Group: Support)"@en,
+        "Palificata, palificata tirantata, paratia di micropali, pali, palancole, pannelli in c.a. (Categoria: Frana, Gruppo: Sostegno)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Piling, tying piling, micropile bulkhead, poles, sheet piles, reinforced concrete panels"@en,
+        "Palificata, palificata tirantata, paratia di micropali, pali, palancole, pannelli in c.a."@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-24> a skos:Concept ;
+    dcterms:identifier "SF-24" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-H> ;
+    skos:definition "Spritz-beton with wire mesh and tie rods (Category: Landslide, Group: Reinforcement and improvement works of the material)"@en,
+        "Spritz-beton con rete metallica e tiranti (Categoria: Frana, Gruppo: Opere rinforzo e miglioram. del materiale)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Spritz-beton with wire mesh and tie rods"@en,
+        "Spritz-beton con rete metallica e tiranti"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-25> a skos:Concept ;
+    dcterms:identifier "SF-25" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-C> ;
+    skos:definition "Lively draining fascination (Category: Landslide, Group: Drainage)"@en,
+        "Fascinata viva drenante (Categoria: Frana, Gruppo: Drenaggio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Lively draining fascination"@en,
+        "Fascinata viva drenante"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-26> a skos:Concept ;
+    dcterms:identifier "SF-26" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-C> ;
+    skos:definition "Draining trench (Category: Landslide, Group: Drainage)"@en,
+        "Trincea drenante (Categoria: Frana, Gruppo: Drenaggio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Draining trench"@en,
+        "Trincea drenante"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-27> a skos:Concept ;
+    dcterms:identifier "SF-27" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-C> ;
+    skos:definition "Draining well (Category: Landslide, Group: Drainage)"@en,
+        "Pozzo drenante (Categoria: Frana, Gruppo: Drenaggio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Draining well"@en,
+        "Pozzo drenante"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-28> a skos:Concept ;
+    dcterms:identifier "SF-28" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-C> ;
+    skos:definition "Sub-horizontal drainage (Category: Landslide, Group: Drainage)"@en,
+        "Dreno suborizzontale (Categoria: Frana, Gruppo: Drenaggio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Sub-horizontal drainage"@en,
+        "Dreno suborizzontale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-29> a skos:Concept ;
+    dcterms:identifier "SF-29" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-C> ;
+    skos:definition "Draining gallery (Category: Landslide, Group: Drainage)"@en,
+        "Galleria drenante (Categoria: Frana, Gruppo: Drenaggio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Draining gallery"@en,
+        "Galleria drenante"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-3> a skos:Concept ;
+    dcterms:identifier "SF-3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-E> ;
+    skos:definition "Vegetation cutting, selective deforestation (Category: Landslide, Group: Operations on the slope)"@en,
+        "Taglio vegetazione, disboscamento selettivo (Categoria: Frana, Gruppo: Operazioni sul pendio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Vegetation cutting, selective deforestation"@en,
+        "Taglio vegetazione, disboscamento selettivo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-30> a skos:Concept ;
+    dcterms:identifier "SF-30" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-I> ;
+    skos:definition "Double twisted wire mesh, steel wire rope panels, steel wire rope reinforcements (Category: Landslide, Group: Rockfall protection)"@en,
+        "Rete metallica a doppia torsione, pannelli in fune d´acciaio, rinforzi con funi d´acciaio (Categoria: Frana, Gruppo: Protezione caduta massi)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Double twisted wire mesh, steel wire rope panels, steel wire rope reinforcements"@en,
+        "Rete metallica a doppia torsione, pannelli in fune d´acciaio, rinforzi con funi d´acciaio"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-31> a skos:Concept ;
+    dcterms:identifier "SF-31" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-I> ;
+    skos:definition "Rockfall barrier (Category: Landslide, Group: Rockfall protection)"@en,
+        "Barriera paramassi (Categoria: Frana, Gruppo: Protezione caduta massi)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Rockfall barrier"@en,
+        "Barriera paramassi"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-32> a skos:Concept ;
+    dcterms:identifier "SF-32" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-H> ;
+    skos:definition "Nails, bolts, tie rods, tackles, anchors (Category: Landslide, Group: Reinforcement and improvement works of the material)"@en,
+        "Chiodi, bulloni, tiranti, placcaggi, ancoraggi (Categoria: Frana, Gruppo: Opere rinforzo e miglioram. del materiale)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Nails, bolts, tie rods, tackles, anchors"@en,
+        "Chiodi, bulloni, tiranti, placcaggi, ancoraggi"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-33> a skos:Concept ;
+    dcterms:identifier "SF-33" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-H> ;
+    skos:definition "Injections and fracture sealing / sealing (Category: Landslide, Group: Reinforcement and improvement works of the material)"@en,
+        "Iniezioni e sigillatura/sarcitura fratture (Categoria: Frana, Gruppo: Opere rinforzo e miglioram. del materiale)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Injections and fracture sealing / sealing"@en,
+        "Iniezioni e sigillatura/sarcitura fratture"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-34> a skos:Concept ;
+    dcterms:identifier "SF-34" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-I> ;
+    skos:definition "Vallo / rockfall relief (Category: Landslide, Group: Rockfall protection)"@en,
+        "Vallo / rilevato paramassi (Categoria: Frana, Gruppo: Protezione caduta massi)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Vallo / rockfall relief"@en,
+        "Vallo / rilevato paramassi"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-35> a skos:Concept ;
+    dcterms:identifier "SF-35" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-I> ;
+    skos:definition "Rockfall gallery (Category: Landslide, Group: Rockfall protection)"@en,
+        "Galleria paramassi (Categoria: Frana, Gruppo: Protezione caduta massi)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Rockfall gallery"@en,
+        "Galleria paramassi"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-36> a skos:Concept ;
+    dcterms:identifier "SF-36" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-B> ;
+    skos:definition "Accumulation tank / storage area (Category: Landslide, Group: Defense of rapid flows (debris flow))"@en,
+        "Vasca di accumulo / piazza di deposito (Categoria: Frana, Gruppo: Difesa colate rapide (debris flow))"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Accumulation tank / storage area"@en,
+        "Vasca di accumulo / piazza di deposito"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-37> a skos:Concept ;
+    dcterms:identifier "SF-37" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-B> ;
+    skos:definition "Selective bridle, frangiculated spur bridle (Category: Landslide, Group: Defense of rapid flows (debris flow))"@en,
+        "Briglia selettiva, briglia frangicolata a speroni (Categoria: Frana, Gruppo: Difesa colate rapide (debris flow))"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Selective bridle, frangiculated spur bridle"@en,
+        "Briglia selettiva, briglia frangicolata a speroni"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-38> a skos:Concept ;
+    dcterms:identifier "SF-38" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-B> ;
+    skos:definition "Artificial diversion canal (Category: Landslide, Group: Defense of rapid flows (debris flow))"@en,
+        "Canale artificiale di diversione (Categoria: Frana, Gruppo: Difesa colate rapide (debris flow))"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Artificial diversion canal"@en,
+        "Canale artificiale di diversione"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-39> a skos:Concept ;
+    dcterms:identifier "SF-39" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-B> ;
+    skos:definition "Deviation / fractionation wedge, deflecting barrier (Category: Landslide, Group: Defense of rapid flows (debris flow))"@en,
+        "Cuneo di deviazione/frazionamento, barriera deflettente (Categoria: Frana, Gruppo: Difesa colate rapide (debris flow))"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Deviation / fractionation wedge, deflecting barrier"@en,
+        "Cuneo di deviazione/frazionamento, barriera deflettente"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-4> a skos:Concept ;
+    dcterms:identifier "SF-4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-A> ;
+    skos:definition "Sowing, hydro-sowing, hydro-sowing with straw and bitumen (Category: Landslide, Group: Upper erosion control and regimaz. waters)"@en,
+        "Semina, idrosemina, idrosemina con paglia e bitume (Categoria: Frana, Gruppo: Controllo erosione sup. e regimaz. acque)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Sowing, hydro-sowing, hydro-sowing with straw and bitumen"@en,
+        "Semina, idrosemina, idrosemina con paglia e bitume"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-40> a skos:Concept ;
+    dcterms:identifier "SF-40" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-H> ;
+    skos:definition "Injections / jet grouting (Category: Landslide, Group: Reinforcement and improvement works of the material)"@en,
+        "Iniezioni / jet grouting (Categoria: Frana, Gruppo: Opere rinforzo e miglioram. del materiale)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Injections / jet grouting"@en,
+        "Iniezioni / jet grouting"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-41> a skos:Concept ;
+    dcterms:identifier "SF-41" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-H> ;
+    skos:definition "Micropile networks (Category: Landslide, Group: Reinforcement and improvement works of the material)"@en,
+        "Reticoli micropali (Categoria: Frana, Gruppo: Opere rinforzo e miglioram. del materiale)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Micropile networks"@en,
+        "Reticoli micropali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-42> a skos:Concept ;
+    dcterms:identifier "SF-42" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-H> ;
+    skos:definition "Thermal, chemical, electrical treatment (Category: Landslide, Group: Reinforcement and improvement works of the material)"@en,
+        "Trattamento termico, chimico, elettrico (Categoria: Frana, Gruppo: Opere rinforzo e miglioram. del materiale)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Thermal, chemical, electrical treatment"@en,
+        "Trattamento termico, chimico, elettrico"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-43> a skos:Concept ;
+    dcterms:identifier "SF-43" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-L> ;
+    skos:definition "Geological, hydrogeological, vegetation studies, mathematical models (Category: Landslide, Group: Studies and surveys)"@en,
+        "Studi geologici, idrogeologici, vegetazionali, modelli matematici (Categoria: Frana, Gruppo: Studi e rilievi)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Geological, hydrogeological, vegetation studies, mathematical models"@en,
+        "Studi geologici, idrogeologici, vegetazionali, modelli matematici"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-44> a skos:Concept ;
+    dcterms:identifier "SF-44" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-L> ;
+    skos:definition "Topographic surveys, geophysical investigations, geognostic laboratory geotechnical analyzes, etc ... (Category: Landslide, Group: Studies and surveys)"@en,
+        "Rilievi topografici, indagini geofisiche, geognostiche analisi geotecniche di laboratorio, ecc... (Categoria: Frana, Gruppo: Studi e rilievi)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Topographic surveys, geophysical investigations, geognostic laboratory geotechnical analyzes, etc ..."@en,
+        "Rilievi topografici, indagini geofisiche, geognostiche analisi geotecniche di laboratorio, ecc..."@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-45> a skos:Concept ;
+    dcterms:identifier "SF-45" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-D> ;
+    skos:definition "Instrumental monitoring (Category: Landslide, Group: Non-structural interventions)"@en,
+        "Monitoraggio strumentale (Categoria: Frana, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Instrumental monitoring"@en,
+        "Monitoraggio strumentale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-46> a skos:Concept ;
+    dcterms:identifier "SF-46" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-D> ;
+    skos:definition "Alarm system (Category: Landslide, Group: Non-structural interventions)"@en,
+        "Sistema di allarme (Categoria: Frana, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Alarm system"@en,
+        "Sistema di allarme"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-47> a skos:Concept ;
+    dcterms:identifier "SF-47" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-D> ;
+    skos:definition "Relocation (Category: Landslide, Group: Non-structural interventions)"@en,
+        "Delocalizzazione (Categoria: Frana, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Relocation"@en,
+        "Delocalizzazione"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-48> a skos:Concept ;
+    dcterms:identifier "SF-48" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-F> ;
+    skos:definition "Realization / restoration of roads (Category: Landslide, Group: Complementary works)"@en,
+        "Realizzazione/ripristino viabilità (Categoria: Frana, Gruppo: Opere complementari)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Realization / restoration of roads"@en,
+        "Realizzazione/ripristino viabilità"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-49> a skos:Concept ;
+    dcterms:identifier "SF-49" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-F> ;
+    skos:definition "Consolidation of buildings and artifacts (Category: Landslide, Group: Complementary works)"@en,
+        "Consolidamento edifici e manufatti (Categoria: Frana, Gruppo: Opere complementari)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Consolidation of buildings and artifacts"@en,
+        "Consolidamento edifici e manufatti"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-5> a skos:Concept ;
+    dcterms:identifier "SF-5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-A> ;
+    skos:definition "Biomat, bio-mesh, bio-felt (biodegradable) (Category: Landslide, Group: Upper erosion control and regimaz. waters)"@en,
+        "Biostuoia, biorete, biofeltro (biodegradabili) (Categoria: Frana, Gruppo: Controllo erosione sup. e regimaz. acque)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Biomat, bio-mesh, bio-felt (biodegradable)"@en,
+        "Biostuoia, biorete, biofeltro (biodegradabili)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-50> a skos:Concept ;
+    dcterms:identifier "SF-50" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-F> ;
+    skos:definition "Consolidation and filling of underground cavities (Category: Landslide, Group: Complementary works)"@en,
+        "Consolidamento e riempimento cavità sotterranee (Categoria: Frana, Gruppo: Opere complementari)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Consolidation and filling of underground cavities"@en,
+        "Consolidamento e riempimento cavità sotterranee"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-51> a skos:Concept ;
+    dcterms:identifier "SF-51" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-F> ;
+    skos:definition "Demolitions (Category: Landslide, Group: Complementary works)"@en,
+        "Demolizioni (Categoria: Frana, Gruppo: Opere complementari)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Demolitions"@en,
+        "Demolizioni"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-52> a skos:Concept ;
+    dcterms:identifier "SF-52" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-F> ;
+    skos:definition "Restoration / adaptation of white and black water pipelines (Category: Landslide, Group: Complementary works)"@en,
+        "Ripristino/adeguamento condotte acque bianche e nere (Categoria: Frana, Gruppo: Opere complementari)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Restoration / adaptation of white and black water pipelines"@en,
+        "Ripristino/adeguamento condotte acque bianche e nere"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-53> a skos:Concept ;
+    dcterms:identifier "SF-53" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-F> ;
+    skos:definition "Landslide - Other complementary works (Category: Landslide, Group: Complementary works)"@en,
+        "Frana - Altre opere complementari (Categoria: Frana, Gruppo: Opere complementari)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Landslide - Other complementary works"@en,
+        "Frana - Altre opere complementari"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-54> a skos:Concept ;
+    dcterms:identifier "SF-54" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-B> ;
+    skos:definition "Net retention barrier for debris flows (Category: Landslide, Group: Defense of rapid flows (debris flow))"@en,
+        "Barriera di ritenuta in rete per colate detritiche (Categoria: Frana, Gruppo: Difesa colate rapide (debris flow))"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Net retention barrier for debris flows"@en,
+        "Barriera di ritenuta in rete per colate detritiche"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-55> a skos:Concept ;
+    dcterms:identifier "SF-55" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J> ;
+    skos:definition "Other support works (Category: Landslide, Group: Support)"@en,
+        "Altre opere di sostegno (Categoria: Frana, Gruppo: Sostegno)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Other support works"@en,
+        "Altre opere di sostegno"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-56> a skos:Concept ;
+    dcterms:identifier "SF-56" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-H> ;
+    skos:definition "Soil nailing (Category: Landslide, Group: Reinforcement and improvement works of the material)"@en,
+        "Chiodatura dei terreni (soil nailing) (Categoria: Frana, Gruppo: Opere rinforzo e miglioram. del materiale)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Soil nailing"@en,
+        "Chiodatura dei terreni (soil nailing)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-57> a skos:Concept ;
+    dcterms:identifier "SF-57" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-C> ;
+    skos:definition "Draining spur (Category: Landslide, Group: Drainage)"@en,
+        "Sperone drenante (Categoria: Frana, Gruppo: Drenaggio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Draining spur"@en,
+        "Sperone drenante"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-6> a skos:Concept ;
+    dcterms:identifier "SF-6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-A> ;
+    skos:definition "Three-dimensional geomat, geocomposite, geocells, vegetative coating (synthetics) (Category: Landslide, Group: Upper erosion control and regimaz. waters)"@en,
+        "Geostuoia tridimensionale, geocomposito, geocelle, rivestimento vegetativo (sintetici) (Categoria: Frana, Gruppo: Controllo erosione sup. e regimaz. acque)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Three-dimensional geomat, geocomposite, geocells, vegetative coating (synthetics)"@en,
+        "Geostuoia tridimensionale, geocomposito, geocelle, rivestimento vegetativo (sintetici)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-7> a skos:Concept ;
+    dcterms:identifier "SF-7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-A> ;
+    skos:definition "Channel in concrete, sheet metal, gutter, disposal pipe (Category: Landslide, Group: Upper erosion control and regimaz. waters)"@en,
+        "Canaletta in calcestruzzo, in lamiera, cunetta, condotta di smaltimento (Categoria: Frana, Gruppo: Controllo erosione sup. e regimaz. acque)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Channel in concrete, sheet metal, gutter, disposal pipe"@en,
+        "Canaletta in calcestruzzo, in lamiera, cunetta, condotta di smaltimento"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-8> a skos:Concept ;
+    dcterms:identifier "SF-8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-A> ;
+    skos:definition "Timber and stone channel, green channel (Category: Landslide, Group: Upper erosion control and regimaz. waters)"@en,
+        "Canaletta in legname e pietrame, canaletta rinverdita (Categoria: Frana, Gruppo: Controllo erosione sup. e regimaz. acque)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Timber and stone channel, green channel"@en,
+        "Canaletta in legname e pietrame, canaletta rinverdita"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-9> a skos:Concept ;
+    dcterms:identifier "SF-9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-A> ;
+    skos:definition "Guard ditch (Category: Landslide, Group: Upper erosion control and regimaz. waters)"@en,
+        "Fosso di guardia (Categoria: Frana, Gruppo: Controllo erosione sup. e regimaz. acque)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Guard ditch"@en,
+        "Fosso di guardia"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-0> a skos:Concept ;
+    dcterms:identifier "SI-0" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-G> ;
+    skos:definition "Undefined hydraulic works (lack of information) (Category: Hydraulics, Group: Undefined works (info lacking))"@en,
+        "Opere idrauliche non definite (informazioni carenti) (Categoria: Idraulica, Gruppo: Opere non definite (info carenti))"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Undefined hydraulic works (lack of information)"@en,
+        "Opere idrauliche non definite (informazioni carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-1> a skos:Concept ;
+    dcterms:identifier "SI-1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-D> ;
+    skos:definition "Tank (Category: Hydraulics, Group: Full defense and lamination works)"@en,
+        "Serbatoio (Categoria: Idraulica, Gruppo: Opere di difesa e laminazione piene)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Tank"@en,
+        "Serbatoio"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-10> a skos:Concept ;
+    dcterms:identifier "SI-10" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-H> ;
+    skos:definition "Green stone and timber bridle (Category: Hydraulics, Group: Transversal works)"@en,
+        "Briglia in pietrame e legname rinverdita (Categoria: Idraulica, Gruppo: Opere trasversali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Green stone and timber bridle"@en,
+        "Briglia in pietrame e legname rinverdita"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-11> a skos:Concept ;
+    dcterms:identifier "SI-11" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-H> ;
+    skos:definition "Bottom threshold (Category: Hydraulics, Group: Transversal works)"@en,
+        "Soglia di fondo (Categoria: Idraulica, Gruppo: Opere trasversali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Bottom threshold"@en,
+        "Soglia di fondo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-12> a skos:Concept ;
+    dcterms:identifier "SI-12" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-H> ;
+    skos:definition "Stone ramp (Category: Hydraulics, Group: Transversal works)"@en,
+        "Rampa in pietrame (Categoria: Idraulica, Gruppo: Opere trasversali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Stone ramp"@en,
+        "Rampa in pietrame"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-13> a skos:Concept ;
+    dcterms:identifier "SI-13" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-H> ;
+    skos:definition "Brush in c.a. (Category: Hydraulics, Group: Transversal works)"@en,
+        "Pennello in c.a. (Categoria: Idraulica, Gruppo: Opere trasversali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Brush in c.a."@en,
+        "Pennello in c.a."@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-14> a skos:Concept ;
+    dcterms:identifier "SI-14" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-H> ;
+    skos:definition "Live repellent in wood and stone (Category: Hydraulics, Group: Transversal works)"@en,
+        "Repellente vivo in legname e pietrame (Categoria: Idraulica, Gruppo: Opere trasversali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Live repellent in wood and stone"@en,
+        "Repellente vivo in legname e pietrame"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-15> a skos:Concept ;
+    dcterms:identifier "SI-15" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> ;
+    skos:definition "Reinforced concrete wall, sub-walls (Category: Hydraulics, Group: Longitudinal works)"@en,
+        "Muro in c.a., sottomurazioni (Categoria: Idraulica, Gruppo: Opere longitudinali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Reinforced concrete wall, sub-walls"@en,
+        "Muro in c.a., sottomurazioni"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-16> a skos:Concept ;
+    dcterms:identifier "SI-16" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> ;
+    skos:definition "Wall in c.a. covered in stones, wall in cemented boulders (Category: Hydraulics, Group: Longitudinal works)"@en,
+        "Muro in c.a. rivestito in pietrame, muro in  massi cementati (Categoria: Idraulica, Gruppo: Opere longitudinali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Wall in c.a. covered in stones, wall in cemented boulders"@en,
+        "Muro in c.a. rivestito in pietrame, muro in  massi cementati"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-17> a skos:Concept ;
+    dcterms:identifier "SI-17" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> ;
+    skos:definition "Longitudinal gabion (Category: Hydraulics, Group: Longitudinal works)"@en,
+        "Gabbionata longitudinale (Categoria: Idraulica, Gruppo: Opere longitudinali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Longitudinal gabion"@en,
+        "Gabbionata longitudinale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-18> a skos:Concept ;
+    dcterms:identifier "SI-18" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> ;
+    skos:definition "Green gabion (Category: Hydraulics, Group: Longitudinal works)"@en,
+        "Gabbionata rinverdita (Categoria: Idraulica, Gruppo: Opere longitudinali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Green gabion"@en,
+        "Gabbionata rinverdita"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-19> a skos:Concept ;
+    dcterms:identifier "SI-19" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> ;
+    skos:definition "Cliff (Category: Hydraulics, Group: Longitudinal works)"@en,
+        "Scogliera (Categoria: Idraulica, Gruppo: Opere longitudinali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Cliff"@en,
+        "Scogliera"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-2> a skos:Concept ;
+    dcterms:identifier "SI-2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-D> ;
+    skos:definition "Expansion tank (crosshead, bottom drain, spillway, bulkheads) (Category: Hydraulics, Group: Full defense and lamination works)"@en,
+        "Cassa di espansione (traversa, scarico di fondo, sfioratore, paratie) (Categoria: Idraulica, Gruppo: Opere di difesa e laminazione piene)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Expansion tank (crosshead, bottom drain, spillway, bulkheads)"@en,
+        "Cassa di espansione (traversa, scarico di fondo, sfioratore, paratie)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-20> a skos:Concept ;
+    dcterms:identifier "SI-20" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> ;
+    skos:definition "Green cliff (Category: Hydraulics, Group: Longitudinal works)"@en,
+        "Scogliera rinverdita (Categoria: Idraulica, Gruppo: Opere longitudinali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Green cliff"@en,
+        "Scogliera rinverdita"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-21> a skos:Concept ;
+    dcterms:identifier "SI-21" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> ;
+    skos:definition "Metal mesh mattress (Category: Hydraulics, Group: Longitudinal works)"@en,
+        "Materasso in rete metallica (Categoria: Idraulica, Gruppo: Opere longitudinali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Metal mesh mattress"@en,
+        "Materasso in rete metallica"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-22> a skos:Concept ;
+    dcterms:identifier "SI-22" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> ;
+    skos:definition "Green mesh mattress (Category: Hydraulics, Group: Longitudinal works)"@en,
+        "Materasso in rete metallica rinverdito (Categoria: Idraulica, Gruppo: Opere longitudinali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Green mesh mattress"@en,
+        "Materasso in rete metallica rinverdito"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-23> a skos:Concept ;
+    dcterms:identifier "SI-23" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> ;
+    skos:definition "Reinforced shore earth (Category: Hydraulics, Group: Longitudinal works)"@en,
+        "Terra rinforzata di sponda (Categoria: Idraulica, Gruppo: Opere longitudinali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Reinforced shore earth"@en,
+        "Terra rinforzata di sponda"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-24> a skos:Concept ;
+    dcterms:identifier "SI-24" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> ;
+    skos:definition "Reinforced earth of the green bank (Category: Hydraulics, Group: Longitudinal works)"@en,
+        "Terra rinforzata di sponda rinverdita (Categoria: Idraulica, Gruppo: Opere longitudinali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Reinforced earth of the green bank"@en,
+        "Terra rinforzata di sponda rinverdita"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-25> a skos:Concept ;
+    dcterms:identifier "SI-25" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> ;
+    skos:definition "Diffuse coverage with live branches (Category: Hydraulics, Group: Longitudinal works)"@en,
+        "Copertura diffusa con ramaglia viva (Categoria: Idraulica, Gruppo: Opere longitudinali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Diffuse coverage with live branches"@en,
+        "Copertura diffusa con ramaglia viva"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-26> a skos:Concept ;
+    dcterms:identifier "SI-26" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> ;
+    skos:definition "Live piling on the bank (Category: Hydraulics, Group: Longitudinal works)"@en,
+        "Palificata viva spondale (Categoria: Idraulica, Gruppo: Opere longitudinali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Live piling on the bank"@en,
+        "Palificata viva spondale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-27> a skos:Concept ;
+    dcterms:identifier "SI-27" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> ;
+    skos:definition "Fascinata alive bank, fore fore alive bank, viminata alive bank, roller bank (Category: Hydraulics, Group: Longitudinal works)"@en,
+        "Fascinata viva spondale, ribalta viva spondale, viminata viva spondale, rullo spondale (Categoria: Idraulica, Gruppo: Opere longitudinali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Fascinata alive bank, fore fore alive bank, viminata alive bank, roller bank"@en,
+        "Fascinata viva spondale, ribalta viva spondale, viminata viva spondale, rullo spondale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-28> a skos:Concept ;
+    dcterms:identifier "SI-28" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-E> ;
+    skos:definition "Sowing, hydroseeding (Category: Hydraulics, Group: Greening and anti-erosion works)"@en,
+        "Semina, idrosemina (Categoria: Idraulica, Gruppo: Opere di rinverdimento e antierosione)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Sowing, hydroseeding"@en,
+        "Semina, idrosemina"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-29> a skos:Concept ;
+    dcterms:identifier "SI-29" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-E> ;
+    skos:definition "Planting of cuttings, shrub and tree species (Category: Hydraulics, Group: Greening and anti-erosion works)"@en,
+        "Messa a dimora di talee, specie arbustive ed arboree (Categoria: Idraulica, Gruppo: Opere di rinverdimento e antierosione)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Planting of cuttings, shrub and tree species"@en,
+        "Messa a dimora di talee, specie arbustive ed arboree"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-3> a skos:Concept ;
+    dcterms:identifier "SI-3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-D> ;
+    skos:definition "Accumulation tank / storage area (Category: Hydraulics, Group: Full defense and lamination works)"@en,
+        "Vasca di accumulo / piazza di deposito (Categoria: Idraulica, Gruppo: Opere di difesa e laminazione piene)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Accumulation tank / storage area"@en,
+        "Vasca di accumulo / piazza di deposito"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-30> a skos:Concept ;
+    dcterms:identifier "SI-30" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-E> ;
+    skos:definition "Biomat, bio-mesh, bio-felt (biodegradable) (Category: Hydraulics, Group: Greening and anti-erosion works)"@en,
+        "Biostuoia, biorete, biofeltro (biodegradabili) (Categoria: Idraulica, Gruppo: Opere di rinverdimento e antierosione)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Biomat, bio-mesh, bio-felt (biodegradable)"@en,
+        "Biostuoia, biorete, biofeltro (biodegradabili)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-31> a skos:Concept ;
+    dcterms:identifier "SI-31" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-E> ;
+    skos:definition "Three-dimensional geomat, geocomposite, geocells (synthetic) (Category: Hydraulics, Group: Greening and anti-erosion works)"@en,
+        "Geostuoia tridimensionale, geocomposito, geocelle (sintetici) (Categoria: Idraulica, Gruppo: Opere di rinverdimento e antierosione)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Three-dimensional geomat, geocomposite, geocells (synthetic)"@en,
+        "Geostuoia tridimensionale, geocomposito, geocelle (sintetici)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-32> a skos:Concept ;
+    dcterms:identifier "SI-32" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-B> ;
+    skos:definition "Selective cutting of vegetation (Category: Hydraulics, Group: Operations in the riverbed)"@en,
+        "Taglio selettivo vegetazione (Categoria: Idraulica, Gruppo: Operazioni in alveo)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Selective cutting of vegetation"@en,
+        "Taglio selettivo vegetazione"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-33> a skos:Concept ;
+    dcterms:identifier "SI-33" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-B> ;
+    skos:definition "Adaptation of the riverbed runoff section (section recalibration / removal of alluvial deposits, renaturalization, demolition) (Category: Hydraulics, Group: Operations in the riverbed)"@en,
+        "Adeguamento sezione di deflusso alveo (ricalibratura sezione / rimozione depositi alluvionali, rinaturalizzazione, demolizioni) (Categoria: Idraulica, Gruppo: Operazioni in alveo)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Adaptation of the riverbed runoff section (section recalibration / removal of alluvial deposits, renaturalization, demolition)"@en,
+        "Adeguamento sezione di deflusso alveo (ricalibratura sezione / rimozione depositi alluvionali, rinaturalizzazione, demolizioni)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-34> a skos:Concept ;
+    dcterms:identifier "SI-34" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-B> ;
+    skos:definition "Bridge span adjustment, restoration / consolidation / bridge adjustment (Category: Hydraulics, Group: Operations in the riverbed)"@en,
+        "Adeguamento luce ponti, ripristino / consolidamento / adeguamento ponti (Categoria: Idraulica, Gruppo: Operazioni in alveo)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Bridge span adjustment, restoration / consolidation / bridge adjustment"@en,
+        "Adeguamento luce ponti, ripristino / consolidamento / adeguamento ponti"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-35> a skos:Concept ;
+    dcterms:identifier "SI-35" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-B> ;
+    skos:definition "Maintenance (Category: Hydraulics, Group: Operations in the riverbed)"@en,
+        "Manutenzione (Categoria: Idraulica, Gruppo: Operazioni in alveo)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Maintenance"@en,
+        "Manutenzione"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-36> a skos:Concept ;
+    dcterms:identifier "SI-36" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-I> ;
+    skos:definition "Hydrological, hydraulic and vegetational studies and models (Category: Hydraulics, Group: Studies and surveys)"@en,
+        "Studi e modelli idrologici, idraulici, vegetazionali (Categoria: Idraulica, Gruppo: Studi e rilievi)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Hydrological, hydraulic and vegetational studies and models"@en,
+        "Studi e modelli idrologici, idraulici, vegetazionali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-37> a skos:Concept ;
+    dcterms:identifier "SI-37" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-I> ;
+    skos:definition "Topographic surveys, geophysical surveys, surveys, etc. (Category: Hydraulics, Group: Studies and surveys)"@en,
+        "Rilievi topografici, indagini geofisiche, sondaggi ecc. (Categoria: Idraulica, Gruppo: Studi e rilievi)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Topographic surveys, geophysical surveys, surveys, etc."@en,
+        "Rilievi topografici, indagini geofisiche, sondaggi ecc."@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-38> a skos:Concept ;
+    dcterms:identifier "SI-38" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-A> ;
+    skos:definition "Instrumental monitoring (Category: Hydraulics, Group: Non-structural interventions)"@en,
+        "Monitoraggio strumentale (Categoria: Idraulica, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Instrumental monitoring"@en,
+        "Monitoraggio strumentale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-39> a skos:Concept ;
+    dcterms:identifier "SI-39" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-A> ;
+    skos:definition "Alarm systems (Category: Hydraulics, Group: Non-structural interventions)"@en,
+        "Sistemi di allarme (Categoria: Idraulica, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Alarm systems"@en,
+        "Sistemi di allarme"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-4> a skos:Concept ;
+    dcterms:identifier "SI-4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-D> ;
+    skos:definition "Embankment (slub, overlay, lining, diaphragm, defense) (Category: Hydraulics, Group: Full defense and lamination works)"@en,
+        "Arginatura (ringrosso, sovralzo, rivestimento, diaframma, difesa) (Categoria: Idraulica, Gruppo: Opere di difesa e laminazione piene)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Embankment (slub, overlay, lining, diaphragm, defense)"@en,
+        "Arginatura (ringrosso, sovralzo, rivestimento, diaframma, difesa)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-40> a skos:Concept ;
+    dcterms:identifier "SI-40" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-A> ;
+    skos:definition "Relocation (Category: Hydraulics, Group: Non-structural interventions)"@en,
+        "Delocalizzazione (Categoria: Idraulica, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Relocation"@en,
+        "Delocalizzazione"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-41> a skos:Concept ;
+    dcterms:identifier "SI-41" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-C> ;
+    skos:definition "Construction of pumping systems (shallow water) / Adjustment of sewer networks (Category: Hydraulics, Group: Complementary works)"@en,
+        "Realizzazione impianti di pompaggio (acque basse) / Adeguamento reti fognarie (Categoria: Idraulica, Gruppo: Opere complementari)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Construction of pumping systems (shallow water) / Adjustment of sewer networks"@en,
+        "Realizzazione impianti di pompaggio (acque basse) / Adeguamento reti fognarie"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-42> a skos:Concept ;
+    dcterms:identifier "SI-42" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-C> ;
+    skos:definition "Realization / adaptation / restoration of roads (Category: Hydraulics, Group: Complementary works)"@en,
+        "Realizzazione / adeguamento / ripristino viabilità (Categoria: Idraulica, Gruppo: Opere complementari)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Realization / adaptation / restoration of roads"@en,
+        "Realizzazione / adeguamento / ripristino viabilità"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-43> a skos:Concept ;
+    dcterms:identifier "SI-43" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-C> ;
+    skos:definition "Alluvioni - Other complementary works (Category: Hydraulics, Group: Complementary works)"@en,
+        "Alluvioni - Altre opere complementari (Categoria: Idraulica, Gruppo: Opere complementari)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Alluvioni - Other complementary works"@en,
+        "Alluvioni - Altre opere complementari"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-44> a skos:Concept ;
+    dcterms:identifier "SI-44" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-D> ;
+    skos:definition "Manhole adjustment (Category: Hydraulics, Group: Full defense and lamination works)"@en,
+        "Adeguamento tombinatura (Categoria: Idraulica, Gruppo: Opere di difesa e laminazione piene)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Manhole adjustment"@en,
+        "Adeguamento tombinatura"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-5> a skos:Concept ;
+    dcterms:identifier "SI-5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-D> ;
+    skos:definition "Overflow / by-pass channel (Category: Hydraulics, Group: Full defense and lamination works)"@en,
+        "Canale scolmatore / by-pass (Categoria: Idraulica, Gruppo: Opere di difesa e laminazione piene)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Overflow / by-pass channel"@en,
+        "Canale scolmatore / by-pass"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-6> a skos:Concept ;
+    dcterms:identifier "SI-6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-D> ;
+    skos:definition "Cunettone (Category: Hydraulics, Group: Full defense and lamination works)"@en,
+        "Cunettone (Categoria: Idraulica, Gruppo: Opere di difesa e laminazione piene)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Cunettone"@en,
+        "Cunettone"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-7> a skos:Concept ;
+    dcterms:identifier "SI-7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-H> ;
+    skos:definition "Reinforced reinforced concrete (Category: Hydraulics, Group: Transversal works)"@en,
+        "Briglia in c.a. (Categoria: Idraulica, Gruppo: Opere trasversali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Reinforced reinforced concrete"@en,
+        "Briglia in c.a."@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-8> a skos:Concept ;
+    dcterms:identifier "SI-8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-H> ;
+    skos:definition "Gabion bridle (Category: Hydraulics, Group: Transversal works)"@en,
+        "Briglia in gabbioni (Categoria: Idraulica, Gruppo: Opere trasversali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Gabion bridle"@en,
+        "Briglia in gabbioni"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-9> a skos:Concept ;
+    dcterms:identifier "SI-9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-H> ;
+    skos:definition "Selective bridle (slit, reticulated, comb) (Category: Hydraulics, Group: Transversal works)"@en,
+        "Briglia selettiva (a fessura, a reticolato, a pettine) (Categoria: Idraulica, Gruppo: Opere trasversali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Selective bridle (slit, reticulated, comb)"@en,
+        "Briglia selettiva (a fessura, a reticolato, a pettine)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-0> a skos:Concept ;
+    dcterms:identifier "SIN-0" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-C> ;
+    skos:definition "Undefined works due to instability due to fires (lack of information) (Category: Fire, Group: Undefined works (info lacking))"@en,
+        "Opere non definite per dissesto da incendio  (informazioni carenti) (Categoria: Incendio, Gruppo: Opere non definite (info carenti))"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Undefined works due to instability due to fires (lack of information)"@en,
+        "Opere non definite per dissesto da incendio  (informazioni carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-1> a skos:Concept ;
+    dcterms:identifier "SIN-1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-B> ;
+    skos:definition "Cutting of burnt tree species (Category: Fire, Group: Structural interventions)"@en,
+        "Taglio specie arboree bruciate (Categoria: Incendio, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Cutting of burnt tree species"@en,
+        "Taglio specie arboree bruciate"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-10> a skos:Concept ;
+    dcterms:identifier "SIN-10" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-A> ;
+    skos:definition "Fires - Other not structural interventions (Category: Fire, Group: Non-structural interventions)"@en,
+        "Incendi - Altri interventi non strutturali (Categoria: Incendio, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Fires - Other not structural interventions"@en,
+        "Incendi - Altri interventi non strutturali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-2> a skos:Concept ;
+    dcterms:identifier "SIN-2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-B> ;
+    skos:definition "Selective clearing (Category: Fire, Group: Structural interventions)"@en,
+        "Decespugliamento selettivo (Categoria: Incendio, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Selective clearing"@en,
+        "Decespugliamento selettivo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-3> a skos:Concept ;
+    dcterms:identifier "SIN-3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-B> ;
+    skos:definition "Reforestation (Category: Fire, Group: Structural interventions)"@en,
+        "Rimboschimento (Categoria: Incendio, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Reforestation"@en,
+        "Rimboschimento"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-4> a skos:Concept ;
+    dcterms:identifier "SIN-4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-B> ;
+    skos:definition "Fire screen avenue / fire screen strip (Category: Fire, Group: Structural interventions)"@en,
+        "Viale parafuoco/fascia parafuoco (Categoria: Incendio, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Fire screen avenue / fire screen strip"@en,
+        "Viale parafuoco/fascia parafuoco"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-5> a skos:Concept ;
+    dcterms:identifier "SIN-5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-B> ;
+    skos:definition "Receiving / hoovering (Category: Fire, Group: Structural interventions)"@en,
+        "Riceppatura/tramarratura (Categoria: Incendio, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Receiving / hoovering"@en,
+        "Riceppatura/tramarratura"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-6> a skos:Concept ;
+    dcterms:identifier "SIN-6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-B> ;
+    skos:definition "Chipping (Category: Fire, Group: Structural interventions)"@en,
+        "Cippatura (Categoria: Incendio, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Chipping"@en,
+        "Cippatura"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-7> a skos:Concept ;
+    dcterms:identifier "SIN-7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-B> ;
+    skos:definition "Construction / restoration of forest roads (Category: Fire, Group: Structural interventions)"@en,
+        "Realizzazione/ripristino strade forestali (Categoria: Incendio, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Construction / restoration of forest roads"@en,
+        "Realizzazione/ripristino strade forestali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-8> a skos:Concept ;
+    dcterms:identifier "SIN-8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-B> ;
+    skos:definition "Fires - Other structural interventions (Category: Fire, Group: Structural interventions)"@en,
+        "Incendi - Altri interventi strutturali (Categoria: Incendio, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Fires - Other structural interventions"@en,
+        "Incendi - Altri interventi strutturali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-9> a skos:Concept ;
+    dcterms:identifier "SIN-9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-A> ;
+    skos:definition "Instrumental monitoring (Category: Fire, Group: Non-structural interventions)"@en,
+        "Monitoraggio strumentale (Categoria: Incendio, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Instrumental monitoring"@en,
+        "Monitoraggio strumentale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-0> a skos:Concept ;
+    dcterms:identifier "SV-0" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-C> ;
+    skos:definition "Undefined avalanche works (lack of information) (Category: Avalanche, Group: Undefined works (info lacking))"@en,
+        "Opere non definite per valanga  (informazioni carenti) (Categoria: Valanga, Gruppo: Opere non definite (info carenti))"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Undefined avalanche works (lack of information)"@en,
+        "Opere non definite per valanga  (informazioni carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-1> a skos:Concept ;
+    dcterms:identifier "SV-1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-B> ;
+    skos:definition "Racks or fences (Category: Avalanche, Group: Structural interventions)"@en,
+        "Rastrelliere o staccionate (Categoria: Valanga, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Racks or fences"@en,
+        "Rastrelliere o staccionate"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-10> a skos:Concept ;
+    dcterms:identifier "SV-10" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-B> ;
+    skos:definition "Interception / diversion dams (Category: Avalanche, Group: Structural interventions)"@en,
+        "Dighe di intercettazione/ deviazione (Categoria: Valanga, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Interception / diversion dams"@en,
+        "Dighe di intercettazione/ deviazione"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-11> a skos:Concept ;
+    dcterms:identifier "SV-11" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-B> ;
+    skos:definition "Avalanche - Other structural interventions (Category: Avalanche, Group: Structural interventions)"@en,
+        "Valanga - Altri interventi strutturali (Categoria: Valanga, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Avalanche - Other structural interventions"@en,
+        "Valanga - Altri interventi strutturali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-12> a skos:Concept ;
+    dcterms:identifier "SV-12" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-A> ;
+    skos:definition "Instrumental monitoring (Category: Avalanche, Group: Non-structural interventions)"@en,
+        "Monitoraggio strumentale (Categoria: Valanga, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Instrumental monitoring"@en,
+        "Monitoraggio strumentale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-13> a skos:Concept ;
+    dcterms:identifier "SV-13" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-A> ;
+    skos:definition "Warning system (Avalanche traffic lights) (Category: Avalanche, Group: Non-structural interventions)"@en,
+        "Sistema di allarme (Semafori da valanga) (Categoria: Valanga, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Warning system (Avalanche traffic lights)"@en,
+        "Sistema di allarme (Semafori da valanga)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-14> a skos:Concept ;
+    dcterms:identifier "SV-14" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-A> ;
+    skos:definition "Relocation (Category: Avalanche, Group: Non-structural interventions)"@en,
+        "Delocalizzazione (Categoria: Valanga, Gruppo: Interventi non strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Relocation"@en,
+        "Delocalizzazione"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-2> a skos:Concept ;
+    dcterms:identifier "SV-2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-B> ;
+    skos:definition "Avalanche protection nets (Category: Avalanche, Group: Structural interventions)"@en,
+        "Reti paravalanghe (Categoria: Valanga, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Avalanche protection nets"@en,
+        "Reti paravalanghe"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-3> a skos:Concept ;
+    dcterms:identifier "SV-3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-B> ;
+    skos:definition "Steps or terraces (Category: Avalanche, Group: Structural interventions)"@en,
+        "Gradoni o terrazzamenti (Categoria: Valanga, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Steps or terraces"@en,
+        "Gradoni o terrazzamenti"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-4> a skos:Concept ;
+    dcterms:identifier "SV-4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-B> ;
+    skos:definition "Reforestation (Category: Avalanche, Group: Structural interventions)"@en,
+        "Rimboschimenti (Categoria: Valanga, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Reforestation"@en,
+        "Rimboschimenti"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-5> a skos:Concept ;
+    dcterms:identifier "SV-5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-B> ;
+    skos:definition "Tripod in timber with reforestation (Category: Avalanche, Group: Structural interventions)"@en,
+        "Treppiedi in legname con rimboschimento (Categoria: Valanga, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Tripod in timber with reforestation"@en,
+        "Treppiedi in legname con rimboschimento"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-6> a skos:Concept ;
+    dcterms:identifier "SV-6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-B> ;
+    skos:definition "Windbreak barriers (Category: Avalanche, Group: Structural interventions)"@en,
+        "Barriere frangivento (Categoria: Valanga, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Windbreak barriers"@en,
+        "Barriere frangivento"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-7> a skos:Concept ;
+    dcterms:identifier "SV-7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-B> ;
+    skos:definition "Braking works (braking cones) (Category: Avalanche, Group: Structural interventions)"@en,
+        "Opere di frenaggio (coni di frenaggio) (Categoria: Valanga, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Braking works (braking cones)"@en,
+        "Opere di frenaggio (coni di frenaggio)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-8> a skos:Concept ;
+    dcterms:identifier "SV-8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-B> ;
+    skos:definition "Avalanche protection tunnels (Category: Avalanche, Group: Structural interventions)"@en,
+        "Gallerie paravalanghe (Categoria: Valanga, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Avalanche protection tunnels"@en,
+        "Gallerie paravalanghe"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-9> a skos:Concept ;
+    dcterms:identifier "SV-9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-B> ;
+    skos:definition "Embankments / walls (Category: Avalanche, Group: Structural interventions)"@en,
+        "Terrapieni/muri (Categoria: Valanga, Gruppo: Interventi strutturali)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:prefLabel "Embankments / walls"@en,
+        "Terrapieni/muri"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-C> a skos:Concept ;
+    dcterms:identifier "SC-C" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC> ;
+    skos:definition "Group: Undefined works (info lacking) (Category: Coastal areas)"@en,
+        "Gruppo: Opere non definite (info carenti) (Categoria: Aree costiere)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-0> ;
+    skos:prefLabel "Undefined works (info lacking)"@en,
+        "Opere non definite (info carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-G> a skos:Concept ;
+    dcterms:identifier "SF-G" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> ;
+    skos:definition "Group: Undefined works (info lacking) (Category: Landslide)"@en,
+        "Gruppo: Opere non definite (info carenti) (Categoria: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-0> ;
+    skos:prefLabel "Undefined works (info lacking)"@en,
+        "Opere non definite (info carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-G> a skos:Concept ;
+    dcterms:identifier "SI-G" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI> ;
+    skos:definition "Group: Undefined works (info lacking) (Category: Hydraulics)"@en,
+        "Gruppo: Opere non definite (info carenti) (Categoria: Idraulica)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-0> ;
+    skos:prefLabel "Undefined works (info lacking)"@en,
+        "Opere non definite (info carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-C> a skos:Concept ;
+    dcterms:identifier "SIN-C" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN> ;
+    skos:definition "Group: Undefined works (info lacking) (Category: Fire)"@en,
+        "Gruppo: Opere non definite (info carenti) (Categoria: Incendio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-0> ;
+    skos:prefLabel "Undefined works (info lacking)"@en,
+        "Opere non definite (info carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-C> a skos:Concept ;
+    dcterms:identifier "SV-C" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV> ;
+    skos:definition "Group: Undefined works (info lacking) (Category: Avalanche)"@en,
+        "Gruppo: Opere non definite (info carenti) (Categoria: Valanga)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-0> ;
+    skos:prefLabel "Undefined works (info lacking)"@en,
+        "Opere non definite (info carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC> a skos:Concept ;
+    dcterms:identifier "SC" ;
+    skos:definition "Repair work category: Coastal areas"@en,
+        "Categoria dell'opera di risanamento: Aree costiere"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-A>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-B>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-C> ;
+    skos:prefLabel "Coastal areas"@en,
+        "Aree costiere"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-L> a skos:Concept ;
+    dcterms:identifier "SF-L" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> ;
+    skos:definition "Group: Studies and surveys (Category: Landslide)"@en,
+        "Gruppo: Studi e rilievi (Categoria: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-43>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-44> ;
+    skos:prefLabel "Studies and surveys"@en,
+        "Studi e rilievi"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-I> a skos:Concept ;
+    dcterms:identifier "SI-I" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI> ;
+    skos:definition "Group: Studies and surveys (Category: Hydraulics)"@en,
+        "Gruppo: Studi e rilievi (Categoria: Idraulica)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-36>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-37> ;
+    skos:prefLabel "Studies and surveys"@en,
+        "Studi e rilievi"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN> a skos:Concept ;
+    dcterms:identifier "SIN" ;
+    skos:definition "Repair work category: Fire"@en,
+        "Categoria dell'opera di risanamento: Incendio"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-A>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-B>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-C> ;
+    skos:prefLabel "Fire"@en,
+        "Incendio"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-A> a skos:Concept ;
+    dcterms:identifier "SIN-A" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN> ;
+    skos:definition "Group: Non-structural interventions (Category: Fire)"@en,
+        "Gruppo: Interventi non strutturali (Categoria: Incendio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-10>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-9> ;
+    skos:prefLabel "Non-structural interventions"@en,
+        "Interventi non strutturali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV> a skos:Concept ;
+    dcterms:identifier "SV" ;
+    skos:definition "Repair work category: Avalanche"@en,
+        "Categoria dell'opera di risanamento: Valanga"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-A>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-B>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-C> ;
+    skos:prefLabel "Avalanche"@en,
+        "Valanga"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-A> a skos:Concept ;
+    dcterms:identifier "SC-A" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC> ;
+    skos:definition "Group: Non-structural interventions (Category: Coastal areas)"@en,
+        "Gruppo: Interventi non strutturali (Categoria: Aree costiere)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-11>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-12>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-13> ;
+    skos:prefLabel "Non-structural interventions"@en,
+        "Interventi non strutturali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-D> a skos:Concept ;
+    dcterms:identifier "SF-D" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> ;
+    skos:definition "Group: Non-structural interventions (Category: Landslide)"@en,
+        "Gruppo: Interventi non strutturali (Categoria: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-45>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-46>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-47> ;
+    skos:prefLabel "Non-structural interventions"@en,
+        "Interventi non strutturali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-E> a skos:Concept ;
+    dcterms:identifier "SF-E" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> ;
+    skos:definition "Group: Operations on the slope (Category: Landslide)"@en,
+        "Gruppo: Operazioni sul pendio (Categoria: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-1>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-2>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-3> ;
+    skos:prefLabel "Operations on the slope"@en,
+        "Operazioni sul pendio"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-K> a skos:Concept ;
+    dcterms:identifier "SF-K" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> ;
+    skos:definition "Group: Surface stabilization (Category: Landslide)"@en,
+        "Gruppo: Stabilizzazione superficiale (Categoria: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-10>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-11>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-12> ;
+    skos:prefLabel "Surface stabilization"@en,
+        "Stabilizzazione superficiale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-A> a skos:Concept ;
+    dcterms:identifier "SI-A" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI> ;
+    skos:definition "Group: Non-structural interventions (Category: Hydraulics)"@en,
+        "Gruppo: Interventi non strutturali (Categoria: Idraulica)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-38>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-39>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-40> ;
+    skos:prefLabel "Non-structural interventions"@en,
+        "Interventi non strutturali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-C> a skos:Concept ;
+    dcterms:identifier "SI-C" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI> ;
+    skos:definition "Group: Complementary works (Category: Hydraulics)"@en,
+        "Gruppo: Opere complementari (Categoria: Idraulica)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-41>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-42>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-43> ;
+    skos:prefLabel "Complementary works"@en,
+        "Opere complementari"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-A> a skos:Concept ;
+    dcterms:identifier "SV-A" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV> ;
+    skos:definition "Group: Non-structural interventions (Category: Avalanche)"@en,
+        "Gruppo: Interventi non strutturali (Categoria: Valanga)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-12>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-13>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-14> ;
+    skos:prefLabel "Non-structural interventions"@en,
+        "Interventi non strutturali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-I> a skos:Concept ;
+    dcterms:identifier "SF-I" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> ;
+    skos:definition "Group: Rockfall protection (Category: Landslide)"@en,
+        "Gruppo: Protezione caduta massi (Categoria: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-30>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-31>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-34>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-35> ;
+    skos:prefLabel "Rockfall protection"@en,
+        "Protezione caduta massi"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-B> a skos:Concept ;
+    dcterms:identifier "SI-B" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI> ;
+    skos:definition "Group: Operations in the riverbed (Category: Hydraulics)"@en,
+        "Gruppo: Operazioni in alveo (Categoria: Idraulica)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-32>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-33>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-34>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-35> ;
+    skos:prefLabel "Operations in the riverbed"@en,
+        "Operazioni in alveo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-E> a skos:Concept ;
+    dcterms:identifier "SI-E" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI> ;
+    skos:definition "Group: Greening and anti-erosion works (Category: Hydraulics)"@en,
+        "Gruppo: Opere di rinverdimento e antierosione (Categoria: Idraulica)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-28>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-29>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-30>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-31> ;
+    skos:prefLabel "Greening and anti-erosion works"@en,
+        "Opere di rinverdimento e antierosione"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-B> a skos:Concept ;
+    dcterms:identifier "SF-B" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> ;
+    skos:definition "Group: Defense of rapid flows (debris flow) (Category: Landslide)"@en,
+        "Gruppo: Difesa colate rapide (debris flow) (Categoria: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-36>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-37>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-38>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-39>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-54> ;
+    skos:prefLabel "Defense of rapid flows (debris flow)"@en,
+        "Difesa colate rapide (debris flow)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-A> a skos:Concept ;
+    dcterms:identifier "SF-A" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> ;
+    skos:definition "Group: Upper erosion control and regimaz. waters (Category: Landslide)"@en,
+        "Gruppo: Controllo erosione sup. e regimaz. acque (Categoria: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-4>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-5>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-6>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-7>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-8>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-9> ;
+    skos:prefLabel "Upper erosion control and regimaz. waters"@en,
+        "Controllo erosione sup. e regimaz. acque"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-C> a skos:Concept ;
+    dcterms:identifier "SF-C" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> ;
+    skos:definition "Group: Drainage (Category: Landslide)"@en,
+        "Gruppo: Drenaggio (Categoria: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-25>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-26>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-27>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-28>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-29>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-57> ;
+    skos:prefLabel "Drainage"@en,
+        "Drenaggio"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-F> a skos:Concept ;
+    dcterms:identifier "SF-F" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> ;
+    skos:definition "Group: Complementary works (Category: Landslide)"@en,
+        "Gruppo: Opere complementari (Categoria: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-48>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-49>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-50>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-51>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-52>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-53> ;
+    skos:prefLabel "Complementary works"@en,
+        "Opere complementari"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-H> a skos:Concept ;
+    dcterms:identifier "SF-H" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> ;
+    skos:definition "Group: Reinforcement and improvement works of the material (Category: Landslide)"@en,
+        "Gruppo: Opere rinforzo e miglioram. del materiale (Categoria: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-24>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-32>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-33>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-40>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-41>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-42>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-56> ;
+    skos:prefLabel "Reinforcement and improvement works of the material"@en,
+        "Opere rinforzo e miglioram. del materiale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-D> a skos:Concept ;
+    dcterms:identifier "SI-D" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI> ;
+    skos:definition "Group: Full defense and lamination works (Category: Hydraulics)"@en,
+        "Gruppo: Opere di difesa e laminazione piene (Categoria: Idraulica)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-1>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-2>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-3>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-4>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-44>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-5>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-6> ;
+    skos:prefLabel "Full defense and lamination works"@en,
+        "Opere di difesa e laminazione piene"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI> a skos:Concept ;
+    dcterms:identifier "SI" ;
+    skos:definition "Repair work category: Hydraulics"@en,
+        "Categoria dell'opera di risanamento: Idraulica"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-A>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-B>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-C>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-D>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-E>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-G>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-H>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-I> ;
+    skos:prefLabel "Hydraulics"@en,
+        "Idraulica"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-H> a skos:Concept ;
+    dcterms:identifier "SI-H" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI> ;
+    skos:definition "Group: Transversal works (Category: Hydraulics)"@en,
+        "Gruppo: Opere trasversali (Categoria: Idraulica)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-10>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-11>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-12>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-13>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-14>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-7>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-8>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-9> ;
+    skos:prefLabel "Transversal works"@en,
+        "Opere trasversali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-B> a skos:Concept ;
+    dcterms:identifier "SIN-B" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN> ;
+    skos:definition "Group: Structural interventions (Category: Fire)"@en,
+        "Gruppo: Interventi strutturali (Categoria: Incendio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-1>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-2>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-3>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-4>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-5>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-6>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-7>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SIN-8> ;
+    skos:prefLabel "Structural interventions"@en,
+        "Interventi strutturali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-B> a skos:Concept ;
+    dcterms:identifier "SC-B" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC> ;
+    skos:definition "Group: Structural interventions (Category: Coastal areas)"@en,
+        "Gruppo: Interventi strutturali (Categoria: Aree costiere)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-1>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-10>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-2>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-3>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-4>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-5>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-6>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-7>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-8>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SC-9> ;
+    skos:prefLabel "Structural interventions"@en,
+        "Interventi strutturali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> a skos:Concept ;
+    dcterms:identifier "SF" ;
+    skos:definition "Repair work category: Landslide"@en,
+        "Categoria dell'opera di risanamento: Frana"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-A>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-B>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-C>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-D>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-E>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-F>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-G>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-H>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-I>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-K>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-L> ;
+    skos:prefLabel "Landslide"@en,
+        "Frana"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-B> a skos:Concept ;
+    dcterms:identifier "SV-B" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV> ;
+    skos:definition "Group: Structural interventions (Category: Avalanche)"@en,
+        "Gruppo: Interventi strutturali (Categoria: Valanga)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-1>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-10>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-11>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-2>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-3>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-4>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-5>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-6>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-7>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-8>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SV-9> ;
+    skos:prefLabel "Structural interventions"@en,
+        "Interventi strutturali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-J> a skos:Concept ;
+    dcterms:identifier "SF-J" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF> ;
+    skos:definition "Group: Support (Category: Landslide)"@en,
+        "Gruppo: Sostegno (Categoria: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-13>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-14>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-15>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-16>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-17>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-18>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-19>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-20>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-21>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-22>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-23>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SF-55> ;
+    skos:prefLabel "Support"@en,
+        "Sostegno"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-F> a skos:Concept ;
+    dcterms:identifier "SI-F" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI> ;
+    skos:definition "Group: Longitudinal works (Category: Hydraulics)"@en,
+        "Gruppo: Opere longitudinali (Categoria: Idraulica)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/repair-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-15>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-16>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-17>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-18>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-19>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-20>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-21>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-22>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-23>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-24>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-25>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-26>,
+        <https://w3id.org/italia/env/vocab/soil-protection/repair-types/SI-27> ;
+    skos:prefLabel "Longitudinal works"@en,
+        "Opere longitudinali"@it .
+

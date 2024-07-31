@@ -1,0 +1,672 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix org: <http://www.w3.orgS/ns/org#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types> a skos:ConceptScheme ,
+        dcatapit:Dataset ,
+        adms:Asset ,
+        dcat:Dataset ;
+    dcterms:title "Vocabolario dei tipi di dissesto idrogeologico"@it ,
+        "Vocabulary of types of hydrogeological instability"@en ;
+    rdfs:label "Vocabolario dei tipi di dissesto idrogeologico"@it ,
+        "Vocabulary of types of hydrogeological instability"@en ;
+    dcterms:description  "Vocabolario dei tipi di dissesto idrogeologico ('DE': Incendio, 'DV': Valanga, 'DC': Dissesto Costiero, 'DI': Idraulico o 'DF': Frana)"@it ,
+        "Vocabulary of types of hydrogeological instability ('DE': Conflagration, 'DV': Avalanche, 'DC': Coastal instability, 'DI': Hydraulic or 'DF': Landslide)"@en ;
+    rdfs:comment "Vocabolario dei tipi di dissesto idrogeologico ('DE': Incendio, 'DV': Valanga, 'DC': Dissesto Costiero, 'DI': Idraulico o 'DF': Frana)"@it ,
+        "Vocabulary of types of hydrogeological instability ('DE': Conflagration, 'DV': Avalanche, 'DC': Coastal instability, 'DI': Hydraulic or 'DF': Landslide)"@en ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ITA> ,
+        <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dcterms:issued "2024-07-31"^^xsd:date ;
+    dcterms:modified "2024-07-31"^^xsd:date ;
+    dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dcterms:identifier "https://w3id.org/italia/env/vocab/soil-protection/instability-types" ;
+    dcterms:creator <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    dcterms:publisher <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    dcterms:rightsHolder <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    owl:versionInfo "Version 0.1 - created in July 2024."@en ,
+        "Versione 0.1 - creato a luglio 2024."@it ;
+    dcterms:type <http://purl.org/adms/assettype/Taxonomy> ;
+    xkos:numberOfLevels "2" ;
+    ndc:keyConcept "instability-types" ;
+    dcterms:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/env/ld/common/organization/001-LD> ;
+    skos:hasTopConcept <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/sp-instability-types-RDF-TURTLE> ,
+        <https://w3id.org/italia/env/ld/common/distribution/sp-instability-types-CSV> ;
+    dcat:keyword "instability"@en ,
+        "dissesto"@it ;
+    dcterms:subject <http://eurovoc.europa.eu/2825> ,
+        <http://eurovoc.europa.eu/1440> ,
+        <http://eurovoc.europa.eu/3158> ,
+        <http://eurovoc.europa.eu/371> ,
+        <http://eurovoc.europa.eu/413> ,
+        <http://eurovoc.europa.eu/c_3f9a7b14> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+
+<https://w3id.org/italia/env/ld/common/distribution/sp-instability-types-RDF-TURTLE> a dcatapit:Distribution ,
+        dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "Distribuzione RDF/Turtle del vocabolario controllato dei tipi di dissesto idrogeologico"@it ,
+        "RDF/Turtle distribution of the controlled vocabulary of types of hydrogeological instability"@en ;
+    dcterms:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato dei tipi di dissesto idrogeologico"@it ,
+        "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary of types of hydrogeological instability"@en ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/soil-protection/instability-types> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/soil-protection/instability-types/instability-types.ttl> .
+
+<https://w3id.org/italia/env/ld/common/distribution/sp-instability-types-CSV> a dcatapit:Distribution ,
+        dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "Distribuzione CSV del vocabolario controllato dei tipi di dissesto idrogeologico"@it ,
+        "CSV distribution of the controlled vocabulary of types of hydrogeological instability"@en ;
+    dcterms:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato dei tipi di dissesto idrogeologico"@it ,
+        "This is the CSV distribution of the Linked Open Data dataset of the controlled vocabulary of types of hydrogeological instability"@en ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/soil-protection/instability-types> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/soil-protection/instability-types/instability-types.csv> .
+
+<https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
+        dcatapit:Agent ,
+        vcard:Organization ,
+        org:Organization ,
+        foaf:Agent ,
+        top:Organisation ;
+    dcterms:identifier "ispra_rm" ;
+    vcard:fn "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+        "Italian National Institute for Environmental Protection and Research"@en ;
+    foaf:name "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+        "Italian Institute for Environmental Protection and Research"@en .
+
+<https://w3id.org/italia/env/ld/common/organization/001-LD> rdf:type owl:NamedIndividual ,
+        dcatapit:Organization ,
+        vcard:Kind ,
+        vcard:Organization ;
+    vcard:fn "DG-SINA - Progetto Linked ISPRA" ;
+    vcard:hasEmail <mailto:assistenza-lod@isprambiente.it> .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-0> a skos:Concept ;
+    dcterms:identifier "DC-0" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC> ;
+    skos:definition "Dissesto costiero non definito (informazioni carenti) (Tipo: Dissesto Costiero)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Dissesto costiero non definito (informazioni carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-1> a skos:Concept ;
+    dcterms:identifier "DC-1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC> ;
+    skos:definition "Prevention of the outflow of floods at the mouth (Type: Coastal instability)"@en,
+        "Impedimento al deflusso delle piene alla foce (Tipo: Dissesto Costiero)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Prevention of the outflow of floods at the mouth"@en,
+        "Impedimento al deflusso delle piene alla foce"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-10> a skos:Concept ;
+    dcterms:identifier "DC-10" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC> ;
+    skos:definition "Altra tipologia di dissesto costiero (non in elenco) (Tipo: Dissesto Costiero)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Altra tipologia di dissesto costiero (non in elenco)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-2> a skos:Concept ;
+    dcterms:identifier "DC-2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC> ;
+    skos:definition "Insabbiamento della foce (Tipo: Dissesto Costiero)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Insabbiamento della foce"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-3> a skos:Concept ;
+    dcterms:identifier "DC-3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC> ;
+    skos:definition "Covering up the coast (Type: Coastal instability)"@en,
+        "Insabbiamento del litorale (Tipo: Dissesto Costiero)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Covering up the coast"@en,
+        "Insabbiamento del litorale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-4> a skos:Concept ;
+    dcterms:identifier "DC-4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC> ;
+    skos:definition "Flooding of the hinterland due to storm surges (Type: Coastal instability)"@en,
+        "Allagamenti del retroterra per mareggiate (Tipo: Dissesto Costiero)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Flooding of the hinterland due to storm surges"@en,
+        "Allagamenti del retroterra per mareggiate"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-5> a skos:Concept ;
+    dcterms:identifier "DC-5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC> ;
+    skos:definition "Erosion of the mouth (Type: Coastal instability)"@en,
+        "Erosione della foce (Tipo: Dissesto Costiero)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Erosion of the mouth"@en,
+        "Erosione della foce"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-6> a skos:Concept ;
+    dcterms:identifier "DC-6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC> ;
+    skos:definition "Coastal erosion (Type: Coastal instability)"@en,
+        "Erosione del litorale (Tipo: Dissesto Costiero)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Coastal erosion"@en,
+        "Erosione del litorale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-7> a skos:Concept ;
+    dcterms:identifier "DC-7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC> ;
+    skos:definition "Coastal dune erosion / overlap (Type: Coastal instability)"@en,
+        "Erosione/sormonto duna costiera (Tipo: Dissesto Costiero)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Coastal dune erosion / overlap"@en,
+        "Erosione/sormonto duna costiera"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-8> a skos:Concept ;
+    dcterms:identifier "DC-8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC> ;
+    skos:definition "Danneggiamento /collasso delle opere marittime (Tipo: Dissesto Costiero)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Danneggiamento /collasso delle opere marittime"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-9> a skos:Concept ;
+    dcterms:identifier "DC-9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC> ;
+    skos:definition "Front erosion / foot undermining (high ribs) (Type: Coastal instability)"@en,
+        "Erosione del fronte/scalzamento piede (coste alte) (Tipo: Dissesto Costiero)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Front erosion / foot undermining (high ribs)"@en,
+        "Erosione del fronte/scalzamento piede (coste alte)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE-0> a skos:Concept ;
+    dcterms:identifier "DE-0" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE> ;
+    skos:definition "Erosione per incendio non definita (informazioni carenti) (Tipo: Incendio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Erosione per incendio non definita (informazioni carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE-1> a skos:Concept ;
+    dcterms:identifier "DE-1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE> ;
+    skos:definition "Areal erosion by diffuse runoff (Type: Conflagration)"@en,
+        "Erosione areale per ruscellamento diffuso (Tipo: Incendio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Areal erosion by diffuse runoff"@en,
+        "Erosione areale per ruscellamento diffuso"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE-2> a skos:Concept ;
+    dcterms:identifier "DE-2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE> ;
+    skos:definition "Stream erosion by runoff within subparallel rivulets (Type: Conflagration)"@en,
+        "Erosione a rivoli per ruscellamento entro rivoli subparalleli (Tipo: Incendio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Stream erosion by runoff within subparallel rivulets"@en,
+        "Erosione a rivoli per ruscellamento entro rivoli subparalleli"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE-3> a skos:Concept ;
+    dcterms:identifier "DE-3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE> ;
+    skos:definition "Linear, furrowed erosion by concentrated runoff (Type: Conflagration)"@en,
+        "Erosione lineare, a solchi per ruscellamento concentrato (Tipo: Incendio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Linear, furrowed erosion by concentrated runoff"@en,
+        "Erosione lineare, a solchi per ruscellamento concentrato"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE-4> a skos:Concept ;
+    dcterms:identifier "DE-4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE> ;
+    skos:definition "Altra tipo di erosione per incendio (non in elenco) (Tipo: Incendio)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Altra tipo di erosione per incendio (non in elenco)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-0> a skos:Concept ;
+    dcterms:identifier "DF-0" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Other type of landslide (not listed) (Type: Landslide)"@en,
+        "Frana non determinata (informazioni carenti) (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Other type of landslide (not listed)"@en,
+        "Frana non determinata (informazioni carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-1> a skos:Concept ;
+    dcterms:identifier "DF-1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Collapse (Type: Landslide)"@en,
+        "Crollo (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Collapse"@en,
+        "Crollo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-10> a skos:Concept ;
+    dcterms:identifier "DF-10" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "DGPV (Type: Landslide)"@en,
+        "DGPV (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "DGPV"@en,
+        "DGPV"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-11> a skos:Concept ;
+    dcterms:identifier "DF-11" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Soliflow, soil creep, cortical sliding, landslides (Type: Landslide)"@en,
+        "Soliflusso, soil creep, scivolamento corticale, smottamenti (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Soliflow, soil creep, cortical sliding, landslides"@en,
+        "Soliflusso, soil creep, scivolamento corticale, smottamenti"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-12> a skos:Concept ;
+    dcterms:identifier "DF-12" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Areas subject to widespread collapses / overturns (Type: Landslide)"@en,
+        "Aree con crolli / ribaltamenti diffusi (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Areas subject to widespread collapses / overturns"@en,
+        "Aree con crolli / ribaltamenti diffusi"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-13> a skos:Concept ;
+    dcterms:identifier "DF-13" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Areas subject to widespread sinking (Type: Landslide)"@en,
+        "Aree con sprofondamenti diffusi (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Areas subject to widespread sinking"@en,
+        "Aree con sprofondamenti diffusi"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-14> a skos:Concept ;
+    dcterms:identifier "DF-14" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Areas subject to widespread surface landslides (Type: Landslide)"@en,
+        "Aree con frane superficiali diffuse (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Areas subject to widespread surface landslides"@en,
+        "Aree con frane superficiali diffuse"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-15> a skos:Concept ;
+    dcterms:identifier "DF-15" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Undetermined landslide (lack of information) (Type: Landslide)"@en,
+        "Altra tipologia di frana (non in elenco) (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Undetermined landslide (lack of information)"@en,
+        "Altra tipologia di frana (non in elenco)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-2> a skos:Concept ;
+    dcterms:identifier "DF-2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Overturning (Type: Landslide)"@en,
+        "Ribaltamento (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Overturning"@en,
+        "Ribaltamento"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-3> a skos:Concept ;
+    dcterms:identifier "DF-3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Rotational sliding (Type: Landslide)"@en,
+        "Scivolamento rotazionale (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Rotational sliding"@en,
+        "Scivolamento rotazionale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-4> a skos:Concept ;
+    dcterms:identifier "DF-4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Translational sliding (Type: Landslide)"@en,
+        "Scivolamento traslativo (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Translational sliding"@en,
+        "Scivolamento traslativo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-5> a skos:Concept ;
+    dcterms:identifier "DF-5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Lateral expansion (Type: Landslide)"@en,
+        "Espansione laterale (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Lateral expansion"@en,
+        "Espansione laterale"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-6> a skos:Concept ;
+    dcterms:identifier "DF-6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Slow casting (speed between m / year - m / month) (Type: Landslide)"@en,
+        "Colata \"lenta\" (velocità compresa tra m/anno - m/mese) (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Slow casting (speed between m / year - m / month)"@en,
+        "Colata \"lenta\" (velocità compresa tra m/anno - m/mese)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-7> a skos:Concept ;
+    dcterms:identifier "DF-7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Fast casting (speed> m / hour) (Type: Landslide)"@en,
+        "Colata \"rapida\" (velocità >m/ora) (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Fast casting (speed> m / hour)"@en,
+        "Colata \"rapida\" (velocità >m/ora)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-8> a skos:Concept ;
+    dcterms:identifier "DF-8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Sinking (Type: Landslide)"@en,
+        "Sprofondamento (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Sinking"@en,
+        "Sprofondamento"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-9> a skos:Concept ;
+    dcterms:identifier "DF-9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> ;
+    skos:definition "Complex (Type: Landslide)"@en,
+        "Complesso (Tipo: Frana)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Complex"@en,
+        "Complesso"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-0> a skos:Concept ;
+    dcterms:identifier "DI-0" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Dissesto idraulico non definito (informazioni carenti) (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Dissesto idraulico non definito (informazioni carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-1> a skos:Concept ;
+    dcterms:identifier "DI-1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Debris flow (Type: Hydraulic)"@en,
+        "Colata detritica (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Debris flow"@en,
+        "Colata detritica"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-10> a skos:Concept ;
+    dcterms:identifier "DI-10" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Insufficiency of lifting systems (shallow water) (Type: Hydraulic)"@en,
+        "Insufficienza impianti di sollevamento (acque basse) (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Insufficiency of lifting systems (shallow water)"@en,
+        "Insufficienza impianti di sollevamento (acque basse)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-11> a skos:Concept ;
+    dcterms:identifier "DI-11" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Prevention of the outflow of floods at the mouth (Type: Hydraulic)"@en,
+        "Impedimento al deflusso delle piene alla foce (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Prevention of the outflow of floods at the mouth"@en,
+        "Impedimento al deflusso delle piene alla foce"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-12> a skos:Concept ;
+    dcterms:identifier "DI-12" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Damage / collapse of the mouth defense works (Type: Hydraulic)"@en,
+        "Danneggiamento / collasso delle opere di difesa foce (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Damage / collapse of the mouth defense works"@en,
+        "Danneggiamento / collasso delle opere di difesa foce"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-13> a skos:Concept ;
+    dcterms:identifier "DI-13" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Other type of hydraulic instability (not listed) (Type: Hydraulic)"@en,
+        "Altro tipo di  dissesto idraulico (non in elenco) (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Other type of hydraulic instability (not listed)"@en,
+        "Altro tipo di  dissesto idraulico (non in elenco)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-2> a skos:Concept ;
+    dcterms:identifier "DI-2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Flash floods (Type: Hydraulic)"@en,
+        "Piene repentine (flash floods) (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Flash floods"@en,
+        "Piene repentine (flash floods)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-3> a skos:Concept ;
+    dcterms:identifier "DI-3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Floods in the fan area (Type: Hydraulic)"@en,
+        "Alluvioni in zona di conoide (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Floods in the fan area"@en,
+        "Alluvioni in zona di conoide"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-4> a skos:Concept ;
+    dcterms:identifier "DI-4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Shore and bottom erosion (Type: Hydraulic)"@en,
+        "Erosioni di sponda e di fondo (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Shore and bottom erosion"@en,
+        "Erosioni di sponda e di fondo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-5> a skos:Concept ;
+    dcterms:identifier "DI-5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Overlaps on non-embanked banks (Type: Hydraulic)"@en,
+        "Sormonti sponde non arginate (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Overlaps on non-embanked banks"@en,
+        "Sormonti sponde non arginate"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-6> a skos:Concept ;
+    dcterms:identifier "DI-6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Overlapping embankments, overlapping embankment walls (Type: Hydraulic)"@en,
+        "Sormonti argini, sormonti muri arginali (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Overlapping embankments, overlapping embankment walls"@en,
+        "Sormonti argini, sormonti muri arginali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-7> a skos:Concept ;
+    dcterms:identifier "DI-7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Breakthroughs of embankments, breakthroughs of embankments (Type: Hydraulic)"@en,
+        "Sfondamenti arginali, sfondamenti muri arginali (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Breakthroughs of embankments, breakthroughs of embankments"@en,
+        "Sfondamenti arginali, sfondamenti muri arginali"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-8> a skos:Concept ;
+    dcterms:identifier "DI-8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Erosions and embankments, fountains (Type: Hydraulic)"@en,
+        "Erosioni e dissesti arginali, fontanazzi (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Erosions and embankments, fountains"@en,
+        "Erosioni e dissesti arginali, fontanazzi"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-9> a skos:Concept ;
+    dcterms:identifier "DI-9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> ;
+    skos:definition "Artifacts in the riverbed, obstacles to outflow, regurgitation phenomena (Type: Hydraulic)"@en,
+        "Manufatti in alveo, ostacoli al deflusso, fenomeni di rigurgito (Tipo: Idraulico)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Artifacts in the riverbed, obstacles to outflow, regurgitation phenomena"@en,
+        "Manufatti in alveo, ostacoli al deflusso, fenomeni di rigurgito"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-0> a skos:Concept ;
+    dcterms:identifier "DV-0" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV> ;
+    skos:definition "Valanga  non definita (informazioni carenti) (Tipo: Valanga)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Valanga  non definita (informazioni carenti)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-1> a skos:Concept ;
+    dcterms:identifier "DV-1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV> ;
+    skos:definition "channeled avalanche (Type: Avalanche)"@en,
+        "valanga incanalata (Tipo: Valanga)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "channeled avalanche"@en,
+        "valanga incanalata"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-2> a skos:Concept ;
+    dcterms:identifier "DV-2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV> ;
+    skos:definition "slope avalanche (open slope) (Type: Avalanche)"@en,
+        "valanga di versante (pendio aperto) (Tipo: Valanga)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "slope avalanche (open slope)"@en,
+        "valanga di versante (pendio aperto)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-3> a skos:Concept ;
+    dcterms:identifier "DV-3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV> ;
+    skos:definition "valanga cubiforme (Tipo: Valanga)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "valanga cubiforme"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-4> a skos:Concept ;
+    dcterms:identifier "DV-4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV> ;
+    skos:definition "grazing avalanche (Type: Avalanche)"@en,
+        "valanga radente (Tipo: Valanga)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "grazing avalanche"@en,
+        "valanga radente"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-5> a skos:Concept ;
+    dcterms:identifier "DV-5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV> ;
+    skos:definition "surface avalanche (Type: Avalanche)"@en,
+        "valanga di superficie (Tipo: Valanga)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "surface avalanche"@en,
+        "valanga di superficie"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-6> a skos:Concept ;
+    dcterms:identifier "DV-6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV> ;
+    skos:definition "valanga di fondo (Tipo: Valanga)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "valanga di fondo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-7> a skos:Concept ;
+    dcterms:identifier "DV-7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV> ;
+    skos:definition "mixed avalanche (Type: Avalanche)"@en,
+        "valanga mista (Tipo: Valanga)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "mixed avalanche"@en,
+        "valanga mista"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-8> a skos:Concept ;
+    dcterms:identifier "DV-8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV> ;
+    skos:definition "Altra tipologia di valanga (non in elenco) (Tipo: Valanga)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:prefLabel "Altra tipologia di valanga (non in elenco)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE> a skos:Concept ;
+    dcterms:identifier "DE" ;
+    skos:definition "Type of instability: Conflagration"@en,
+        "Tipo di dissesto: Incendio"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE-0>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE-1>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE-2>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE-3>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DE-4> ;
+    skos:prefLabel "Conflagration"@en,
+        "Incendio"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV> a skos:Concept ;
+    dcterms:identifier "DV" ;
+    skos:definition "Type of instability: Avalanche"@en,
+        "Tipo di dissesto: Valanga"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-0>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-1>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-2>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-3>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-4>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-5>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-6>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-7>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DV-8> ;
+    skos:prefLabel "Avalanche"@en,
+        "Valanga"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC> a skos:Concept ;
+    dcterms:identifier "DC" ;
+    skos:definition "Type of instability: Coastal instability"@en,
+        "Tipo di dissesto: Dissesto Costiero"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-0>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-1>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-10>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-2>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-3>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-4>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-5>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-6>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-7>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-8>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DC-9> ;
+    skos:prefLabel "Coastal instability"@en,
+        "Dissesto Costiero"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI> a skos:Concept ;
+    dcterms:identifier "DI" ;
+    skos:definition "Type of instability: Hydraulic"@en,
+        "Tipo di dissesto: Idraulico"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-0>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-1>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-10>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-11>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-12>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-13>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-2>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-3>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-4>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-5>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-6>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-7>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-8>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DI-9> ;
+    skos:prefLabel "Hydraulic"@en,
+        "Idraulico"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF> a skos:Concept ;
+    dcterms:identifier "DF" ;
+    skos:definition "Type of instability: Landslide"@en,
+        "Tipo di dissesto: Frana"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-types> ;
+    skos:narrower <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-0>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-1>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-10>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-11>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-12>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-13>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-14>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-15>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-2>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-3>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-4>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-5>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-6>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-7>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-8>,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-types/DF-9> ;
+    skos:prefLabel "Landslide"@en,
+        "Frana"@it .
+

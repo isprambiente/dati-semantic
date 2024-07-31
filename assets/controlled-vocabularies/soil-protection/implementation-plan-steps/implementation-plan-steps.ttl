@@ -1,0 +1,488 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix org: <http://www.w3.orgS/ns/org#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> a skos:ConceptScheme ,
+        dcatapit:Dataset ,
+        adms:Asset ,
+        dcat:Dataset ;
+    dcterms:title "Vocabolario dei passi di un piano di attuazione"@it ,
+        "Vocabulary of steps of an implementation plan"@en ;
+    rdfs:label "Vocabolario dei passi di un piano di attuazione"@it ,
+        "Vocabulary of steps of an implementation plan"@en ;
+    dcterms:description  "Vocabolario dei passi dell'iter di attuazione di interventi per la difesa del suolo"@it ,
+        "Vocabulary of steps in a soil protection implementation plan"@en ;
+    rdfs:comment "Vocabolario dei passi dell'iter di attuazione di interventi per la difesa del suolo"@it ,
+        "Vocabulary of steps in a soil protection implementation plan"@en ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dcterms:issued "2024-07-31"^^xsd:date ;
+    dcterms:modified "2024-07-31"^^xsd:date ;
+    dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dcterms:identifier "https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps" ;
+    dcterms:creator <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    dcterms:publisher <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    dcterms:rightsHolder <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    owl:versionInfo "Version 0.1 - created in July 2024."@en ,
+        "Versione 0.1 - creato a luglio 2024."@it ;
+    dcterms:type <http://purl.org/adms/assettype/CodeList> ;
+    xkos:numberOfLevels "1" ;
+    ndc:keyConcept "implementation-plan-steps" ;
+    dcterms:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/env/ld/common/organization/001-LD> ;
+    skos:hasTopConcept <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/10> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/100> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/102> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/110> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/115> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/120> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/125> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/130> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/132> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/140> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/142> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/150> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/152> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/170> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/172> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/175> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/180> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/181> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/182> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/183> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/184> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/185> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/190> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/193> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/194> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/20> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/201> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/202> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/204> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/206> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/210> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/215> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/217> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/220> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/223> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/225> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/226> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/227> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/228> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/229> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/30> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/40> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/5> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/70> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/75> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/77> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/80> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/82> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/920> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/921> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/990> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/992> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/995> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/997> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/998> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/999> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/sp-implementation-plan-steps-RDF-TURTLE> ,
+        <https://w3id.org/italia/env/ld/common/distribution/sp-implementation-plan-steps-CSV> ;
+    dcat:keyword "administrative procedure"@en ,
+        "procedura amministrativa"@it ,
+        "implementation plan"@en ,
+        "piano di attuazione"@it ,
+        "procurement"@en ;
+    dcterms:subject <http://eurovoc.europa.eu/2825> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+
+<https://w3id.org/italia/env/ld/common/distribution/sp-implementation-plan-steps-RDF-TURTLE> a dcatapit:Distribution ,
+        dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "Distribuzione RDF/Turtle del vocabolario controllato dei passi di un piano di attuazione di interventi per la difesa del suolo"@it ,
+        "RDF/Turtle distribution of the controlled vocabulary of steps in a soil protection implementation plan"@en ;
+    dcterms:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato dei passi di un piano di attuazione di interventi per la difesa del suolo"@it ,
+        "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary of steps in a soil protection implementation plan"@en ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/soil-protection/implementation-plan-steps> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/soil-protection/implementation-plan-steps/implementation-plan-steps.ttl> .
+
+<https://w3id.org/italia/env/ld/common/distribution/sp-implementation-plan-steps-CSV> a dcatapit:Distribution ,
+        dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "Distribuzione CSV del vocabolario controllato dei passi di un piano di attuazione di interventi per la difesa del suolo"@it ,
+        "CSV distribution of the controlled vocabulary of steps in a soil protection implementation plan"@en ;
+    dcterms:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato dei passi di un piano di attuazione di interventi per la difesa del suolo"@it ,
+        "This is the CSV distribution of the Linked Open Data dataset of the controlled vocabulary of steps in a soil protection implementation plan"@en ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/soil-protection/implementation-plan-steps> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/soil-protection/implementation-plan-steps/implementation-plan-steps.csv> .
+
+<https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
+        dcatapit:Agent ,
+        vcard:Organization ,
+        org:Organization ,
+        foaf:Agent ,
+        top:Organisation ;
+    dcterms:identifier "ispra_rm" ;
+    vcard:fn "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+        "Italian National Institute for Environmental Protection and Research"@en ;
+    foaf:name "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+        "Italian Institute for Environmental Protection and Research"@en .
+
+<https://w3id.org/italia/env/ld/common/organization/001-LD> rdf:type owl:NamedIndividual ,
+        dcatapit:Organization ,
+        vcard:Kind ,
+        vcard:Organization ;
+    vcard:fn "DG-SINA - Progetto Linked ISPRA" ;
+    vcard:hasEmail <mailto:assistenza-lod@isprambiente.it> .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/10> a skos:Concept ;
+    dcterms:identifier "10" ;
+    skos:definition "Finanziamento (Fase istruttoria chiusa): Istruttoria respinta"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Istruttoria respinta"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/100> a skos:Concept ;
+    dcterms:identifier "100" ;
+    skos:definition "Lavori (Esecuzione Studi e Indagini): Indagini /studi ultimati"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Indagini /studi ultimati"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/102> a skos:Concept ;
+    dcterms:identifier "102" ;
+    skos:definition "Lavori (Esecuzione Studi e Indagini): (BDAP - Fine Studio di fattibilità)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - Fine Studio di fattibilità)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/110> a skos:Concept ;
+    dcterms:identifier "110" ;
+    skos:definition "Lavori (In corso di progettazione): Incarico prog. fatt. tecnico-economica (ex prelim)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Incarico prog. fatt. tecnico-economica (ex prelim)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/115> a skos:Concept ;
+    dcterms:identifier "115" ;
+    skos:definition "Lavori (In corso di progettazione): (BDAP - inizio Progettazione Preliminare)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - inizio Progettazione Preliminare)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/120> a skos:Concept ;
+    dcterms:identifier "120" ;
+    skos:definition "Lavori (In corso di progettazione): Appr. progetto fatt. tecnico-economica (ex prelim)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Appr. progetto fatt. tecnico-economica (ex prelim)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/125> a skos:Concept ;
+    dcterms:identifier "125" ;
+    skos:definition "Lavori (In corso di progettazione): (BDAP - Fine Progettazione Preliminare)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - Fine Progettazione Preliminare)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/130> a skos:Concept ;
+    dcterms:identifier "130" ;
+    skos:definition "Lavori (In corso di progettazione): Affidamento incarico progetto definitivo"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Affidamento incarico progetto definitivo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/132> a skos:Concept ;
+    dcterms:identifier "132" ;
+    skos:definition "Lavori (In corso di progettazione): (BDAP - Inizio progettazione definitiva)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - Inizio progettazione definitiva)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/140> a skos:Concept ;
+    dcterms:identifier "140" ;
+    skos:definition "Lavori (In corso di progettazione): Approvazione progetto definitivo"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Approvazione progetto definitivo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/142> a skos:Concept ;
+    dcterms:identifier "142" ;
+    skos:definition "Lavori (In corso di progettazione): (BDAP - fine progettazione definitiva)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - fine progettazione definitiva)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/150> a skos:Concept ;
+    dcterms:identifier "150" ;
+    skos:definition "Lavori (In corso di progettazione): Affidamento incarico progetto esecutivo"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Affidamento incarico progetto esecutivo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/152> a skos:Concept ;
+    dcterms:identifier "152" ;
+    skos:definition "Lavori (In corso di progettazione): (BDAP - Inizio progettazione esecutiva)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - Inizio progettazione esecutiva)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/170> a skos:Concept ;
+    dcterms:identifier "170" ;
+    skos:definition "Lavori (Progettazione ultimata): Approvazione progetto esecutivo"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Approvazione progetto esecutivo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/172> a skos:Concept ;
+    dcterms:identifier "172" ;
+    skos:definition "Lavori (Progettazione ultimata): (BDAP - fine progettazione esecutiva)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - fine progettazione esecutiva)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/175> a skos:Concept ;
+    dcterms:identifier "175" ;
+    skos:definition "Lavori (Progettazione ultimata): Pubblicazione bando di gara"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Pubblicazione bando di gara"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/180> a skos:Concept ;
+    dcterms:identifier "180" ;
+    skos:definition "Lavori (Lavori aggiudicati): Lavori aggiudicati"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Lavori aggiudicati"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/181> a skos:Concept ;
+    dcterms:identifier "181" ;
+    skos:definition "Lavori (Lavori aggiudicati): Affidamento incarichi (attività di supporto)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Affidamento incarichi (attività di supporto)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/182> a skos:Concept ;
+    dcterms:identifier "182" ;
+    skos:definition "Lavori (Lavori in esecuzione): (PUC - stipula contratto)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(PUC - stipula contratto)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/183> a skos:Concept ;
+    dcterms:identifier "183" ;
+    skos:definition "Lavori (Lavori in esecuzione): (PUC - stipula contratto - fine)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(PUC - stipula contratto - fine)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/184> a skos:Concept ;
+    dcterms:identifier "184" ;
+    skos:definition "Lavori (Lavori in esecuzione): (BDAP - inizio esecuzione lavori)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - inizio esecuzione lavori)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/185> a skos:Concept ;
+    dcterms:identifier "185" ;
+    skos:definition "Lavori (Lavori in esecuzione): Avvio procedura acquisto immobili"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Avvio procedura acquisto immobili"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/190> a skos:Concept ;
+    dcterms:identifier "190" ;
+    skos:definition "Lavori (Lavori in esecuzione): Consegna lavori"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Consegna lavori"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/193> a skos:Concept ;
+    dcterms:identifier "193" ;
+    skos:definition "Lavori (Lavori in esecuzione): Avvio delle attività di supporto"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Avvio delle attività di supporto"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/194> a skos:Concept ;
+    dcterms:identifier "194" ;
+    skos:definition "Lavori (Lavori in esecuzione): Conclusione parziali delle attività"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Conclusione parziali delle attività"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/20> a skos:Concept ;
+    dcterms:identifier "20" ;
+    skos:definition "Finanziamento (Finanziamento): Accredito fondi alle regioni"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Accredito fondi alle regioni"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/201> a skos:Concept ;
+    dcterms:identifier "201" ;
+    skos:definition "Lavori (Utilizzo economie): Istruttoria approvata"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Istruttoria approvata"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/202> a skos:Concept ;
+    dcterms:identifier "202" ;
+    skos:definition "Lavori (Utilizzo economie): Approvazione esecutivo (economie)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Approvazione esecutivo (economie)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/204> a skos:Concept ;
+    dcterms:identifier "204" ;
+    skos:definition "Lavori (Utilizzo economie): Consegna lavori (economie)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Consegna lavori (economie)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/206> a skos:Concept ;
+    dcterms:identifier "206" ;
+    skos:definition "Lavori (Lavori ultimati): Attività completate"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Attività completate"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/210> a skos:Concept ;
+    dcterms:identifier "210" ;
+    skos:definition "Lavori (Lavori ultimati): Certificato di ultimazione"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Certificato di ultimazione"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/215> a skos:Concept ;
+    dcterms:identifier "215" ;
+    skos:definition "Lavori (Lavori ultimati): (BDAP - fine esecuzione lavori)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - fine esecuzione lavori)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/217> a skos:Concept ;
+    dcterms:identifier "217" ;
+    skos:definition "Lavori (Lavori ultimati): (BDAP - inizio collaudo)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - inizio collaudo)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/220> a skos:Concept ;
+    dcterms:identifier "220" ;
+    skos:definition "Lavori (Lavori ultimati): Collaudo o Certificato Regolare Esecuzione"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Collaudo o Certificato Regolare Esecuzione"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/223> a skos:Concept ;
+    dcterms:identifier "223" ;
+    skos:definition "Lavori (Lavori ultimati): (BDAP - fine collaudo)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - fine collaudo)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/225> a skos:Concept ;
+    dcterms:identifier "225" ;
+    skos:definition "Lavori (Conclusi): Concluso (acquisizione dati terminata)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Concluso (acquisizione dati terminata)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/226> a skos:Concept ;
+    dcterms:identifier "226" ;
+    skos:definition "Lavori (Conclusi): (BDAP - chiusura intervento)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - chiusura intervento)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/227> a skos:Concept ;
+    dcterms:identifier "227" ;
+    skos:definition "Lavori (Conclusi): (BDAP - chiusura intervento)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - chiusura intervento)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/228> a skos:Concept ;
+    dcterms:identifier "228" ;
+    skos:definition "Lavori (Conclusi): (BDAP - funzionalità)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - funzionalità)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/229> a skos:Concept ;
+    dcterms:identifier "229" ;
+    skos:definition "Lavori (Conclusi): (BDAP - funzionalità)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - funzionalità)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/30> a skos:Concept ;
+    dcterms:identifier "30" ;
+    skos:definition "Finanziamento (Finanziamento): Trasferimento fondi all´ente attuatore"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Trasferimento fondi all´ente attuatore"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/40> a skos:Concept ;
+    dcterms:identifier "40" ;
+    skos:definition "Finanziamento (Finanziamento): Trasferimento fondi completo"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Trasferimento fondi completo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/5> a skos:Concept ;
+    dcterms:identifier "5" ;
+    skos:definition "Finanziamento (Fase istruttoria attiva): Richiesta utilizzo economie"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Richiesta utilizzo economie"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/70> a skos:Concept ;
+    dcterms:identifier "70" ;
+    skos:definition "Lavori (In attesa di avvio): In attesa di avvio"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "In attesa di avvio"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/75> a skos:Concept ;
+    dcterms:identifier "75" ;
+    skos:definition "Lavori (In corso di progettazione): Redazione Piano comunale o Perizia"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Redazione Piano comunale o Perizia"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/77> a skos:Concept ;
+    dcterms:identifier "77" ;
+    skos:definition "Lavori (Progettazione ultimata): Approvazione-Adozione Piano comunale o Perizia"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Approvazione-Adozione Piano comunale o Perizia"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/80> a skos:Concept ;
+    dcterms:identifier "80" ;
+    skos:definition "Lavori (Esecuzione Studi e Indagini): Affidamento incarico o avvio indagini/studi"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Affidamento incarico o avvio indagini/studi"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/82> a skos:Concept ;
+    dcterms:identifier "82" ;
+    skos:definition "Lavori (Esecuzione Studi e Indagini): (BDAP - inizio Studio di fattibilità)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "(BDAP - inizio Studio di fattibilità)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/920> a skos:Concept ;
+    dcterms:identifier "920" ;
+    skos:definition "Sospensioni (Proposta di modifica): Intervento sospeso (proposta di modifica)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Intervento sospeso (proposta di modifica)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/921> a skos:Concept ;
+    dcterms:identifier "921" ;
+    skos:definition "Sospensioni (Proposta di modifica): Intervento in procedura di revoca"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Intervento in procedura di revoca"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/990> a skos:Concept ;
+    dcterms:identifier "990" ;
+    skos:definition "Revoca (Sez. programmatica AdP): Inserito in sez. programmatica accordo programma"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Inserito in sez. programmatica accordo programma"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/992> a skos:Concept ;
+    dcterms:identifier "992" ;
+    skos:definition "Revoca (Revocati o Nulli (sostitutivi)): Definanziato da AdP, atto integr, Del. CIPE, etc"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Definanziato da AdP, atto integr, Del. CIPE, etc"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/995> a skos:Concept ;
+    dcterms:identifier "995" ;
+    skos:definition "Revoca (Revocati o Nulli (sostitutivi)): Stralciato da AdP (o ridefinito con altro codice)"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Stralciato da AdP (o ridefinito con altro codice)"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/997> a skos:Concept ;
+    dcterms:identifier "997" ;
+    skos:definition "Revoca (Revocati o Nulli (sostitutivi)): Intervento EC monitorato in intervento origine"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Intervento EC monitorato in intervento origine"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/998> a skos:Concept ;
+    dcterms:identifier "998" ;
+    skos:definition "Revoca (Revocati o Nulli (sostitutivi)): Intervento Sostitutivo"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "Intervento Sostitutivo"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps/999> a skos:Concept ;
+    dcterms:identifier "999" ;
+    skos:definition "Revoca (Revocati o Nulli (sostitutivi)): REVOCATO -"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/implementation-plan-steps> ;
+    skos:prefLabel "REVOCATO -"@it .
+
