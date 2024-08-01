@@ -18,9 +18,9 @@
         dcatapit:Dataset ,
         adms:Asset ,
         dcat:Dataset ;
-    dcterms:title "Vocabolario dei passi di un piano di attuazione"@it ,
+    dcterms:title "Vocabolario dei passi di attuazione degli interventi"@it ,
         "Vocabulary of steps of an implementation plan"@en ;
-    rdfs:label "Vocabolario dei passi di un piano di attuazione"@it ,
+    rdfs:label "Vocabolario dei passi di attuazione degli interventi"@it ,
         "Vocabulary of steps of an implementation plan"@en ;
     dcterms:description  "Vocabolario dei passi dell'iter di attuazione di interventi per la difesa del suolo"@it ,
         "Vocabulary of steps in a soil protection implementation plan"@en ;
@@ -113,9 +113,9 @@
         dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dcterms:title "Distribuzione RDF/Turtle del vocabolario controllato dei passi di un piano di attuazione di interventi per la difesa del suolo"@it ,
+    dcterms:title "Distribuzione RDF/Turtle del vocabolario controllato dei passi di attuazione degli interventi per la difesa del suolo"@it ,
         "RDF/Turtle distribution of the controlled vocabulary of steps in a soil protection implementation plan"@en ;
-    dcterms:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato dei passi di un piano di attuazione di interventi per la difesa del suolo"@it ,
+    dcterms:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato dei passi di attuazione degli interventi per la difesa del suolo"@it ,
         "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary of steps in a soil protection implementation plan"@en ;
     dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/soil-protection/implementation-plan-steps> ;
     dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/soil-protection/implementation-plan-steps/implementation-plan-steps.ttl> .
@@ -124,9 +124,9 @@
         dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
     dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    dcterms:title "Distribuzione CSV del vocabolario controllato dei passi di un piano di attuazione di interventi per la difesa del suolo"@it ,
+    dcterms:title "Distribuzione CSV del vocabolario controllato dei passi di attuazione degli interventi per la difesa del suolo"@it ,
         "CSV distribution of the controlled vocabulary of steps in a soil protection implementation plan"@en ;
-    dcterms:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato dei passi di un piano di attuazione di interventi per la difesa del suolo"@it ,
+    dcterms:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato dei passi di attuazione degli interventi per la difesa del suolo"@it ,
         "This is the CSV distribution of the Linked Open Data dataset of the controlled vocabulary of steps in a soil protection implementation plan"@en ;
     dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/soil-protection/implementation-plan-steps> ;
     dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/soil-protection/implementation-plan-steps/implementation-plan-steps.csv> .
