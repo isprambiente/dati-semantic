@@ -1,0 +1,162 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix org: <http://www.w3.orgS/ns/org#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-categories> a skos:ConceptScheme ,
+        dcatapit:Dataset ,
+        adms:Asset ,
+        dcat:Dataset ;
+    dcterms:title "Vocabolario delle categorie di dissesto idrogeologico"@it ,
+        "Vocabulary of categories of hydrogeological instability"@en ;
+    rdfs:label "Vocabolario delle categorie di dissesto idrogeologico"@it ,
+        "Vocabulary of categories of hydrogeological instability"@en ;
+    dcterms:description  "Vocabolario delle categorie di dissesto idrogeologico ('A': alluvione, 'C': dissesto costiero, 'F': frana, 'I': incendio, 'M': misto, 'N': non definito o 'V': valanga), ad es. associate ad interventi per la difesa del suolo"@it ,
+        "Vocabulary of categories of hydrogeological instability ('A': Hydraulic, 'C': Coastal instability, 'F': Landslide, 'I': Conflagration, 'M': Mixed, 'N': Not Defined or 'V': avalanche), e.g. associated with soil protection measures"@en ;
+    rdfs:comment "Vocabolario delle categorie di dissesto idrogeologico ('A': alluvione, 'C': dissesto costiero, 'F': frana, 'I': incendio, 'M': misto, 'N': non definito o 'V': valanga), ad es. associate ad interventi per la difesa del suolo"@it ,
+        "Vocabulary of categories of hydrogeological instability ('A': Hydraulic, 'C': Coastal instability, 'F': Landslide, 'I': Conflagration, 'M': Mixed, 'N': Nnot Defined or 'V': avalanche), e.g. associated with soil protection measures"@en ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ITA> ,
+        <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dcterms:issued "2024-08-05"^^xsd:date ;
+    dcterms:modified "2024-08-05"^^xsd:date ;
+    dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dcterms:identifier "https://w3id.org/italia/env/vocab/soil-protection/instability-categories" ;
+    dcterms:creator <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    dcterms:publisher <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    dcterms:rightsHolder <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    owl:versionInfo "Version 0.1 - created in August 2024."@en ,
+        "Versione 0.1 - creato ad agosto 2024."@it ;
+    dcterms:type <http://purl.org/adms/assettype/CodeList> ;
+    xkos:numberOfLevels "1" ;
+    ndc:keyConcept "instability-categories" ;
+    dcterms:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/env/ld/common/organization/001-LD> ;
+    skos:hasTopConcept <https://w3id.org/italia/env/vocab/soil-protection/instability-categories/A> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-categories/C> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-categories/F> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-categories/I> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-categories/M> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-categories/N> ,
+        <https://w3id.org/italia/env/vocab/soil-protection/instability-categories/V> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/sp-instability-categories-RDF-TURTLE> ,
+        <https://w3id.org/italia/env/ld/common/distribution/sp-instability-categories-CSV> ;
+    dcat:keyword "instability"@en ,
+        "dissesto"@it ;
+    dcterms:subject <http://eurovoc.europa.eu/2825> ,
+        <http://eurovoc.europa.eu/1440> ,
+        <http://eurovoc.europa.eu/3158> ,
+        <http://eurovoc.europa.eu/371> ,
+        <http://eurovoc.europa.eu/413> ,
+        <http://eurovoc.europa.eu/c_3f9a7b14> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ,
+        <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+
+<https://w3id.org/italia/env/ld/common/distribution/sp-instability-categories-RDF-TURTLE> a dcatapit:Distribution ,
+        dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "Distribuzione RDF/Turtle del vocabolario controllato delle categorie di dissesto idrogeologico"@it ,
+        "RDF/Turtle distribution of the controlled vocabulary of categories of hydrogeological instability"@en ;
+    dcterms:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato delle categorie di dissesto idrogeologico"@it ,
+        "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary of categories of hydrogeological instability"@en ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/soil-protection/instability-categories> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/soil-protection/instability-categories/instability-categories.ttl> .
+
+<https://w3id.org/italia/env/ld/common/distribution/sp-instability-categories-CSV> a dcatapit:Distribution ,
+        dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "Distribuzione CSV del vocabolario controllato delle categorie di dissesto idrogeologico"@it ,
+        "CSV distribution of the controlled vocabulary of categories of hydrogeological instability"@en ;
+    dcterms:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato delle categorie di dissesto idrogeologico"@it ,
+        "This is the CSV distribution of the Linked Open Data dataset of the controlled vocabulary of categories of hydrogeological instability"@en ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/soil-protection/instability-categories> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/soil-protection/instability-categories/instability-categories.csv> .
+
+<https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
+        dcatapit:Agent ,
+        vcard:Organization ,
+        org:Organization ,
+        foaf:Agent ,
+        top:Organisation ;
+    dcterms:identifier "ispra_rm" ;
+    vcard:fn "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+        "Italian National Institute for Environmental Protection and Research"@en ;
+    foaf:name "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+        "Italian Institute for Environmental Protection and Research"@en .
+
+<https://w3id.org/italia/env/ld/common/organization/001-LD> rdf:type owl:NamedIndividual ,
+        dcatapit:Organization ,
+        vcard:Kind ,
+        vcard:Organization ;
+    vcard:fn "DG-SINA - Progetto Linked ISPRA" ;
+    vcard:hasEmail <mailto:assistenza-lod@isprambiente.it> .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-categories/A> a skos:Concept ;
+    dcterms:identifier "A" ;
+    skos:definition "Category instability A: Hydraulic"@en,
+        "Categoria dissesto A: alluvione"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-categories> ;
+    skos:prefLabel "Hydraulic"@en,
+        "alluvione"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-categories/C> a skos:Concept ;
+    dcterms:identifier "C" ;
+    skos:definition "Category instability C: Coastal instability"@en,
+        "Categoria dissesto C: dissesto costiero"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-categories> ;
+    skos:prefLabel "Coastal instability"@en,
+        "dissesto costiero"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-categories/F> a skos:Concept ;
+    dcterms:identifier "F" ;
+    skos:definition "Category instability F: Landslide"@en,
+        "Categoria dissesto F: frana"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-categories> ;
+    skos:prefLabel "Landslide"@en,
+        "frana"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-categories/I> a skos:Concept ;
+    dcterms:identifier "I" ;
+    skos:definition "Category instability I: Conflagration"@en,
+        "Categoria dissesto I: incendio"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-categories> ;
+    skos:prefLabel "Conflagration"@en,
+        "incendio"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-categories/M> a skos:Concept ;
+    dcterms:identifier "M" ;
+    skos:definition "Category instability M: Mixed"@en,
+        "Categoria dissesto M: misto"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-categories> ;
+    skos:prefLabel "Mixed"@en,
+        "misto"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-categories/N> a skos:Concept ;
+    dcterms:identifier "N" ;
+    skos:definition "Category instability N: Not Defined"@en,
+        "Categoria dissesto N: non definito"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-categories> ;
+    skos:prefLabel "Not Defined"@en,
+        "non definito"@it .
+
+<https://w3id.org/italia/env/vocab/soil-protection/instability-categories/V> a skos:Concept ;
+    dcterms:identifier "V" ;
+    skos:definition "Category instability V: Avalanche"@en,
+        "Categoria dissesto V: valanga"@it ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/soil-protection/instability-categories> ;
+    skos:prefLabel "Avalanche"@en,
+        "valanga"@it .
+

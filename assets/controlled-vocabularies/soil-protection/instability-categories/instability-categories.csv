@@ -1,0 +1,8 @@
+"codice_1_livello","label_1_livello_it","label_1_livello_en","def_1_livello_it","def_1_livello_en"
+"A","alluvione","Hydraulic","Categoria dissesto A: alluvione","Category instability A: Hydraulic"
+"C","dissesto costiero","Coastal instability","Categoria dissesto C: dissesto costiero","Category instability C: Coastal instability"
+"F","frana","Landslide","Categoria dissesto F: frana","Category instability F: Landslide"
+"I","incendio","Conflagration","Categoria dissesto I: incendio","Category instability I: Conflagration"
+"M","misto","Mixed","Categoria dissesto M: misto","Category instability M: Mixed"
+"N","non definito","Not Defined","Categoria dissesto N: non definito","Category instability N: Not Defined"
+"V","valanga","Avalanche","Categoria dissesto V: valanga","Category instability V: Avalanche"
