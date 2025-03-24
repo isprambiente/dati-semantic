@@ -1,0 +1,1427 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim1> a skos:Concept ;
+    dcterms:identifier "CALTIM1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Consumed land in 0-300 meters a.s.l. in hectares"@en,
+        "Superficie di suolo consumato all'interno di una fascia tra 0 e 300 metri di quota [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim1> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_0-300m_a.s.l."@en,
+        "Consumato_0-300m_quota [ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim10> a skos:Concept ;
+    dcterms:identifier "CALTIM10" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Consumed land in 0-10 % slope in hectares"@en,
+        "Superficie di suolo consumato tra 0 e 10% di pendenza [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim10> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_0-10_%_slope"@en,
+        "Consumato_0-10%_pendenza_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim11> a skos:Concept ;
+    dcterms:identifier "CALTIM11" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Consumed land over 10 % slope in hectares"@en,
+        "Superficie di suolo consumato oltre 10% di pendenza [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim11> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_over_10_%_slope"@en,
+        "Consumato_oltre_10%_pendenza_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim12> a skos:Concept ;
+    dcterms:identifier "CALTIM12" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Not consumed land in 0-10 % slope in hectares"@en,
+        "Superficie di suolo non consumato tra 0 e 10% di pendenza [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim12> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_0-10_%_slope"@en,
+        "Non consumato_0-10%_pendenza_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim13> a skos:Concept ;
+    dcterms:identifier "CALTIM13" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Not consumed land over 10 % slope in hectares"@en,
+        "Superficie di suolo non consumato oltre 10% di pendenza [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim13> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_over_10_%_slope"@en,
+        "Non consumato_oltre_10%_pendenza_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim14> a skos:Concept ;
+    dcterms:identifier "CALTIM14" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Consumed land in 0-10 % slope in %"@en,
+        "Percentuale di suolo consumato tra 0 e 10% di pendenza sulla superficie della fascia [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim14> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_0-10_%_slope_in_%"@en,
+        "Consumato_0-10%_pendenza_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim15> a skos:Concept ;
+    dcterms:identifier "CALTIM15" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Consumed land over 10 % slope in %"@en,
+        "Percentuale di suolo consumato oltre 10% di pendenza sulla superficie della fascia [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim15> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_over_10_%_slope_in_%"@en,
+        "Consumato_oltre_10%_pendenza_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim2> a skos:Concept ;
+    dcterms:identifier "CALTIM2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Consumed land in 300-600 meters a.s.l. in hectares"@en,
+        "Superficie di suolo consumato all'interno di una fascia tra 300 e 600 metri di quota [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_300-600m_a.s.l."@en,
+        "Consumato_300-600m_quota [ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim3> a skos:Concept ;
+    dcterms:identifier "CALTIM3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Consumed land over 600 meters a.s.l. in hectares"@en,
+        "Superficie di suolo consumato oltre 600 metri di quota [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim3> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_over_600m_a.s.l."@en,
+        "Consumato_oltre_600m_quota [ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim4> a skos:Concept ;
+    dcterms:identifier "CALTIM4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Not consumed land in 0-300 meters a.s.l. in hectares"@en,
+        "Superficie di suolo non  consumato all'interno di una fascia tra 0 e 300 metri di quota [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim4> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_0-300m_a.s.l."@en,
+        "Non consumato_0-300m_quota [ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim5> a skos:Concept ;
+    dcterms:identifier "CALTIM5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Not consumed land in 300-600 meters a.s.l. in hectares"@en,
+        "Superficie di suolo non consumato all'interno di una fascia tra 300 e 600 metri di quota [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim5> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_300-600m_a.s.l."@en,
+        "Non consumato_300-600m_quota [ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim6> a skos:Concept ;
+    dcterms:identifier "CALTIM6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Npt consumed land over 600 meters a.s.l. in hectares"@en,
+        "Superficie di suolo nonconsumato oltre 600 metri di quota [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim6> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_over_600m_a.s.l."@en,
+        "Non consumato_oltre_600m_quota [ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim7> a skos:Concept ;
+    dcterms:identifier "CALTIM7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Consumed land in 0-300 meters a.s.l. in %"@en,
+        "Percentuale di suolo consumato all'interno di una fascia tra 0 e 300 metri di quota sulla superficie della fascia [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim7> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_0-300m_a.s.l._in_%"@en,
+        "Consumato_0-300m_quota [%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim8> a skos:Concept ;
+    dcterms:identifier "CALTIM8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Consumed land in 300-600 meters a.s.l. in %"@en,
+        "Percentuale di suolo consumato all'interno di una fascia tra 300 e 600 metri di quota sulla superficie della fascia [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim8> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_300-600m_a.s.l._in_%"@en,
+        "Consumato_300-600m_quota [%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim9> a skos:Concept ;
+    dcterms:identifier "CALTIM9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/caltim> ;
+    skos:definition "Consumed land over 600 meters a.s.l. in %"@en,
+        "Percentuale di suolo consumato oltre 600 metri di quota sulla superficie della fascia [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim9> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_over_600m_a.s.l._in_%"@en,
+        "Consumato_oltre_600m_quota [%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/careep1> a skos:Concept ;
+    dcterms:identifier "CAREEP1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/careep> ;
+    skos:definition "Not consumed land in protected areas in hectares"@en,
+        "Superficie di suolo non consumato all'interno delle aree EUAP (Elenco Ufficiale delle Aree Protette Italiane) [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/careep1> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_in_EUAP"@en,
+        "Non_consumato_in_EUAP_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/careep2> a skos:Concept ;
+    dcterms:identifier "CAREEP2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/careep> ;
+    skos:definition "Consumed land in protected areas in hectares"@en,
+        "Superficie di suolo consumato all'interno delle aree EUAP (Elenco Ufficiale delle Aree Protette Italiane) [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/careep2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_in_EUAP"@en,
+        "Consumato_in_EUAP_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/careep3> a skos:Concept ;
+    dcterms:identifier "CAREEP3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/careep> ;
+    skos:definition "Not classified land in protected areas in hectares"@en,
+        "Superficie non classificata per mancanza di dati all'interno delle aree EUAP (Elenco Ufficiale delle Aree Protette Italiane) [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/careep3> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_classified_in_EUAP"@en,
+        "Non_classificato_in_EUAP_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccidri1> a skos:Concept ;
+    dcterms:identifier "CCIDRI1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccidri> ;
+    skos:definition "Not consumed land in 150 meters river buffer zones  in hectares"@en,
+        "Superficie di suolo non consumato all'interno di una fascia di 150 metri di distanza dai corpi idrici permanenti [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccidri1> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_150m_rivers"@en,
+        "Non_consumato_in_150m_corpi_idrici_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccidri2> a skos:Concept ;
+    dcterms:identifier "CCIDRI2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccidri> ;
+    skos:definition "Consumed land in 150 meters river buffer zones  in hectares"@en,
+        "Superficie di suolo consumato all'interno di una fascia di 150 metri di distanza dai corpi idrici permanenti [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccidri2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_150m_rivers"@en,
+        "Consumato_in_150m_corpi_idrici_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccidri3> a skos:Concept ;
+    dcterms:identifier "CCIDRI3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccidri> ;
+    skos:definition "Not classified land in 150 meters river buffer zones  in hectares"@en,
+        "Superficie non classificata per mancanza di dati all'interno di una fascia di 150 metri di distanza dai corpi idrici permanenti [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccidri3> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_classified_land_in_150m_rivers"@en,
+        "Non_classificato_in_150m_corpi_idrici_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccidri4> a skos:Concept ;
+    dcterms:identifier "CCIDRI4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccidri> ;
+    skos:definition "Consumed land in 150 meters river buffer zones  in %"@en,
+        "Percentuale di suolo consumato entro 150 metri di distanza dai corpi idrici permanenti sulla superficie della fascia [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccidri4> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_150m_rivers_in_%"@en,
+        "Consumato_in_150m_corpi_idrici_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccidri5> a skos:Concept ;
+    dcterms:identifier "CCIDRI5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccidri> ;
+    skos:definition "Not consumed land out of 150 meters river buffer zones  in %"@en,
+        "Percentuale di suolo consumato oltre 150 metri di distanza dai corpi idrici permanenti sulla superficie della fascia [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccidri5> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_out_of_150m_rivers_in_%"@en,
+        "Consumato_oltre_150m_corpi_idrici_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccoste1> a skos:Concept ;
+    dcterms:identifier "CCOSTE1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccoste> ;
+    skos:definition "Not consumed land in 300 meters from shoreline in hectares"@en,
+        "Superficie di suolo non consumato all'interno di una fascia tra a 0 e 300 metri dalla linea di costa [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccoste1> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_300m_from_shoreline"@en,
+        "Non_consumato_in_0-300m_costa_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccoste10> a skos:Concept ;
+    dcterms:identifier "CCOSTE10" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccoste> ;
+    skos:definition "Consumed land in 1000-10000 meters from shoreline in %"@en,
+        "Percentuale di suolo consumato all'interno di una fascia tra 1000 e 10000 metri dalla linea di costa [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccoste10> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_1000-10000m_from_shoreline_in_%"@en,
+        "Consumato_in_1000-10000m_costa_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccoste11> a skos:Concept ;
+    dcterms:identifier "CCOSTE11" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccoste> ;
+    skos:definition "Consumed land out of 10000 meters from shoreline in %"@en,
+        "Percentuale di suolo consumato oltre 10000 metri dalla linea di costa sulla superficie della fascia [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccoste11> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_out_of_10000m_from_shoreline_in_%"@en,
+        "Consumato_oltre_10000m_costa_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccoste2> a skos:Concept ;
+    dcterms:identifier "CCOSTE2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccoste> ;
+    skos:definition "Not consumed land in 300-1000 meters from shoreline in hectares"@en,
+        "Superficie di suolo non consumato all'interno di una fascia tra 300 e 1000 metri dalla linea di costa [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccoste2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_300-1000m_from_shoreline"@en,
+        "Non_consumato_in_300-1000m_costa_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccoste3> a skos:Concept ;
+    dcterms:identifier "CCOSTE3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccoste> ;
+    skos:definition "Not consumed land in 1000-10000 meters from shoreline in hectares"@en,
+        "Superficie di suolo non consumato all'interno di una fascia tra 1000 e 10000 metri dalla linea di costa [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccoste3> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_1000-10000m_from_shoreline"@en,
+        "Non_consumato_in_1000-10000m_costa_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccoste4> a skos:Concept ;
+    dcterms:identifier "CCOSTE4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccoste> ;
+    skos:definition "Consumed land in 300 meters from shoreline in hectares"@en,
+        "Superficie di suolo consumato all'interno di una fascia tra 0 e 300 metri dalla linea di costa [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccoste4> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_300m_from_shoreline"@en,
+        "Consumato_in_0-300m_costa_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccoste5> a skos:Concept ;
+    dcterms:identifier "CCOSTE5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccoste> ;
+    skos:definition "Consumed land in 300-1000 meters from shoreline in hectares"@en,
+        "Superficie di suolo consumato all'interno di una fascia tra 300 e 1000 metri dalla linea di costa [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccoste5> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_300-1000m_from_shoreline"@en,
+        "Consumato_in_300-1000m_costa_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccoste6> a skos:Concept ;
+    dcterms:identifier "CCOSTE6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccoste> ;
+    skos:definition "Consumed land in 1000-10000 meters from shoreline in hectares"@en,
+        "Superficie di suolo consumato all'interno di una fascia tra 1000 e 10000 metri dalla linea di costa [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccoste6> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_1000-10000m_from_shoreline"@en,
+        "Consumato_in_1000-10000m_costa_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccoste7> a skos:Concept ;
+    dcterms:identifier "CCOSTE7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccoste> ;
+    skos:definition "Consumed land out of 10000 meters from shoreline in hectares"@en,
+        "Superficie di suolo consumato oltre 10000 metri dalla linea di costa [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccoste7> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_out_of_10000m_from_shoreline"@en,
+        "Consumato_oltre_10000m_costa_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccoste8> a skos:Concept ;
+    dcterms:identifier "CCOSTE8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccoste> ;
+    skos:definition "Consumed land in 300 meters from shoreline in %"@en,
+        "Percentuale di suolo consumato all'interno di una fascia tra 0 e 300 metri dalla linea di costa sulla superficie della fascia [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccoste8> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_300m_from_shoreline_in_%"@en,
+        "Consumato_in_0-300m_costa_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccoste9> a skos:Concept ;
+    dcterms:identifier "CCOSTE9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ccoste> ;
+    skos:definition "Consumed land in 300-1000 meters from shoreline in %"@en,
+        "Percentuale di suolo consumato all'interno di una fascia tra 300 e 1000 metri dalla linea di costa sulla superficie della fascia [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccoste9> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_300-1000m_from_shoreline_in_%"@en,
+        "Consumato_in_300-1000m_costa_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/clammi1> a skos:Concept ;
+    dcterms:identifier "CLAMMI1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/clammi> ;
+    skos:definition "Classification of municipalities centrality by  Dipartimento per lo Sviluppo e la Coesione Economica"@en,
+        "Classificazione dei comuni proposta dal Dipartimento per lo Sviluppo e la Coesione Economica secondo livelli di perifericità, ovvero di distanza dai centri dotati di infrastrutture in grado di offrire servizi al cittadino."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/clammi1> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Classification_of_municipalities_centrality_by__Di"@en,
+        "CLASSE_COMUNI"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/clammi2> a skos:Concept ;
+    dcterms:identifier "CLAMMI2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/clammi> ;
+    skos:definition "Classification of municipalities elevation by ISTAT"@en,
+        "Classificazione per fasce altimetriche ISTAT."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/clammi2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Classification_of_municipalities_elevation_by_ISTA"@en,
+        "Zona_altimetrica"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/clammi3> a skos:Concept ;
+    dcterms:identifier "CLAMMI3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/clammi> ;
+    skos:definition "Total administrative area in hectares"@en,
+        "Area Totale (somma delle aree dei pixel) del limite amministrativo considerato [ha]."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/clammi3> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "TA"@en,
+        "TA"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/clammi4> a skos:Concept ;
+    dcterms:identifier "CLAMMI4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/clammi> ;
+    skos:definition "Population (ISTAT)"@en,
+        "Popolazione residente all'anno di riferimento da rilevamento intercensuario ISTAT ."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/clammi4> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "POP_"@en,
+        "POP_"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csismi1> a skos:Concept ;
+    dcterms:identifier "CSISMI1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csismi> ;
+    skos:definition "Consumed land in high seismic hazard zones in hectares"@en,
+        "Superficie di suolo consumato in aree a pericolosità sismica alta [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csismi1> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_high_seismic_hazard_zones"@en,
+        "Consumato_in_aree_pericolosità_sismica_alta_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csismi2> a skos:Concept ;
+    dcterms:identifier "CSISMI2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csismi> ;
+    skos:definition "Consumed land in very high seismic hazard zones in hectares"@en,
+        "Superficie di suolo consumato in aree a pericolosità sismica molto alta [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csismi2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_very_high_seismic_hazard_zones"@en,
+        "Consumato_in_aree_pericolosità_sismica_molto_alta_"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csismi3> a skos:Concept ;
+    dcterms:identifier "CSISMI3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csismi> ;
+    skos:definition "Not consumed land in high seismic hazard zones in hectares"@en,
+        "Superficie di suolo non consumato in aree a pericolosità sismica alta [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csismi3> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_high_seismic_hazard_zones"@en,
+        "Non consumato_in_aree_pericolosità_sismica_alta_[h"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csismi4> a skos:Concept ;
+    dcterms:identifier "CSISMI4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csismi> ;
+    skos:definition "Not consumed land in very high seismic hazard zones in hectares"@en,
+        "Superficie di suolo non consumato in aree a pericolosità sismica molto alta [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csismi4> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_very_high_seismic_hazard_zone"@en,
+        "Non consumato_in_aree_pericolosità_sismica_molto_a"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csismi5> a skos:Concept ;
+    dcterms:identifier "CSISMI5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csismi> ;
+    skos:definition "Consumed land in high seismic hazard zones in %"@en,
+        "Superficie di suolo consumato in aree a pericolosità sismica alta [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csismi5> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_high_seismic_hazard_zones_in_%"@en,
+        "Consumato_in_aree_pericolosità_sismica_alta_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csismi6> a skos:Concept ;
+    dcterms:identifier "CSISMI6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csismi> ;
+    skos:definition "Consumed land in very high seismic hazard zones in %"@en,
+        "Superficie di suolo consumato in aree a pericolosità sismica molto alta [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csismi6> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_very_high_seismic_hazard_zones_in"@en,
+        "Consumato_in_aree_pericolosità_sismica_molto_alta_"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csuolo1> a skos:Concept ;
+    dcterms:identifier "CSUOLO1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csuolo> ;
+    skos:definition "Consumed land in hectares"@en,
+        "Superficie di suolo consumato [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csuolo1> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land"@en,
+        "Suolo_consumato_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csuolo10> a skos:Concept ;
+    dcterms:identifier "CSUOLO10" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csuolo> ;
+    skos:definition "Gross increase of consumed land in hectares"@en,
+        "Incremento di suolo consumato rispetto al periodo precedente al lordo delle rinaturalizzazioni [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csuolo10> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Gross_consumed_increase_[ha]"@en,
+        "Incremento_lordo_consumato_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csuolo2> a skos:Concept ;
+    dcterms:identifier "CSUOLO2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csuolo> ;
+    skos:definition "Not consumed land in hectares"@en,
+        "Superficie di suolo non consumato [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csuolo2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land"@en,
+        "Suolo_non_consumato_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csuolo3> a skos:Concept ;
+    dcterms:identifier "CSUOLO3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csuolo> ;
+    skos:definition "Not classified land in hectares"@en,
+        "Superficie non classificata per mancanza di dati [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csuolo3> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_classified_land"@en,
+        "Non_classificato_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csuolo4> a skos:Concept ;
+    dcterms:identifier "CSUOLO4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csuolo> ;
+    skos:definition "Consumed land in % of the administrative unit area"@en,
+        "Percentuale di suolo consumato sulla superficie amministrativa [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csuolo4> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_%"@en,
+        "Suolo_consumato_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csuolo5> a skos:Concept ;
+    dcterms:identifier "CSUOLO5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csuolo> ;
+    skos:definition "Not consumed land in % of the administrative unit area"@en,
+        "Percentuale di suolo non consumato sulla superficie amministrativa  [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csuolo5> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_%"@en,
+        "Non_consumato_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csuolo6> a skos:Concept ;
+    dcterms:identifier "CSUOLO6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csuolo> ;
+    skos:definition "Not classified land in % of the administrative unit area"@en,
+        "Percentuale non classificata per mancanza di dati sulla superficie amministrativa [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csuolo6> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_classified_land_in_%"@en,
+        "Non_classificato_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csuolo8> a skos:Concept ;
+    dcterms:identifier "CSUOLO8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csuolo> ;
+    skos:definition "Increase of consumed land in hectares"@en,
+        "Incremento di suolo consumato rispetto al periodo precedente [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csuolo8> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_increase_[ha]"@en,
+        "Incremento_consumato_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csuolo9> a skos:Concept ;
+    dcterms:identifier "CSUOLO9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/csuolo> ;
+    skos:definition "Density of consumed land [m2] over total area [ha]"@en,
+        "Densita di consumo di suolo [m2] rispetto all'area totale [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csuolo9> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_density_[m2/ha]"@en,
+        "Densita_consumo_[m2/ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/diseco1> a skos:Concept ;
+    dcterms:identifier "DISECO1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/diseco> ;
+    skos:definition "Surface in a 60m buffer of consumed land area in hectares"@en,
+        "Superficie impattata dalla presenza di coperture artificiali considerando una distanza (buffer) di 60 metri [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/diseco1> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Surface_in_a_60m_buffer_of_consumed_land_area"@en,
+        "Superficie_alterata_dal_consumo_di_suolo_60m_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/diseco10> a skos:Concept ;
+    dcterms:identifier "DISECO10" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/diseco> ;
+    skos:definition "Surface of Permanent Water Bodies"@en,
+        "Superficie corpi idrici permanenti da carta di copertura del suolo [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/diseco10> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Surface_of_Permanent_Water_Bodies"@en,
+        "Sup_corpi_idrici[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/diseco11> a skos:Concept ;
+    dcterms:identifier "DISECO11" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/diseco> ;
+    skos:definition "Consumed land in excluding surface of Permanent Water Bodies HRL Copernicus 2012 in %"@en,
+        "Percentuale di suolo consumato escludendo dal calcolo la superficie corpi idrici permanenti (da HRL Copernicus 2012) [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/diseco11> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_excluding_surface_of_Permanent_Wa"@en,
+        "Perc_consumato_netto_corpi_idrici[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/diseco2> a skos:Concept ;
+    dcterms:identifier "DISECO2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/diseco> ;
+    skos:definition "Surface not in a 60m buffer of consumed land area in hectares"@en,
+        "Superficie non impattata dalla presenza di coperture artificiali considerando una distanza (buffer) di 60 metri [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/diseco2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Surface_not_in_a_60m_buffer_of_consumed_land_area"@en,
+        "Superficie_non_alterata_dal_consumo_di_suolo_60m_["@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/diseco3> a skos:Concept ;
+    dcterms:identifier "DISECO3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/diseco> ;
+    skos:definition "Surface in a 60m buffer of consumed land area in %"@en,
+        "Superficie impattata dalla presenza di coperture artificiali considerando una distanza (buffer) di 60 metri [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/diseco3> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Surface_in_a_60m_buffer_of_consumed_land_area_in_%"@en,
+        "Superficie_alterata_dal_consumo_di_suolo_60m_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/diseco4> a skos:Concept ;
+    dcterms:identifier "DISECO4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/diseco> ;
+    skos:definition "Surface in a 100m buffer of consumed land area in hectares"@en,
+        "Superficie impattata dalla presenza di coperture artificiali considerando una distanza (buffer) di 100 metri [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/diseco4> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Surface_in_a_100m_buffer_of_consumed_land_area"@en,
+        "Superficie_alterata_dal_consumo_di_suolo_100m_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/diseco5> a skos:Concept ;
+    dcterms:identifier "DISECO5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/diseco> ;
+    skos:definition "Surface not in a 100m buffer of consumed land area in hectares"@en,
+        "Superficie non impattata dalla presenza di coperture artificiali considerando una distanza (buffer) di 100 metri [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/diseco5> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Surface_not_in_a_100m_buffer_of_consumed_land_area"@en,
+        "Superficie_non_alterata_dal_consumo_di_suolo_100m_"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/diseco6> a skos:Concept ;
+    dcterms:identifier "DISECO6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/diseco> ;
+    skos:definition "Surface in a 100m buffer of consumed land area in %"@en,
+        "Superficie impattata dalla presenza di coperture artificiali considerando una distanza (buffer) di 100 metri [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/diseco6> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Surface_in_a_100m_buffer_of_consumed_land_area_in_"@en,
+        "Superficie_alterata_dal_consumo_di_suolo_100m_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/diseco7> a skos:Concept ;
+    dcterms:identifier "DISECO7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/diseco> ;
+    skos:definition "Surface in a 200m buffer of consumed land area in hectares"@en,
+        "Superficie impattata dalla presenza di coperture artificiali considerando una distanza (buffer) di 200 metri [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/diseco7> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Surface_in_a_200m_buffer_of_consumed_land_area"@en,
+        "Superficie_alterata_dal_consumo_di_suolo_200m_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/diseco8> a skos:Concept ;
+    dcterms:identifier "DISECO8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/diseco> ;
+    skos:definition "Surface not in a 200m buffer of consumed land area in hectares"@en,
+        "Superficie non impattata dalla presenza di coperture artificiali considerando una distanza (buffer) di 200 metri [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/diseco8> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Surface_not_in_a_200m_buffer_of_consumed_land_area"@en,
+        "Superficie_non_alterata_dal_consumo_di_suolo_200m_"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/diseco9> a skos:Concept ;
+    dcterms:identifier "DISECO9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/diseco> ;
+    skos:definition "Surface in a 200m buffer of consumed land area in %"@en,
+        "Superficie impattata dalla presenza di coperture artificiali considerando una distanza (buffer) di 200 metri [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/diseco9> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Surface_in_a_200m_buffer_of_consumed_land_area_in_"@en,
+        "Superficie_alterata_dal_consumo_di_suolo_200m_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis1> a skos:Concept ;
+    dcterms:identifier "ECOSIS1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 of carbon sequestration in land and vegetation. Reference value 23 €/ton of carbon"@en,
+        "Variazione (€) del flusso annuale di carbonio stoccato dovuta al consumo di suolo 2012 - 2021. Il valore di riferimento è di 23 € per ogni tonnellata di carbonio."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis1> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "CARB_E _min"@en,
+        "CARB_E _min"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis11> a skos:Concept ;
+    dcterms:identifier "ECOSIS11" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 for microclimate regulation"@en,
+        "Variazione (€) dal 2012 al 2021 per la regolazione del microclima"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis11> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "RM_E_min"@en,
+        "RM_E_min"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis12> a skos:Concept ;
+    dcterms:identifier "ECOSIS12" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 for microclimate regulation"@en,
+        "Variazione (€) dal 2012 al 2021 per la regolazione del microclima"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis12> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "RM_E_max"@en,
+        "RM_E_max"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis13> a skos:Concept ;
+    dcterms:identifier "ECOSIS13" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Total loss of ecosystem services considering the minimum for each service"@en,
+        "Totale della perdita di servizi ecosistemici usando i valori minimi di ogni servizio. Vengono considerati solo le variazioni di flussi."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis13> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Tot_E_min"@en,
+        "Tot_E_min"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis14> a skos:Concept ;
+    dcterms:identifier "ECOSIS14" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Total loss of ecosystem services considering the maximum for each service"@en,
+        "Totale della perdita di servizi ecosistemici usando i valori massimi di ogni servizio. Vengono considerati solo le variazioni di flussi."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis14> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Tot_E_max"@en,
+        "Tot_E_max"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis19> a skos:Concept ;
+    dcterms:identifier "ECOSIS19" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 of water purification. Reference value 18,31 € /ha starting from ESDAC data"@en,
+        "Variazione (€) dal 2012 al 2021 del filtraggio dell'acqua dai contaminanti. Il valore di riferimento è di 18,31 € per ogni ettaro partendo da dati ESDAC."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis19> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "PUR_E_min"@en,
+        "PUR_E_min"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis2> a skos:Concept ;
+    dcterms:identifier "ECOSIS2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 of carbon sequestration in land and vegetation. Reference value 121,45 €/ton of carbon"@en,
+        "Variazione (€) del flusso annuale di carbonio stoccato dovuta al consumo di suolo 2012 - 2021. Il valore di riferimento è di 121,45 € per ogni tonnellata di carbonio."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "CARB_E_max"@en,
+        "CARB_E_max"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis20> a skos:Concept ;
+    dcterms:identifier "ECOSIS20" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 of water purification. Reference value 4884,47 € /ha starting from ESDAC data"@en,
+        "Variazione (€) dal 2012 al 2021 del filtraggio dell'acqua dai contaminanti. Il valore di riferimento è di 4884,47 € per ogni ettaro partendo da dati ESDAC."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis20> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "PUR_E_max"@en,
+        "PUR_E_max"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis21> a skos:Concept ;
+    dcterms:identifier "ECOSIS21" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 of carbon sequestration in land and vegetation. Reference value 23 €/ton of carbon"@en,
+        "Variazione (€) dal 2012 al 2021 di carbonio stoccato nel suolo e nella vegetazione. Il valore di riferimento è di 23 € per ogni tonnellata di carbonio."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis21> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "F_CAR_E_min"@en,
+        "S_CAR_E_min"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis22> a skos:Concept ;
+    dcterms:identifier "ECOSIS22" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 of carbon sequestration in land and vegetation. Reference value 121,45 €/ton of carbon"@en,
+        "Variazione (€) dal 2012 al 2021 di carbonio stoccato nel suolo e nella vegetazione. Il valore di riferimento è di 121,45 € per ogni tonnellata di carbonio."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis22> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "F_CAR_E_max"@en,
+        "S_CAR_E_max"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis23> a skos:Concept ;
+    dcterms:identifier "ECOSIS23" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 of timber production. Evaluation through Average Agriculture Value"@en,
+        "Variazione (€) dal 2012 al 2021 della produzione legnosa. Calcolata con l'utilizzo dei Valori Agricoli Medi."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis23> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "F_LEG_E"@en,
+        "S_LEG_E"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis25> a skos:Concept ;
+    dcterms:identifier "ECOSIS25" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Property loss (€) from 2012 to 2021 due to land consumption referred to conventional agriculture. It is calculated using the Gross Margin, divided by a capitalization rate of 1%."@en,
+        "Danno patrimoniale (€) dal 2012 al 2021 dovuta al consumo di suolo riferita all'agricoltura convenzionale. Calcolata con l'utilizzo del Margine Lordo, diviso per un saggio di capitalizzazione dell'1%."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis25> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "S_AGR_min"@en,
+        "S_AGR_min"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis26> a skos:Concept ;
+    dcterms:identifier "ECOSIS26" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Property loss (€) from 2012 to 2021 due to land consumption referred to biological agriculture. It is calculated using the Gross Margin, divided by a capitalization rate of 1%."@en,
+        "Danno patrimoniale (€) dal 2012 al 2021 dovuta al consumo di suolo riferita all'agricoltura biologica. Calcolata con l'utilizzo del Margine Lordo, diviso per un saggio di capitalizzazione dell'1%."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis26> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "S_AGR_max"@en,
+        "S_AGR_max"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis3> a skos:Concept ;
+    dcterms:identifier "ECOSIS3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 of habitat quality"@en,
+        "Variazione (€) dal 2012 al 2021 della qualità degli habitat. Il valore di riferimento è di 1.000,891 € per ettaro, moltiplicato per l'indice di qualità."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis3> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "HABITAT_E"@en,
+        "HABITAT_E"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis4> a skos:Concept ;
+    dcterms:identifier "ECOSIS4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 of agricultural production"@en,
+        "Variazione (€) del flusso di produzione agricola dovuta al consumo di suolo 2012 - 2021. I valori di riferimento derivano da dati RICA."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis4> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "PROD_AGR_E"@en,
+        "PROD_AGR_E"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis5> a skos:Concept ;
+    dcterms:identifier "ECOSIS5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 of wood production"@en,
+        "Variazione (€) del flusso annuale di legname disponibile per la raccolta dovuta al consumo di suolo 2012 - 2021. Il valore di riferimento è di 88,15 € per ogni metro cubo di legname."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis5> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "PROD_LEGN_E"@en,
+        "PROD_LEGN_E"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis6> a skos:Concept ;
+    dcterms:identifier "ECOSIS6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 of pollinator abbundancy, reference value 169,42 €/ha"@en,
+        "Variazione (€) dal 2012 al 2021 dell'abbondanza di impollinatori. Il valore di riferimento è di 169,27 € per ettaro, moltiplicato per l'indice di abbondanza."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis6> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "IMPOL_E_min"@en,
+        "IMPOL_E_min"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis7> a skos:Concept ;
+    dcterms:identifier "ECOSIS7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> ;
+    skos:definition "Variation (€) from 2012 to 2021 of pollinator abbundancy, reference value  226,21 €/ha"@en,
+        "Variazione (€) dal 2012 al 2021 dell'abbondanza di impollinatori. Il valore di riferimento è di 226,00 € per ettaro, moltiplicato per l'indice di abbondanza."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis7> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "IMPOL_E_max"@en,
+        "IMPOL_E_max"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/formet1> a skos:Concept ;
+    dcterms:identifier "FORMET1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/formet> ;
+    skos:definition "Largest Class Patch Index in %"@en,
+        "Largest Class Patch Index: percentuale occupata dalla patch di dimensione più grande rispetto alla superficie totale consumata [%]."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/formet1> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "LCPI"@en,
+        "LCPI"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/formet2> a skos:Concept ;
+    dcterms:identifier "FORMET2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/formet> ;
+    skos:definition "Edge density [m/ha]"@en,
+        "Edge Density, densità dei margini urbani: lunghezza totale dei margini delle classe consumata sulla somma totale della superficie della stessa classe [m/ha]."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/formet2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Edclass"@en,
+        "Edclass"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/formet3> a skos:Concept ;
+    dcterms:identifier "FORMET3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/formet> ;
+    skos:definition "Residual Mean Patch Size in hectares"@en,
+        "Residual Mean Patch Size: dimensione media dei poligoni di suolo consumato, con l'esclusione della patch di dimensione maggiore [ha]."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/formet3> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "RMPS"@en,
+        "RMPS"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/formet4> a skos:Concept ;
+    dcterms:identifier "FORMET4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/formet> ;
+    skos:definition "Population density [ab/ha]"@en,
+        "Abitanti per ettaro, rispetto all'Area Totale (TA) [ab/ha]."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/formet4> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "DENSITY"@en,
+        "DENSITA"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/formet5> a skos:Concept ;
+    dcterms:identifier "FORMET5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/formet> ;
+    skos:definition "Ratio of low density urban area on urban area in %"@en,
+        "Rapporto tra aree ad alta densità di urbanizzazione e aree ad alta e bassa densità [%]."@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/formet5> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Dispersion_index"@en,
+        "Indice_dispersione"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane1> a skos:Concept ;
+    dcterms:identifier "PFRANE1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Consumed land in landslide hazard zones (P1) in hectares"@en,
+        "Superficie di suolo consumato in aree a pericolosità da frana moderata (P1) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane1> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_landslide_hazard_zones_(P1)"@en,
+        "Consumato_in_aree_pericolosità_frane_1_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane10> a skos:Concept ;
+    dcterms:identifier "PFRANE10" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Not consumed land in landslide hazard zones (P5) in hectares"@en,
+        "Superficie di suolo non consumato in aree di attenzione AA (P5) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane10> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_landslide_hazard_zones_(P5)"@en,
+        "Non consumato_in_aree_pericolosità_frane_5_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane11> a skos:Concept ;
+    dcterms:identifier "PFRANE11" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Consumed land in landslide hazard zones (P1) in %"@en,
+        "Superficie di suolo consumato in aree a pericolosità da frana moderata (P1) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane11> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_landslide_hazard_zones_(P1)_in_%"@en,
+        "Consumato_in_aree_pericolosità_frane_1_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane12> a skos:Concept ;
+    dcterms:identifier "PFRANE12" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Consumed land in landslide hazard zones (P2) in %"@en,
+        "Superficie di suolo consumato in aree a pericolosità da frana media (P2) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane12> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_landslide_hazard_zones_(P2)_in_%"@en,
+        "Consumato_in_aree_pericolosità_frane_2_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane13> a skos:Concept ;
+    dcterms:identifier "PFRANE13" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Consumed land in landslide hazard zones (P3) in %"@en,
+        "Superficie di suolo consumato in aree a pericolosità da frana elevata (P3) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane13> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_landslide_hazard_zones_(P3)_in_%"@en,
+        "Consumato_in_aree_pericolosità_frane_3_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane14> a skos:Concept ;
+    dcterms:identifier "PFRANE14" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Consumed land in landslide hazard zones (P4) in %"@en,
+        "Superficie di suolo consumato in aree a pericolosità da frana molto elevata (P4) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane14> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_landslide_hazard_zones_(P4)_in_%"@en,
+        "Consumato_in_aree_pericolosità_frane_4_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane15> a skos:Concept ;
+    dcterms:identifier "PFRANE15" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Consumed land in landslide hazard zones (P5) in %"@en,
+        "Superficie di suolo consumato in aree di attenzione AA (P5) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane15> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_landslide_hazard_zones_(P5)_in_%"@en,
+        "Consumato_in_aree_pericolosità_frane_5_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane2> a skos:Concept ;
+    dcterms:identifier "PFRANE2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Consumed land in landslide hazard zones (P2) in hectares"@en,
+        "Superficie di suolo consumato in aree a pericolosità da frana media (P2) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_landslide_hazard_zones_(P2)"@en,
+        "Consumato_in_aree_pericolosità_frane_2_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane3> a skos:Concept ;
+    dcterms:identifier "PFRANE3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Consumed land in landslide hazard zones (P3) in hectares"@en,
+        "Superficie di suolo consumato in aree a pericolosità da frana elevata (P3) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane3> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_landslide_hazard_zones_(P3)"@en,
+        "Consumato_in_aree_pericolosità_frane_3_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane4> a skos:Concept ;
+    dcterms:identifier "PFRANE4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Consumed land in landslide hazard zones (P4) in hectares"@en,
+        "Superficie di suolo consumato in aree a pericolosità da frana molto elevata (P4) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane4> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_landslide_hazard_zones_(P4)"@en,
+        "Consumato_in_aree_pericolosità_frane_4_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane5> a skos:Concept ;
+    dcterms:identifier "PFRANE5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Consumed land in landslide hazard zones (P5) in hectares"@en,
+        "Superficie di suolo consumato in aree di attenzione AA (P5) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane5> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_landslide_hazard_zones_(P5)"@en,
+        "Consumato_in_aree_pericolosità_frane_5_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane6> a skos:Concept ;
+    dcterms:identifier "PFRANE6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Not consumed land in landslide hazard zones (P1) in hectares"@en,
+        "Superficie di suolo non consumato in aree a pericolosità da frana moderata (P1) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane6> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_landslide_hazard_zones_(P1)"@en,
+        "Non consumato_in_aree_pericolosità_frane_1_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane7> a skos:Concept ;
+    dcterms:identifier "PFRANE7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Not consumed land in landslide hazard zones (P2) in hectares"@en,
+        "Superficie di suolo non consumato in aree a pericolosità da frana media (P2) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane7> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_landslide_hazard_zones_(P2)"@en,
+        "Non consumato_in_aree_pericolosità_frane_2_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane8> a skos:Concept ;
+    dcterms:identifier "PFRANE8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Not consumed land in landslide hazard zones (P3) in hectares"@en,
+        "Superficie di suolo non consumato in aree a pericolosità da frana elevata (P3) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane8> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_landslide_hazard_zones_(P3)"@en,
+        "Non consumato_in_aree_pericolosità_frane_3_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane9> a skos:Concept ;
+    dcterms:identifier "PFRANE9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> ;
+    skos:definition "Not consumed land in landslide hazard zones (P4) in hectares"@en,
+        "Superficie di suolo non consumato in aree a pericolosità da frana molto elevata (P4) dei Piani di Assetto Idrogeologico (PAI), di cui l’ISPRA ha effettuato un’armonizzazione delle legende [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane9> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_landslide_hazard_zones_(P4)"@en,
+        "Non consumato_in_aree_pericolosità_frane_4_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pidrau1> a skos:Concept ;
+    dcterms:identifier "PIDRAU1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pidrau> ;
+    skos:definition "Consumed land in flood hazard zones (P1) in hectares"@en,
+        "Superficie di suolo consumato in aree a pericolosità idraulica bassa (P1) redatte dalle Autorità di Bacino, Regioni e Province Autonome ai sensi del D.lgs. 49/2010 (recepimento della Direttiva Alluvioni 2007/60/CE) [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pidrau1> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_flood_hazard_zones_(P1)"@en,
+        "Consumato_in_aree_pericolosità_idraulica_1_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pidrau2> a skos:Concept ;
+    dcterms:identifier "PIDRAU2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pidrau> ;
+    skos:definition "Not consumed land in flood hazard zones (P1) in hectares"@en,
+        "Superficie di suolo non consumato in aree a pericolosità idraulica bassa (P1) redatte dalle Autorità di Bacino, Regioni e Province Autonome ai sensi del D.lgs. 49/2010 (recepimento della Direttiva Alluvioni 2007/60/CE) [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pidrau2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_flood_hazard_zones_(P1)"@en,
+        "Non consumato_in_aree_pericolosità_idraulica_1_[ha"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pidrau3> a skos:Concept ;
+    dcterms:identifier "PIDRAU3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pidrau> ;
+    skos:definition "Consumed land in flood hazard zones (P1) in %"@en,
+        "Percentuale di suolo consumato in aree a pericolosità idraulica bassa (P1) redatte dalle Autorità di Bacino, Regioni e Province Autonome ai sensi del D.lgs. 49/2010 (recepimento della Direttiva Alluvioni 2007/60/CE) [%]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pidrau3> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_flood_hazard_zones_(P1)_in_%"@en,
+        "Consumato_in_aree_pericolosità_idraulica_1_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pidrau4> a skos:Concept ;
+    dcterms:identifier "PIDRAU4" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pidrau> ;
+    skos:definition "Consumed land in flood hazard zones (P2) in hectares"@en,
+        "Superficie di suolo consumato in aree a pericolosità idraulica media (P2) redatte dalle Autorità di Bacino, Regioni e Province Autonome ai sensi del D.lgs. 49/2010 (recepimento della Direttiva Alluvioni 2007/60/CE) [ha]"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pidrau4> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_flood_hazard_zones_(P2)"@en,
+        "Consumato_in_aree_pericolosità_idraulica_2_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pidrau5> a skos:Concept ;
+    dcterms:identifier "PIDRAU5" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pidrau> ;
+    skos:definition "Not consumed land in flood hazard zones (P2) in hectares"@en,
+        "Superficie di suolo non consumato in aree a pericolosità idraulica media (P2) con tempi di ritorno fra 100 e 200 anni (alluvioni poco frequenti) redatte dalle Autorità di Bacino, Regioni e Province Autonome ai sensi del D.lgs. 49/2010 (recepimento della D"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pidrau5> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_flood_hazard_zones_(P2)"@en,
+        "Non consumato_in_aree_pericolosità_idraulica_2_[ha"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pidrau6> a skos:Concept ;
+    dcterms:identifier "PIDRAU6" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pidrau> ;
+    skos:definition "Consumed land in flood hazard zones (P2) in %"@en,
+        "Percentuale di suolo consumato in aree a pericolosità idraulica media (P2) con tempi di ritorno fra 100 e 200 anni (alluvioni poco frequenti) redatte dalle Autorità di Bacino, Regioni e Province Autonome ai sensi del D.lgs. 49/2010 (recepimento della Dire"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pidrau6> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_flood_hazard_zones_(P2)_in_%"@en,
+        "Consumato_in_aree_pericolosità_idraulica_2_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pidrau7> a skos:Concept ;
+    dcterms:identifier "PIDRAU7" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pidrau> ;
+    skos:definition "Consumed land in flood hazard zones (P3) in hectares"@en,
+        "Superficie di suolo consumato in aree a pericolosità idraulica alta (P3) con tempi di ritorno fra 20 e 50 anni (alluvioni frequenti) redatte dalle Autorità di Bacino, Regioni e Province Autonome ai sensi del D.lgs. 49/2010 (recepimento della Direttiva All"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pidrau7> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_flood_hazard_zones_(P3)"@en,
+        "Consumato_in_aree_pericolosità_idraulica_3_[ha]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pidrau8> a skos:Concept ;
+    dcterms:identifier "PIDRAU8" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pidrau> ;
+    skos:definition "Not consumed land in flood hazard zones (P3) in hectares"@en,
+        "Superficie di suolo non consumato in aree a pericolosità idraulica alta (P3) con tempi di ritorno fra 20 e 50 anni (alluvioni frequenti) redatte dalle Autorità di Bacino, Regioni e Province Autonome ai sensi del D.lgs. 49/2010 (recepimento della Direttiva"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pidrau8> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_land_in_flood_hazard_zones_(P3)"@en,
+        "Non consumato_in_aree_pericolosità_idraulica_3_[ha"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pidrau9> a skos:Concept ;
+    dcterms:identifier "PIDRAU9" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/pidrau> ;
+    skos:definition "Consumed land in flood hazard zones (P3) in %"@en,
+        "Percentuale di suolo consumato in aree a pericolosità idraulica alta (P3) con tempi di ritorno fra 20 e 50 anni (alluvioni frequenti) redatte dalle Autorità di Bacino, Regioni e Province Autonome ai sensi del D.lgs. 49/2010 (recepimento della Direttiva Al"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pidrau9> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_land_in_flood_hazard_zones_(P3)_in_%"@en,
+        "Consumato_in_aree_pericolosità_idraulica_3_[%]"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/sdgind1531> a skos:Concept ;
+    dcterms:identifier "SDGIND1531" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/sdg> ;
+    skos:definition "Percentage of degraded land overt total area, excluding permanent water bodies. Quantification based on the analysis of available data for three sub-indicators  (Trends in Land Cover, Land Productivity and Carbon Stocks) in accordance with SDG 15.3.1 Metadata. Reporting period: 2021."@en,
+        "Percentuale del suolo degradato sulla superficie di riferimento, esclusi i corpi idrici permanenti. Quantificazione  basata sull'analisi dei dati disponibili per i sub indicatori: cambiamenti di land cover, land productivity e stock di carbonio nel suolo, in accordo con i metadati per l'indicatore di sviluppo sostenibile 15.3.1. Data di reporting: 2021"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/sdgind1531> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Degraded_area"@en,
+        "Area_con_degrado_in_aumento_sdg"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/sdgind2> a skos:Concept ;
+    dcterms:identifier "SDGIND2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/sdg> ;
+    skos:definition "land degradation considering all sub-indicator"@en,
+        "Degrado del suolo rispetto ai 6 anni precedenti considerando tutti i subindicatori"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/sdgind2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Degraded_area_total"@en,
+        "Area_con_degrado_in_aumento_totale"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/sdgind3> a skos:Concept ;
+    dcterms:identifier "SDGIND3" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/sdg> ;
+    skos:definition "Ratio_of_land_consumption_rate_to_population_growth_rate from 2012 to 2018"@en,
+        "Rapporto tra il tasso di variazione del suolo consumato (km2) e il tasso di variazione della popolazione rispetto all'anno precedente"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/sdgind3> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Ratio_consumed_land_population_2012_2018"@en,
+        "Rapporto_suolo_consumato_popolazione"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/vinpae1> a skos:Concept ;
+    dcterms:identifier "VINPAE1" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/vinpae> ;
+    skos:definition "land consumption in protected areas in accordance with D.Lgs. 42/2004 (art. 136, art. 142 c.1 a, b, c, d, l)"@en,
+        "Suolo consumato all'interno delle aree sottoposte a tutela paessaggistica ai sensi del D.Lgs. 42/2004 (art. 136, art. 142 c.1 a, b, c, d, l)"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/vinpae1> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Consumed_in_protected_area"@en,
+        "Consumato_in_aree_tutelate"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/vinpae2> a skos:Concept ;
+    dcterms:identifier "VINPAE2" ;
+    skos:broader <https://w3id.org/italia/env/vocab/land-take/indicators/vinpae> ;
+    skos:definition "land not consumed in protected areas ex D.Lgs. 42/2004 (art. 136, art. 142 c.1 a, b, c, d, l)"@en,
+        "Suolo non consumato all'interno delle aree sottoposte a tutela paessaggistica ai sensi del D.Lgs. 42/2004 (art. 136, art. 142 c.1 a, b, c, d, l)"@it ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/vinpae2> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Not_consumed_in_protected_area"@en,
+        "Non_consumato_in_aree_tutelate"@it .
+
+<https://w3id.org/italia/env/ld/common/distribution/lt-indicators-CSV> a dcatapit:Distribution,
+        dcat:Distribution ;
+    dcterms:description "This is the CSV distribution of the Linked Open Data dataset of the controlled vocabulary of land take indicators"@en,
+        "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato degli indicatori di consumo suolo"@it ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "CSV distribution of the controlled vocabulary of land take indicators"@en,
+        "Distribuzione CSV del vocabolario controllato degli indicatori di consumo suolo"@it ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/land-take/indicators> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/land-take/indicators/indicators.csv> .
+
+<https://w3id.org/italia/env/ld/common/distribution/lt-indicators-RDF-TURTLE> a dcatapit:Distribution,
+        dcat:Distribution ;
+    dcterms:description "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary of land take indicators"@en,
+        "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato degli indicatori di consumo suolo"@it ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "RDF/Turtle distribution of the controlled vocabulary of land take indicators"@en,
+        "Distribuzione RDF/Turtle del vocabolario controllato degli indicatori di consumo suolo"@it ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/land-take/indicators> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/land-take/indicators/indicators.ttl> .
+
+<https://w3id.org/italia/env/ld/common/organization/001-LD> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    vcard:fn "DG-SINA - Progetto Linked ISPRA" ;
+    vcard:hasEmail <mailto:assistenza-lod@isprambiente.it> .
+
+<https://w3id.org/italia/env/ld/common/person/0000-0001-7283-116X> a dcterms:Agent,
+        prov:Person,
+        foaf:Person,
+        schema:Person ;
+    rdfs:label "Luca Congedo" ;
+    owl:sameAs <https://orcid.org/0000-0001-7283-116X> ;
+    foaf:familyName "Congedo" ;
+    foaf:givenName "Luca" ;
+    schema:identifier <https://orcid.org/0000-0001-7283-116X> .
+
+<https://w3id.org/italia/env/ld/common/person/0000-0002-3415-6105> a dcterms:Agent,
+        prov:Person,
+        foaf:Person,
+        schema:Person ;
+    rdfs:label "Michele Munafò" ;
+    owl:sameAs <https://orcid.org/0000-0002-3415-6105> ;
+    foaf:familyName "Munafò" ;
+    foaf:givenName "Michele" ;
+    schema:identifier <https://orcid.org/0000-0002-3415-6105> .
+
+<https://w3id.org/italia/env/ld/common/person/0000-0002-6454-2859> a dcterms:Agent,
+        prov:Person,
+        foaf:Person,
+        schema:Person ;
+    rdfs:label "Giulio Settanta" ;
+    owl:sameAs <https://orcid.org/0000-0002-6454-2859> ;
+    foaf:familyName "Settanta" ;
+    foaf:givenName "Giulio" ;
+    schema:identifier <https://orcid.org/0000-0002-6454-2859> .
+
+<https://w3id.org/italia/env/ld/common/person/0000-0003-0126-7914> a dcterms:Agent,
+        prov:Person,
+        foaf:Person,
+        schema:Person ;
+    rdfs:label "Marco Picone" ;
+    owl:sameAs <https://orcid.org/0000-0003-0126-7914> ;
+    foaf:familyName "Picone" ;
+    foaf:givenName "Marco" ;
+    schema:identifier <https://orcid.org/0000-0003-0126-7914> .
+
+<https://w3id.org/italia/env/ld/common/person/0000-0003-0998-9751> a dcterms:Agent,
+        prov:Person,
+        foaf:Person,
+        schema:Person ;
+    rdfs:label "Elio Giulianelli" ;
+    owl:sameAs <https://orcid.org/0000-0003-0998-9751> ;
+    foaf:familyName "Giulianelli" ;
+    foaf:givenName "Elio" ;
+    schema:identifier <https://orcid.org/0000-0003-0998-9751> .
+
+<https://w3id.org/italia/env/ld/common/organisation/001> a dcatapit:Agent,
+        owl:NamedIndividual,
+        vcard:Organization,
+        org:Organization,
+        foaf:Agent,
+        top:Organisation ;
+    dcterms:identifier "ispra_rm" ;
+    vcard:fn "Italian National Institute for Environmental Protection and Research"@en,
+        "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ;
+    foaf:name "Italian Institute for Environmental Protection and Research"@en,
+        "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/vinpae> a skos:Concept ;
+    dcterms:identifier "VINPAE" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/vinpae> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Landscape assets"@en,
+        "Beni paesaggistici"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/careep> a skos:Concept ;
+    dcterms:identifier "CAREEP" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/careep> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "land consumption in protected areas"@en,
+        "Consumo di suolo in aree protette"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/sdg> a skos:Concept ;
+    dcterms:identifier "SDG" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/sdg> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Land degradation neutrality"@en,
+        "Neutralità degrado del suolo"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/clammi> a skos:Concept ;
+    dcterms:identifier "CLAMMI" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/clammi> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Description/classification of administrative unit"@en,
+        "Descrizione/classificazione ambito amministrativo"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccidri> a skos:Concept ;
+    dcterms:identifier "CCIDRI" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccidri> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "land consumption in river buffer zones"@en,
+        "Consumo di suolo e corpi idrici"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/formet> a skos:Concept ;
+    dcterms:identifier "FORMET" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/formet> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Urban settlement form and urban sprawl"@en,
+        "Forme di urbanizzazione e tipologia insediativa/sprawl urbano"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csismi> a skos:Concept ;
+    dcterms:identifier "CSISMI" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csismi> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "land consumption in seismic hazard"@en,
+        "Consumo di suolo nelle aree a pericolosità sismica"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/csuolo> a skos:Concept ;
+    dcterms:identifier "CSUOLO" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/csuolo> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "land consumption"@en,
+        "Consumo di suolo"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pidrau> a skos:Concept ;
+    dcterms:identifier "PIDRAU" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pidrau> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "land consumption in flood hazard zones"@en,
+        "Consumo di suolo nelle aree a pericolosità idraulica"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ccoste> a skos:Concept ;
+    dcterms:identifier "CCOSTE" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ccoste> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "land consumption in coastal areas"@en,
+        "Consumo di suolo in fascia costiera"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/diseco> a skos:Concept ;
+    dcterms:identifier "DISECO" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/diseco> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Effective land consumption and ecological interference"@en,
+        "Consumo di suolo effettivo e disturbo ecologico"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/caltim> a skos:Concept ;
+    dcterms:identifier "CALTIM" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/caltim> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "land consumption for elevation and slope classes"@en,
+        "Consumo di suolo per classi altimetriche e di pendenza"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/pfrane> a skos:Concept ;
+    dcterms:identifier "PFRANE" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/pfrane> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "land consumption in landslide hazard zones"@en,
+        "Consumo di suolo nelle aree a pericolosità frane"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators/ecosis> a skos:Concept ;
+    dcterms:identifier "ECOSIS" ;
+    skos:exactMatch <https://w3id.org/italia/env/ld/soilc/parameter/ecosis> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/land-take/indicators> ;
+    skos:prefLabel "Ecosystem services"@en,
+        "Servizi ecosistemici"@it .
+
+<https://w3id.org/italia/env/vocab/land-take/indicators> a dcatapit:Dataset,
+        skos:ConceptScheme,
+        adms:Asset,
+        dcat:Dataset ;
+    rdfs:label "Vocabulary of land take indicators"@en,
+        "Vocabolario degli indicatori di consumo suolo"@it ;
+    dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dcterms:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    dcterms:creator <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    dcterms:description "Vocabulary of land take indicators (e.g. Land take in %, Land take in flood hazard zones, ...)"@en,
+        "Vocabolario degli indicatori di consumo suolo (es. Percentuale di suolo consumato, Superficie di suolo non consumato in aree a pericolosità idraulica, ...)"@it ;
+    dcterms:identifier "https://w3id.org/italia/env/vocab/land-take/indicators" ;
+    dcterms:issued "2023-03-03"^^xsd:date ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dcterms:modified "2025-03-10"^^xsd:date ;
+    dcterms:publisher <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    dcterms:rightsHolder <https://w3id.org/italia/env/ld/common/organisation/001> ;
+    dcterms:subject <http://eurovoc.europa.eu/4630> ;
+    dcterms:title "Vocabulary of land take indicators"@en,
+        "Vocabolario degli indicatori di consumo suolo"@it ;
+    dcterms:type <http://purl.org/adms/assettype/Taxonomy> ;
+    xkos:numberOfLevels "2" ;
+    rdfs:comment "Vocabulary of land take indicators (e.g. Land take in %, Land take in flood hazard zones, ...)"@en,
+        "Vocabolario degli indicatori di consumo suolo (es. Percentuale di suolo consumato, Superficie di suolo non consumato in aree a pericolosità idraulica, ...)"@it ;
+    owl:versionInfo "Version 0.2 - updated in March 2025 - Vocabolary metadata inserted."@en,
+        "Versione 0.2 - aggiornata a marzo 2025 - Inseriti i metadati del vocabolario."@it ;
+    skos:hasTopConcept <https://w3id.org/italia/env/vocab/land-take/indicators/caltim>,
+        <https://w3id.org/italia/env/vocab/land-take/indicators/careep>,
+        <https://w3id.org/italia/env/vocab/land-take/indicators/ccidri>,
+        <https://w3id.org/italia/env/vocab/land-take/indicators/ccoste>,
+        <https://w3id.org/italia/env/vocab/land-take/indicators/clammi>,
+        <https://w3id.org/italia/env/vocab/land-take/indicators/csismi>,
+        <https://w3id.org/italia/env/vocab/land-take/indicators/csuolo>,
+        <https://w3id.org/italia/env/vocab/land-take/indicators/diseco>,
+        <https://w3id.org/italia/env/vocab/land-take/indicators/ecosis>,
+        <https://w3id.org/italia/env/vocab/land-take/indicators/formet>,
+        <https://w3id.org/italia/env/vocab/land-take/indicators/pfrane>,
+        <https://w3id.org/italia/env/vocab/land-take/indicators/pidrau>,
+        <https://w3id.org/italia/env/vocab/land-take/indicators/sdg>,
+        <https://w3id.org/italia/env/vocab/land-take/indicators/vinpae> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    dcat:contactPoint <https://w3id.org/italia/env/ld/common/organization/001-LD> ;
+    dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/lt-indicators-CSV>,
+        <https://w3id.org/italia/env/ld/common/distribution/lt-indicators-RDF-TURTLE> ;
+    dcat:keyword "Land"@en,
+        "Land Take"@en,
+        "Land Use"@en,
+        "Land consumption"@en,
+        "Consumo del suolo"@it,
+        "Suolo"@it,
+        "Suolo consumato"@it,
+        "Uso del suolo"@it ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+    schema:creator <https://w3id.org/italia/env/ld/common/person/0000-0001-7283-116X>,
+        <https://w3id.org/italia/env/ld/common/person/0000-0002-3415-6105>,
+        <https://w3id.org/italia/env/ld/common/person/0000-0002-6454-2859>,
+        <https://w3id.org/italia/env/ld/common/person/0000-0003-0126-7914>,
+        <https://w3id.org/italia/env/ld/common/person/0000-0003-0998-9751> ;
+    ndc:keyConcept "indicators" .
+
