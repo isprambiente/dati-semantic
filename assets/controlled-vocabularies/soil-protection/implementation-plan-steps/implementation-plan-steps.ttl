@@ -10,7 +10,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix org: <http://www.w3.orgS/ns/org#> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix top: <https://w3id.org/italia/env/onto/top/> .
 
