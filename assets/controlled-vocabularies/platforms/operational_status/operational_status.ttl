@@ -12,6 +12,8 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
 @prefix top: <https://w3id.org/italia/env/onto/top/> .
 
 <https://w3id.org/italia/env/vocab/platforms/operational_status>
@@ -22,14 +24,14 @@
   rdfs:comment "Vocabolario dello stato operativo delle reti e delle stazioni di misura (Operativo/Cessato)"@it, "Vocabulary of the operational status of networks and measure stations (Operational/Ceased)"@en ;
   dct:language <http://publications.europa.eu/resource/authority/language/ITA>, <http://publications.europa.eu/resource/authority/language/ENG> ;
   dct:issued "2023-03-03"^^xsd:date ;
-  dct:modified "2024-03-25"^^xsd:date ;
+  dct:modified "2025-07-10"^^xsd:date ;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
   dct:identifier "https://w3id.org/italia/env/vocab/platforms/operational_status" ;
   dct:creator <https://w3id.org/italia/env/ld/common/organisation/001> ;
   dct:publisher <https://w3id.org/italia/env/ld/common/organisation/001> ;
   dct:rightsHolder <https://w3id.org/italia/env/ld/common/organisation/001> ;
-  owl:versionInfo "Version 0.2 - updated in March 2024 - Vocabolary metadata inserted."@en ,
-                  "Versione 0.2 - aggiornata a marzo 2024 - Inseriti i metadati del vocabolario."@it ;
+  owl:versionInfo "Version 0.3 - updated in March 2024 - Vocabolary metadata inserted - July 2025 - Authors inserted"@en ,
+                  "Versione 0.3 - aggiornata a marzo 2024 - Inseriti i metadati del vocabolario - Luglio 2025 -"@it ;
   dct:type <http://purl.org/adms/assettype/CodeList>;
   xkos:numberOfLevels "1" ;
   ndc:keyConcept "operational_status" ;
@@ -42,6 +44,9 @@
   dcat:keyword "operational status"@en ,
                "stato operativo"@it ;
   dct:subject <https://eurovoc.europa.eu/c_a935cf3f> ;
+  schema:creator <https://w3id.org/italia/env/ld/common/person/0000-0002-6454-2859> ,
+        <https://w3id.org/italia/env/ld/common/person/0000-0003-0126-7914> ,
+        <https://w3id.org/italia/env/ld/common/person/0000-0003-0998-9751> ;  
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> .
 
 <https://w3id.org/italia/env/ld/common/distribution/p-operational-status-RDF-TURTLE> a dcatapit:Distribution, dcat:Distribution;
@@ -82,6 +87,39 @@
                                                                   vcard:Organization ;
                                                          vcard:fn "DG-SINA - Progetto Linked ISPRA" ;
                                                          vcard:hasEmail <mailto:assistenza-lod@isprambiente.it> .
+
+<https://w3id.org/italia/env/ld/common/person/0000-0002-6454-2859> a dct:Agent ,
+    owl:NamedIndividual ,
+    prov:Person ,
+    foaf:Person ,
+    schema:Person ;
+    rdfs:label "Giulio Settanta" ;
+    owl:sameAs <https://orcid.org/0000-0002-6454-2859> ;
+    foaf:familyName "Settanta" ;
+    foaf:givenName "Giulio" ;
+    schema:identifier <https://orcid.org/0000-0002-6454-2859> .
+
+<https://w3id.org/italia/env/ld/common/person/0000-0003-0126-7914> a dct:Agent ,
+    owl:NamedIndividual ,
+    prov:Person ,
+    foaf:Person ,
+    schema:Person ;
+    rdfs:label "Marco Picone" ;
+    owl:sameAs <https://orcid.org/0000-0003-0126-7914> ;
+    foaf:familyName "Picone" ;
+    foaf:givenName "Marco" ;
+    schema:identifier <https://orcid.org/0000-0003-0126-7914> .
+
+<https://w3id.org/italia/env/ld/common/person/0000-0003-0998-9751> a dct:Agent ,
+    owl:NamedIndividual ,
+    prov:Person ,
+    foaf:Person ,
+    schema:Person ;
+    rdfs:label "Elio Giulianelli" ;
+    owl:sameAs <https://orcid.org/0000-0003-0998-9751> ;
+    foaf:familyName "Giulianelli" ;
+    foaf:givenName "Elio" ;
+    schema:identifier <https://orcid.org/0000-0003-0998-9751> .
 
 <https://w3id.org/italia/env/vocab/platforms/operational_status/operational>
   a skos:Concept ;
