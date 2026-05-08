@@ -14,7 +14,7 @@
     <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#NamedIndividual"/>
   </j.0:Organization>
   <owl:Ontology rdf:about="https://w3id.org/italia/env/onto/core#">
-    <rdfs:label xml:lang="en">Ispra Ontology</rdfs:label>
+    <rdfs:label xml:lang="en">Ispra CORE Ontology</rdfs:label>
     <vann:preferredNamespaceUri>https://w3id.org/italia/env/onto/core#</vann:preferredNamespaceUri>
     <dc:date>2023/05/08</dc:date>
     <dc:creator>"https://www.isprambiente.gov.it/it"></dc:creator>
@@ -22,7 +22,7 @@
     <ns:license rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.it"/>
     <vann:preferredNamespacePrefix>ispra</vann:preferredNamespacePrefix>
     <owl:versionInfo>0.2.0</owl:versionInfo>
-    <dc:title xml:lang="en">Ispra Ontology</dc:title>
+    <dc:title xml:lang="en">Ispra CORE Ontology</dc:title>
     <dc:publisher rdf:resource="http://www.isprambiente.gov.it/it/"/>
   </owl:Ontology>
   <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
