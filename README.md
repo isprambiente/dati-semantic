@@ -23,5 +23,13 @@ Sono anche  modellate le classi e le proprietà per rappresentare indicatori e c
 ### [Ontologia Rendis](https://w3id.org/italia/env/onto/rendis)
 La rete di ontologie ISPRA è stata estesa con il modulo ontologico RENDIS che modella la conoscenza riguardante il Repertorio Nazionale degli interventi per la Difesa del Suolo. Il namespace del modulo RENDIS è https://w3id.org/italia/env/onto/rendis/.
 
+---
+
+## Documentazione Storica
+Versione precedente dell'ontologia ISPRA (come il modulo **Core**), utilizzata per i dataset storici:
+
+**[Ontologia Core (Legacy)](./LEGACY_ONTOLOGY.md)**
+
+
 ## Licenza
 Tutti i moduli ontologici sono rilasciati sotto la licenza aperta Creative Commons Attribution 4.0

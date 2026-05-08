@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://xmlns.com/foaf/0.1/"
+    xmlns:ns="http://creativecommons.org/ns#"
+    xmlns:ns2="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:core="https://w3id.org/italia/env/onto/core#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <j.0:Organization rdf:about="https://www.isprambiente.gov.it/it">
+    <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.0:Organization>
+  <owl:Ontology rdf:about="https://w3id.org/italia/env/onto/core#">
+    <rdfs:label xml:lang="en">Ispra CORE Ontology</rdfs:label>
+    <vann:preferredNamespaceUri>https://w3id.org/italia/env/onto/core#</vann:preferredNamespaceUri>
+    <dc:date>2023/05/08</dc:date>
+    <dc:creator>"https://www.isprambiente.gov.it/it"></dc:creator>
+    <dc:description xml:lang="it">L'ontologia ISPRA nasce dall'esigenza di pubblicazione dei dataset LOD ed è finalizzata alla descrizione dei processi e delle attività dell'Istituto negli ambiti circoscritti dai primi dataset pubblicati. Al momento sono descritte in modo analitico le classi e le proprietà che insistono sul dominio specifico della rete ondametrica nazionale, della rete mareografica, del consumo del suolo e degli interventi di dissesto idrogeologico, ma l'obiettivo è di estenderla parallelamente alla pubblicazione di nuovi dataset.</dc:description>
+    <ns:license rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.it"/>
+    <vann:preferredNamespacePrefix>ispra</vann:preferredNamespacePrefix>
+    <owl:versionInfo>0.2.0</owl:versionInfo>
+    <dc:title xml:lang="en">Ispra CORE Ontology</dc:title>
+    <dc:publisher rdf:resource="http://www.isprambiente.gov.it/it/"/>
+  </owl:Ontology>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+  <owl:Class rdf:about="http://www.geonames.org/ontology#Feature"/>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Instability">
+    <rdfs:comment xml:lang="it">Tipologia di dissesto indicata in progetto o rilevata in sito.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Type of instability phenomenon shown in the drawings or observed by site visit.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Dissesto</rdfs:label>
+    <rdfs:label xml:lang="en">Instability</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#MeasurementCollection">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Costituisce l'insieme di misure e metadati in un determinato periodo inerenti una grandezza osservata (es. Wind, Wave) in un dato luogo.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Set of measures and metadata in a specified period regarding an observed parameter (eg. Wind, Wave) in a given place</rdfs:comment>
+    <rdfs:label xml:lang="it">Set di Misure</rdfs:label>
+    <rdfs:label xml:lang="en">Measurement Collection</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Contract">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Lotto</rdfs:label>
+    <rdfs:label xml:lang="en">Contract</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#IndicatorCollection">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Collezione di indicatori</rdfs:label>
+    <rdfs:label xml:lang="en">Indicator Collection</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Anemometer">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Strumento</rdfs:comment>
+    <rdfs:comment xml:lang="en">Instrument</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Instrument"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Anemometro</rdfs:label>
+    <rdfs:label xml:lang="en">Anemometer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Redox">
+    <rdfs:comment xml:lang="it">Parametro di Qualità</rdfs:comment>
+    <rdfs:comment xml:lang="en">Quality Parameter</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Redox</rdfs:label>
+    <rdfs:label xml:lang="en">Redox</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Wind">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Parametro Meteorologico</rdfs:comment>
+    <rdfs:comment xml:lang="en">Meteorological Parameter</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Vento</rdfs:label>
+    <rdfs:label xml:lang="en">Wind</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#AirPres">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Parametro Meteorologico</rdfs:comment>
+    <rdfs:comment xml:lang="en">Meteorological Parameter</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Pressione atmosferica</rdfs:label>
+    <rdfs:label xml:lang="en">Atmospheric Pressure</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Intervention">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Intervento per la mitigazione del rischio idrogeologico a cui è assegnato uno specifico finanziamento. Può essere costituito da uno più lotti.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A single action, funded under a plan for hydrogeological risk mitigation. It may consist of one or more related projects.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/procurement/public-contracts#Contract"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Intervento</rdfs:label>
+    <rdfs:label xml:lang="en">Action</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#SoilUseIndicator">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Indicator"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Indicatore di uso del suolo</rdfs:label>
+    <rdfs:label xml:lang="en">Use soil Indicator</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Wave">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Parametro Oceanografico</rdfs:comment>
+    <rdfs:comment xml:lang="en">Oceanographic Parameter</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Onda</rdfs:label>
+    <rdfs:label xml:lang="en">Wave</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/procurement/public-contracts#FrameworkAgreement">
+    <ns2:term_status>stable</ns2:term_status>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Indicator">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Indicatore</rdfs:label>
+    <rdfs:label xml:lang="en">Indicator</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Hydrometer">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Strumento</rdfs:comment>
+    <rdfs:comment xml:lang="en">Instrument</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Instrument"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Idrometro</rdfs:label>
+    <rdfs:label xml:lang="en">Hydrometer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#AuthorityKind">
+    <rdfs:comment xml:lang="it">Ente coinvolto e funzione svolta.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="en">Involved authorities and role played.</rdfs:comment>
+    <rdfs:label xml:lang="it">Autorità</rdfs:label>
+    <rdfs:label xml:lang="en">Authority kind</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+  <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <ns2:term_status>stable</ns2:term_status>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#GeoFeature">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:subClassOf rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <rdfs:label xml:lang="it">Elemento geografico</rdfs:label>
+    <rdfs:label xml:lang="en">Geographical feature</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#RelativeHumidity">
+    <rdfs:comment xml:lang="it">Parametro Meteorologico</rdfs:comment>
+    <rdfs:comment xml:lang="en">Meteorological Parameter</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Umidità relativa</rdfs:label>
+    <rdfs:label xml:lang="en">Relative Humidity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#PH">
+    <rdfs:comment xml:lang="it">Parametro di Qualità</rdfs:comment>
+    <rdfs:comment xml:lang="en">Quality Parameter</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">PH</rdfs:label>
+    <rdfs:label xml:lang="en">PH</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#WaterTemperature">
+    <rdfs:comment xml:lang="it">Parametro Oceanografico</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="en">Oceanographic Parameter</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Temperatura dell'acqua</rdfs:label>
+    <rdfs:label xml:lang="en">Water Temperature</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Hygrometer">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Strumento</rdfs:comment>
+    <rdfs:comment xml:lang="en">Instrument</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Instrument"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Igrometro</rdfs:label>
+    <rdfs:label xml:lang="en">Hygrometer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Termometer">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Strumento</rdfs:comment>
+    <rdfs:comment xml:lang="en">Instrument</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Instrument"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Termometro</rdfs:label>
+    <rdfs:label xml:lang="en">Termometer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/goodrelations/v1#BusinessEntity">
+    <ns2:term_status>stable</ns2:term_status>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#AirTemp">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Parametro Meteorologico</rdfs:comment>
+    <rdfs:comment xml:lang="en">Meteorological Parameter</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Temperatura dell'aria</rdfs:label>
+    <rdfs:label xml:lang="en">Air Temperature</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#LotStep">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Passo dell'iter di attuazione del progetto.</rdfs:comment>
+    <rdfs:label xml:lang="it">Passi del lotto</rdfs:label>
+    <rdfs:label xml:lang="en">Lot step</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Sst">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Parametro Oceanografico</rdfs:comment>
+    <rdfs:comment xml:lang="en">Oceanographic Parameter</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Temperatura Superficiale dell'acqua</rdfs:label>
+    <rdfs:label xml:lang="en">Sea Surface Temperature</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#MarineIndicator">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/core#Indicator"/>
+    <rdfs:label xml:lang="it">Indicatore marino</rdfs:label>
+    <rdfs:label xml:lang="en">Marine Indicator</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3.org/ns/org#OrganizationalUnit">
+    <ns2:term_status>stable</ns2:term_status>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#MultiParameterProbe">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Strumento</rdfs:comment>
+    <rdfs:comment xml:lang="en">Instrument</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Instrument"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Sonda Multiparametrica</rdfs:label>
+    <rdfs:label xml:lang="en">Multi Parameter Probe</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Conductivity">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Parametro  di Qualità</rdfs:comment>
+    <rdfs:comment xml:lang="en">Quality Parameter</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Conducibilità</rdfs:label>
+    <rdfs:label xml:lang="en">Conductivity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Place">
+    <rdfs:comment xml:lang="it">TBC</rdfs:comment>
+    <rdfs:comment xml:lang="en">TBC</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Luogo</rdfs:label>
+    <rdfs:label xml:lang="en">Place</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#HydrometricLevel">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Parametro Oceanografico</rdfs:comment>
+    <rdfs:comment xml:lang="en">Oceanographic Parameter</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Livello idrometrico</rdfs:label>
+    <rdfs:label xml:lang="en">Hydrometric Level</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/dc/dcmitype/Collection"/>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Lithology">
+    <rdfs:comment xml:lang="it">Tipi litologici indicati in progetto.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Lithology as stated in the project.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Litologia</rdfs:label>
+    <rdfs:label xml:lang="en">Lithology</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Parameter">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Parametro</rdfs:label>
+    <rdfs:label xml:lang="en">Parameter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#WaveGauge">
+    <rdfs:comment xml:lang="it">Strumento</rdfs:comment>
+    <rdfs:comment xml:lang="en">Instrument</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Instrument"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="it">Ondametro</rdfs:label>
+    <rdfs:label xml:lang="en">Wave Gauge</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Repair">
+    <rdfs:comment xml:lang="en">Type of protection works.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Tipologia di opere definite nel progetto .</rdfs:comment>
+    <rdfs:label xml:lang="it">Opera</rdfs:label>
+    <rdfs:label xml:lang="en">Repair</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Instrument">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Strumento</rdfs:label>
+    <rdfs:label xml:lang="en">Instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#MeasureStation">
+    <rdfs:comment xml:lang="it">Insieme di strumenti di misura che permettono il monitoraggio in un dato luogo, per un determinato tempo, relativamente ai suoi parametri fondamentali.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Facility with instruments and equipment for monitoring in a given place, for a determined period, relatively to its foundamental parameters.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Stazione di Misura</rdfs:label>
+    <rdfs:label xml:lang="en">Measure Station</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#EconomicIndicator">
+    <rdfs:comment xml:lang="it">Parametro del quadro economico del lotto.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="en">Parameter of the project economic framework.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/core#Indicator"/>
+    <rdfs:label xml:lang="it">Indicatore economico</rdfs:label>
+    <rdfs:label xml:lang="en">Economic Indicator</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Model">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Tipologia di stazione di misura (ispra-core:MeasureStation) in funzione delle sua caratteristiche principali (grandezza, costruzione, ecc.)</rdfs:comment>
+    <rdfs:comment xml:lang="en">Type of measuring station (ispra-core: Measure Station) including a set of its main characteristics (size, construction, etc.)</rdfs:comment>
+    <rdfs:label xml:lang="it">Modello</rdfs:label>
+    <rdfs:label xml:lang="en">Model</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#Barometer">
+    <rdfs:comment xml:lang="it">Strumento</rdfs:comment>
+    <rdfs:comment xml:lang="en">Instrument</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/core#Instrument"/>
+    <rdfs:label xml:lang="it">Barometro</rdfs:label>
+    <rdfs:label xml:lang="en">Barometer</rdfs:label>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#belongsTo">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Appartiene a</rdfs:label>
+    <rdfs:label xml:lang="en">Belongs to</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/org#OrganizationalUnit"/>
+    <rdfs:domain rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#lithologyRelatedTo">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Lithology"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <rdfs:comment xml:lang="it">Questa proprietà collega la litologia al contratto.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="en">This property connects the Lithology to the Contract.</rdfs:comment>
+    <rdfs:label xml:lang="it">Litologia collegata a</rdfs:label>
+    <rdfs:label xml:lang="en">Lithology related to</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#primaryGeographicalFeature">
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#Place"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <rdfs:comment xml:lang="it">Luogo primario legato ad un intervento di dissesto.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="en">Primary geographical feature of a Contract</rdfs:comment>
+    <rdfs:label xml:lang="it">Luogo primario</rdfs:label>
+    <rdfs:label xml:lang="en">Primary geographical feature</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#lithologyType">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Lithology"/>
+    <rdfs:comment xml:lang="it">Questa proprietà collega la litologia allo specifico concetto.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property connects the Lithology to the specific concept.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Tipo di litologia</rdfs:label>
+    <rdfs:label xml:lang="en">Lithology type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#measures">
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#Parameter"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#MeasureStation"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Proprietà che collega la stazione di misura con la grandezza  (es. Wind, Wave) osservata in un determinato luogo.</rdfs:comment>
+    <rdfs:comment xml:lang="en">It connects the measure station with the observed parameter (eg. Wind, Wave) in a given place.</rdfs:comment>
+    <rdfs:label xml:lang="it">Misura</rdfs:label>
+    <rdfs:label xml:lang="en">Measures</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#instabilityType">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Instability"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Questa proprietà collega la classe Dissesto ad un concetto più specifico di dissesto.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property connects the class Instability to the more specific Concept of instability.</rdfs:comment>
+    <rdfs:label xml:lang="it">Tipo di dissesto</rdfs:label>
+    <rdfs:label xml:lang="en">Instability type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#hasEconomicIndicator">
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#EconomicIndicator"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <rdfs:comment xml:lang="it">Questa proprietà collega il contratto agli indicatori economici.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property connects the Contract to its Economic Indicator</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Ha indicatori economici</rdfs:label>
+    <rdfs:label xml:lang="en">Has economic indicator</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#repairRelatedTo">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Repair"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Questa proprietà collega l'opera al contratto.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property connects the Repair to the Contract.</rdfs:comment>
+    <rdfs:label xml:lang="it">Opera collegata a</rdfs:label>
+    <rdfs:label xml:lang="en">Repair related to</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#lot">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#LotStep"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <rdfs:comment xml:lang="it">Questa proprietà collega i singoli passi del contratto al lotto relativo.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property connects the class Lot Step to the contract.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Lotto</rdfs:label>
+    <rdfs:label xml:lang="en">Lot</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#isDataOf">
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#Parameter"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#MeasurementCollection"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Associa i dati misurati in un determinato periodo a una grandezza (es. Wind, Wave) osservata in un determinato luogo.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property connects the measured data in a given period with an observed parameter (eg. Wind, Wave) in a given place.</rdfs:comment>
+    <rdfs:label xml:lang="it">Grandezza osservata</rdfs:label>
+    <rdfs:label xml:lang="en">Observed Parameter</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#measuredBy">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Parameter"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#Instrument"/>
+    <rdfs:comment xml:lang="it">Individua lo strumento presente nella stazione di misura in un determinato luogo che è in grado di misurare una grandezza (es. Wind, Wave) .</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="en">It identifies the instrument located in a station in a given place that measures a parameter (eg. Wind, Wave).</rdfs:comment>
+    <rdfs:label xml:lang="it">Misurato da</rdfs:label>
+    <rdfs:label xml:lang="en">Measured by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#placedOn">
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#MeasureStation"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Instrument"/>
+    <rdfs:comment xml:lang="it">Stazione di misura in cui è presente lo strumento</rdfs:comment>
+    <rdfs:comment xml:lang="en">Measure station that includes the instrument.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Situato in </rdfs:label>
+    <rdfs:label xml:lang="en">Placed on</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#hasAgreement">
+    <rdfs:range rdf:resource="http://purl.org/procurement/public-contracts#FrameworkAgreement"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <rdfs:comment xml:lang="it">Proprietà che collega il contratto con il decreto di attuazione.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="en">This property connects the contract with its framework agreement.</rdfs:comment>
+    <rdfs:label xml:lang="it">Has agreement</rdfs:label>
+    <rdfs:label xml:lang="en">Ha un accordo quadro</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#entity">
+    <rdfs:range rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#AuthorityKind"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Questa proprietà associa la classe AuthorityKind con l'entità.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property connects class AuthorityKind with the entity.</rdfs:comment>
+    <rdfs:label xml:lang="it">Entità</rdfs:label>
+    <rdfs:label xml:lang="en">Entity</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#hasModel">
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#Model"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#MeasureStation"/>
+    <rdfs:comment xml:lang="it">Questa proprietà collega la Stazione di misura al suo modello.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property connects the Measure Station with its model.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Ha modello di stazione di misura</rdfs:label>
+    <rdfs:label xml:lang="en">Has measure station model</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#repairCategory">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Repair"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Categoria di opera</rdfs:label>
+    <rdfs:label xml:lang="en">Repair category</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#isLotOf">
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <rdfs:comment xml:lang="it">Questa proprietà collega i lotti al contratto.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property connects the Lot to the Contract.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">E' lotto di</rdfs:label>
+    <rdfs:label xml:lang="en">Is lot of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#iterStepType">
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Elenco dei passi dell'iter previsti per l'attuazione dell'intervento.</rdfs:comment>
+    <rdfs:label xml:lang="it">Passi dell'iter</rdfs:label>
+    <rdfs:label xml:lang="en">Iter step type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#typeOfDataStation">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#MeasureStation"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Tipologia di stazione di misura.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Type of Data Station.</rdfs:comment>
+    <rdfs:label xml:lang="it">Tipo di stazione di misura</rdfs:label>
+    <rdfs:label xml:lang="en">Type of Data Station</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#hasIter">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <rdfs:comment xml:lang="it">Questa proprietà collega il Contratto con il suo iter burocratico.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="en">This property connects the class Contract with its formal procedural steps.</rdfs:comment>
+    <rdfs:label xml:lang="it">Ha iter</rdfs:label>
+    <rdfs:label xml:lang="en">Has iter</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#contractingAuthority">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#AuthorityKind"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Questa proprietà associa il contratto con un'entità generica coinvolta (con un ruolo definito) nel contratto stesso.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property connects class contract with a generic entity involved, with specific role, in the contract.</rdfs:comment>
+    <rdfs:label xml:lang="it">Ente legato all'intervento</rdfs:label>
+    <rdfs:label xml:lang="en">Contracting authority</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#repairType">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Repair"/>
+    <rdfs:comment xml:lang="it">Questa proprietà collega l'opera al concetto del vocabolario controllato.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property connects the Repair to a concept of a specific vocabulary.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Tipologia di opera</rdfs:label>
+    <rdfs:label xml:lang="en">Repair type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#operationalStatus">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#MeasureStation"/>
+    <rdfs:comment xml:lang="it">Indica lo stato operativo della stazione di misura (es. Operational, Ceased, ecc.).</rdfs:comment>
+    <rdfs:comment xml:lang="en">It indicates the operational status of the measure station (Operational, Ceased, etc.).</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Stato Operativo</rdfs:label>
+    <rdfs:label xml:lang="en">Operational Status</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#instabilityRelatedTo">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Instability"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Questa proprietà collega la classe Dissesto al contratto di finanziamento relativo.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property connects the class Instability to the contract.</rdfs:comment>
+    <rdfs:label xml:lang="it">Dissesto relativo a</rdfs:label>
+    <rdfs:label xml:lang="en">Instability related to</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#hasStep">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#LotStep"/>
+    <rdfs:comment xml:lang="it">Questa proprietà collega il concetto di Iter con i passi relativi</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property connects the Concept of the formal procedure with its relative steps.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Ha passo di iter</rdfs:label>
+    <rdfs:label xml:lang="en">Has step</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#generatedBy">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#MeasurementCollection"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#Instrument"/>
+    <rdfs:comment xml:lang="it">Individua lo strumento che ha generato la misura.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Instruments that generate the measure.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Generato da</rdfs:label>
+    <rdfs:label xml:lang="en">Generated by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#certainty">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#MeasurementCollection"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Livello di validazione del dato. Vengono definiti su scala numerica a partire da 0 (dati grezzi). Es. L0, L1, L2, ecc.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Certainty level of the observed data. It is defined as numerical scale starting from 0 (raw data). Eg L0, L1, L2, etc.</rdfs:comment>
+    <rdfs:label xml:lang="it">Validazione</rdfs:label>
+    <rdfs:label xml:lang="en">Certainty</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#repairGroup">
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Gruppo di opera</rdfs:label>
+    <rdfs:label xml:lang="en">Repair group</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/core#secondaryGeographicalFeature">
+    <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/core#Place"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <rdfs:comment xml:lang="it">Luogo secondario legato ad un intervento di dissesto.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Secondary geographical feature of a Contract</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Luogo secondario</rdfs:label>
+    <rdfs:label xml:lang="en">Secondary geographical feature</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#manufacturer">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Model"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Produttore e modello della stazione di misura.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Manufacter and model of the measure station.</rdfs:comment>
+    <rdfs:label xml:lang="it">Produttore</rdfs:label>
+    <rdfs:label xml:lang="en">Manufacturer</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#officialInstabilityType">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <rdfs:comment xml:lang="it">Tipologia di dissesto indicata nel decreto di finanziamento.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="en">Type of instability declared in the decree</rdfs:comment>
+    <rdfs:label xml:lang="it">Dissesto indicato nel decreto</rdfs:label>
+    <rdfs:label xml:lang="en">Official instability type</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#levellingTime">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Model"/>
+    <rdfs:comment xml:lang="it">Anno in cui è stata effettuata l'operazione di livellazione.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Time (Year) of the levelling activities.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Anno di livellazione</rdfs:label>
+    <rdfs:label xml:lang="en">Levelling Time</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#sensorModel">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Instrument"/>
+    <rdfs:comment xml:lang="en">Sensor/Instrument Model.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Modello del sensore/strumento.</rdfs:comment>
+    <rdfs:label xml:lang="it">Modello del sensore</rdfs:label>
+    <rdfs:label xml:lang="en">Sensor Model</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#waveHeightReported">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Instrument"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Parametri di altezza d'onda restituiti dallo strumento.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Wave height parameters reported by the instrument.</rdfs:comment>
+    <rdfs:label xml:lang="it">Output di Altezza d'onda</rdfs:label>
+    <rdfs:label xml:lang="en">Wave Height Reported</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#structure">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Model"/>
+    <rdfs:comment xml:lang="en">Material or building type of the measure station.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Materiale o tipologia costruttiva della stazione di misura.</rdfs:comment>
+    <rdfs:label xml:lang="it">Struttura</rdfs:label>
+    <rdfs:label xml:lang="en">Structure</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#positioningSystem">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Model"/>
+    <rdfs:comment xml:lang="en">Positioning System installed on the measure station.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Sistemi di georeferenziazione presenti nella stazione di misura.</rdfs:comment>
+    <rdfs:label xml:lang="it">Georeferenziazione</rdfs:label>
+    <rdfs:label xml:lang="en">Positioning System</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#instabilityGroup">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Instability"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Raggruppamento di dissesto</rdfs:label>
+    <rdfs:label xml:lang="en">Instability group</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#cup">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <rdfs:comment xml:lang="it">E' costituito da una stringa alfanumerica di 15 caratteri, che accompagna ciascun progetto di investimento pubblico a partire dalla fase formale di assegnazione delle risorse.</rdfs:comment>
+    <rdfs:comment xml:lang="en">It consists of a string of 15 alphanumeric characters, which accompanies each contract from the stage of formal resource allocation.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Codice Unico di Progetto</rdfs:label>
+    <rdfs:label xml:lang="en">Project Unit Code</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#MeasureStation"/>
+    <rdfs:comment xml:lang="it">Codice identificativo della stazione individuato da organismi nazionali o internazionali.</rdfs:comment>
+    <rdfs:comment xml:lang="en">ID code of the measurement station as assigned by national or international organizations.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Codice</rdfs:label>
+    <rdfs:label xml:lang="en">Code</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#sigWaveCount">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#MeasureStation"/>
+    <rdfs:comment xml:lang="it"> Conteggio delle osservazioni ondametriche nel periodo di funzionamento.</rdfs:comment>
+    <rdfs:comment xml:lang="en"> Number of wave observations during the operational period.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Conteggio</rdfs:label>
+    <rdfs:label xml:lang="en">Count</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#parameterReported">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Instrument"/>
+    <rdfs:comment xml:lang="it">Insieme di grandezze osservate dallo strumento.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Set of parameters measured by the instrument.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Parametri riportati</rdfs:label>
+    <rdfs:label xml:lang="en">Parameters reported</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#hullType">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Model"/>
+    <rdfs:comment xml:lang="it">Tipologia dello scafo  della stazione di misura.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Hull type of the measure station.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Scafo</rdfs:label>
+    <rdfs:label xml:lang="en">Hull Type</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#diameter">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Model"/>
+    <rdfs:comment xml:lang="it">Diametro della stazione di misura.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Diameter of the measure station.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Diametro</rdfs:label>
+    <rdfs:label xml:lang="en">Diameter</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#averagingPeriod">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Instrument"/>
+    <rdfs:comment xml:lang="it">Frequenza di restituzione del dato (in Minuti o Ore)</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="en">Frequency of final outputs (in Minutes or Hours)</rdfs:comment>
+    <rdfs:label xml:lang="it">Restituzione</rdfs:label>
+    <rdfs:label xml:lang="en">Averaging Period</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#measurementPeriod">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#IndicatorCollection"/>
+          <owl:Class rdf:about="https://w3id.org/italia/env/onto/core#MeasurementCollection"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Intervallo di tempo associato alla misura (Mese-Anno).</rdfs:comment>
+    <rdfs:comment xml:lang="en">Measurement Period related to the measure (Month-Year).</rdfs:comment>
+    <rdfs:label xml:lang="it">Periodo di misurazione</rdfs:label>
+    <rdfs:label xml:lang="en">Measurement Period</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#isPrimary">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Instrument"/>
+    <rdfs:comment xml:lang="it">Proprietà booleana che individua lo strumento primario (TRUE) che restituisce la misura e gli eventuali strumenti secondari (FALSE) utilizzati in caso di malfunzionamenti o per backup e validazione.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="en">Boolean value identifing the primary measuring instrument (TRUE) and any secondary instruments (FALSE) used in case of malfunctions or for backup and validation.</rdfs:comment>
+    <rdfs:label xml:lang="it">E' strumento primario</rdfs:label>
+    <rdfs:label xml:lang="en">Is primary instruments</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#mooringType">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Model"/>
+    <rdfs:comment xml:lang="it">Tipologia di ormeggio della stazione di misura.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Mooring type of the measure station.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Ormeggio</rdfs:label>
+    <rdfs:label xml:lang="en">Mooring Type</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#wavePeriodReported">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Instrument"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Parametri di periodo dell'onda restituiti dallo strumento.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Wave period parameters reported by the instrument.</rdfs:comment>
+    <rdfs:label xml:lang="it">Output di Periodo dell'onda</rdfs:label>
+    <rdfs:label xml:lang="en">Wave Period Reported</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#location">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Model"/>
+    <rdfs:comment xml:lang="it">Localizzazione della stazione di misura (nel caso di mareografi è da intendersi in relazione allo spazio di mare antistante).</rdfs:comment>
+    <rdfs:comment xml:lang="en">Place in which the station is installed (in the case of tide gauges this place is related to the sea area in front of the station).</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Localizzazione</rdfs:label>
+    <rdfs:label xml:lang="en">Location</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#directionalResolution">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Instrument"/>
+    <rdfs:comment xml:lang="it">Risoluzione dei parametri direzionali in gradi (360 se Omni-direzionale).</rdfs:comment>
+    <rdfs:comment xml:lang="en">Directional resolution in degrees (360 if Omni-directional).</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Risoluzione direzionale</rdfs:label>
+    <rdfs:label xml:lang="en">Directional resolution</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#wmoSensorCode">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Instrument"/>
+    <rdfs:comment xml:lang="it">Associa lo strumento al relativo concept definito da WMO.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="en">It connects the intrument with the analogous concept as defined by WMO.</rdfs:comment>
+    <rdfs:label xml:lang="it">Wmo Sensor Code</rdfs:label>
+    <rdfs:label xml:lang="en">Wmo Sensor Code</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#role">
+    <rdfs:comment xml:lang="it">Ruolo dell'ente nella classe Authority kind</rdfs:comment>
+    <rdfs:comment xml:lang="en">The role of Entity in Authority kind class.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Ruolo</rdfs:label>
+    <rdfs:label xml:lang="en">Role</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#AuthorityKind"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#sensorSamplingFrequency">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Instrument"/>
+    <rdfs:comment xml:lang="it">Frequenza di campionamento dello strumento (in hertz).</rdfs:comment>
+    <rdfs:comment xml:lang="en">Observation sampling of the instrumen (in hertz).</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Frequenza di campionamento</rdfs:label>
+    <rdfs:label xml:lang="en">Sensor Sampling Frequency</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#isDistrictAuthority">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#AuthorityKind"/>
+    <rdfs:comment xml:lang="it">Booleano che indica se l'autorità svolge anche il ruolo di autorità di distretto.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Boolean property that states if the authority act as district authority.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">E' autorità di distretto</rdfs:label>
+    <rdfs:label xml:lang="en">Is district authority</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#amountFinanced">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Contract"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Importo finanziato (in euro)</rdfs:comment>
+    <rdfs:comment xml:lang="en">Amount financed (in Euros)</rdfs:comment>
+    <rdfs:label xml:lang="it">Importo finanziato</rdfs:label>
+    <rdfs:label xml:lang="en">Amount financed</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#levelling">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Model"/>
+    <rdfs:comment xml:lang="it">Tipologia di operazioni di livellazione utilizzati per la definizione del livello di riferimento.</rdfs:comment>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="en">Levelling activity useful to the definition of the referring level.</rdfs:comment>
+    <rdfs:label xml:lang="it">Livellazione</rdfs:label>
+    <rdfs:label xml:lang="en">Levelling</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#phase">
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:label xml:lang="it">Fase</rdfs:label>
+    <rdfs:label xml:lang="en">Phase</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/core#measurementHeight">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/core#Model"/>
+    <ns2:term_status>stable</ns2:term_status>
+    <rdfs:comment xml:lang="it">Altezza dello strumento rispetto al livello di riferimento.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Instrument height above the reference level.</rdfs:comment>
+    <rdfs:label xml:lang="it">Altezza di misurazione</rdfs:label>
+    <rdfs:label xml:lang="en">Measurement Height</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+</rdf:RDF>
