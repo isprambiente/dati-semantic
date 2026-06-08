@@ -1,0 +1,361 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
+
+############################################################
+# 1. CONCEPT SCHEME + DCAT‑AP_IT METADATA
+############################################################
+
+<https://w3id.org/italia/env/vocab/climate/indicators>
+  a skos:ConceptScheme,
+    dcatapit:Dataset,
+    adms:Asset,
+    dcat:Dataset ;
+  dcterms:title "Vocabolario degli indicatori climatici"@it ,
+            "Vocabulary of climate indicators"@en ;
+  rdfs:label "Vocabolario degli indicatori climatici"@it ,
+             "Vocabulary of climate indicators"@en ;
+  dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  dcterms:description "Vocabolario controllato degli indicatori climatici (valori normali, clima recente, periodi) utilizzato per la pubblicazione dei dati climatici."@it ,
+                  "Controlled vocabulary of climate indicators (normal values, recent climate, periods) used for publishing climate data."@en ;
+  rdfs:comment "Vocabolario controllato degli indicatori climatici (valori normali, clima recente, periodi) utilizzato per la pubblicazione dei dati climatici."@it ,
+                  "Controlled vocabulary of climate indicators (normal values, recent climate, periods) used for publishing climate data."@en ;                  
+  dcterms:identifier "https://w3id.org/italia/env/vocab/climate/indicators" ;
+  dcterms:language <http://publications.europa.eu/resource/authority/language/ITA>,
+               <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dcterms:issued "2026-06-08"^^xsd:date ;
+  dcterms:modified "2026-06-08"^^xsd:date ;
+  dcterms:creator <https://w3id.org/italia/env/ld/common/organisation/001> ;
+  dcterms:publisher <https://w3id.org/italia/env/ld/common/organisation/001> ;
+  dcterms:rightsHolder <https://w3id.org/italia/env/ld/common/organisation/001> ;
+  owl:versionInfo "Version 1.0 - June 2026 - First publication of the Climate Indicators controlled vocabulary"@en ,
+                  "Versione 1.0 - Giugno 2026 - Prima pubblicazione del vocabolario controllato degli indicatori climatici"@it ;
+  dcterms:type <http://purl.org/adms/assettype/Taxonomy> ;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+  xkos:numberOfLevels "2" ;
+  ndc:keyConcept "indicators" ;
+  dcterms:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+  dcat:contactPoint <https://w3id.org/italia/env/ld/common/organization/001-LD> ;
+  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/climate-indicators-RDF-TURTLE>,
+                    <https://w3id.org/italia/env/ld/common/distribution/climate-indicators-CSV> ;
+  dcat:keyword "climate"@en ,
+               "clima"@it ,
+               "indicatori climatici"@it ,
+               "climate indicators"@en ;
+  dcterms:subject <http://eurovoc.europa.eu/6384> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+  schema:creator 
+    <https://w3id.org/italia/env/ld/common/person/0000-0003-0998-9751>,   
+    <https://w3id.org/italia/env/ld/common/person/0000-0002-6454-2859>,   
+    <https://w3id.org/italia/env/ld/common/person/0009-0008-4292-8962> ;
+  skos:hasTopConcept
+        <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> ,
+        <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> .
+
+<https://w3id.org/italia/env/ld/common/distribution/climate-indicators-CSV>
+    a dcatapit:Distribution,
+      dcat:Distribution ;
+    dcterms:description "This is the CSV distribution of the Linked Open Data dataset of the controlled vocabulary of climate indicators"@en,
+                       "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato degli indicatori climatici"@it ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "CSV distribution of the controlled vocabulary of climate indicators"@en,
+                  "Distribuzione CSV del vocabolario controllato degli indicatori climatici"@it ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/climate/indicators> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/climate/indicators/indicators.csv> .
+
+<https://w3id.org/italia/env/ld/common/distribution/climate-indicators-RDF-TURTLE>
+    a dcatapit:Distribution,
+      dcat:Distribution ;
+    dcterms:description "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary of climate indicators"@en,
+                       "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato degli indicatori climatici"@it ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "RDF/Turtle distribution of the controlled vocabulary of climate indicators"@en,
+                  "Distribuzione RDF/Turtle del vocabolario controllato degli indicatori climatici"@it ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/climate/indicators> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/climate/indicators/indicators.ttl> .
+
+<https://w3id.org/italia/env/ld/common/person/0000-0002-6454-2859> a dcterms:Agent,
+        prov:Person,
+        foaf:Person,
+        schema:Person ;
+    rdfs:label "Giulio Settanta" ;
+    owl:sameAs <https://orcid.org/0000-0002-6454-2859> ;
+    foaf:familyName "Settanta" ;
+    foaf:givenName "Giulio" ;
+    schema:identifier <https://orcid.org/0000-0002-6454-2859> .
+
+<https://w3id.org/italia/env/ld/common/person/0000-0003-0998-9751> a dcterms:Agent,
+        prov:Person,
+        foaf:Person,
+        schema:Person ;
+    rdfs:label "Elio Giulianelli" ;
+    owl:sameAs <https://orcid.org/0000-0003-0998-9751> ;
+    foaf:familyName "Giulianelli" ;
+    foaf:givenName "Elio" ;
+    schema:identifier <https://orcid.org/0000-0003-0998-9751> .   
+
+<https://w3id.org/italia/env/ld/common/person/0009-0008-4292-8962> a dcterms:Agent,
+        prov:Person,
+        foaf:Person,
+        schema:Person ;
+    rdfs:label "Luisa Vaccaro" ;
+    owl:sameAs <https://orcid.org/0009-0008-4292-8962> ;
+    foaf:familyName "Vaccaro" ;
+    foaf:givenName "Luisa" ;
+    schema:identifier <https://orcid.org/0009-0008-4292-8962> .       
+
+<https://w3id.org/italia/env/ld/common/organisation/001> a dcatapit:Agent,
+        owl:NamedIndividual,
+        vcard:Organization,
+        org:Organization,
+        foaf:Agent,
+        top:Organisation ;
+    dcterms:identifier "ispra_rm" ;
+    vcard:fn "Italian National Institute for Environmental Protection and Research"@en,
+        "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ;
+    foaf:name "Italian Institute for Environmental Protection and Research"@en,
+        "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it .    
+
+<https://w3id.org/italia/env/ld/common/organization/001-LD> rdf:type owl:NamedIndividual ,
+    dcatapit:Organization ,
+    vcard:Kind ,
+    vcard:Organization ;
+    vcard:fn "DG-SINA - Progetto Linked ISPRA" ;
+    vcard:hasEmail <mailto:assistenza-lod@isprambiente.it> .        
+
+############################################################
+# 2. SKOS CONCEPTS — URI ISPRA ESPLICITE
+############################################################
+
+########## TOP CONCEPTS ##########
+
+<https://w3id.org/italia/env/vocab/climate/indicators/normal-values>
+    a skos:Concept ;
+    dcterms:identifier "normal-values" ;
+    skos:prefLabel "Valori normali - Temperatura e precipitazione"@it ;
+    skos:prefLabel "Normal values - Temperature and precipitation"@en ;
+    skos:definition "Valori medi di una variabile climatica (come la temperatura e la precipitazione in relazione al periodo e alla regione in cui il fenomeno si manifesta) calcolati su un periodo di riferimento trentennale definito dalla WMO. Ogni 10 anni viene aggiornato il periodo di riferimento"@it ;
+    skos:definition "Mean values of a climate variable (such as temperature and precipitation, relative to the time period and region in which the phenomenon occurs) calculated over a 30-year reference period defined by the WMO. The reference period is updated every 10 years."@en ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/recent-climate>
+    a skos:Concept ;
+    dcterms:identifier "recent-climate" ;
+    skos:prefLabel "Clima recente - Temperatura e precipitazione"@it ;
+    skos:prefLabel "Recent climate - Temperature and precipitation"@en ;
+    skos:definition "Indicatori climatici di una variabile climatica (come la temperatura e la precipitazione in relazione al periodo e alla regione in cui il fenomeno si manifesta) riferiti agli ultimi anni disponibili, confrontabili con il più recente periodo di riferimento trentennale definito dalla WMO."@it ;
+    skos:definition "Climate indicators for a specific climate variable (such as temperature and precipitation, as they relate to the time period and region in which the phenomenon occurs), based on the most recent available data, and comparable to the most recent 30-year reference period defined by the WMO."@en ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+########## VARIABLES ##########
+
+<https://w3id.org/italia/env/vocab/climate/indicators/mean-temperature>
+    a skos:Concept ;
+    dcterms:identifier "mean-temperature" ;
+    skos:prefLabel "Temperatura media"@it ;
+    skos:prefLabel "Mean temperature"@en ;
+    skos:definition "Temperatura media calcolata come valore climatologico su un periodo di riferimento trentennale definito dalla WMO. Unità: °C."@it ;
+    skos:definition "Mean temperature computed as a climatological value over a WMO-defined 30‑year reference period. Unit: °C."@en ;
+    skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/max-temperature>
+    a skos:Concept ;
+    dcterms:identifier "max-temperature" ;
+    skos:prefLabel "Temperatura massima"@it ;
+    skos:prefLabel "Maximum temperature"@en ;
+    skos:definition "Temperatura massima calcolata come valore climatologico su un periodo di riferimento trentennale definito dalla WMO. Unità: °C."@it ;
+    skos:definition "Maximum temperature computed as a climatological value over a WMO-defined 30‑year reference period. Unit: °C."@en ;
+    skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/min-temperature>
+    a skos:Concept ;
+    dcterms:identifier "min-temperature" ;
+    skos:prefLabel "Temperatura minima"@it ;
+    skos:prefLabel "Minimum temperature"@en ;
+    skos:definition "Temperatura minima calcolata come valore climatologico su un periodo di riferimento trentennale definito dalla WMO. Unità: °C."@it ;
+    skos:definition "Minimum temperature computed as a climatological value over a WMO-defined 30‑year reference period. Unit: °C."@en ;
+    skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/cumulative-precipitation>
+    a skos:Concept ;
+    dcterms:identifier "cumulative-precipitation" ;
+    skos:prefLabel "Precipitazione cumulata"@it ;
+    skos:prefLabel "Cumulative precipitation"@en ;
+    skos:definition "Totale delle precipitazioni cumulate calcolato come valore climatologico su un periodo di riferimento trentennale definito dalla WMO. Unità: mm."@it ;
+    skos:definition "Total accumulated precipitation computed as a climatological value over a WMO-defined 30‑year reference period. Unit: mm."@en ;
+    skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+########## TYPES (GENERAL) ##########
+
+############################################################
+# ANOMALIE SPECIFICHE
+############################################################
+
+<https://w3id.org/italia/env/vocab/climate/indicators/mean-temperature-anomaly>
+    a skos:Concept ;
+    dcterms:identifier "mean-temperature-anomaly" ;
+    skos:prefLabel "Anomalia della temperatura media"@it ;
+    skos:prefLabel "Mean temperature anomaly"@en ;
+    skos:definition "Deviazione del valore attuale della temperatura media rispetto al più recente periodo di riferimento trentennale definito dalla WMO. Unità: °C."@it ;
+    skos:definition "Deviation of actual mean temperature from the latest 30‑year WMO reference period. Unit: °C."@en ;
+    skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/max-temperature-anomaly>
+    a skos:Concept ;
+    dcterms:identifier "max-temperature-anomaly" ;
+    skos:prefLabel "Anomalia della temperatura massima"@it ;
+    skos:prefLabel "Maximum temperature anomaly"@en ;
+    skos:definition "Deviazione del valore attuale della temperatura massima rispetto al più recente periodo di riferimento trentennale definito dalla WMO. Unità: °C."@it ;
+    skos:definition "Deviation of actual maximum temperature from the latest 30‑year WMO reference period. Unit: °C."@en ;
+    skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/min-temperature-anomaly>
+    a skos:Concept ;
+    dcterms:identifier "min-temperature-anomaly" ;
+    skos:prefLabel "Anomalia della temperatura minima"@it ;
+    skos:prefLabel "Minimum temperature anomaly"@en ;
+    skos:definition "Deviazione del valore attuale della temperatura minima rispetto al più recente periodo di riferimento trentennale definito dalla WMO. Unità: °C."@it ;
+    skos:definition "Deviation of actual minimum temperature from the latest 30‑year WMO reference period. Unit: °C."@en ;
+    skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/precipitation-anomaly>
+    a skos:Concept ;
+    dcterms:identifier "precipitation-anomaly" ;
+    skos:prefLabel "Anomalia della precipitazione cumulata"@it ;
+    skos:prefLabel "Cumulative precipitation anomaly"@en ;
+    skos:definition "Deviazione del valore attuale della precipitazione cumulata rispetto al più recente periodo di riferimento trentennale definito dalla WMO. Unità: mm."@it ;
+    skos:definition "Deviation of actual cumulative precipitation from the latest 30‑year WMO reference period. Unit: mm."@en ;
+    skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/mean-temperature-absolute>
+    a skos:Concept ;
+    dcterms:identifier "mean-temperature-absolute" ;
+    skos:prefLabel "Valore attuale della temperatura media"@it ;
+    skos:prefLabel "Actual mean temperature"@en ;
+    skos:definition "Valore attuale della temperatura media (tipicamente per gli ultimi anni). Unità: °C."@it ;
+    skos:definition "Actual value of the mean temperature (typically for recent years). Unit: °C."@en ;
+    skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/max-temperature-absolute>
+    a skos:Concept ;
+    dcterms:identifier "max-temperature-absolute" ;
+    skos:prefLabel "Valore attuale della temperatura massima"@it ;
+    skos:prefLabel "Actual maximum temperature"@en ;
+    skos:definition "Valore attuale della temperatura massima (tipicamente per gli ultimi anni). Unità: °C."@it ;
+    skos:definition "Actual value of the maximum temperature (typically for recent years). Unit: °C."@en ;
+    skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/min-temperature-absolute>
+    a skos:Concept ;
+    dcterms:identifier "min-temperature-absolute" ;
+    skos:prefLabel "Valore attuale della temperatura minima"@it ;
+    skos:prefLabel "Actual minimum temperature"@en ;
+    skos:definition "Valore attuale della temperatura minima (tipicamente per gli ultimi anni). Unità: °C."@it ;
+    skos:definition "Actual value of the minimum temperature (typically for recent years). Unit: °C."@en ;
+    skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/precipitation-absolute>
+    a skos:Concept ;
+    dcterms:identifier "precipitation-absolute" ;
+    skos:prefLabel "Valore attuale della precipitazione cumulata"@it ;
+    skos:prefLabel "Actual cumulative precipitation"@en ;
+    skos:definition "Valore attuale della precipitazione cumulata (tipicamente per gli ultimi anni). Unità: mm."@it ;
+    skos:definition "Actual value of the cumulative precipitation (typically for recent years). Unit: mm."@en ;
+    skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+########## PERIODS ##########
+
+<https://w3id.org/italia/env/vocab/climate/indicators/period-1961-1990>
+    a skos:Concept ;
+    dcterms:identifier "period-1961-1990" ;
+    skos:prefLabel "1961-1990"@it ;
+    skos:prefLabel "1961-1990"@en ;
+    skos:definition "Primo trentennio di riferimento WMO utilizzato per il calcolo dei valori normali climatici."@it ;
+    skos:definition "First WMO reference 30‑year period used for computing climatic normal values."@en ;
+    skos:related <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/period-1971-2000>
+    a skos:Concept ;
+    dcterms:identifier "period-1971-2000" ;
+    skos:prefLabel "1971-2000"@it ;
+    skos:prefLabel "1971-2000"@en ;
+    skos:definition "Secondo trentennio di riferimento WMO utilizzato per il calcolo dei valori normali climatici."@it ;
+    skos:definition "Second WMO reference 30‑year period used for computing climatic normal values."@en ;
+    skos:related <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/period-1981-2010>
+    a skos:Concept ;
+    dcterms:identifier "period-1981-2010" ;
+    skos:prefLabel "1981-2010"@it ;
+    skos:prefLabel "1981-2010"@en ;
+    skos:definition "Terzo trentennio di riferimento WMO utilizzato per il calcolo dei valori normali climatici."@it ;
+    skos:definition "Third WMO reference 30‑year period used for computing climatic normal values."@en ;
+    skos:related <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/period-1991-2020>
+    a skos:Concept ;
+    dcterms:identifier "period-1991-2020" ;
+    skos:prefLabel "1991-2020"@it ;
+    skos:prefLabel "1991-2020"@en ;
+    skos:definition "Quarto e più recente trentennio di riferimento WMO utilizzato sia per il calcolo dei valori normali sia come periodo di riferimento per le anomalie del clima recente."@it ;
+    skos:definition "Fourth and most recent WMO reference 30‑year period used both for computing climatic normal values and as the reference period for recent‑climate anomalies."@en ;
+    skos:related <https://w3id.org/italia/env/vocab/climate/indicators/normal-values>,
+                 <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> .
+
+########## AREA LEVELS ##########
+
+<https://w3id.org/italia/env/vocab/climate/indicators/national-aggregation>
+    a skos:Concept ;
+    dcterms:identifier "national-aggregation" ;
+    skos:prefLabel "Aggregazione nazionale"@it ;
+    skos:prefLabel "National aggregation"@en ;
+    skos:definition "Livello di aggregazione dei dati climatici riferito all'intero territorio nazionale."@it ;
+    skos:definition "Aggregation level of climate data referring to the entire national territory."@en ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/regional-aggregation>
+    a skos:Concept ;
+    dcterms:identifier "regional-aggregation" ;
+    skos:prefLabel "Aggregazione regionale"@it ;
+    skos:prefLabel "Regional aggregation"@en ;
+    skos:definition "Livello di aggregazione dei dati climatici riferito alle regioni."@it ;
+    skos:definition "Aggregation level of climate data referring to regions."@en ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+
+<https://w3id.org/italia/env/vocab/climate/indicators/provincial-aggregation>
+    a skos:Concept ;
+    dcterms:identifier "provincial-aggregation" ;
+    skos:prefLabel "Aggregazione provinciale"@it ;
+    skos:prefLabel "Provincial aggregation"@en ;
+    skos:definition "Livello di aggregazione dei dati climatici riferito alle province."@it ;
+    skos:definition "Aggregation level of climate data referring to provinces."@en ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
+

@@ -1,0 +1,940 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://w3id.org/italia/env/vocab/cem/indicators> a skos:ConceptScheme ,
+	dcat:Dataset , dcatapit:Dataset , adms:Asset ;
+	dcterms:modified	"2026-06-08"^^xsd:date ;
+	rdfs:label	"Vocabulary of Electromagnetic Field (EMF) Indicators"@en , "Vocabolario degli indicatori dei campi elettromagnetici (CEM)"@it ;
+	owl:versionInfo	"Versione 1.0 - Giugno 2026"@it , "Version 1.0 - June 2026"@en ;
+	dcterms:type	<http://purl.org/adms/assettype/Taxonomy> ;
+	dcterms:title	"Vocabulary of Electromagnetic Field (EMF) Indicators"@en , "Vocabolario degli indicatori dei campi elettromagnetici (CEM)"@it ;
+	dcterms:description	"Vocabolario controllato degli indicatori relativi ai campi elettromagnetici (CEM), comprendente pressioni, controlli e superamenti dei limiti per diverse tipologie di sorgenti (RTV, SRB, ELF)."@it , "Controlled vocabulary of indicators related to electromagnetic fields (EMF), including pressures, controls and exceedances for different source types (RTV, BTS, ELF)."@en ;
+	rdfs:comment "Vocabolario controllato degli indicatori relativi ai campi elettromagnetici (CEM), comprendente pressioni, controlli e superamenti dei limiti per diverse tipologie di sorgenti (RTV, SRB, ELF)."@it , "Controlled vocabulary of indicators related to electromagnetic fields (EMF), including pressures, controls and exceedances for different source types (RTV, BTS, ELF)."@en ;
+	dcterms:identifier	"https://w3id.org/italia/env/vocab/cem/indicators" ;
+	dcterms:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+	dcat:contactPoint <https://w3id.org/italia/env/ld/common/organization/001-LD> ;
+	dcterms:creator <https://w3id.org/italia/env/ld/common/organisation/001> ;
+	dcterms:publisher <https://w3id.org/italia/env/ld/common/organisation/001> ;
+	dcterms:rightsHolder <https://w3id.org/italia/env/ld/common/organisation/001> ;
+	dcterms:issued	"2026-06-08"^^xsd:date ;
+	dcterms:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+	dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+	xkos:numberOfLevels	"3" ;
+	skos:hasTopConcept	<https://w3id.org/italia/env/vocab/cem/indicators/pressures> , <https://w3id.org/italia/env/vocab/cem/indicators/controls> , <https://w3id.org/italia/env/vocab/cem/indicators/exceedances> ;
+	adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+	dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/cem-indicators-RDF-TURTLE> ,
+			<https://w3id.org/italia/env/ld/common/distribution/cem-indicators-CSV> ;
+	dcat:keyword "campi elettromagnetici"@it , "monitoraggio ambientale"@it , "inquinamento elettromagnetico"@it , "indicatori"@it , "linee elettriche"@it , "stazioni radio base"@it ,
+	             "electromagnetic fields"@en , "environmental monitoring"@en , "electromagnetic pollution"@en , "indicators"@en , "power lines"@en , "base transceiver station"@en ;
+	dcterms:subject <http://eurovoc.europa.eu/3140> , # sorveglianza dell'ambiente
+	<http://eurovoc.europa.eu/4424> ,       # telecomunicazione
+    <http://eurovoc.europa.eu/4507> ;       # trasporto d'energia
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ,
+		<http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+	schema:creator <https://w3id.org/italia/env/ld/common/person/0009-0003-4059-3816>,
+        <https://w3id.org/italia/env/ld/common/person/0009-0002-0095-9599>,
+        <https://w3id.org/italia/env/ld/common/person/0009-0008-4292-8962>,
+        <https://w3id.org/italia/env/ld/common/person/0000-0003-0998-9751> ;
+	ndc:keyConcept	"indicators" .
+
+<https://w3id.org/italia/env/ld/common/distribution/cem-indicators-RDF-TURTLE> a dcatapit:Distribution ,
+    dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "Distribuzione RDF/Turtle del vocabolario controllato degli indicatori dei campi elettromagnetici (CEM)"@it ,
+        "RDF/Turtle distribution of the controlled vocabulary of Electromagnetic Field (EMF) Indicators"@en ;
+    dcterms:description "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato degli indicatori dei campi elettromagnetici (CEM)"@it ,
+        "This is the RDF/Turtle distribution of the Linked Open Data dataset of the controlled vocabulary of Electromagnetic Field (EMF) Indicators"@en ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/cem/indicators> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/cem/indicators/indicators.ttl> .
+
+<https://w3id.org/italia/env/ld/common/distribution/cem-indicators-CSV> a dcatapit:Distribution ,
+    dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    dcterms:title "Distribuzione CSV del vocabolario controllato degli indicatori dei campi elettromagnetici (CEM)"@it ,
+        "CSV distribution of the controlled vocabulary of Electromagnetic Field (EMF) Indicators"@en ;
+    dcterms:description "Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario controllato degli indicatori dei campi elettromagnetici (CEM)"@it ,
+        "This is the CSV distribution of the Linked Open Data dataset of the controlled vocabulary of Electromagnetic Field (EMF) Indicators"@en ;
+    dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/cem/indicators> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/cem/indicators/indicators.csv> .
+
+<https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
+        dcatapit:Agent ,
+        vcard:Organization ,
+        org:Organization ,
+        foaf:Agent ,
+        top:Organisation ;
+    dcterms:identifier "ispra_rm" ;
+    vcard:fn "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+        "Italian National Institute for Environmental Protection and Research"@en ;
+    foaf:name "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+        "Italian Institute for Environmental Protection and Research"@en .
+
+<https://w3id.org/italia/env/ld/common/organization/001-LD> rdf:type owl:NamedIndividual ,
+        dcatapit:Organization ,
+        vcard:Kind ,
+        vcard:Organization ;
+    vcard:fn "DG-SINA - Progetto Linked ISPRA" ;
+    vcard:hasEmail <mailto:assistenza-lod@isprambiente.it> .
+
+<https://w3id.org/italia/env/ld/common/person/0000-0003-0998-9751> a dcterms:Agent,
+        prov:Person,
+        foaf:Person,
+        schema:Person ;
+    rdfs:label "Elio Giulianelli" ;
+    owl:sameAs <https://orcid.org/0000-0003-0998-9751> ;
+    foaf:familyName "Giulianelli" ;
+    foaf:givenName "Elio" ;
+    schema:identifier <https://orcid.org/0000-0003-0998-9751> .
+
+<https://w3id.org/italia/env/ld/common/person/0009-0008-4292-8962> a dcterms:Agent,
+        prov:Person,
+        foaf:Person,
+        schema:Person ;
+    rdfs:label "Luisa Vaccaro" ;
+    owl:sameAs <https://orcid.org/0009-0008-4292-8962> ;
+    foaf:familyName "Vaccaro" ;
+    foaf:givenName "Luisa" ;
+    schema:identifier <https://orcid.org/0009-0008-4292-8962> .
+
+<https://w3id.org/italia/env/ld/common/person/0009-0002-0095-9599> a dcterms:Agent,
+        prov:Person,
+        foaf:Person,
+        schema:Person ;
+    rdfs:label "Gabriele Bellabarba" ;
+    owl:sameAs <https://orcid.org/0009-0002-0095-9599> ;
+    foaf:familyName "Bellabarba" ;
+    foaf:givenName "Gabriele" ;
+    schema:identifier <https://orcid.org/0009-0002-0095-9599> .	
+
+
+<https://w3id.org/italia/env/ld/common/person/0009-0003-4059-3816> a dcterms:Agent,
+        prov:Person,
+        foaf:Person,
+        schema:Person ;
+    rdfs:label "Maria Logorelli" ;
+    owl:sameAs <https://orcid.org/0009-0003-4059-3816> ;
+    foaf:familyName "Logorelli" ;
+    foaf:givenName "Maria" ;
+    schema:identifier <https://orcid.org/0009-0003-4059-3816> .
+
+################################################################################
+####################### INDICATORI PRESSIONI ###################################
+################################################################################
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pressures>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:prefLabel	"Pressures"@en , "Pressioni"@it ;
+	dcterms:identifier	"pressures" ;
+	skos:definition	"Indicatori relativi allo stato delle sorgenti di campi elettromagnetici (RTV, SRB, ELF)."@it , "Indicators describing the state of electromagnetic field sources (RTV, SRB, ELF)."@en ;
+	skos:topConceptOf	<https://w3id.org/italia/env/vocab/cem/indicators> .
+
+################################################################################
+####################### INDICATORI PRESSIONI ELF ###############################
+################################################################################
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pressures-elf>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures> ;
+	skos:prefLabel	"Pressioni ELF"@it , "ELF pressures"@en ;
+	dcterms:identifier	"pressures-elf" ;
+	skos:definition	"Indicators describing extremely low frequency (ELF) sources such as power lines and substations."@en , "Indicatori relativi alle sorgenti a frequenza estremamente bassa (ELF), come linee elettriche e cabine."@it .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-elf-kmlinee-10-40kv>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-elf> ;
+	skos:prefLabel	"km linee 10-40 kV"@it , "km of 10-40 kV lines"@en ;
+	dcterms:identifier	"pre-elf-kmlinee-10-40kv" ;
+	skos:definition	"numero di km di linee complessivo alla tensione specificata"@it , "total number of line km at the specified voltage"@en ;
+	skos:notation	"kmlinee_10_40kV" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-elf-kmlinee-40-150kv>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-elf> ;
+	skos:prefLabel	"km linee 40-150 kV"@it , "km of 40-150 kV lines"@en ;
+	dcterms:identifier	"pre-elf-kmlinee-40-150kv" ;
+	skos:definition	"numero di km di linee complessivo alla tensione specificata"@it , "total number of line km at the specified voltage"@en ;
+	skos:notation	"kmlinee_40_150kV" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-elf-kmlinee-220kv>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-elf> ;
+	skos:prefLabel	"km linee 220 kV"@it , "km of 220 kV lines"@en ;
+	dcterms:identifier	"pre-elf-kmlinee-220kv" ;
+	skos:definition	"numero di km di linee complessivo alla tensione specificata"@it , "total number of line km at the specified voltage"@en ;
+	skos:notation	"kmlinee_220kV" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-elf-kmlinee-380kv>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-elf> ;
+	skos:prefLabel	"km linee 380 kV"@it , "km of 380 kV lines"@en ;
+	dcterms:identifier	"pre-elf-kmlinee-380kv" ;
+	skos:definition	"numero di km di linee complessivo alla tensione specificata"@it , "total number of line km at the specified voltage"@en ;
+	skos:notation	"kmlinee_380kV" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-elf-numstazcabprimarie>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-elf> ;
+	skos:prefLabel	"n. di stazioni o cabine di trasformazione primarie"@it , "number of primary transforming stations or substations"@en ;
+	dcterms:identifier	"pre-elf-numstazcabprimarie" ;
+	skos:definition	"numero di stazioni o cabine di trasformazione primarie presenti sul territorio regionale"@it , "number of primary transforming stations or substations present within the regional territory"@en ;
+	skos:notation	"NumStazCabPrimarie" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-elf-numcabsecondarie>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-elf> ;
+	skos:prefLabel	"n. di cabine di trasformazione secondarie"@it , "number of secondary transforming substations"@en ;
+	dcterms:identifier	"pre-elf-numcabsecondarie" ;
+	skos:definition	"numero di cabine di trasformazione secondarie presenti sul territorio regionale"@it , "number of secondary transforming substations present within the regional territory"@en ;
+	skos:notation	"NumCabSecondarie" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-elf-note>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-elf> ;
+	skos:prefLabel	"Note"@it , "Notes"@en ;
+	dcterms:identifier	"pre-elf-note" ;
+	skos:definition	"informazioni utili"@it , "useful information"@en ;
+	skos:notation	"NoteELF" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-elf-province-mancanti>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-elf> ;
+	skos:prefLabel	"Province mancanti"@it , "Missing provinces"@en ;
+	dcterms:identifier	"pre-elf-province-mancanti" ;
+	skos:definition	"Si indicano le province di cui non si conoscono, interamente o in parte, i dati."@it , "Indicate the provinces for which data are completely or partially unknown."@en ;
+	skos:notation	"Province_mancanti" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-elf-note-province-mancanti>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-elf> ;
+	skos:prefLabel	"Note sulle province mancanti nei dati ELF"@it , "Notes on missing provinces in ELF data"@en ;
+	dcterms:identifier	"pre-elf-note-province-mancanti" ;
+	skos:definition	"Note descrittive relative alle province mancanti nei dati ELF."@it , "Descriptive notes related to missing provinces in ELF data."@en ;
+	skos:notation	"Note_province" .
+
+################################################################################
+####################### INDICATORI PRESSIONI RTV ###############################
+################################################################################
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pressures-rtv>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures> ;
+	skos:prefLabel	"RTV pressures"@en , "Pressioni RTV"@it ;
+	dcterms:identifier	"pressures-rtv" ;
+	skos:definition	"Indicatori relativi allo stato degli impianti radiotelevisivi (RTV)."@it , "Indicators describing the state of radio and television broadcasting installations (RTV)."@en .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-rtv-n-siti>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-rtv> ;
+	skos:prefLabel	"N. Siti RTV"@it , "Number of RTV sites"@en ;
+	dcterms:identifier	"pre-rtv-n-siti" ;
+	skos:definition	"numero complessivo delle località, su tutto il territorio regionale, in cui sono installati impianti RTV. Località = indirizzo, oppure, fuori dai centri abitati, la coordinata geografica che individua una località in cui sono installati uno o più impianti. "@it , "total number of locations, across the entire regional territory, where RTV installations are located. Location = address, or, outside inhabited centers, the geographical coordinate identifying a location where one or more installations are set up."@en ;
+	skos:notation	"N. Siti RTV" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-rtv-n-impianti-attivi>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-rtv> ;
+	skos:prefLabel	"n. impianti RTV attivi"@it , "Number of active RTV installations"@en ;
+	dcterms:identifier	"pre-rtv-n-impianti-attivi" ;
+	skos:definition	"numero complessivo di impianti RTV attivi su tutto il territorio regionale, intendendo per “impianto” l’elemento associabile ad una determinata frequenza di trasmissione, installato in un determinato punto del territorio, su sostegno."@it , "total number of active RTV installations across the entire regional territory, where 'installation' refers to the element associated with a specific transmission frequency, installed at a specific point on the territory, on a support."@en ;
+	skos:notation	"N. impianti RTV attivi" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-rtv-potenza-impianti-attivi-kw>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-rtv> ;
+	skos:prefLabel	"Potenza complessiva impianti RTV attivi"@it , "Total power of active RTV installations"@en ;
+	dcterms:identifier	"pre-rtv-potenza-impianti-attivi-kw" ;
+	skos:definition	"la potenza complessiva (in esercizio; kW) degli impianti RTV attivi sul territorio regionale. "@it , "the total power (in operation; kW) of active RTV installations within the regional territory."@en ;
+	skos:notation	"Potenza complessiva impianti RTV attivi (kW)" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-rtv-n-impianti-autorizzati>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-rtv> ;
+	skos:prefLabel	"n. impianti autorizzati RTV"@it , "Number of authorized RTV installations"@en ;
+	dcterms:identifier	"pre-rtv-n-impianti-autorizzati" ;
+	skos:definition	"numero totale di impianti valutati con parere tecnico delle ARPA/APPA che non risultano ancora attivi."@it , "total number of installations evaluated with a technical opinion by ARPA/APPA that are not yet active."@en ;
+	skos:notation	"N. impianti RTV autorizzati" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-rtv-potenza-autorizzati-kw>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-rtv> ;
+	skos:prefLabel	"Potenza complessiva impianti RTV autorizzati"@it , "Total power of authorized RTV installations"@en ;
+	dcterms:identifier	"pre-rtv-potenza-autorizzati-kw" ;
+	skos:definition	"potenza complessiva (in esercizio; kW) degli impianti RTV autorizzati sul territorio regionale che non risultano ancora attivi."@it , "total power (in operation; kW) of authorized RTV installations within the regional territory that are not yet active."@en ;
+	skos:notation	"Potenza complessiva RTV autorizzati (kW)" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-rtv-note>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-rtv> ;
+	skos:prefLabel	"Note"@it , "Notes"@en ;
+	dcterms:identifier	"pre-rtv-note" ;
+	skos:definition	"informazioni utili "@it , "useful information"@en ;
+	skos:notation	"Note" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-rtv-province-mancanti>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-rtv> ;
+	skos:prefLabel	"Province mancanti"@it , "Missing provinces"@en ;
+	dcterms:identifier	"pre-rtv-province-mancanti" ;
+	skos:definition	"Si indicano le province di cui non si conoscono, interamente o in parte, i dati"@it , "Indicates the provinces for which data are entirely or partially unknown"@en ;
+	skos:notation	"Province mancanti" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-rtv-note-province-mancanti>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-rtv> ;
+	skos:prefLabel	"Notes on missing provinces in RTV data"@en , "Note sulle province mancanti nei dati RTV"@it ;
+	dcterms:identifier	"pre-rtv-note-province-mancanti" ;
+	skos:definition	"Descriptive notes related to missing provinces in RTV data."@en , "Note descrittive relative alle province mancanti nei dati RTV."@it ;
+	skos:notation	"Note province mancanti" .
+
+################################################################################
+####################### INDICATORI PRESSIONI SRB ###############################
+################################################################################
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures> ;
+	skos:prefLabel	"Pressioni SRB"@it , "BTS pressures"@en ;
+	dcterms:identifier	"pressures-srb" ;
+	skos:definition	"Indicatori relativi allo stato delle stazioni radio base (SRB) per la telefonia mobile."@it , "Indicators describing the state of Base Transceiver Station (BTS)."@en .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-n-siti>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"n. siti SRB"@it , "Number of BTS sites"@en ;
+	dcterms:identifier	"pre-srb-n-siti" ;
+	skos:definition	"numero complessivo delle località, su tutto il territorio regionale, in cui sono installati impianti SRB. Località = indirizzo, oppure, fuori dai centri abitati, la coordinata geografica che individua una località in cui sono installati uno o più impianti. "@it , "total number of locations, across the entire regional territory, where BTS installations are located. Location = address, or, outside inhabited centers, the geographical coordinate identifying a location where one or more installations are set up."@en ;
+	skos:notation	"N. siti SRB" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-n-impianti-attivi>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"n. impianti SRB attivi"@it , "Number of active BTS installations"@en ;
+	dcterms:identifier	"pre-srb-n-impianti-attivi" ;
+	skos:definition	"numero complessivo di impianti SRB attivi su tutto il territorio regionale, identificando con un “impianto” l’insieme di sorgenti appartenenti ad uno specifico concessionario (gestore) ed installato in un determinato punto del territorio, su sostegno. "@it , "total number of active BTS installations across the entire regional territory, identifying an 'installation' as the set of sources belonging to a specific concessionaire (operator) and installed at a specific point on the territory, on a support."@en ;
+	skos:notation	"N. Impianti SRB attivi" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-n-servizi-attivi>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"n. servizi SRB attivi"@it , "Number of active BTS services"@en ;
+	dcterms:identifier	"pre-srb-n-servizi-attivi" ;
+	skos:definition	"numero complessivo di servizi SRB attivi su tutto il territorio regionale, identificando con un “servizio” la tipologia in base alla tecnologia e alla frequenza "@it , "total number of active BTS services across the entire regional territory, identifying a 'service' as the type based on technology and frequency"@en ;
+	skos:notation	"N. servizi SRB attivi" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-impianti-wimax-attivi>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"di cui Impianti Wi-max attivi"@it , "Of which active Wi-max installations"@en ;
+	dcterms:identifier	"pre-srb-impianti-wimax-attivi" ;
+	skos:definition	"Numero di impianti Wi-max attivi tra le stazioni radio base."@it , "Number of active Wi-max installations among base stations."@en ;
+	skos:notation	"di cui Impianti Wi-max attivi" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-potenza-attivi-kw>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"Potenza complessiva servizi SRB attivi"@it , "Total power of active BTS services"@en ;
+	dcterms:identifier	"pre-srb-potenza-attivi-kw" ;
+	skos:definition	"potenza complessiva (in esercizio; kW) dei servizi SRB attivi sul territorio regionale."@it , "total power (in operation; kW) of active BTS services within the regional territory."@en ;
+	skos:notation	"Potenza complessiva SRB Attivi (kW)" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-n-impianti-autorizzati>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"n. impianti SRB autorizzati"@it , "Number of authorized BTS installations"@en ;
+	dcterms:identifier	"pre-srb-n-impianti-autorizzati" ;
+	skos:definition	"numero totale di impianti valutati con parere tecnico delle ARPA/APPA che non risultano ancora attivi.  "@it , "total number of installations evaluated with a technical opinion by ARPA/APPA that are not yet active."@en ;
+	skos:notation	"N. Impianti SRB autorizzati" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-potenza-autorizzati-kw>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"Potenza complessiva servizi SRB autorizzati"@it , "Total power of authorized BTS services"@en ;
+	dcterms:identifier	"pre-srb-potenza-autorizzati-kw" ;
+	skos:definition	"indicare la potenza complessiva (in esercizio; kW) degli impianti SRB autorizzati sul territorio regionale che non risultano ancora attivi."@it , "indicate the total power (in operation; kW) of authorized BTS installations within the regional territory that are not yet active."@en ;
+	skos:notation	"Potenza complessiva SRB autorizzati" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-province-mancanti>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"Province mancanti"@it , "Missing provinces"@en ;
+	dcterms:identifier	"pre-srb-province-mancanti" ;
+	skos:definition	"Si indicano le province di cui non si conoscono, interamente o in parte, i dati"@it , "Indicates the provinces for which data are entirely or partially unknown"@en ;
+	skos:notation	"Province mancanti" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-note-province-mancanti>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"Note sulle province mancanti nei dati SRB"@it , "Notes on missing provinces in BTS data"@en ;
+	dcterms:identifier	"pre-srb-note-province-mancanti" ;
+	skos:definition	"Descriptive notes related to missing provinces in BTS data."@en , "Note descrittive relative alle province mancanti nei dati SRB."@it ;
+	skos:notation	"Note province mancanti" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-n-servizi-autorizzati>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"n. servizi SRB autorizzati"@it , "Number of authorized BTS services"@en ;
+	dcterms:identifier	"pre-srb-n-servizi-autorizzati" ;
+	skos:definition	"inserire il numero totale di servizi valutati con parere tecnico delle ARPA/APPA che non risultano ancora attivi, identificando con un “servizio” la tipologia in base alla tecnologia e alla frequenza"@it , "enter the total number of services evaluated with a technical opinion by ARPA/APPA that are not yet active, identifying a 'service' as the type based on technology and frequency"@en ;
+	skos:notation	"N. servizi SRB autorizzati" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-impianti-wimax-autorizzati>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"Impianti Wi-max autorizzati SRB"@it , "Authorized BTS Wi-max installations"@en ;
+	dcterms:identifier	"pre-srb-impianti-wimax-autorizzati" ;
+	skos:definition	"Numero di impianti Wi-max autorizzati tra le stazioni radio base."@it , "Number of authorized Wi-max installations among BTS - base transceiver stations."@en ;
+	skos:notation	"Impianti Wi-max autorizzati" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-potenza-wimax-attivi-kw>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"Potenza complessiva impianti Wi-max attivi (kW)"@it , "Total power of active Wi-max installations (kW)"@en ;
+	dcterms:identifier	"pre-srb-potenza-wimax-attivi-kw" ;
+	skos:definition	"Potenza complessiva degli impianti Wi-max attivi."@it , "Total power of active Wi-max installations."@en ;
+	skos:notation	"di cui Potenza complessiva impianti Wi-max attivi (kW)" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-servizi-wimax-autorizzati>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"Servizi Wi-max autorizzati SRB"@it , "Authorized BTS Wi-max services"@en ;
+	dcterms:identifier	"pre-srb-servizi-wimax-autorizzati" ;
+	skos:definition	"Numero di servizi Wi-max autorizzati tra le stazioni radio base."@it , "Number of authorized Wi-max services among BTS - base transceiver station."@en ;
+	skos:notation	"di cui Servizi Wi-max autorizzati" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-servizi-wimax-attivi>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"Servizi Wi-max attivi SRB"@it , "Active BTS Wi-max services"@en ;
+	dcterms:identifier	"pre-srb-servizi-wimax-attivi" ;
+	skos:definition	"Numero di servizi Wi-max attivi tra le stazioni radio base."@it , "Number of active Wi-max services among BTS - base transceiver station."@en ;
+	skos:notation	"di cui Servizi Wi-max attivi" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-potenza-wimax-autorizzati-kw>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"Potenza complessiva impianti Wi-max autorizzati (kW)"@it , "Total power of authorized Wi-max installations (kW)"@en ;
+	dcterms:identifier	"pre-srb-potenza-wimax-autorizzati-kw" ;
+	skos:definition	"Potenza complessiva degli impianti Wi-max autorizzati."@it , "Total power of authorized Wi-max installations."@en ;
+	skos:notation	"di cui Potenza complessiva impianti Wi-max autorizzati (kW)" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/pre-srb-note>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/pressures-srb> ;
+	skos:prefLabel	"Note"@it , "Notes"@en ;
+	dcterms:identifier	"pre-srb-note" ;
+	skos:definition	"informazioni utili "@it , "useful information"@en ;
+	skos:notation	"Note" .
+
+################################################################################
+####################### INDICATORI SUPERAMENTI #################################
+################################################################################
+
+<https://w3id.org/italia/env/vocab/cem/indicators/exceedances>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:prefLabel	"Exceedances"@en , "Superamenti"@it ;
+	dcterms:identifier	"exceedances" ;
+	skos:definition	"Indicatori relativi ai superamenti dei limiti per le sorgenti di campi elettromagnetici (RTV, SRB, ELF)."@it , "Indicators describing limit exceedances for electromagnetic field sources (RTV, BTS, ELF)."@en ;
+	skos:topConceptOf	<https://w3id.org/italia/env/vocab/cem/indicators> .
+
+################################################################################
+####################### INDICATORI SUPERAMENTI ELF #############################
+################################################################################
+
+<https://w3id.org/italia/env/vocab/cem/indicators/exceedances-elf>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/exceedances> ;
+	skos:prefLabel	"ELF exceedances"@en , "Superamenti ELF"@it ;
+	dcterms:identifier	"exceedances-elf" ;
+	skos:definition	"Indicators describing limit exceedances for ELF sources (power lines and substations)."@en , "Indicatori relativi ai superamenti dei limiti per sorgenti ELF (linee elettriche e cabine)."@it .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/exc-elf-n-superamenti>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/exceedances-elf> ;
+	skos:prefLabel	"N. superamenti"@it , "number of exceedances"@en ;
+	dcterms:identifier	"exc-elf-n-superamenti" ;
+	skos:definition	"Numero complessivi dei casi di superamento riscontrati dall’ARPA/APPA durante l’attività di controllo. I casi di superamento possono essere riferiti al limite di esposizione (100 microT per campo magnetico o 5 kV/m per campo elettrico) da applicare in qualsiasi condizione espositiva, al valore di attenzione (10 microT) o all’obiettivo di qualità (3 microT) da applicare in luoghi adibiti a permanenze prolungate (non inferiori alle 4 ore giornaliere)"@it , "Total number of exceedance cases detected by ARPA/APPA during control activities. Exceedance cases may refer to the exposure limit (100 microT for magnetic fields or 5 kV/m for electric fields) to be applied under any exposure condition, the attention value (10 microT), or the quality objective (3 microT) to be applied in places intended for prolonged stays of no less than 4 hours per day"@en ;
+	skos:notation	"Numero superamenti" .
+
+################################################################################
+####################### INDICATORI SUPERAMENTI RTV SRB #########################
+################################################################################
+
+<https://w3id.org/italia/env/vocab/cem/indicators/exceedances-rtv-srb>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/exceedances> ;
+	skos:prefLabel	"RTV or BTS exceedances"@en , "Superamenti RTV o SRB"@it ;
+	dcterms:identifier	"exceedances-rtv-srb" ;
+	skos:definition	"Indicators describing limit exceedances for radio and television broadcasting installations (RTV) or BTS installations."@en , "Indicatori relativi ai superamenti dei limiti per impianti radiotelevisivi (RTV) o SRB."@it .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/exc-rtv-srb-n-superamenti>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/exceedances-rtv-srb> ;
+	skos:prefLabel	"N. superamenti"@it , "number of exceedances"@en ;
+	dcterms:identifier	"exc-rtv-srb-n-superamenti" ;
+	skos:definition	"Numero complessivi dei casi di superamento riscontrati dall’ARPA/APPA durante l’attività di controllo. I casi di superamento possono essere riferiti al limite di esposizione (20 V/m per frequenze comprese tra 3Mhz e 3GHz e 40V/m per frequenze> 3 GHz) da applicare a qualsiasi conditione espositiva, al valore di attenzione 15 V/m (o 6 V/m per casi antecedenti l’entrata in vigore dei nuovi limiti normativi con Legge 214/2023) da applicare in luoghi adibiti a permanenze prolungate (non inferiori alle 4 ore giornaliere)."@it , "Total number of exceedance cases detected by ARPA/APPA during control activities. Exceedance cases may refer to the exposure limit (20 V/m for frequencies between 3MHz and 3GHz and 40V/m for frequencies > 3 GHz) to be applied to any exposure condition, or to the attention value of 15 V/m (or 6 V/m for cases prior to the entry into force of the new regulatory limits under Law 214/2023) to be applied in places intended for prolonged stays of no less than 4 hours per day."@en ;
+	skos:notation	"Numero superamenti" .
+
+################################################################################
+####################### INDICATORI CONTROLLI ###################################
+################################################################################
+
+<https://w3id.org/italia/env/vocab/cem/indicators/controls>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:prefLabel	"Controls"@en , "Controlli"@it ;
+	dcterms:identifier	"controls" ;
+	skos:definition	"Indicatori relativi alle attività di controllo e monitoraggio delle sorgenti di campi elettromagnetici (RTV, SRB, ELF)."@it , "Indicators describing monitoring and control activities on electromagnetic field sources (RTV, BTS, ELF)."@en ;
+	skos:topConceptOf	<https://w3id.org/italia/env/vocab/cem/indicators> .
+
+################################################################################
+####################### INDICATORI CONTROLLI ELF ###############################
+################################################################################
+
+<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls> ;
+	skos:prefLabel	"Controlli ELF"@it , "ELF controls"@en ;
+	dcterms:identifier	"controls-elf" ;
+	skos:definition	"Indicatori relativi alle attivit\u00E0 di controllo e monitoraggio sulle sorgenti ELF (linee elettriche e cabine)."@it , "Indicators describing monitoring and control activities on ELF sources (power lines and substations)."@en .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-n-pareri-preventivi>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"n. pareri preventivi /istruttorie tecniche"@it , "number of preliminary opinions / technical assessments"@en ;
+	dcterms:identifier	"con-elf-n-pareri-preventivi" ;
+	skos:definition	"numero dei pareri preventivi/istruttorie tecniche espressi prima della messa in funzione degli impianti dall’ARPA/APPA"@it , "number of preliminary opinions / technical assessments issued by ARPA/APPA prior to the commissioning of the installations"@en ;
+	skos:notation	"n_pareri_preventivi_istruttorie_tecniche" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-n-interventi-modellistici-cabine>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"n. interventi di controllo e/o studio tramite valutazioni modellistiche su cabine elettriche"@it , "number of control and/or study interventions through modelling assessments on electrical substations"@en ;
+	dcterms:identifier	"con-elf-n-interventi-modellistici-cabine" ;
+	skos:definition	"interventi di controllo e/o studio svolti dall’ARPA/APPA dopo la messa in funzione degli impianti, con strumenti di simulazione su cabine elettriche"@it , "control and/or study interventions carried out by ARPA/APPA after the commissioning of the plants, using simulation tools on electrical substations"@en ;
+	skos:notation	"n_interventi_controllo_valutazioni_modellistiche_cabine" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-n-interventi-modellistici-linee>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"n. interventi di controllo e/o studio tramite valutazioni modellistiche su linee elettriche"@it , "number of control and/or study interventions through modelling assessments on power lines"@en ;
+	dcterms:identifier	"con-elf-n-interventi-modellistici-linee" ;
+	skos:definition	"interventi di controllo e/o studio svolti dall’ARPA/APPA dopo la messa in funzione degli impianti, con strumenti di simulazione su linee elettriche"@it , "control and/or study interventions carried out by ARPA/APPA after the commissioning of the plants, using simulation tools on power lines"@en ;
+	skos:notation	"n_interventi_controllo_valutazioni_modellistiche_linee" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-n-interventi-sperimentali-cabine>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"n. interventi di controllo sperimentali su cabine elettriche"@it , "number of experimental control interventions on electrical substations"@en ;
+	dcterms:identifier	"con-elf-n-interventi-sperimentali-cabine" ;
+	skos:definition	"numero totale di interventi di controllo sperimentali (da intendersi sopralluoghi con misure) effettuati dall’ARPA/APPA su cabine elettriche"@it , "total number of experimental control interventions (meaning site inspections with measurements) carried out by ARPA/APPA on electrical substations"@en ;
+	skos:notation	"n_interventi_controllo_sperimentali_cabine" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-n-interventi-sperimentali-linee>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"n. interventi di controllo sperimentali su linee elettriche"@it , "number of experimental control interventions on power lines"@en ;
+	dcterms:identifier	"con-elf-n-interventi-sperimentali-linee" ;
+	skos:definition	"numero totale di interventi di controllo sperimentali (da intendersi sopralluoghi con misure) effettuati dall’ARPA/APPA su linee elettriche"@it , "total number of experimental control interventions (meaning site inspections with measurements) carried out by ARPA/APPA on power lines"@en ;
+	skos:notation	"n_interventi_controllo_sperimentali_linee" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-n-campagne-monitoraggio-linee>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"n. campagne di monitoraggio in continuo per linee elettriche"@it , "number of continuous monitoring campaigns for power lines"@en ;
+	dcterms:identifier	"con-elf-n-campagne-monitoraggio-linee" ;
+	skos:definition	"numero campagne di monitoraggio in continuo effettuate dall’ARPA/APPA su linee elettriche"@it , "number of continuous monitoring campaigns carried out by ARPA/APPA on power lines"@en ;
+	skos:notation	"n_campagne_monitoraggio_continuo_linee" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-n-giorni-monitoraggio-linee>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"N. giorni di monitoraggio in continuo per linee elettriche"@it , "number of continuous monitoring days for power lines"@en ;
+	dcterms:identifier	"con-elf-n-giorni-monitoraggio-linee" ;
+	skos:definition	"numero dei giorni di monitoraggio in continuo di tutte le campagne di monitoraggio effettuate dall’ARPA/APPA su linee elettriche"@it , "number of continuous monitoring days across all monitoring campaigns carried out by ARPA/APPA on power lines"@en ;
+	skos:notation	"n_giorni_monitoraggio_continuo_linee" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-n-misure-manuali-linee>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"N. complessivo di misure manuali per linee elettriche"@it , "total number of manual measurements for power lines"@en ;
+	dcterms:identifier	"con-elf-n-misure-manuali-linee" ;
+	skos:definition	"numero complessivo delle misure effettuate con strumentazione in campo dall’ARPA/APPA su linee elettriche"@it , "total number of measurements carried out with field instrumentation by ARPA/APPA on power lines"@en ;
+	skos:notation	"n_complessivo_misure_manuali_linee" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-n-misure-manuali-cabine>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"N. complessivo di misure manuali per cabine elettriche"@it , "total number of manual measurements for electrical substations"@en ;
+	dcterms:identifier	"con-elf-n-misure-manuali-cabine" ;
+	skos:definition	"numero complessivo delle misure effettuate con strumentazione in campo dall’ARPA/APPA su cabine elettriche"@it , "total number of measurements carried out with field instrumentation by ARPA/APPA on electrical substations"@en ;
+	skos:notation	"n_complessivo_misure_manuali_cabine" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-province-mancanti>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"Province mancanti"@it , "missing provinces"@en ;
+	dcterms:identifier	"con-elf-province-mancanti" ;
+	skos:definition	"Si indicano le province di cui non si conoscono, interamente o in parte, i dati"@it , "indicates the provinces for which data are completely or partially unknown"@en ;
+	skos:notation	"province_mancanti" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-note-province-mancanti>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"Note sulle province mancanti nei dati di controllo ELF"@it , "Notes on missing provinces in ELF control data"@en ;
+	dcterms:identifier	"con-elf-note-province-mancanti" ;
+	skos:definition	"Note descrittive relative alle province mancanti nei dati di controllo ELF."@it , "Descriptive notes related to missing provinces in ELF control data."@en ;
+	skos:notation	"province_mancanti_note" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-n-interventi-sperimentali-cabine-richiesta>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"n. interventi di controllo sperimentali su cabine elettriche su richiesta dei cittadini e/o amministrazioni locali"@it , "number of experimental control interventions on electrical substations at the request of citizens and/or local administrations"@en ;
+	dcterms:identifier	"con-elf-n-interventi-sperimentali-cabine-richiesta" ;
+	skos:definition	"numero degli interventi di controllo sperimentali su richiesta dei cittadini e/o amministrazioni locali (da intendersi sopralluoghi con misure) effettuati dall’ARPA/APPA su cabine elettriche"@it , "number of experimental control interventions at the request of citizens and/or local administrations (meaning site inspections with measurements) carried out by ARPA/APPA on electrical substations"@en ;
+	skos:notation	"n_interventi_controllo_sperimentali_cabine_richiesta" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-n-interventi-sperimentali-linee-richiesta>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"n. interventi di controllo sperimentali su linee elettriche su richiesta dei cittadini e/o amministrazioni locali"@it , "number of experimental control interventions on power lines at the request of citizens and/or local administrations"@en ;
+	dcterms:identifier	"con-elf-n-interventi-sperimentali-linee-richiesta" ;
+	skos:definition	"numero degli interventi di controllo sperimentali su richiesta dei cittadini e/o amministrazioni locali (da intendersi sopralluoghi con misure) effettuati dall’ARPA/APPA su linee elettriche"@it , "number of experimental control interventions at the request of citizens and/or local administrations (meaning site inspections with measurements) carried out by ARPA/APPA on power lines"@en ;
+	skos:notation	"n_interventi_controllo_sperimentali_linee_richiesta" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-n-campagne-monitoraggio-cabine>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"n. campagne di monitoraggio in continuo per cabine elettriche"@it , "number of continuous monitoring campaigns for electrical substations"@en ;
+	dcterms:identifier	"con-elf-n-campagne-monitoraggio-cabine" ;
+	skos:definition	"numero campagne di monitoraggio in continuo effettuate dall’ARPA/APPA su cabine elettriche"@it , "number of continuous monitoring campaigns carried out by ARPA/APPA on electrical substations"@en ;
+	skos:notation	"n_campagne_monitoraggio_continuo_cabine" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-n-giorni-monitoraggio-cabine>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"N. giorni di monitoraggio in continuo per cabine elettriche"@it , "number of continuous monitoring days for electrical substations"@en ;
+	dcterms:identifier	"con-elf-n-giorni-monitoraggio-cabine" ;
+	skos:definition	"numero dei giorni di monitoraggio in continuo di tutte le campagne di monitoraggio effettuate dall’ARPA/APPA su cabine elettriche"@it , "number of continuous monitoring days across all monitoring campaigns carried out by ARPA/APPA on electrical substations"@en ;
+	skos:notation	"n_giorni_monitoraggio_continuo_cabine" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-perc-monitoraggi-linee-b-lt-1>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"Percentuale di monitoraggi su linee elettriche con valori di campo di induzione magnetica (B) misurati inferiori a 1 microT"@it , "percentage of monitoring on power lines with measured magnetic induction field (B) values lower than 1 microT"@en ;
+	dcterms:identifier	"con-elf-perc-monitoraggi-linee-b-lt-1" ;
+	skos:definition	"percentuale di monitoraggi su linee elettriche che hanno rilevato valori misurati di campo di induzione magnetica (B) inferiori a 1 microT"@it , "percentage of monitoring on power lines that detected measured magnetic induction field (B) values lower than 1 microT"@en ;
+	skos:notation	"perc_monitoraggi_linee_1" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-perc-monitoraggi-linee-b-1-3>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"Percentuale di monitoraggi su linee elettriche con valori di campo di induzione magnetica (B) misurati compresi tra 1 (incluso) e 3 (escluso) microT"@it , "percentage of monitoring on power lines with measured magnetic induction field (B) values between 1 (inclusive) and 3 (exclusive) microT"@en ;
+	dcterms:identifier	"con-elf-perc-monitoraggi-linee-b-1-3" ;
+	skos:definition	"percentuale di monitoraggi su linee elettriche che hanno rilevato valori misurati di campo di induzione magnetica (B) compresi tra 1 (incluso) e 3 (escluso) microT"@it , "percentage of monitoring on power lines that detected measured magnetic induction field (B) values between 1 (inclusive) and 3 (exclusive) microT"@en ;
+	skos:notation	"perc_monitoraggi_linee_1_3" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-perc-monitoraggi-linee-b-3-10>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"Percentuale di monitoraggi su linee elettriche con valori di campo di induzione magnetica (B) misurati compresi tra 3 (incluso) e 10 (escluso) microT"@it , "percentage of monitoring on power lines with measured magnetic induction field (B) values between 3 (inclusive) and 10 (exclusive) microT"@en ;
+	dcterms:identifier	"con-elf-perc-monitoraggi-linee-b-3-10" ;
+	skos:definition	"percentuale di monitoraggi su linee elettriche che hanno rilevato valori misurati di campo di induzione magnetica (B) compresi tra 3 (incluso) e 10 (escluso) microT"@it , "percentage of monitoring on power lines that detected measured magnetic induction field (B) values between 3 (inclusive) and 10 (exclusive) microT"@en ;
+	skos:notation	"perc_monitoraggi_linee_3_10" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-perc-monitoraggi-linee-b-ge-10>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"Percentuale di monitoraggi su linee elettriche con valori di campo di induzione magnetica (B) misurati superiori o uguali a 10 microT"@it , "percentage of monitoring on power lines with measured magnetic induction field (B) values greater than or equal to 10 microT"@en ;
+	dcterms:identifier	"con-elf-perc-monitoraggi-linee-b-ge-10" ;
+	skos:definition	"percentuale di monitoraggi su linee elettriche che hanno rilevato valori misurati di campo di induzione magnetica (B) superiori o uguali a 10 microT"@it , "percentage of monitoring on power lines that detected measured magnetic induction field (B) values greater than or equal to 10 microT"@en ;
+	skos:notation	"perc_monitoraggi_linee_10" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-perc-monitoraggi-cabine-b-lt-1>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"Percentuale di monitoraggi su cabine elettriche con valori di campo di induzione magnetica (B) misurati inferiori a 1 microT"@it , "percentage of monitoring on electrical substations with measured magnetic induction field (B) values lower than 1 microT"@en ;
+	dcterms:identifier	"con-elf-perc-monitoraggi-cabine-b-lt-1" ;
+	skos:definition	"percentuale di monitoraggi su cabine elettriche che hanno rilevato valori misurati di campo di induzione magnetica (B) inferiori a 1 microT"@it , "percentage of monitoring on electrical substations that detected measured magnetic induction field (B) values lower than 1 microT"@en ;
+	skos:notation	"perc_monitoraggi_cabine_1" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-perc-monitoraggi-cabine-b-1-3>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"Percentuale di monitoraggi su cabine elettriche con valori di campo di induzione magnetica (B) misurati compresi tra 1 (incluso) e 3 (escluso) microT"@it , "percentage of monitoring on electrical substations with measured magnetic induction field (B) values between 1 (inclusive) and 3 (exclusive) microT"@en ;
+	dcterms:identifier	"con-elf-perc-monitoraggi-cabine-b-1-3" ;
+	skos:definition	"percentuale di monitoraggi su cabine elettriche che hanno rilevato valori misurati di campo di induzione magnetica (B) compresi tra 1 (incluso) e 3 (escluso) microT"@it , "percentage of monitoring on electrical substations that detected measured magnetic induction field (B) values between 1 (inclusive) and 3 (exclusive) microT"@en ;
+	skos:notation	"perc_monitoraggi_cabine_1_3" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-perc-monitoraggi-cabine-b-3-10>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"Percentuale di monitoraggi su cabine elettriche con valori di campo di induzione magnetica (B) misurati compresi tra 3 (incluso) e 10 (escluso) microT"@it , "percentage of monitoring on electrical substations with measured magnetic induction field (B) values between 3 (inclusive) and 10 (exclusive) microT"@en ;
+	dcterms:identifier	"con-elf-perc-monitoraggi-cabine-b-3-10" ;
+	skos:definition	"percentuale di monitoraggi su cabine elettriche che hanno rilevato valori misurati di campo di induzione magnetica (B) compresi tra 3 (incluso) e 10 (escluso) microT"@it , "percentage of monitoring on electrical substations that detected measured magnetic induction field (B) values between 3 (inclusive) and 10 (exclusive) microT"@en ;
+	skos:notation	"perc_monitoraggi_cabine_3_10" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-elf-perc-monitoraggi-cabine-b-ge-10>
+	a	skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls-elf> ;
+	skos:prefLabel	"Percentuale di monitoraggi su cabine elettriche con valori di campo di induzione magnetica (B) misurati superiori o uguali a 10 microT"@it , "percentage of monitoring on electrical substations with measured magnetic induction field (B) values greater than or equal to 10 microT"@en ;
+	dcterms:identifier	"con-elf-perc-monitoraggi-cabine-b-ge-10" ;
+	skos:definition	"percentuale di monitoraggi su cabine elettriche che hanno rilevato valori misurati di campo di induzione magnetica (B) superiori o uguali a 10 microT"@it , "percentage of monitoring on electrical substations that detected measured magnetic induction field (B) values greater than or equal to 10 microT"@en ;
+	skos:notation	"perc_monitoraggi_cabine_10" .
+
+################################################################################
+####################### INDICATORI CONTROLLI RTV SRB ###########################
+################################################################################
+
+<https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb>
+	a skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader	<https://w3id.org/italia/env/vocab/cem/indicators/controls> ;
+	skos:prefLabel	"Controlli RTV o SRB"@it , "RTV or BTS controls"@en ;
+	dcterms:identifier	"controls-rtv-srb" ;
+	skos:definition	"Indicators describing monitoring and control activities on Base Transceiver Stations (BTS) or RTV."@en , "Indicatori relativi alle attività di controllo e monitoraggio sulle stazioni radio base (SRB) o RTV."@it .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-n-pareri-preventivi>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "n. of preliminary opinions/technical assessments"@en , "n. pareri preventivi/istruttorie tecniche"@it ;
+	dcterms:identifier "con-rtv-srb-n-pareri-preventivi" ;
+	skos:definition "number of preliminary opinions/technical assessments issued by ARPA/APPA before the commissioning of the installations"@en , "numero dei pareri preventivi/istruttorie tecniche espressi dall’ARPA/APPA prima della messa in funzione degli impianti"@it ;
+	skos:notation "N. pareri preventivi/istruttorie tecniche" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-n-interventi-modellistici>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "n. of control interventions and/or study through modelling assessments"@en , "n. interventi di controllo e/o studio tramite valutazioni modellistiche"@it ;
+	dcterms:identifier "con-rtv-srb-n-interventi-modellistici" ;
+	skos:definition "number of control interventions carried out by ARPA/APPA after the commissioning of the installations"@en , "numero degli interventi di controllo svolti dall’ARPA/APPA dopo la messa in funzione degli impianti"@it ;
+	skos:notation "N. interventi controllo studio tramite valutazioni modellistiche" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-n-interventi-sperimentali>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "n. of experimental control interventions"@en , "n. interventi di controllo sperimentali"@it ;
+	dcterms:identifier "con-rtv-srb-n-interventi-sperimentali" ;
+	skos:definition "number of experimental control interventions (meaning on-site inspections with measurements) carried out by ARPA/APPA"@en , "numero degli interventi di controllo sperimentali (da intendersi sopralluoghi con misure) effettuati dall’ARPA/APPA"@it ;
+	skos:notation "N. interventi controllo sperimentali" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-n-interventi-sperimentali-richiesta>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "n. of experimental control interventions upon request of citizens and/or local authorities"@en , "n. interventi di controllo sperimentali su richiesta dei cittadini e/o amministrazioni locali"@it ;
+	dcterms:identifier "con-rtv-srb-n-interventi-sperimentali-richiesta" ;
+	skos:definition "number of experimental control interventions upon request of citizens and/or local authorities (meaning on-site inspections with measurements) carried out by ARPA/APPA"@en , "numero degli interventi di controllo sperimentali su richiesta dei cittadini e/o amministrazioni locali (da intendersi sopralluoghi con misure) effettuati dall’ ARPA/APPA"@it ;
+	skos:notation "N. interv controllo sperim richiesta cittadini amministr locali" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-n-giorni-monitoraggio>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "n. of continuous monitoring days"@en , "n. giorni di monitoraggio in continuo"@it ;
+	dcterms:identifier "con-rtv-srb-n-giorni-monitoraggio" ;
+	skos:definition "number of continuous monitoring days of all the monitoring campaigns carried out by ARPA/APPA"@en , "numero dei giorni di monitoraggio in continuo di tutte le campagne di monitoraggio effettuate dall’ARPA/APPA"@it ;
+	skos:notation "N. giorni di monitoraggio in continuo" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-n-misure-banda-larga>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "total n. of broadband manual measurements"@en , "n. complessivo di misure manuali in banda larga"@it ;
+	dcterms:identifier "con-rtv-srb-n-misure-banda-larga" ;
+	skos:definition "total number of broadband measurements with field instrumentation carried out by ARPA/APPA"@en , "numero complessivo di misure in banda larga con strumentazione in campo effettuate dall’ARPA/APPA"@it ;
+	skos:notation "N. complessivo di misure manuali in banda larga" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-n-misure-banda-stretta>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "total n. of narrowband manual measurements"@en , "n. complessivo di misure manuali in banda stretta"@it ;
+	dcterms:identifier "con-rtv-srb-n-misure-banda-stretta" ;
+	skos:definition "total number of narrowband measurements with field instrumentation carried out by ARPA/APPA"@en , "numero complessivo di misure in banda stretta con strumentazione in campo effettuate dall’ARPA/APPA"@it ;
+	skos:notation "N. complessivo di misure manuali in banda stretta" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-province-mancanti>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "missing provinces"@en , "Province mancanti"@it ;
+	dcterms:identifier "con-rtv-srb-province-mancanti" ;
+	skos:definition "indicates the provinces whose data are completely or partially unknown"@en , "Si indicano le province di cui non si conoscono, interamente o in parte, i dati"@it ;
+	skos:notation "Province mancanti" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-note-province-mancanti>
+	a skos:Concept ;
+	skos:inScheme	<https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel	"Note sulle province mancanti nei dati di controllo RTV o SRB"@it , "Notes on missing provinces in SRB or BTS control data"@en ;
+	dcterms:identifier	"con-rtv-srb-note-province-mancanti" ;
+	skos:definition	"Descriptive notes related to missing provinces in SRB or BTS control data."@en , "Note descrittive relative alle province mancanti nei dati di controllo RTV o SRB."@it ;
+	skos:notation	"Note province mancanti" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-n-campagne-monitoraggio>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "n. of continuous monitoring campaigns"@en , "n. campagne di monitoraggio in continuo"@it ;
+	dcterms:identifier "con-rtv-srb-n-campagne-monitoraggio" ;
+	skos:definition "number of continuous monitoring campaigns carried out by ARPA/APPA"@en , "numero campagne di monitoraggio in continuo effettuate dall’ARPA/APPA"@it ;
+	skos:notation "N. campagne di monitoraggio in continuo" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-perc-campagne-e-lt-6>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "percentage of monitoring campaigns (E < 6 V/m)"@en , "percentuale di campagne di monitoraggio con valori massimi di campo elettrico (E) misurati inferiori a 6 V/m"@it ;
+	dcterms:identifier "con-rtv-srb-perc-campagne-e-lt-6" ;
+	skos:definition "percentage of monitorings that found measured electric field (E) values below 6 V/m"@en , "percentuale di monitoraggi che hanno riscontrato valori di campo elettrico (E) misurati inferiori a 6 V/m"@it ;
+	skos:notation "Percentuali campagne di monitoraggio (E < 6 V/m)" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-perc-campagne-6-15>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "percentage of monitoring campaigns (6 <= E < 15 V/m)"@en , "percentuale di campagne di monitoraggio con valori massimi di campo elettrico misurati compresi tra 6 (incluso) e 15 (escluso) V/m"@it ;
+	dcterms:identifier "con-rtv-srb-perc-campagne-6-15" ;
+	skos:definition "percentage of monitorings that found measured electric field (E) values between 6 (inclusive) and 15 (exclusive) V/m"@en , "percentuale di monitoraggi che hanno riscontrato valori di campo elettrico (E) misurati compresi tra 6 (incluso) e 15 (escluso) V/m"@it ;
+	skos:notation "Percentuali campagne di monitoraggio (6 <= E < 15 V/m)" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-perc-campagne-15-20>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "percentage of monitoring campaigns (15 <= E < 20 V/m)"@en , "percentuale di campagne di monitoraggio con valori massimi di campo elettrico misurati compresi tra 15 (incluso) e 20 (escluso) V/m"@it ;
+	dcterms:identifier "con-rtv-srb-perc-campagne-15-20" ;
+	skos:definition "percentage of monitorings that found measured electric field (E) values between 15 (inclusive) and 20 (exclusive) V/m"@en , "percentuale di monitoraggi che hanno riscontrato valori di campo elettrico (E) misurati compresi tra 15 (incluso) e 20 (escluso) V/m"@it ;
+	skos:notation "Percentuali campagne di monitoraggio (15 <= E < 20 V/m)" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-perc-campagne-ge-20>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "percentage of monitoring campaigns (E >= 20 V/m)"@en , "percentuale di campagne di monitoraggio con valori massimi di campo elettrico misurati superiori o uguali a 20 V/m"@it ;
+	dcterms:identifier "con-rtv-srb-perc-campagne-ge-20" ;
+	skos:definition "percentage of monitorings that found measured electric field (E) values greater than or equal to 20 V/m"@en , "percentuale di monitoraggi che hanno riscontrato valori di campo elettrico (E) misurati superiori o uguali a 20 V/m"@it ;
+	skos:notation "Percentuali campagne di monitoraggio (E >= 20 V/m)" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-perc-banda-larga-e-lt-6>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "percentage of broadband manual measurements (E < 6 V/m)"@en , "Percentuale di misure manuali in banda larga con valori di campo elettrico (E) misurati inferiori a 6 V/m"@it ;
+	dcterms:identifier "con-rtv-srb-perc-banda-larga-e-lt-6" ;
+	skos:definition "percentage of broadband manual measurements that found electric field (E) values below 6 V/m"@en , "percentuale di misure manuali in banda larga che hanno riscontrato valori di campo elettrico (E) inferiori a 6 V/m"@it ;
+	skos:notation "Percentuale di misure manuali in banda larga (E < 6 V/m)" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-perc-banda-larga-6-15>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "percentage of broadband manual measurements (6 <= E < 15 V/m)"@en , "Percentuale di misure manuali in banda larga con valori di campo elettrico (E) misurati compresi tra 6 (incluso) e 15 (escluso) V/m"@it ;
+	dcterms:identifier "con-rtv-srb-perc-banda-larga-6-15" ;
+	skos:definition "percentage of broadband manual measurements that found electric field (E) values between 6 (inclusive) and 15 (exclusive) V/m"@en , "percentuale di misure manuali in banda larga che hanno riscontrato valori di campo elettrico (E) compresi tra 6 (incluso) e 15 (escluso) V/m"@it ;
+	skos:notation "Percentuale di misure manuali in banda larga (6 <= E < 15 V/m)" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-perc-banda-larga-15-20>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "percentage of broadband manual measurements (15 <= E < 20 V/m)"@en , "Percentuale di misure manuali in banda larga con valori di campo elettrico (E) misurati compresi tra 15 (incluso) e 20 (escluso) V/m"@it ;
+	dcterms:identifier "con-rtv-srb-perc-banda-larga-15-20" ;
+	skos:definition "percentage of broadband manual measurements that found electric field (E) values between 15 (inclusive) and 20 (exclusive) V/m"@en , "percentuale di misure manuali in banda larga che hanno riscontrato valori di campo elettrico (E) comprese tra 15 (incluso) e 20 (escluso) V/m"@it ;
+	skos:notation "Percentuale di misure manuali in banda larga (15 <= E < 20 V/m)" .
+
+<https://w3id.org/italia/env/vocab/cem/indicators/con-rtv-srb-perc-banda-larga-ge-20>
+	a skos:Concept ;
+	skos:inScheme <https://w3id.org/italia/env/vocab/cem/indicators> ;
+	skos:broader <https://w3id.org/italia/env/vocab/cem/indicators/controls-rtv-srb> ;
+	skos:prefLabel "percentage of broadband manual measurements (E >= 20 V/m)"@en , "Percentuale di misure manuali in banda larga con valori di campo elettrico (E) misurati superiori o uguali a 20 V/m"@it ;
+	dcterms:identifier "con-rtv-srb-perc-banda-larga-ge-20" ;
+	skos:definition "percentage of broadband manual measurements that found electric field (E) values greater than or equal to 20 V/m"@en , "percentuale di misure manuali in banda larga che hanno riscontrato valori di campo elettrico (E) superiori o uguali a 20 V/m"@it ;
+	skos:notation "Percentuale di misure manuali in banda larga (E >= 20 V/m)" .
