@@ -51,7 +51,7 @@
         <https://w3id.org/italia/env/ld/common/person/0009-0002-0095-9599>,
         <https://w3id.org/italia/env/ld/common/person/0009-0008-4292-8962>,
         <https://w3id.org/italia/env/ld/common/person/0000-0003-0998-9751> ;
-	ndc:keyConcept	"indicators" .
+	ndc:keyConcept	"cem-indicators" .
 
 <https://w3id.org/italia/env/ld/common/distribution/cem-indicators-RDF-TURTLE> a dcatapit:Distribution ,
     dcat:Distribution ;
