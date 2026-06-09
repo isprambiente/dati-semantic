@@ -47,7 +47,7 @@
   dcterms:type <http://purl.org/adms/assettype/Taxonomy> ;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
   xkos:numberOfLevels "2" ;
-  ndc:keyConcept "indicators" ;
+  ndc:keyConcept "climate-indicators" ;
   dcterms:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
   dcat:contactPoint <https://w3id.org/italia/env/ld/common/organization/001-LD> ;
   dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/climate-indicators-RDF-TURTLE>,
