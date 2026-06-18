@@ -37,8 +37,8 @@
   dcterms:identifier "https://w3id.org/italia/env/vocab/climate/indicators" ;
   dcterms:language <http://publications.europa.eu/resource/authority/language/ITA>,
                <http://publications.europa.eu/resource/authority/language/ENG> ;
-  dcterms:issued "2026-06-08"^^xsd:date ;
-  dcterms:modified "2026-06-08"^^xsd:date ;
+  dcterms:issued "2026-06-18"^^xsd:date ;
+  dcterms:modified "2026-06-18"^^xsd:date ;
   dcterms:creator <https://w3id.org/italia/env/ld/common/organisation/001> ;
   dcterms:publisher <https://w3id.org/italia/env/ld/common/organisation/001> ;
   dcterms:rightsHolder <https://w3id.org/italia/env/ld/common/organisation/001> ;
@@ -150,8 +150,8 @@
     dcterms:identifier "normal-values" ;
     skos:prefLabel "Valori normali - Temperatura e precipitazione"@it ;
     skos:prefLabel "Normal values - Temperature and precipitation"@en ;
-    skos:definition "Valori medi di una variabile climatica (come la temperatura e la precipitazione in relazione al periodo e alla regione in cui il fenomeno si manifesta) calcolati su un periodo di riferimento trentennale definito dalla WMO. Ogni 10 anni viene aggiornato il periodo di riferimento"@it ;
-    skos:definition "Mean values of a climate variable (such as temperature and precipitation, relative to the time period and region in which the phenomenon occurs) calculated over a 30-year reference period defined by the WMO. The reference period is updated every 10 years."@en ;
+    skos:definition "Valori medi delle variabili climatiche relativi al periodo e all'area geografica di interesse, calcolati su un periodo di trent'anni, come definito dalla WMO. Ogni 10 anni viene aggiornato tale periodo di riferimento."@it ;
+    skos:definition "Mean values of climate variables related to the period and geographical area of interest, calculated over a thirty-year period as defined by the WMO. This reference period is updated every 10 years."@en ;
     skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
 
 <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate>
@@ -159,47 +159,47 @@
     dcterms:identifier "recent-climate" ;
     skos:prefLabel "Clima recente - Temperatura e precipitazione"@it ;
     skos:prefLabel "Recent climate - Temperature and precipitation"@en ;
-    skos:definition "Indicatori climatici di una variabile climatica (come la temperatura e la precipitazione in relazione al periodo e alla regione in cui il fenomeno si manifesta) riferiti agli ultimi anni disponibili, confrontabili con il più recente periodo di riferimento trentennale definito dalla WMO."@it ;
-    skos:definition "Climate indicators for a specific climate variable (such as temperature and precipitation, as they relate to the time period and region in which the phenomenon occurs), based on the most recent available data, and comparable to the most recent 30-year reference period defined by the WMO."@en ;
+    skos:definition "Indicatori climatici di temperatura e precipitazione, relativi a periodo e area geografica di interesse, per gli ultimi anni."@it ;
+    skos:definition "Temperature and precipitation climate indicators, related to the time period and geographic area of interest, for recent years."@en ;
     skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
 
 ########## VARIABLES ##########
 
-<https://w3id.org/italia/env/vocab/climate/indicators/mean-temperature>
+<https://w3id.org/italia/env/vocab/climate/indicators/mean-temperature-normal>
     a skos:Concept ;
-    dcterms:identifier "mean-temperature" ;
-    skos:prefLabel "Temperatura media"@it ;
-    skos:prefLabel "Mean temperature"@en ;
+    dcterms:identifier "mean-temperature-normal" ;
+    skos:prefLabel "Valore normale della temperatura media"@it ;
+    skos:prefLabel "Normal mean temperature"@en ;
     skos:definition "Temperatura media calcolata come valore climatologico su un periodo di riferimento trentennale definito dalla WMO. Unità: °C."@it ;
     skos:definition "Mean temperature computed as a climatological value over a WMO-defined 30‑year reference period. Unit: °C."@en ;
     skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> ;
     skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
 
-<https://w3id.org/italia/env/vocab/climate/indicators/max-temperature>
+<https://w3id.org/italia/env/vocab/climate/indicators/max-temperature-normal>
     a skos:Concept ;
-    dcterms:identifier "max-temperature" ;
-    skos:prefLabel "Temperatura massima"@it ;
-    skos:prefLabel "Maximum temperature"@en ;
+    dcterms:identifier "max-temperature-normal" ;
+    skos:prefLabel "Valore normale della temperatura massima"@it ;
+    skos:prefLabel "Normal maximum temperature"@en ;
     skos:definition "Temperatura massima calcolata come valore climatologico su un periodo di riferimento trentennale definito dalla WMO. Unità: °C."@it ;
     skos:definition "Maximum temperature computed as a climatological value over a WMO-defined 30‑year reference period. Unit: °C."@en ;
     skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> ;
     skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
 
-<https://w3id.org/italia/env/vocab/climate/indicators/min-temperature>
+<https://w3id.org/italia/env/vocab/climate/indicators/min-temperature-normal>
     a skos:Concept ;
-    dcterms:identifier "min-temperature" ;
-    skos:prefLabel "Temperatura minima"@it ;
-    skos:prefLabel "Minimum temperature"@en ;
+    dcterms:identifier "min-temperature-normal" ;
+    skos:prefLabel "Valore normale della temperatura minima"@it ;
+    skos:prefLabel "Normal minimum temperature"@en ;
     skos:definition "Temperatura minima calcolata come valore climatologico su un periodo di riferimento trentennale definito dalla WMO. Unità: °C."@it ;
     skos:definition "Minimum temperature computed as a climatological value over a WMO-defined 30‑year reference period. Unit: °C."@en ;
     skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> ;
     skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
 
-<https://w3id.org/italia/env/vocab/climate/indicators/cumulative-precipitation>
+<https://w3id.org/italia/env/vocab/climate/indicators/cumulative-precipitation-normal>
     a skos:Concept ;
-    dcterms:identifier "cumulative-precipitation" ;
-    skos:prefLabel "Precipitazione cumulata"@it ;
-    skos:prefLabel "Cumulative precipitation"@en ;
+    dcterms:identifier "cumulative-precipitation-normal" ;
+    skos:prefLabel "Valore normale della precipitazione cumulata"@it ;
+    skos:prefLabel "Normal cumulative precipitation"@en ;
     skos:definition "Totale delle precipitazioni cumulate calcolato come valore climatologico su un periodo di riferimento trentennale definito dalla WMO. Unità: mm."@it ;
     skos:definition "Total accumulated precipitation computed as a climatological value over a WMO-defined 30‑year reference period. Unit: mm."@en ;
     skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> ;
@@ -241,9 +241,9 @@
     skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> ;
     skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
 
-<https://w3id.org/italia/env/vocab/climate/indicators/precipitation-anomaly>
+<https://w3id.org/italia/env/vocab/climate/indicators/cumulative-precipitation-anomaly>
     a skos:Concept ;
-    dcterms:identifier "precipitation-anomaly" ;
+    dcterms:identifier "cumulative-precipitation-anomaly" ;
     skos:prefLabel "Anomalia della precipitazione cumulata"@it ;
     skos:prefLabel "Cumulative precipitation anomaly"@en ;
     skos:definition "Deviazione del valore attuale della precipitazione cumulata rispetto al più recente periodo di riferimento trentennale definito dalla WMO. Unità: mm."@it ;
@@ -256,8 +256,8 @@
     dcterms:identifier "mean-temperature-absolute" ;
     skos:prefLabel "Valore attuale della temperatura media"@it ;
     skos:prefLabel "Actual mean temperature"@en ;
-    skos:definition "Valore attuale della temperatura media (tipicamente per gli ultimi anni). Unità: °C."@it ;
-    skos:definition "Actual value of the mean temperature (typically for recent years). Unit: °C."@en ;
+    skos:definition "Valore della temperatura media nel periodo e nell'area geografica di interesse, per diverse aggregazioni temporali (mensili/stagionali/annuali)."@it ;
+    skos:definition "Value of the mean temperature for the period and geographical area of interest, across different time aggregations (monthly/seasonal/annual)."@en ;
     skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> ;
     skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
 
@@ -266,8 +266,8 @@
     dcterms:identifier "max-temperature-absolute" ;
     skos:prefLabel "Valore attuale della temperatura massima"@it ;
     skos:prefLabel "Actual maximum temperature"@en ;
-    skos:definition "Valore attuale della temperatura massima (tipicamente per gli ultimi anni). Unità: °C."@it ;
-    skos:definition "Actual value of the maximum temperature (typically for recent years). Unit: °C."@en ;
+    skos:definition "Valore della temperatura massima media nel periodo e nell'area geografica di interesse, per diverse aggregazioni temporali (mensili/stagionali/annuali)."@it ;
+    skos:definition "Value of the mean maximum temperature for the period and geographical area of interest, across different time aggregations (monthly/seasonal/annual)."@en ;
     skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> ;
     skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
 
@@ -276,18 +276,18 @@
     dcterms:identifier "min-temperature-absolute" ;
     skos:prefLabel "Valore attuale della temperatura minima"@it ;
     skos:prefLabel "Actual minimum temperature"@en ;
-    skos:definition "Valore attuale della temperatura minima (tipicamente per gli ultimi anni). Unità: °C."@it ;
-    skos:definition "Actual value of the minimum temperature (typically for recent years). Unit: °C."@en ;
+    skos:definition "Valore della temperatura minima media nel periodo e nell'area geografica di interesse, per diverse aggregazioni temporali (mensili/stagionali/annuali)."@it ;
+    skos:definition "Value of the mean minimum temperature for the period and geographical area of interest, across different time aggregations (monthly/seasonal/annual)."@en ;
     skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> ;
     skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
 
-<https://w3id.org/italia/env/vocab/climate/indicators/precipitation-absolute>
+<https://w3id.org/italia/env/vocab/climate/indicators/cumulative-precipitation-absolute>
     a skos:Concept ;
-    dcterms:identifier "precipitation-absolute" ;
+    dcterms:identifier "cumulative-precipitation-absolute" ;
     skos:prefLabel "Valore attuale della precipitazione cumulata"@it ;
     skos:prefLabel "Actual cumulative precipitation"@en ;
-    skos:definition "Valore attuale della precipitazione cumulata (tipicamente per gli ultimi anni). Unità: mm."@it ;
-    skos:definition "Actual value of the cumulative precipitation (typically for recent years). Unit: mm."@en ;
+    skos:definition "Valore della precipitazione cumulata nel periodo e nell'area geografica di interesse, per diverse aggregazioni temporali (mensili/stagionali/annuali)."@it ;
+    skos:definition "Value of the cumulative precipitation for the period and geographical area of interest, across different time aggregations (monthly/seasonal/annual)."@en ;
     skos:broader <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> ;
     skos:inScheme <https://w3id.org/italia/env/vocab/climate/indicators> .
 
@@ -298,8 +298,8 @@
     dcterms:identifier "period-1961-1990" ;
     skos:prefLabel "1961-1990"@it ;
     skos:prefLabel "1961-1990"@en ;
-    skos:definition "Primo trentennio di riferimento WMO utilizzato per il calcolo dei valori normali climatici."@it ;
-    skos:definition "First WMO reference 30‑year period used for computing climatic normal values."@en ;
+    skos:definition "Trentennio climatologico di riferimento WMO utilizzato per il calcolo dei valori normali climatici del passato."@it ;
+    skos:definition "WMO climatological reference 30‑year period used for computing past climatic normal values."@en ;
     skos:related <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> .
 
 <https://w3id.org/italia/env/vocab/climate/indicators/period-1971-2000>
@@ -307,8 +307,8 @@
     dcterms:identifier "period-1971-2000" ;
     skos:prefLabel "1971-2000"@it ;
     skos:prefLabel "1971-2000"@en ;
-    skos:definition "Secondo trentennio di riferimento WMO utilizzato per il calcolo dei valori normali climatici."@it ;
-    skos:definition "Second WMO reference 30‑year period used for computing climatic normal values."@en ;
+    skos:definition "Trentennio climatologico di riferimento WMO utilizzato per il calcolo dei valori normali climatici del passato."@it ;
+    skos:definition "WMO climatological reference 30‑year period used for computing past climatic normal values."@en ;
     skos:related <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> .
 
 <https://w3id.org/italia/env/vocab/climate/indicators/period-1981-2010>
@@ -316,8 +316,8 @@
     dcterms:identifier "period-1981-2010" ;
     skos:prefLabel "1981-2010"@it ;
     skos:prefLabel "1981-2010"@en ;
-    skos:definition "Terzo trentennio di riferimento WMO utilizzato per il calcolo dei valori normali climatici."@it ;
-    skos:definition "Third WMO reference 30‑year period used for computing climatic normal values."@en ;
+    skos:definition "Trentennio climatologico di riferimento WMO utilizzato per il calcolo dei valori normali climatici del passato."@it ;
+    skos:definition "WMO climatological reference 30‑year period used for computing past climatic normal values."@en ;
     skos:related <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> .
 
 <https://w3id.org/italia/env/vocab/climate/indicators/period-1991-2020>
@@ -325,10 +325,9 @@
     dcterms:identifier "period-1991-2020" ;
     skos:prefLabel "1991-2020"@it ;
     skos:prefLabel "1991-2020"@en ;
-    skos:definition "Quarto e più recente trentennio di riferimento WMO utilizzato sia per il calcolo dei valori normali sia come periodo di riferimento per le anomalie del clima recente."@it ;
-    skos:definition "Fourth and most recent WMO reference 30‑year period used both for computing climatic normal values and as the reference period for recent‑climate anomalies."@en ;
-    skos:related <https://w3id.org/italia/env/vocab/climate/indicators/normal-values>,
-                 <https://w3id.org/italia/env/vocab/climate/indicators/recent-climate> .
+    skos:definition "Il più recente trentennio climatologico di riferimento WMO utilizzato sia per il calcolo dei valori normali climatici sia come periodo di riferimento per le anomalie del clima recente."@it ;
+    skos:definition "The most recent WMO climatological reference 30‑year period used both for computing climatic normal values and as the reference period for recent‑climate anomalies."@en ;
+    skos:related <https://w3id.org/italia/env/vocab/climate/indicators/normal-values> .
 
 ########## AREA LEVELS ##########
 
