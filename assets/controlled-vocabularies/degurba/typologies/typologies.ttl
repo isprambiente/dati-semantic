@@ -1,0 +1,190 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
+
+<https://w3id.org/italia/env/vocab/degurba/typologies>
+  a skos:ConceptScheme, dcatapit:Dataset, adms:Asset, dcat:Dataset ;
+  dcterms:title "Degree of Urbanisation (DEGURBA) Controlled Vocabulary"@en ,  
+    "Vocabolario Controllato del Grado di Urbanizzazione (DEGURBA)"@it ;
+  rdfs:label "Degree of Urbanisation (DEGURBA) Controlled Vocabulary"@en , 
+        "Vocabolario Controllato del Grado di Urbanizzazione (DEGURBA)"@it ;
+    dcterms:description """This controlled vocabulary represents Level 1 of the Degree of Urbanisation (DEGURBA) classification, used to monitor Sustainable Development Goals (SDGs). It classifies small spatial units (such as municipalities) into three mutually exclusive categories: (1) Cities / Densely populated areas, (2) Towns and semi-dense areas / Intermediate density areas, and (3) Rural areas / Thinly populated areas. The classification is based on a 1 km² population grid, evaluating population density, size, and contiguity to capture the urban-rural continuum accurately without the distortions of varying administrative boundaries."""@en ;
+    dcterms:description """Questo vocabolario controllato rappresenta il Livello 1 della classificazione del Grado di Urbanizzazione (DEGURBA), utilizzato per il monitoraggio degli Obiettivi di Sviluppo Sostenibile (SDG). Classifica le unità spaziali locali (come i comuni) in tre categorie mutuamente esclusive: (1) Città / Zone densamente popolate, (2) Piccole città e sobborghi / Zone a densità intermedia, e (3) Zone rurali / Zone scarsamente popolate. La classificazione si basa su una griglia di popolazione con celle di 1 km², valutando densità, ampiezza e contiguità della popolazione per descrivere fedelmente il continuum urbano-rurale senza le distorsioni dei confini amministrativi."""@it ;
+    rdfs:comment """This controlled vocabulary represents Level 1 of the Degree of Urbanisation (DEGURBA) classification, used to monitor Sustainable Development Goals (SDGs). It classifies small spatial units (such as municipalities) into three mutually exclusive categories: (1) Cities / Densely populated areas, (2) Towns and semi-dense areas / Intermediate density areas, and (3) Rural areas / Thinly populated areas. The classification is based on a 1 km² population grid, evaluating population density, size, and contiguity to capture the urban-rural continuum accurately without the distortions of varying administrative boundaries."""@en , 
+        """Questo vocabolario controllato rappresenta il Livello 1 della classificazione del Grado di Urbanizzazione (DEGURBA), utilizzato per il monitoraggio degli Obiettivi di Sviluppo Sostenibile (SDG). Classifica le unità spaziali locali (come i comuni) in tre categorie mutuamente esclusive: (1) Città / Zone densamente popolate, (2) Piccole città e sobborghi / Zone a densità intermedia, e (3) Zone rurali / Zone scarsamente popolate. La classificazione si basa su una griglia di popolazione con celle di 1 km², valutando densità, ampiezza e contiguità della popolazione per descrivere fedelmente il continuum urbano-rurale senza le distorsioni dei confini amministrativi."""@it ;
+  dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> , 
+    <http://publications.europa.eu/resource/authority/language/ITA> ;
+  dcterms:issued "2026-06-18"^^xsd:date ;
+  dcterms:modified "2026-06-18"^^xsd:date ;
+  dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  dcterms:identifier "https://w3id.org/italia/env/vocab/degurba/typologies" ;
+  dcterms:creator <https://w3id.org/italia/env/ld/common/organisation/001> ;
+  dcterms:publisher <https://w3id.org/italia/env/ld/common/organisation/001> ;
+  dcterms:rightsHolder <https://w3id.org/italia/env/ld/common/organisation/001> ;
+  owl:versionInfo "Version 1.0 - June 2026"@en ,
+    "Versione 1.0 - Giugno 2026"@it ;
+  dcterms:type <http://purl.org/adms/assettype/CodeList> ;
+  xkos:numberOfLevels "1" ;
+  ndc:keyConcept "degurba-typologies" ;
+  dcterms:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+  dcat:contactPoint <https://w3id.org/italia/env/ld/common/organization/001-LD> ;
+  skos:hasTopConcept <https://w3id.org/italia/env/vocab/degurba/typologies/cities> ,
+    <https://w3id.org/italia/env/vocab/degurba/typologies/towns-and-semi-dense-areas> ,
+    <https://w3id.org/italia/env/vocab/degurba/typologies/rural-areas> ,
+    <https://w3id.org/italia/env/vocab/degurba/typologies/urban-centres> ,
+    <https://w3id.org/italia/env/vocab/degurba/typologies/urban-clusters> ,
+    <https://w3id.org/italia/env/vocab/degurba/typologies/rural-grid-cells> ;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/degurb-typologies-RDF-TURTLE>, 
+    <https://w3id.org/italia/env/ld/common/distribution/degurb-typologies-CSV> ;
+  dcat:keyword "degurba"@en , "classification"@en , "classificazione"@it , "urbanizzazione"@it , "urbanisation"@en ;
+  dcterms:subject <http://eurovoc.europa.eu/4618> ;
+  schema:creator <https://w3id.org/italia/env/ld/common/person/0000-0003-0998-9751> ;  
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> .
+
+<https://w3id.org/italia/env/ld/common/distribution/degurb-typologies-RDF-TURTLE> a dcatapit:Distribution, dcat:Distribution;
+  dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+  dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dcterms:title "RDF/Turtle distribution of the vocabulary of Degree of Urbanisation (DEGURBA)"@en ,
+    "Distribuzione RDF/Turtle del vocabolario sul Grado di Urbanizzazione (DEGURBA)"@it ;
+  dcterms:description "This is the RDF/Turtle distribution of the Linked Open Data dataset of Degree of Urbanisation (DEGURBA)"@en ,
+    "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data sul Grado di Urbanizzazione (DEGURBA)."@it ;
+  dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/degurba/typologies> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/degurba/typologies/typologies.ttl> .
+
+<https://w3id.org/italia/env/ld/common/distribution/degurb-typologies-CSV> a dcatapit:Distribution, dcat:Distribution;
+  dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+  dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+  dcterms:title "CSV distribution of the vocabulary of Degree of Urbanisation (DEGURBA)"@en ,
+    "Distribuzione CSV del vocabolario sul Grado di Urbanizzazione (DEGURBA)"@it ;
+  dcterms:description "This is the CSV distribution of the Linked Open Data dataset of Degree of Urbanisation (DEGURBA)"@en ,
+    "Questa è la distribuzione CSV del dataset Linked Open Data sul Grado di Urbanizzazione (DEGURBA)."@it ;
+  dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/degurba/typologies> ;
+  dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/degurba/typologies/typologies.csv> .
+
+<https://w3id.org/italia/env/ld/common/organisation/001> rdf:type owl:NamedIndividual ,
+    dcatapit:Agent ,
+    vcard:Organization ,
+    org:Organization ,
+    foaf:Agent ,
+    top:Organisation ;
+    dcterms:identifier "ispra_rm" ;
+    vcard:fn "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+            "Italian National Institute for Environmental Protection and Research"@en ;
+    foaf:name "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it ,
+            "Italian Institute for Environmental Protection and Research"@en .
+
+<https://w3id.org/italia/env/ld/common/organization/001-LD> rdf:type owl:NamedIndividual ,
+    dcatapit:Organization ,
+    vcard:Kind ,
+    vcard:Organization ;
+    vcard:fn "DG-SINA - Progetto Linked ISPRA" ;
+    vcard:hasEmail <mailto:assistenza-lod@isprambiente.it> .
+
+<https://w3id.org/italia/env/ld/common/person/0000-0003-0998-9751> a dcterms:Agent ,
+    owl:NamedIndividual ,
+    prov:Person ,
+    foaf:Person ,
+    schema:Person ;
+    rdfs:label "Elio Giulianelli" ;
+    owl:sameAs <https://orcid.org/0000-0003-0998-9751> ;
+    foaf:familyName "Giulianelli" ;
+    foaf:givenName "Elio" ;
+    schema:identifier <https://orcid.org/0000-0003-0998-9751> .                                                         
+
+<https://w3id.org/italia/env/vocab/degurba/typologies/cities> a skos:Concept ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/degurba/typologies> ;
+    skos:topConceptOf <https://w3id.org/italia/env/vocab/degurba/typologies> ;
+    skos:notation "1" ;
+    dcterms:identifier "cities" ;
+    skos:prefLabel "Cities (or Densely populated areas)"@en , 
+        "Città o Zone densamente popolate"@it ;
+    skos:definition "'Cities (or Densely populated areas)' — small spatial units that have at least 50 % of their population in 'Urban centres - High-density clusters'"@en , 
+        "'Città o Zone densamente popolate': se almeno il 50% della popolazione ricade in uno o più 'Agglomerati ad alta densità (Urban centre)'"@it ;
+    skos:related <https://w3id.org/italia/env/vocab/degurba/typologies/urban-centres> .
+
+<https://w3id.org/italia/env/vocab/degurba/typologies/towns-and-semi-dense-areas> a skos:Concept ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/degurba/typologies> ;
+    skos:topConceptOf <https://w3id.org/italia/env/vocab/degurba/typologies> ;
+    skos:notation "2" ;
+    dcterms:identifier "towns-and-semi-dense-areas" ;
+    skos:prefLabel "Towns and semi-dense areas (or Intermediate density areas)"@en , 
+        "Piccole città e sobborghi o Zone a densità intermedia di popolazione"@it ;
+    skos:definition "'Towns and semi-dense areas (or Intermediate density areas)' — small spatial units that have less than 50 % of their population in urban centres and no more than 50 % of their population in 'Rural grid cells - Mostly low-density cells''"@en , 
+        "'Piccole città e sobborghi o Zone a densità intermedia di popolazione': se meno del 50% della popolazione ricade in 'Agglomerati ad alta densità (Urban centre)' ma almeno il 50% della popolazione ricade in 'Agglomerati urbani (Urban cluster)'"@it ;
+    skos:related <https://w3id.org/italia/env/vocab/degurba/typologies/urban-clusters> .
+
+<https://w3id.org/italia/env/vocab/degurba/typologies/rural-areas> a skos:Concept ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/degurba/typologies> ;
+    skos:topConceptOf <https://w3id.org/italia/env/vocab/degurba/typologies> ;
+    skos:notation "3" ;
+    dcterms:identifier "rural-areas" ;
+    skos:prefLabel "Rural areas (or Thinly populated areas)"@en , 
+        "Zone rurali o Zone scarsamente popolate"@it ;
+    skos:definition "'Rural areas (or Thinly populated areas)' — small spatial units that have more than 50 % of their population in 'Rural grid cells - Mostly low-density cells'"@en , 
+        "'Zone rurali o Zone scarsamente popolate': se più del 50% della popolazione vive in 'Celle rurali della griglia'"@it ;
+    skos:related <https://w3id.org/italia/env/vocab/degurba/typologies/rural-grid-cells> .
+
+<https://w3id.org/italia/env/vocab/degurba/typologies/not-classified> a skos:Concept ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/degurba/typologies> ;
+    skos:notation "0" ;
+    dcterms:identifier "not-classified" ;
+    skos:prefLabel "Not Classified"@en , 
+        "Non Classificato"@it ;
+    skos:definition "Unclassified local spatial unit or cluster of contiguous cells"@en , 
+        "Unità spaziale locale o aggregato di celle contigue non classificati"@it .
+
+<https://w3id.org/italia/env/vocab/degurba/typologies/urban-centres> a skos:Concept ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/degurba/typologies> ;
+    skos:topConceptOf <https://w3id.org/italia/env/vocab/degurba/typologies> ;
+    #skos:notation "11" ;
+    dcterms:identifier "urban-centres" ;
+    skos:prefLabel "Urban centres - High-density clusters"@en , 
+        "Agglomerati ad alta densità (Urban centre)"@it ;
+    skos:definition """An urban centre (high-density cluster) — cluster of contiguous grid cells of 1 km² (using four-point contiguity, in other words, excluding diagonals) with a population density of at least 1 500 inhabitants per km²
+        and collectively a minimum population of 50 000 inhabitants before gap-filling; if needed, cells that are at least
+        50 % built-up may be added"""@en , 
+        "Agglomerato ad alta densità (Urban centre): aggregato di celle della griglia regolare Geostat (griglia a maglia regolare - 1km, 10km, 100km - a fini statistici che ricopre l'intero territorio europeo, contenente la popolazione residente al censimento della popolazione e la percentuale di superfice ricoperta da acqua in ciascuna cella), contigue secondo i soli punti cardinali (4), dove ciascuna cella ha una densità di almeno 1.500 abitanti per km2 e, nell'aggregato, presentano almeno 50mila abitanti prima del riempimento delle 'lacune'."@it ;
+    skos:related <https://w3id.org/italia/env/vocab/degurba/typologies/cities> .
+
+<https://w3id.org/italia/env/vocab/degurba/typologies/urban-clusters> a skos:Concept ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/degurba/typologies> ;
+    skos:topConceptOf <https://w3id.org/italia/env/vocab/degurba/typologies> ;
+    #skos:notation "22" ;
+    dcterms:identifier "urban-clusters" ;
+    skos:prefLabel "Urban clusters - Moderate density clusters"@en , 
+        "Agglomerati urbani (Urban cluster)"@it ;
+    skos:definition """An urban cluster (moderate-density cluster) — a cluster of contiguous grid cells of 1 km² (using eight-point
+contiguity, in other words, including diagonals) with a population density of at least 300 inhabitants per km²
+and a minimum population of 5 000 inhabitants. In a final step, the grid cells identified as an urban centre are
+removed from the urban cluster."""@en , 
+        "Agglomerato urbano (Urban cluster): aggregato di celle contigue, (anche per le sole diagonali, per un totale di 8 celle vicine), ciascuna con una densità di almeno 300 abitanti per km2 e che, nell'aggregato, hanno almeno 5mila abitanti."@it ;
+    skos:related <https://w3id.org/italia/env/vocab/degurba/typologies/towns-and-semi-dense-areas> .
+
+<https://w3id.org/italia/env/vocab/degurba/typologies/rural-grid-cells> a skos:Concept ;
+    skos:inScheme <https://w3id.org/italia/env/vocab/degurba/typologies> ;
+    skos:topConceptOf <https://w3id.org/italia/env/vocab/degurba/typologies> ;
+    #skos:notation "33" ;
+    dcterms:identifier "rural-grid-cells" ;
+    skos:prefLabel "Rural grid cells - Mostly low-density cells"@en , 
+        "Celle rurali della griglia"@it ;
+    skos:definition """Rural grid cells (or mostly low-density cells) — grid cells that are not identified as urban centres or as urban
+clusters."""@en , 
+        "'Celle rurali della griglia': celle della griglia regolare Geostat (griglia a maglia regolare - 1km, 10km, 100km - a fini statistici che ricopre l'intero territorio europeo, contenente la popolazione residente al censimento della popolazione e la percentuale di superfice ricoperta da acqua in ciascuna cella) da 1 km2 che non rientrano negli 'Agglomerati ad alta densità' o negli 'Agglomerati urbani'."@it ;
+    skos:related <https://w3id.org/italia/env/vocab/degurba/typologies/rural-areas> .               
+
